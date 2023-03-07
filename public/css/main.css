@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --background-color: #eaeaea;
+    --link-color:       #6E6D7A;
+
+    --item-border-radius: 0.8rem;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+
+    max-width: 1200px;
+
+    padding: 0;
+    margin:  0;
+
+    padding-left:  2rem;
+    padding-right: 2rem;
+
+    margin-left:  auto;
+    margin-right: auto;
+
+    font-size: 1.2rem;
+    background-color: var(--background-color);
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* Navigation Bar                                                             */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+nav {
+    width: 100%;
+
+    padding-top:    1.75rem;
+    padding-bottom: 1.75rem;
+
+    margin-bottom: 2rem;
+
+    border-bottom: 1px solid #c7c7c7;
+
+    display:         flex;
+    justify-content: space-between;
+    align-items:     center;
+
+    font-size: 1rem;
+}
+
+/*----------------------------------------------------------------------------*/
+nav a {
+    font-weight: bold;
+    color:     var(--link-color);
+
+    text-decoration: none;
+    padding:         1rem;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Makes the left-most item and right-most item to be aligned without padding */
+nav div:first-of-type :first-child {
+    /* background-color: red; */
+    padding-left: 0;
+}
+
+nav div:last-of-type :last-child {
+    /* background-color: red; */
+    padding-right: 0;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* Headers                                                                    */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+h1 {
+    margin-bottom: 1.0rem;
+    font-size:     2rem;
+
+    font-weight:   600;
+}
+
+h1::before {
+    content: "\25A0";
+    margin-right: 1rem;
+}
+
+h1 span {
+    font-weight: 100;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* Projects List                                                              */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+/* -------------------------------------------------------------------------- */
+.project-list-card {
+    background-color: var(--background-color);
+
+    transition:    transform 0.01s ease-in-out;
+    cursor:        pointer;
+    font-size:     1rem;
+    border-radius: var(--item-border-radius);
+}
+
+.project-list-card:hover {
+    transform: scale(1.005);
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* -------------------------------------------------------------------------- */
+.project-list-card a {
+    text-decoration: none;
+    color:           var(--link-color);
+}
+
+.project-list-card:hover a {
+    color:     black;
+    font-weight: 800;
+}
+
+/* -------------------------------------------------------------------------- */
+.project-list-card img {
+    width:  100%;
+    height: 100%;
+
+    border-radius: var(--item-border-radius);
+    object-fit:    cover;
+}
+
+/* -------------------------------------------------------------------------- */
+.project-list-card section {
+    display:         flex;
+    justify-content: space-between;
+
+    width: 100%;
+    font-weight: 500;
+
+    padding-top:    0.4rem;
+    padding-bottom: 0.6rem;
+
+    padding-left:  0.5rem;
+    padding-right: 0.5rem;
+    /* background-color: red; */
+}
+
+/* -------------------------------------------------------------------------- */
+.project-list-card section span:nth-child(1) {
+    font-weight: 700;
+}
+
+.project-list-card section span:nth-last-child(2) {
+    margin-left:   auto;
+    padding-right: 0.5rem;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* Projects Details                                                           */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.project-details canvas, iframe {
+    background-color: aqua;
+
+    width:  100%;
+    height:  60vh;
+    display: block;
+    border-radius: var(--item-border-radius);
+}
+
+/*----------------------------------------------------------------------------*/
+.project-details header {
+    display: flex;
+    margin: 0.75rem 0;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*----------------------------------------------------------------------------*/
+.project-details section {
+    padding: 0rem 2rem;
+}
+
+.project-details .label-container{
+    display: flex;
+    gap: 1rem
+}
+
+.project-details .company {
+    color:blue;
+    max-width: fit-content;
+    max-height: 50px;
+    max-width: 150px;
+
+}
+
+svg path {
+    fill:   black;
+  }
+
+.bg-black {
+    background-color: black;
+}
+
+/* This is the bubbles that represents what i did */
+.project-details span {
+    background-color: #c83456;
+    color: white;
+    font-size: 0.9rem;
+    padding:     0.5rem;
+    border-radius: calc(var(--item-border-radius) * 0.7);
+}
+
+.project-details .js {
+    background-color: hsl(340, 42%, 34%);
+}
+.project-details .demolib {
+    background-color: hsl(340, 51%, 43%);
+}
+.project-details .csharp {
+    background-color: hsl(251, 23%, 23%);
+}
+.project-details .monogame {
+    background-color: hsl(251, 59%, 49%);
+}
+
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/*  Games / Projects                                                          */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+.grid-flow-container {    /* Container for Personal Games - better for mixed sizes */
+    display:        flex;
+    flex-direction: column;
+    gap:            1rem;
+}
+
+.grid-flow-container .column {
+    display:        flex;
+    flex-direction: column;
+    gap:            1rem;
+}
+
+
+/*----------------------------------------------------------------------------*/
+.grid-container {
+    display: grid;
+    gap: 1rem;
+}
+
+/* For screens 600px and above */
+@media (min-width: 600px) {
+  /* CSS rules here */
+    .grid-flow-container {
+        flex-direction: row;
+    }
+    .grid-container {
+        grid-template-columns: auto;
+        /* background-color: red; */
+        align-items: stretch;
+    }
+}
+
+/* For screens 800px and above */
+@media (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+        /* background-color: blue; */
+        align-items: stretch;
+    }
+}
+
+/* For screens 1000px and above */
+@media (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        grid-auto-flow: row dense;
+        grid-auto-rows: minmax(auto, max-content);
+
+        justify-content: center;
+        align-content:   space-between;
+        align-items:     baseline;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+.about {
+
+}
+
+.about .looking-for-resume {
+    background-color: #e3e3e3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* margin-left: 2rem; */
+    padding: 0.5rem;
+}
