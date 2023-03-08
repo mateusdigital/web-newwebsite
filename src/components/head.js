@@ -6,7 +6,7 @@ export default function Head_() {
   return (
     <>
         <Head>
-            {/* <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> */}
+
             <link href="/css/main.css" rel="stylesheet" type="text/css" />
 
             <link rel="apple-touch-icon"      sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
