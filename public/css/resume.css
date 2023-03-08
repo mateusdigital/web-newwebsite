@@ -17,7 +17,19 @@
 
 }
 
+.trophy:after{
+    content: "";
+    display: inline-block;
+    width:  1.1rem;
+    height: 1.1rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    background-image: url("https://www.svgrepo.com/show/14797/trophy.svg");
+  }
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     /* outline: #4CAF50 solid 1px; */
 }
@@ -37,6 +49,15 @@ header {
     display: grid;
     grid-template-columns: 68% 1fr;
     justify-items: end;
+
+}
+
+.resume_section ul {
+    list-style: none;
+    background-color: aqua;
+}
+.resume_section li span:first-child {
+    background-color: blue;
 
 }
 
