@@ -54,11 +54,8 @@ header {
 
 .resume_section ul {
     list-style: none;
-    background-color: aqua;
-}
-.resume_section li span:first-child {
-    background-color: blue;
-
+    margin-left: 1.5rem;
+    /* background-color: aqua; */
 }
 
 /* --------------------------------------------- */
@@ -229,5 +226,24 @@ header {
 .skill_item_container {
     background-color: aquamarine;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto
+}
+
+
+.skill_item_subtitle {
+    display: block;
+
+    text-transform: uppercase;
+
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    /* font-size:   var(--size-info-description); */
+
+    /* background-color: red; */
+}
+
+.skill_item_language span {
+    font-weight: lighter;
+    font-size: var(--size-info-description);
+    /* background-color: aqua; */
 }
