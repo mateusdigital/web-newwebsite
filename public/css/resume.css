@@ -4,14 +4,13 @@
 * {
     padding: 0;
     margin:  0;
-
 }
 
 body {
     max-width: 1000px;
     width:     100%;
 
-    margin: 0;
+
     margin-left:  auto;
     margin-right: auto;
 
@@ -19,47 +18,54 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto Condensed', sans-serif;
     /* background-color: blue; */
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+
     /* background-color: red; */
 }
 
-.header {
+header {
     /* background-color: red; */
-    margin: 1rem 0;
+    padding: 3rem 1.5rem 1.5rem;
 
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1rem
+    grid-template-columns: 72% 1fr;
+    justify-items: end;
 }
 
+main {
+    padding: 0rem 1.5rem;
+}
 
 /* --------------------------------------------- */
 .info {
-    /* top | left and right | bottom */
 }
 
-.info h1 {
+.info .title {
+    display: inline-block;
+    font-family: 'Roboto Condensed';
     font-size:   2.5rem;
     text-transform: uppercase;
     font-weight: 900;
 }
 
-.info h2 {
+.info .position {
+    display: block;
+    font-family: 'Roboto';
     text-transform: capitalize;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.info h3 {
+.info .description {
+    background-color: aqua;
+    display: inline-block;
+    font-family: 'Roboto';
     font-size: 0.9rem;
     font-weight: 300;
-
 }
 
 
@@ -67,13 +73,13 @@ h2, h3, h4, h5, h6 {
 .contact {
     display: grid;
     align-content: center;
-    gap: 0.4rem
+    gap: 0.5rem
 }
 
 .contact span {
     padding-left: 0.4rem;
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size:    0.9rem;
+    font-weight:  500;
 }
 
 /* --------------------------------------------- */
@@ -81,13 +87,18 @@ h2, h3, h4, h5, h6 {
     /* outline: #4CAF50 solid 1px; */
 }
 
-.experience h1 {
-    /* background-color: blue; */
-    font-size: 1.4rem;
+.experience_title {
+    display: inline-block;
+    /* background-color: red; */
+
+    font-family: 'Roboto Condensed';
+    font-weight: 800;
+    font-size: 1.2rem;
     text-transform: uppercase;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
+/* -------------------------------------------------------------------------  */
 .exp-container {
     /* background-color: aquamarine; */
     display: grid;
@@ -97,14 +108,100 @@ h2, h3, h4, h5, h6 {
 
 }
 
+/* -------------------------------------------------------------------------  */
 .exp-company-container {
     display: grid;
+    align-items: start;
+    justify-content: space-between;
+    align-content: space-evenly
 }
 
 .exp-company-container img {
     width:  6rem;
+    display: block;
+    margin-left:  auto;
+    margin-right: auto;
 }
 
-.exp-company-container {
+.exp_company_title {
+    font-family: "Roboto";
+    font-weight: 600;
 
+    font-size: 1.2rem;
+
+    display: block;
+    margin:  0;
+    padding: 0.5rem 0 0;
+
+    margin-left:  auto;
+    margin-right: auto;
+    text-align:   center;
+}
+
+.exp_company_city {
+    font-family: "Roboto";
+    font-weight: 600;
+
+    font-size: 0.8rem;
+
+    display: block;
+    margin:  0;
+
+    margin-left:  auto;
+    margin-right: auto;
+    text-align:   center;
+}
+
+
+.exp_company_titles_container {
+    display: grid;
+    margin: 1rem 0;
+}
+
+.exp_company_position {
+    font-family: "Roboto";
+    font-weight: 600;
+
+    font-size: 1.2rem;
+
+    display: block;
+    margin:  0;
+    padding: 0.5rem 0 0;
+
+    margin-left:  auto;
+    margin-right: auto;
+    text-align:   center;
+}
+
+.exp_company_duration {
+    font-family: "Open Sans";
+
+    font-size: 0.9rem;
+
+    display: block;
+    text-align:   center;
+}
+
+/* -------------------------------------------------------------------------  */
+.exp-item  {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+    /* background-color: red; */
+}
+
+.exp-item h1 {
+    font-size: 1.5rem;
+
+    margin:  0;
+    padding: 0;
+    /* background-color: red; */
+}
+
+.exp-item h2 {
+    font-size: 0.9rem;
+
+    margin:         0;
+    padding-bottom: 1rem;
+    /* background-color: red; */
 }
