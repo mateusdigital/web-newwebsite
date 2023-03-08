@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link href="/css/resume.css" rel="stylesheet" type="text/css" />
@@ -15,8 +17,10 @@
 <body>
     <header>
         <div class="info_container">
-            <span class="info_title">Mateus Mesquita</span>
-            <span class="info_position">Senior Programmer</span>
+            <div>
+                <span class="info_title">Mateus Mesquita</span>
+                <span class="info_position">Senior Programmer</span>
+            </div>
             <span class="info_description">
                 I'm fluent in system and game programming with deep knowledge of C++ and awesome debugging abilities.
                 With high social skills I try to help people find better ways to think out of the box and be comfortable
@@ -26,36 +30,36 @@
             </span>
         </div>
 
-        <div class="contact">
-            <div class="item">
+        <div class="contact_item_container">
+            <div class="contact_item">
                 <i class="fas fa-phone"></i> <!-- Phone icon -->
-                <span class="text"> +55 13 978 236 464 </span>
+                <span class="contact_item_text"> +55 13 978 236 464 </span>
             </div>
 
-            <div class="item">
+            <div class="contact_item">
                 <i class="far fa-envelope"></i> <!-- Email icon -->
-                <span class="text"> mateus@tamandua.digital </span>
+                <span class="contact_item_text"> mateus@tamandua.digital </span>
             </div>
 
-            <div class="item">
+            <div class="contact_item">
                 <i class="fas fa-globe"></i> <!-- Web icon -->
-                <span class="text"> https://mateus.earth </span>
+                <span class="contact_item_text"> https://mateus.earth </span>
             </div>
 
-            <div class="item">
+            <div class="contact_item">
                 <i class="far fa-address-book"></i> <!-- Contact icon -->
-                <span class="text"> References available on request </span>
+                <span class="contact_item_text"> References available on request </span>
             </div>
         </div>
     </header>
 
     <!-- ------------------------------------------------------------------- -->
-    <main class="experience">
-        <span class="experience_title">Experience</span>
+    <main class="resume_section">
+        <span class="resume_section_title">Experience</span>
 
         <!-- Ubisoft ------------------------------------------------------------------ -->
-        <div class="exp-container">
-            <div class="exp-company-container">
+        <div class="exp_container">
+            <div class="exp_company_container">
                 <div>
                     <img class=exp_company_logo" src="/img/company-logos/ubisoft-logo.png" alt="" />
 
@@ -69,11 +73,18 @@
                 </div>
             </div>
 
-            <div class="exp_items-container">
+            <div class="exp_items_container">
                 <div class="exp_item">
                     <span class="exp_item_title">Far Cry 6</span>
                     <span class="exp_item_subtitle">XS | PS5 | XB1 | PS4 | PC</span>
                     <p class="exp_item_description">
+                        ACESSIBILITY
+
+                        > Creating a new AAA title alongside a veteran team which includes the founding members of Infinity
+                        Ward and Respawn Entertainment.
+                        > For our first AAA title, we have partnered with a large Western publisher as we create an original IP. We
+                        aren't talking about the game yet, but we're excited to show it to you in the future.
+
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque perspiciatis minima aut
                         incidunt possimus odio et at beatae dolorem quam saepe iusto quo cumque eos, doloribus quia,
                         ipsa
@@ -95,8 +106,8 @@
         </div>
 
         <!-- Wargaming ------------------------------------------------------------------ -->
-        <div class="exp-container">
-            <div class="exp-company-container">
+        <div class="exp_container">
+            <div class="exp_company_container">
                 <div>
                     <img class=exp_company_logo" src="/img/company-logos/wargaming-logo.png" alt="" />
 
@@ -113,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="exp_items-container">
+            <div class="exp_items_container">
                 <div class="exp_item">
                     <span class="exp_item_title">World of Tanks - Blitz</span>
                     <span class="exp_item_subtitle">XS | PS5 | XB1 | PS4 | PC</span>
@@ -139,8 +150,8 @@
         </div>
 
         <!-- Miniclip  ------------------------------------------------------------------ -->
-        <div class="exp-container">
-            <div class="exp-company-container">
+        <div class="exp_container">
+            <div class="exp_company_container">
                 <div>
                     <img class=exp_company_logo" src="/img/company-logos/miniclip-logo.png" alt="" />
 
@@ -154,7 +165,7 @@
                 </div>
             </div>
 
-            <div class="exp_items-container">
+            <div class="exp_items_container">
                 <div class="exp_item">
                     <span class="exp_item_title">8 Ball Poll</span>
                     <span class="exp_item_subtitle">Mobile</span>
@@ -180,8 +191,8 @@
         </div>
 
         <!-- Firehorse ------------------------------------------------------------------ -->
-        <div class="exp-container">
-            <div class="exp-company-container">
+        <div class="exp_container">
+            <div class="exp_company_container">
                 <div>
                     <img class=exp_company_logo" src="/img/company-logos/firehorse-logo.png" alt="" />
 
@@ -196,7 +207,7 @@
             </div>
 
 
-            <div class="exp_items-container">
+            <div class="exp_items_container">
                 <div class="exp_item">
                     <span class="exp_item_title">Killers and Thieves</span>
                     <span class="exp_item_subtitle">Steam</span>
@@ -259,8 +270,20 @@
     </main>
 
     <!-- ------------------------------------------------------------------- -->
-    <main class="experience">
-        <span class="experience_title">Other Experience</span>
+    <main class="resume_section">
+        <span class="resume_section_title">Other experience</span>
+        <ul>
+            <li>iOS Developer, Ginga.One, December 2015 - March 2016</li>
+            <li>Creative Programmer, Imidiar, May 2015 - March 2016</li>
+            <li>CEO - Co-founder, EAZZ Games, January 2012 - January 2013</li>
+            <li>Intern, Microsoft Innovation Center, January 2011 - January 2013</li>
+        </ul>
+    </main>
+
+    <!-- ------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------- -->
+    <main class="resume_section">
+        <span class="resume_section_title">Other</span>
 
         <ul>
             <li>iOS Developer, Ginga.One, December 2015 - March 2016</li>
@@ -271,20 +294,8 @@
     </main>
 
     <!-- ------------------------------------------------------------------- -->
-    <main class="experience">
-        <span class="experience_title">Other Experience</span>
-
-        <ul>
-            <li>iOS Developer, Ginga.One, December 2015 - March 2016</li>
-            <li>Creative Programmer, Imidiar, May 2015 - March 2016</li>
-            <li>CEO - Co-founder, EAZZ Games, January 2012 - January 2013</li>
-            <li>Intern, Microsoft Innovation Center, January 2011 - January 2013</li>
-        </ul>
-    </main>
-
-    <!-- ------------------------------------------------------------------- -->
-    <main class="skills_main">
-        <span class="experience_title">Skills</span>
+    <main class="resume_section">
+        <span class="resume_section_title">Skills</span>
 
         <div class="skill_item_container">
             <div class="skill_item">
