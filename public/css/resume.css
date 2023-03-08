@@ -216,3 +216,11 @@ main {
 
 .exp_item_description {
 }
+
+
+/* -------------------------------------------------------------------------- */
+.skill_item_container {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
