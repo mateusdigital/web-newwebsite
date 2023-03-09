@@ -197,16 +197,17 @@ header {
 
 .resume_section ul {
     list-style: square;
-    /* list-style-position: inside; */
     margin-left: 2.5rem;
     margin-right: 0;
-    /* background-color: aqua; */
 }
+
 .resume_section li {
     margin: 0;
     padding: 0;
-
 }
+
+
+
 /* -------------------------------------------------------------------------  */
 .exp_item  {
     /* background-color: red; */
@@ -236,6 +237,19 @@ header {
 .exp_item_description {
     font-family: var(--font-text);
     font-size:   var(--size-info-description);
+    background-color: blue;
+}
+
+.exp_item_description_title {
+    display: block;
+    background-color: aqua;
+    font-size: 0.9rem;
+    font-family: var(--font-header-2);
+    font-weight: bolder;
+}
+
+.exp_item_description li {
+    background-color: aquamarine;
 }
 
 
