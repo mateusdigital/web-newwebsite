@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/* -------------------------------------------------------------------------- */
 :root {
     --font-header-1: "Roboto";
     --font-header-2: "Roboto Condensed";
@@ -10,22 +11,8 @@
     --size-info-description: 0.8rem;
 
     --size-resume-section-title: 1.2rem;
-
-    --very-bold: 900;
-    --bold:      500;
-    --light:     300;
-
 }
 
-.trophy:after{
-    content: "";
-    display: inline-block;
-    width:  1.1rem;
-    height: 1.1rem;
-    margin-right: 0.4rem;
-    margin-left: 0.4rem;
-    background-image: url("https://www.svgrepo.com/show/14797/trophy.svg");
-  }
 
 * {
     margin: 0;
@@ -52,13 +39,11 @@ header {
 
 }
 
-.resume_section ul {
-    list-style: none;
-    margin-left: 1.5rem;
-    /* background-color: aqua; */
-}
 
-/* --------------------------------------------- */
+/*
+    Info
+*/
+/* -------------------------------------------------------------------------- */
 .info_container {
     display: grid;
     align-content: space-between;
@@ -68,7 +53,7 @@ header {
     display: inline-block;
     font-family: var(--font-header-2);
     font-size:   var(--size-info-name);
-    font-weight: var(--very-bold);
+    font-weight: bolder;
 
     text-transform: uppercase;
 }
@@ -77,7 +62,7 @@ header {
     display: block;
     font-family: var(--font-header-1);
     font-size:   var(--size-info-position);
-    font-weight: var(--bold);
+    font-weight: bold;
 
     text-transform: capitalize;
 }
@@ -88,12 +73,15 @@ header {
 
     font-family: var(--font-header-1);
     font-size:   var(--size-info-description);
-    font-weight: var(--light);
+    font-weight: lighter;
 }
 
 
-/* --------------------------------------------- */
-.contact_item_container {
+/*
+    Contact
+*/
+/* -------------------------------------------------------------------------- */
+.contact_container {
     display:       grid;
     align-content: center;
 }
@@ -103,11 +91,14 @@ header {
 
 .contact_item_text {
     font-family: var(--font-text);
-    font-weight: var(--bold);
+    font-weight: 400;
     font-size:   var(--size-info-description);
 }
 
-/* --------------------------------------------- */
+/*
+    Resume Section
+*/
+/* -------------------------------------------------------------------------- */
 .resume_section {
     /* outline: #4CAF50 solid 1px; */
 }
@@ -118,35 +109,49 @@ header {
 
     font-family: var(--font-header-2);
     font-size:   var(--size-resume-section-title);
-    font-weight: var(--very-bold);
-
+    font-weight: bolder;
 
     text-transform: uppercase;
 }
 
-/* -------------------------------------------------------------------------  */
+
+/*
+    Experience Container
+*/
+/* -------------------------------------------------------------------------- */
 .exp_container {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+
     display: grid;
-    grid-template-columns: 1fr 3.5fr;
+    grid-template-columns: auto 1fr;
 }
 
+/*
+    Experience Company Container
+        The big company logos on the left.
+*/
 /* -------------------------------------------------------------------------  */
+.exp_company_container * {
+    /* outline: #4CAF50 solid 1px; */
+}
+
 .exp_company_container {
     display:         grid;
     align-items:     start;
-    /* align-content:   space-evenly; */
     justify-content: space-between;
+    align-content:   space-evenly;/* Put in the middle */
 }
 
 .exp_company_container img {
     width:        5rem;
     display:      block;
+    margin-left:  auto;
+    margin-right: auto;
 }
 
 .exp_company_title {
     font-family:  var(--font-header-1);
-    font-weight:  var(--very-bold);
+    font-weight:  bolder;
 
     display: block;
 
@@ -156,7 +161,7 @@ header {
 
 .exp_company_city {
     font-family:  var(--font-header-1);
-    font-weight:  var(--light);
+    font-weight:  lighter;
     font-size:    var(--size-info-description);
 
     display: block;
@@ -171,7 +176,7 @@ header {
 
 .exp_company_position {
     font-family:  var(--font-header-2);
-    font-weight:  var(--bold);
+    font-weight:  bold;
     /* font-size:    var(--size-info-description); */
 
 
@@ -182,7 +187,7 @@ header {
 
 .exp_company_duration {
     font-family:  var(--font-header-2);
-    font-weight:  var(--light);
+    font-weight:  lighter;
     font-size:    var(--size-info-description);
 
 
@@ -190,6 +195,18 @@ header {
     text-align: center;
 }
 
+.resume_section ul {
+    list-style: square;
+    /* list-style-position: inside; */
+    margin-left: 2.5rem;
+    margin-right: 0;
+    /* background-color: aqua; */
+}
+.resume_section li {
+    margin: 0;
+    padding: 0;
+
+}
 /* -------------------------------------------------------------------------  */
 .exp_item  {
     /* background-color: red; */
@@ -201,7 +218,7 @@ header {
     text-transform: uppercase;
 
     font-family: var(--font-header-1);
-    font-weight: var(--very-bold);
+    font-weight: bolder;
     font-size:   var(--size-resume-section-title);
 
     /* background-color: red; */
@@ -209,7 +226,7 @@ header {
 
 .exp_item_subtitle {
     font-family: var(--font-header-1);
-    font-weight: var(--light);
+    font-weight: lighter;
     font-size:   var(--size-info-description);
 
     display: block;
@@ -242,8 +259,21 @@ header {
     /* background-color: red; */
 }
 
+
+/* -------------------------------------------------------------------------- */
+.skill_item_award_trophy:after{
+    content: "";
+    display: inline-block;
+    width:  1.1rem;
+    height: 1.1rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+    background-image: url("https://www.svgrepo.com/show/14797/trophy.svg");
+}
+
 .skill_item_language span {
     font-weight: lighter;
     font-size: var(--size-info-description);
+
     /* background-color: aqua; */
 }
