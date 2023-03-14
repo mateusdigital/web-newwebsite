@@ -29,6 +29,7 @@ header {
     display: grid;
     grid-template-columns: 68% 1fr;
     justify-items: end;
+    margin: 0rem 0rem 1rem;
 
 }
 ul {
@@ -43,6 +44,9 @@ ul {
 .info_container {
     display: grid;
     align-content: space-between;
+
+    height: 100%;
+    background-color: red;
 }
 
 .info_title {
@@ -70,6 +74,7 @@ ul {
     font-family: var(--font-header-1);
     font-size: small;
 
+    margin-top: 0.25rem;
 }
 
 
@@ -80,6 +85,8 @@ ul {
 .contact_container {
     display:       grid;
     align-content: center;
+
+    background-color: aqua;
 }
 
 .contact_item i {
