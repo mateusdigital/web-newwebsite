@@ -2,9 +2,6 @@
 
 /* -------------------------------------------------------------------------- */
 :root {
-    --font-header-1: "Roboto";
-    --font-header-2: "Roboto Condensed";
-    --font-text:     "Open Sans";
 
     --size-info-name:        2rem;
     --size-info-position:    1.1rem;
@@ -18,12 +15,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: #4CAF50 solid 1px; */
+    outline: #4CAF50 solid 1px;
 }
 
 body {
     max-width: 21cm;
-    font-family: var(--font-text);
     background-color: rgb(18, 18, 18);
 }
 
@@ -51,29 +47,17 @@ header {
 
 .info_title {
     display: inline-block;
-    font-family: var(--font-header-2);
-    font-size:   var(--size-info-name);
-    font-weight: bolder;
-
     text-transform: uppercase;
 }
 
 .info_position {
     display: block;
-    font-family: var(--font-header-1);
-    font-size:   var(--size-info-position);
-    font-weight: bold;
-
     text-transform: capitalize;
 }
 
 .info_description {
     /* background-color: aqua; */
     display: inline-block;
-
-    font-family: var(--font-header-1);
-    font-size:   var(--size-info-description);
-    font-weight: lighter;
 }
 
 
@@ -90,9 +74,6 @@ header {
 }
 
 .contact_item_text {
-    font-family: var(--font-text);
-    font-weight: 400;
-    font-size:   var(--size-info-description);
 }
 
 /*
@@ -107,9 +88,6 @@ header {
     display: inline-block;
     /* background-color: red; */
 
-    font-family: var(--font-header-2);
-    font-size:   var(--size-resume-section-title);
-    font-weight: bolder;
 
     text-transform: uppercase;
 }
@@ -150,8 +128,6 @@ header {
 }
 
 .exp_company_title {
-    font-family:  var(--font-header-1);
-    font-weight:  bolder;
 
     display: block;
 
@@ -160,9 +136,6 @@ header {
 }
 
 .exp_company_city {
-    font-family:  var(--font-header-1);
-    font-weight:  lighter;
-    font-size:    var(--size-info-description);
 
     display: block;
 
@@ -175,9 +148,6 @@ header {
 }
 
 .exp_company_position {
-    font-family:  var(--font-header-2);
-    font-weight:  bold;
-    /* font-size:    var(--size-info-description); */
 
 
     display: block;
@@ -186,9 +156,6 @@ header {
 }
 
 .exp_company_duration {
-    font-family:  var(--font-header-2);
-    font-weight:  lighter;
-    font-size:    var(--size-info-description);
 
 
     display:    block;
@@ -218,34 +185,23 @@ header {
 
     text-transform: uppercase;
 
-    font-family: var(--font-header-1);
-    font-weight: bolder;
-    font-size:   var(--size-resume-section-title);
 
     /* background-color: red; */
 }
 
 .exp_item_subtitle {
-    font-family: var(--font-header-1);
-    font-weight: lighter;
-    font-size:   var(--size-info-description);
 
     display: block;
     /* background-color: red; */
 }
 
 .exp_item_description {
-    font-family: var(--font-text);
-    font-size:   var(--size-info-description);
     /* background-color: blue; */
 }
 
 .exp_item_description_title {
     display: block;
 
-    font-size:   0.9rem;
-    font-family: var(--font-header-2);
-    font-weight: bolder;
 }
 
 .exp_item_description ul {
@@ -270,9 +226,6 @@ header {
 
     text-transform: uppercase;
 
-    font-family: var(--font-header-2);
-    font-weight: bold;
-    /* font-size:   var(--size-info-description); */
 
     /* background-color: red; */
 }
@@ -290,8 +243,6 @@ header {
 }
 
 .skill_item_language span {
-    font-weight: lighter;
-    font-size: var(--size-info-description);
 
     /* background-color: aqua; */
 }
