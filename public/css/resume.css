@@ -5,6 +5,14 @@
     --font-header-1: "Roboto";
     --font-header-2: "Roboto Condensed";
     --font-text:     "Open Sans";
+
+    --xx-large: 2.50rem;
+    --x-large:  2.00rem;
+    --large:    1.10rem;
+    --medium:   0.85rem;
+    --small:    0.75rem;
+    --smaller:  0.68rem;
+
 }
 
 
@@ -16,12 +24,8 @@
 }
 
 body {
-    max-width: 21cm;
-    background-color: rgb(18, 18, 18);
-}
 
-header, main {
-    background-color: white;
+    background-color: rgb(18, 18, 18);
 }
 
 header {
@@ -37,6 +41,19 @@ ul {
 
 }
 
+.content {
+    background-color: white;
+
+    max-width: 21cm;
+    width:     21cm;
+
+    margin-left:  auto;
+    margin-right: auto;
+
+    /* padding:       2rem;
+    padding-right: 2rem; */
+}
+
 /*
     Info
 */
@@ -46,13 +63,13 @@ ul {
     align-content: space-between;
 
     height: 100%;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .info_title {
     font-family: var(--font-header-2);
     font-weight: bolder;
-    font-size:   xx-large;
+    font-size:   var(--xx-large);
 
     display: block;
     text-transform: uppercase;
@@ -61,7 +78,7 @@ ul {
 .info_position {
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   large;
+    font-size:   var(--large);
 
     display: block;
     text-transform: capitalize;
@@ -72,7 +89,7 @@ ul {
     display: inline-block;
 
     font-family: var(--font-header-1);
-    font-size: small;
+    font-size: var(--small);
 
     margin-top: 0.25rem;
 }
@@ -86,7 +103,7 @@ ul {
     display:       grid;
     align-content: center;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .contact_item i {
@@ -95,7 +112,7 @@ ul {
 .contact_item_text {
     font-family: var(--font-header-1);
     /* font-weight: bold; */
-    font-size:   small;
+    font-size:   var(--small);
 }
 
 /*
@@ -104,7 +121,7 @@ ul {
 /* -------------------------------------------------------------------------- */
 .resume_section {
     /* outline: #4CAF50 solid 1px; */
-    margin-bottom: 1rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .resume_section_title {
@@ -113,7 +130,7 @@ ul {
 
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   large;
+    font-size:   var(--large);
 
     text-transform: uppercase;
 }
@@ -159,7 +176,7 @@ ul {
 
     font-family: var(--font-header-1);
     font-weight: bold;
-    font-size:   medium;
+    font-size:   var(--medium);
 }
 
 .exp_company_city {
@@ -168,7 +185,7 @@ ul {
 
     font-family: var(--font-header-2);
     /* font-weight: bold; */
-    font-size:   small;
+    font-size:   var(--small);
     margin-bottom: 0.25rem;
 }
 
@@ -184,7 +201,7 @@ ul {
 
     font-family: var(--font-header-1);
     font-weight: bold;
-    font-size:   small;
+    font-size:   var(--small);
 
     margin-top: 0.5rem;
 }
@@ -194,14 +211,13 @@ ul {
     text-align: center;
 
     font-family: var(--font-header-2);
-    font-size:   small;
+    font-size:   var(--small);
 }
 
 /* -------------------------------------------------------------------------  */
 .exp_item  {
     /* background-color: red; */
     /* margin-bottom: 1rem; */
-    margin-bottom: 0.5rem;
 }
 
 .exp_item_title {
@@ -210,7 +226,7 @@ ul {
 
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   large;
+    font-size:   var(--large);
 
     /* background-color: red; */
 }
@@ -220,7 +236,9 @@ ul {
 
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   small;
+    font-size:   var(--smaller);
+
+    margin-bottom: 0.5rem;
     /* background-color: red; */
 }
 
@@ -228,7 +246,8 @@ ul {
     /* background-color: red; */
     font-family: var(--font-text);
     font-weight: normal;
-    font-size:   small;
+    font-size:   var(--small);
+    padding-bottom: 0.25rem;
 }
 
 .exp_item_description_title {
@@ -236,12 +255,14 @@ ul {
 
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   medium;
+    font-size:   var(--small);
+    margin-bottom: 0.25rem;
 }
 
 .exp_item_description ul {
     /* background-color: aquamarine; */
     /* list-style-type: none; */
+    margin-bottom: 0.25rem;
 }
 .exp_item_description li {
     /* background-color: aquamarine; */
@@ -251,7 +272,7 @@ ul {
 .other_experience_container {
     font-family: var(--font-text);
     font-weight: normal;
-    font-size:   small;
+    font-size:   var(--small);
 }
 
 .other_experience_container ul {
@@ -272,11 +293,21 @@ ul {
     /* background-color: aquamarine; */
 
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, 1fr);
 
     font-family: var(--font-text);
     font-weight: normal;
-    font-size:   small;
+    font-size:   var(--small);
+
+}
+
+.skill_item_container_details {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    font-family: var(--font-text);
+    font-weight: normal;
+    font-size:   var(--small);
 
 }
 
@@ -286,7 +317,7 @@ ul {
 
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   large;
+    font-size:   var(--large);
 
     text-transform: uppercase;
 }
@@ -297,7 +328,7 @@ ul {
 
     font-family: var(--font-header-2);
     font-weight: bold;
-    font-size:   small;
+    font-size:   var(--small);
 
     text-transform: uppercase;
     margin-left: 1rem;
