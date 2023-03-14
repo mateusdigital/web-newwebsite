@@ -73,7 +73,9 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Ubisoft",
-            role: "Programmer"
+            role: "Senior Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "LRMbuyJyUzU",
         },
         {
             name:"skull_and_bones",
@@ -82,7 +84,10 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Ubisoft",
-            role: "Programmer"
+            role: "Senior Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "fgy4WZ9ta7E",
+
         },
         {
             name:"wot_blitz",
@@ -172,7 +177,9 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Additional Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "V1tX-iznvSI",
         },
 
 

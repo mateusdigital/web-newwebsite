@@ -1,10 +1,9 @@
 
 export default function UbisoftLogo_(props) {
-    const {className} = props;
   return (
     <>
       <svg
-        className={className}
+        className="company"
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 99.2 31.6"

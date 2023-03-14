@@ -5,7 +5,7 @@ export default function WargamingLogo_(props) {
   return (
     <>
       <svg
-        className={className}
+        className="company"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="-0.001 -0.001 1205.874 554.55"
       >

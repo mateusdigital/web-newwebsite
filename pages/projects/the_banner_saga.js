@@ -35,29 +35,45 @@ export default function Roses() {
                 </header>
 
                 <section>
+                    <p>
+                        Firehorse and Stoic Studio had the same publisher at the time - VersusEvil, which
+                        allowed them to collaborate very interestingly and I ended up working with
+                        those amazing award wining games.
+                    </p>
 
                     <p>
-                                For the second installment of The Maze Runner we had yet another world to turn into a hazardous obstacle run. Organic landscapes with curves, bends and hills set these environments apart from the previous title. I've designed well over 150 level segments for this game, while making sure every single one of them had a unique catch and feel. I was closesly involved in the design and development of obstacles.
+                    I was responsible to maintain and improve both games for Stoic Studio.
+                    At the time it was a huge challenge, since the games were written in a totally
+                    different stack that I was used to. Also the scope of the project - then, the
+                    biggest project I'd worked on - made it a true challenge.
+                    </p>
 
-                Designed over 150 level segments
-                Design of obstacles + tech implementation
-                Designed multiple particle effects
-Actively participated in game design brainstorms
+                    <p>
+                    The game was written in mixture of languages with Action Script 3 as the primally
+                    language for the game and tools, and lots of different middleware for multiple
+                    platforms. Ant was used as the build system, and Mercurial was the versioning
+                    used by the team.
+                    </p>
 
+                    <p>
+                    I've a pair of meetings with the Stoic team, but mostly of the work was simple
+                    done by picking the assigned tasks from Jira and chatting with the devs when
+                    problems popped up.
                     </p>
                 </section>
 
-
                 <section>
-                    Links:
-                    <ul>
-                        <li><Link_ href={info_url}>Fullpage view</Link_></li>
-                        <li><Link_ href={info_repo_url}>Source Code (github)</Link_></li>
-                    </ul>
+                    This is one of the most beloved projects that I've worked, it helped to open
+                    so many doors and gave me so nice opportunities.
+                    After this project I got the opportunity to make Stoic Studio's <Link_ href="/projects/killers_and_thives">Killers and Thieves</Link_>.
                 </section>
-            </main>
 
-            {/* <DemoScripts /> */}
+                    #### Tech:
+                    - Action Script 3
+                    - Ant
+                    - Mercurial
+                    - JIRA
+            </main>
         </>
     )
 }

@@ -25,7 +25,7 @@ export default function Home () {
                 extra-professional time.
             </p>
 
-            <div class='heading'>LATINO AMERICANO!</div>
+            <div className='heading'>LATINO AMERICANO!</div>
             <hr />
             <p>
                 I was born in France and raised in Romans-Sur-Isere where I spent most of my time playing soccer but somehow
@@ -37,7 +37,7 @@ export default function Home () {
                 </picture>
             </p>
 
-            <div class='heading'>Lisboa</div>
+            <div className='heading'>Lisboa</div>
             <hr />
             <p>
                 In 2003, two days after graduating I started to work in Paris as a Software Engineer. I spent one year there
@@ -51,7 +51,7 @@ export default function Home () {
 
 
 
-            <div class='heading'>TORONTO</div>
+            <div className='heading'>TORONTO</div>
             <hr />
             <p>
                 In 2004 I left to Toronto, Canada with a Work Holiday Visa in order to "Explore, Dream and Discover" the world
@@ -73,7 +73,7 @@ export default function Home () {
 
 
 
-            <div class='heading'>CITIZENSHIP</div>
+            <div className='heading'>CITIZENSHIP</div>
             <hr />
             <p>
                 In July 2012 I was granted Canadian Citizenship. I am now a dual Citizen of both France and Canada :)! <br/><br/>
@@ -85,7 +85,7 @@ export default function Home () {
             </p>
 
 
-            <div class='heading'>GOOGLE</div>
+            <div className='heading'>GOOGLE</div>
             <hr />
             <p>
                 In 2014 I was hired by Google and I relocated to California in the USA.<br />
@@ -97,7 +97,7 @@ export default function Home () {
                 </picture>
             </p>
 
-            <div class='heading'>BOOK</div>
+            <div className='heading'>BOOK</div>
             <hr />
             <p>
                 In 2017 I published a 314 pages <a
@@ -110,7 +110,7 @@ export default function Home () {
                 </picture>
             </p>
 
-            <div class='heading'>BOOK, AGAIN</div>
+            <div className='heading'>BOOK, AGAIN</div>
             <hr />
             <p>
                 In 2018 I released the second edition of the <a href="../gebbwolf3d">Game Engine Black Book: Wolfenstein 3D</a>.
@@ -131,7 +131,7 @@ export default function Home () {
             </p>
 
 
-            <div class='heading'>BOOK, AGAIN, AGAIN</div>
+            <div className='heading'>BOOK, AGAIN, AGAIN</div>
             <hr />
             <p>
                 In 2022 I published a 250 pages book named <a href="../cpsb">The Book of CP-System</a> explaining the hardware
