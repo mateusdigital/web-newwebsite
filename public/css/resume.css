@@ -104,6 +104,7 @@ ul {
 /* -------------------------------------------------------------------------- */
 .resume_section {
     /* outline: #4CAF50 solid 1px; */
+    margin-bottom: 1rem;
 }
 
 .resume_section_title {
@@ -125,10 +126,10 @@ ul {
 .exp_container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
     margin-top:    0.75rem;
-    margin-bottom: 1.50rem;
+    margin-bottom: 1.00rem;
 }
 
 /*
@@ -199,6 +200,8 @@ ul {
 /* -------------------------------------------------------------------------  */
 .exp_item  {
     /* background-color: red; */
+    /* margin-bottom: 1rem; */
+    margin-bottom: 0.5rem;
 }
 
 .exp_item_title {
@@ -266,7 +269,7 @@ ul {
 
 /* -------------------------------------------------------------------------- */
 .skill_item_container {
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
     display: grid;
     grid-template-columns: repeat(4, auto);
@@ -274,6 +277,7 @@ ul {
     font-family: var(--font-text);
     font-weight: normal;
     font-size:   small;
+
 }
 
 .skill_item_title {
