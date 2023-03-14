@@ -2,12 +2,9 @@
 
 /* -------------------------------------------------------------------------- */
 :root {
-
-    --size-info-name:        2rem;
-    --size-info-position:    1.1rem;
-    --size-info-description: 0.8rem;
-
-    --size-resume-section-title: 1.2rem;
+    --font-header-1: "Roboto";
+    --font-header-2: "Roboto Condensed";
+    --font-text:     "Open Sans";
 }
 
 
@@ -15,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: #4CAF50 solid 1px;
+    /* outline: #4CAF50 solid 1px; */
 }
 
 body {
@@ -46,11 +43,19 @@ header {
 }
 
 .info_title {
-    display: inline-block;
+    font-family: var(--font-header-2);
+    font-weight: bolder;
+    font-size:   xx-large;
+
+    display: block;
     text-transform: uppercase;
 }
 
 .info_position {
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   large;
+
     display: block;
     text-transform: capitalize;
 }
@@ -58,6 +63,10 @@ header {
 .info_description {
     /* background-color: aqua; */
     display: inline-block;
+
+    font-family: var(--font-header-1);
+    font-size: small;
+
 }
 
 
@@ -74,6 +83,9 @@ header {
 }
 
 .contact_item_text {
+    font-family: var(--font-header-1);
+    /* font-weight: bold; */
+    font-size:   small;
 }
 
 /*
@@ -85,9 +97,12 @@ header {
 }
 
 .resume_section_title {
-    display: inline-block;
+    display: block;
     /* background-color: red; */
 
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   large;
 
     text-transform: uppercase;
 }
@@ -127,53 +142,47 @@ header {
     margin-right: auto;
 }
 
+/* ---- */
 .exp_company_title {
-
     display: block;
+    text-align: center;
 
-    text-align:   center;
-
+    font-family: var(--font-header-1);
+    font-weight: bold;
+    font-size:   medium;
 }
 
 .exp_company_city {
-
     display: block;
+    text-align: center;
 
-    text-align:   center;
+    font-family: var(--font-header-2);
+    /* font-weight: bold; */
+    font-size:   small;
 }
 
 
+/* ---- */
 .exp_company_titles_container {
     display: grid;
 }
 
 .exp_company_position {
-
-
     display: block;
+    text-align: center;
 
-    text-align:   center;
+    font-family: var(--font-header-1);
+    font-weight: bold;
+    font-size:   small;
 }
 
 .exp_company_duration {
-
-
     display:    block;
     text-align: center;
+
+    font-family: var(--font-header-2);
+    font-size:   small;
 }
-
-.resume_section ul {
-    list-style: square;
-    margin-left: 2.5rem;
-    margin-right: 0;
-}
-
-.resume_section li {
-    margin: 0;
-    padding: 0;
-}
-
-
 
 /* -------------------------------------------------------------------------  */
 .exp_item  {
@@ -182,35 +191,48 @@ header {
 
 .exp_item_title {
     display: block;
-
     text-transform: uppercase;
 
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   large;
 
     /* background-color: red; */
 }
 
 .exp_item_subtitle {
-
     display: block;
+
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   small;
     /* background-color: red; */
 }
 
 .exp_item_description {
-    /* background-color: blue; */
+    font-family: var(--font-text);
+    font-weight: normal;
+    font-size:   small;
 }
 
 .exp_item_description_title {
     display: block;
 
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   medium;
 }
 
 .exp_item_description ul {
+    /* background-color: aquamarine; */
     /* list-style-type: none; */
     margin-left: 2rem;
 }
 .exp_item_description li {
     /* background-color: aquamarine; */
+    list-style: disc; /* Set the bullet point style to a filled circle */
 }
+
 
 
 /* -------------------------------------------------------------------------- */
@@ -245,4 +267,20 @@ header {
 .skill_item_language span {
 
     /* background-color: aqua; */
+}
+
+.text-detail {
+    font-size: 90%;
+}
+
+/* ---- */
+.resume_section ul {
+    list-style: square;
+    margin-left: 2.5rem;
+    margin-right: 0;
+}
+
+.resume_section li {
+    margin: 0;
+    padding: 0;
 }
