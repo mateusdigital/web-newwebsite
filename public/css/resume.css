@@ -124,8 +124,8 @@ ul {
 /* -------------------------------------------------------------------------- */
 .exp_container {
     display: grid;
-    grid-template-columns: auto auto;
-    /* background-color: aquamarine; */
+    grid-template-columns: 1fr 3fr;
+    background-color: aquamarine;
 
     margin-top:    0.75rem;
     margin-bottom: 1.50rem;
