@@ -31,7 +31,10 @@ header {
     justify-items: end;
 
 }
+ul {
+    margin-left: 2rem;
 
+}
 
 /*
     Info
@@ -210,6 +213,7 @@ header {
 }
 
 .exp_item_description {
+    /* background-color: red; */
     font-family: var(--font-text);
     font-weight: normal;
     font-size:   small;
@@ -226,35 +230,79 @@ header {
 .exp_item_description ul {
     /* background-color: aquamarine; */
     /* list-style-type: none; */
-    margin-left: 2rem;
 }
 .exp_item_description li {
     /* background-color: aquamarine; */
     list-style: disc; /* Set the bullet point style to a filled circle */
 }
 
+.other_experience_container {
+    font-family: var(--font-text);
+    font-weight: normal;
+    font-size:   small;
+}
 
+.other_experience_container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.other_experience_container li {
+    display: inline;
+    /* background-color: red;; */
+}
+.other_exp_title {
+    display: block;
+}
 
 /* -------------------------------------------------------------------------- */
 .skill_item_container {
     background-color: aquamarine;
+
     display: grid;
-    grid-template-columns: auto auto auto auto
+    grid-template-columns: repeat(4, auto);
+
+    font-family: var(--font-text);
+    font-weight: normal;
+    font-size:   small;
 }
 
+.skill_item_title {
+    display: block;
+    /* background-color: red; */
+
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   large;
+
+    text-transform: uppercase;
+}
 
 .skill_item_subtitle {
     display: block;
-
     text-transform: uppercase;
 
+    font-family: var(--font-header-2);
+    font-weight: bold;
+    font-size:   small;
+
+    text-transform: uppercase;
+    margin-left: 1rem;
 
     /* background-color: red; */
 }
 
 
+
+
+.skill_item_language span {
+
+    /* background-color: aqua; */
+}
+
+
 /* -------------------------------------------------------------------------- */
-.skill_item_award_trophy:after{
+.trophy::after{
     content: "";
     display: inline-block;
     width:  1.1rem;
@@ -264,23 +312,8 @@ header {
     background-image: url("https://www.svgrepo.com/show/14797/trophy.svg");
 }
 
-.skill_item_language span {
-
-    /* background-color: aqua; */
-}
-
 .text-detail {
     font-size: 90%;
 }
 
 /* ---- */
-.resume_section ul {
-    list-style: square;
-    margin-left: 2.5rem;
-    margin-right: 0;
-}
-
-.resume_section li {
-    margin: 0;
-    padding: 0;
-}
