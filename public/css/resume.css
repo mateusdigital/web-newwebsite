@@ -123,10 +123,12 @@ ul {
 */
 /* -------------------------------------------------------------------------- */
 .exp_container {
+    display: grid;
+    grid-template-columns: auto auto;
     /* background-color: aquamarine; */
 
-    display: grid;
-    grid-template-columns: auto 1fr;
+    margin-top:    0.75rem;
+    margin-bottom: 1.50rem;
 }
 
 /*
@@ -139,10 +141,6 @@ ul {
 }
 
 .exp_company_container {
-    display:         grid;
-    align-items:     start;
-    justify-content: space-between;
-    align-content:   space-evenly;/* Put in the middle */
 }
 
 .exp_company_container img {
@@ -150,6 +148,7 @@ ul {
     display:      block;
     margin-left:  auto;
     margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 /* ---- */
@@ -169,6 +168,7 @@ ul {
     font-family: var(--font-header-2);
     /* font-weight: bold; */
     font-size:   small;
+    margin-bottom: 0.25rem;
 }
 
 
@@ -184,6 +184,8 @@ ul {
     font-family: var(--font-header-1);
     font-weight: bold;
     font-size:   small;
+
+    margin-top: 0.5rem;
 }
 
 .exp_company_duration {
