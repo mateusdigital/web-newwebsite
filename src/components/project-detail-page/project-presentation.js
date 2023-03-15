@@ -14,14 +14,27 @@ export default function ProjectPresentation_({info}) {
     if(type == "professional") {
         const video_id = info.youtube_video_id;
         top_element = YTVideo_({video_id});
-    } else if(type == "personal") {
+    }
+
+    else if (type == "demo") {
+        top_element = DemoCanvas_({name});
+    }
+
+    else if(type == "personal") {
         const src = `/img/personal/${name}.png`;
         const img = (<img className="project-detail-personal-game-img" src={src}></img>)
 
         top_element = img;
-    } else if (type == "demo") {
-        top_element = DemoCanvas_({name});
-    } else {
+    }
+
+    else if(type == "old") {
+        const src = `/img/old/${name}.png`;
+        const img = (<img className="project-detail-personal-game-img" src={src}></img>)
+
+        top_element = img;
+    }
+
+    else {
         debugger;
     }
 

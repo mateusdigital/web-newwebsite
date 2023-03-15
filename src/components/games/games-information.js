@@ -20,7 +20,6 @@ function GamesInformation_(name) {
             // name:"personal/nuclear_rain"
         {
             name:"nuclear_rain",
-            thumbnail_path: "img/games/personal/nuclear_rain.png",
             title:"Nuclear Rain",
             year:"2020",
             platform:"Web",
@@ -30,7 +29,6 @@ function GamesInformation_(name) {
             // name:"personal/cosmic_intruders"
         {
             name:"cosmic_intruders",
-            thumbnail_path: "img/games/personal/cosmic_intruders.png",
             title:"Cosmic Intruders",
             year:"2020",
             platform:"Web",
@@ -40,7 +38,6 @@ function GamesInformation_(name) {
             // name:"personal/the_mistral_report"
         {
             name:"the_mistral_report",
-            thumbnail_path: "img/games/personal/the_mistral_report.png",
             title:"The Mistral Report",
             year:"2020",
             platform:"Web",
@@ -50,7 +47,6 @@ function GamesInformation_(name) {
             // name:"personal/color_grid"
         {
             name:"color_grid",
-            thumbnail_path: "img/games/personal/color_grid.png",
             title:"Color Grid",
             year:"2020",
             platform:"Web",
@@ -60,7 +56,6 @@ function GamesInformation_(name) {
             // name:"personal/memory_amazing_cow"
         {
             name:"memory_amazing_cow",
-            thumbnail_path: "img/games/personal/memory_amazing_cow.png",
             title:"Memory - Amazing Cow!",
             year:"2020",
             platform:"Web",
@@ -237,52 +232,46 @@ function GamesInformation_(name) {
             youtube_video_id: "V1tX-iznvSI",
         },
 
-
-
+        // ---------------------------------------------------------------------
         {
-            name:"bow_and_arrow",
-            thumbnail_path:"img/games/old/bow_and_arrow.png",
-            title:"Bow and Arrow",
-            year:"",
-            platform:"PC",
-            company: "",
-            role: "Programmer"
+            name:     "bow_and_arrow",
+            title:    "Bow and Arrow",
+            year:     "2020",
+            platform: "PC",
+            type:     "old",
+            tech:     ["Monogame", "C#"],
         },
         {
             name:"kaboom",
-            thumbnail_path:"img/games/old/kaboom.png",
             title:"Kaboom",
-            year:"",
-            platform:"PC",
-            company: "",
-            role: "Programmer"
+            year:     "2020",
+            platform: "PC",
+            type:     "old",
+            tech:     ["Pygame", "python"],
         },
         {
             name:"ram_it",
-            thumbnail_path:"img/games/old/ram_it.png",
             title:"Ram It",
-            year:"",
-            platform:"PC",
-            company: "",
-            role: "Programmer"
+            year:     "2020",
+            platform: "PC",
+            type:     "old",
+            tech:     ["Pygame", "python"],
         },
         {
             name:"space_raiders",
-            thumbnail_path:"img/games/old/space_raiders.png",
             title:"Space Raiders",
-            year:"",
-            platform:"PC",
-            company: "",
-            role: "Programmer"
+            year:     "2020",
+            platform: "PC",
+            type:     "old",
+            tech:     ["Terminal", "C++"],
         },
         {
             name:"taz",
-            thumbnail_path:"img/games/old/taz.png",
             title:"Taz",
-            year:"",
-            platform:"PC",
-            company: "",
-            role: "Programmer"
+            year:     "2020",
+            platform: "PC",
+            type:     "old",
+            tech:     ["Pygame", "python"],
         },
 
 
