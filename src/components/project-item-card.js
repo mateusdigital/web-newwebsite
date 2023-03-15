@@ -15,13 +15,12 @@ export default function ProjectItemCard_({name}) {
     const platform  = info.platform;
     const type      = info.type;
 
-    const game_or_demo = (info.is_demo) ? "demos" : "games";
+    const img_extension = (type == "demo") ? "gif" : "png";
 
     const details_page_url = `/projects/${name}`;
-    const img_path         = `/img/${game_or_demo}/${type}/${name}.png`;
+    const img_path         = `/img/${type}/${name}.${img_extension}`;
 
     const alt_text = `Screenshot of "${title}"`;
-
 
     return (
         <>
