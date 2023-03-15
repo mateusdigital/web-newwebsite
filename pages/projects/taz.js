@@ -2,13 +2,10 @@
 import Head_       from "@/components/head";
 import Header_     from "@/components/header";
 import Nav_        from "@/components/nav";
-import DemoCanvas_ from "@/components/demo-canvas";
-import DemoScripts from "@/components/demo-scripts";
 import GamesInformation_ from "@/components/games/games-information";
 
 import Link_ from "@/components/link";
 import YTVideo_ from "@/components/yt-video";
-import MiniclipLogo_ from "@/components/logos/miniclip-logo";
 
 export default function Page() {
     const info = GamesInformation_("taz");

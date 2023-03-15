@@ -1,7 +1,7 @@
-export default function GamesInformation_(name) {
+function GamesInformation_(name) {
     const list = [
         {
-            name:"     el_jamon_volador",
+            name:     "el_jamon_volador",
             title:    "El Jamon Volador",
             year:     "2020",
             platform: "Web",
@@ -292,6 +292,9 @@ export default function GamesInformation_(name) {
         { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
     ];
 
+    if(!name) {
+        return list;
+    }
 
     for(let item of list) {
         if(item.name == name) {
@@ -300,3 +303,6 @@ export default function GamesInformation_(name) {
     }
     return null;
 }
+
+module.exports = GamesInformation_;
+// export default GamesInformation_;

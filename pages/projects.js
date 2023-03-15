@@ -1,16 +1,10 @@
-import Head_            from "@/components/head";
-import Header_          from "@/components/header";
-import Nav_             from "@/components/nav";
-import ProjectItemCard_ from "@/components/project-item-card";
+import DefaultPage_ from "@/components/default-page";
+import ProjectItemCard_ from '@/components/projects-list-page/project-item-card'
 
-export default function Games() {
-  return (
-    <>
-        <Head_ />
-
-        <Header_ />
-        <Nav_ />
-
+export default function Projects() {
+    return (
+      <>
+        <DefaultPage_>
         <main className="projects-list">
             <section>
                 <h1>Creative <span>Coding</span></h1>
@@ -65,6 +59,7 @@ export default function Games() {
                 <li>Tic Tac Toe</li>
             </section>
         </main>
+        </DefaultPage_>
     </>
   )
 }

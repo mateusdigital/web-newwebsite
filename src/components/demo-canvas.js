@@ -1,15 +1,15 @@
 
 import path from "path";
 
-export default function DemoCanvas_({project_name}) {
-    project_name = project_name.trim();
-    project_name = path.basename(project_name);
-    project_name = project_name.replace(path.extname(project_name), "");
-
+export default function DemoCanvas_({name}) {
+    name = name.trim();
     return (
         <>
             <div className="proj-canvas-container">
-                <canvas id="projCanvas" data-project-name={project_name}></canvas>
+                <canvas id="projCanvas" data-project-name={name}></canvas>
+
+                <script src="/modules/demolib_loader/source/loader.js"></script>
+                <script src="/src/main.js" defer></script>
             </div>
         </>
     );

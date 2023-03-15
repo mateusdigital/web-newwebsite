@@ -1,24 +1,49 @@
-#!/usr/bin/env bash
+#!/usr/bin/env node
+// -----------------------------------------------------------------------------
+const fs = require("fs");
+const path = require("path");
+const { exec } = require('child_process');
 
-readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
-readonly ROOT_DIR="$(dirname $SCRIPT_DIR)";
-readonly DEMOS_DIR="${ROOT_DIR}/public/modules/demos";
+
+// -----------------------------------------------------------------------------
+const script_dir = path.normalize(__dirname);
+const root_dir   = path.dirname(script_dir);
 
 
+function git_clone(name, git_path) {
+    const git_url = `https://github.com/mateus-earth/${name}`;
+    const git_cmd = `git clone --recursive "${git_url}" "${git_path}"`;
 
-readonly list=$(cat "${ROOT_DIR}/pages/projects.js" \
-                | grep "<GameItem_"                 \
-                | sed 's/.*name="\([^"]*\)".*/\1/'  \
-                );
+    exec(git_cmd, (error, stdout, stderr) => {
+        if (error) {
+            console.error(`exec error: ${error}`);
+            return;
+        }
+        console.log(`---> Downloading ${name}`);
+        console.log(`stdout: ${stdout}`);
+        console.error(`stderr: ${stderr}`);
+    });
+}
 
-echo $list;
-for item in $list; do
-    git_path="${DEMOS_DIR}/${item}";
-    if [ -d  "${git_path}" ]; then
-        echo "---> $item is already clonned";
+
+// -----------------------------------------------------------------------------
+// Download the Demos...
+const GamesInformation_ = require(`${root_dir}/src/components/games/games-information`);
+const list = GamesInformation_();
+for(let item of list) {
+    if(item.type != "demo") {
         continue;
-    fi;
+    }
 
-    git_url="https://github.com/mateus-earth/${item}";
-    git clone --recursive "${git_url}" "${git_path}";
-done;
+    const name     = item.name.trim();
+    const git_path = `${root_dir}/public/modules/demos/${name}`;
+    if(fs.existsSync(git_path)) {
+        console.log(`---> ${name} is already cloned`);
+        continue;
+    }
+
+    git_clone(name, git_path);
+}
+
+// Download the Demolib...
+git_clone("demolib_loader", `${root_dir}/public/modules/demolib_loader`);

@@ -7,9 +7,9 @@ import ProjectTitleAndCompany_ from "@/components/project-detail-page/project-ti
 export default function ProjectDetailPage_({info, children}) {
 
     let elem = null;
-    if(info.is_demo) {
+    if(info.type == "demo") {
         elem = ProjectTitle_({info});
-    } else {
+    } else if(info.type == "professional") {
         elem = ProjectTitleAndCompany_({info});
     }
 

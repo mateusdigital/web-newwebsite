@@ -1,15 +1,10 @@
-import Head_   from "@/components/head";
-import Header_ from "@/components/header";
+import DefaultPage_ from "@/components/default-page";
 import Link_ from "@/components/link";
-import Nav_    from "@/components/nav";
 
-export default function Home () {
+export default function About() {
   return (
     <>
-        <Head_ />
-
-        <Header_ />
-        <Nav_ />
+        <DefaultPage_>
         <main className="about">
             <p className="looking-for-resume">
                 -- You might be probably looking for my <Link_ href="/resume">Resume</Link_>
@@ -229,6 +224,7 @@ export default function Home () {
                 I also build user friendly and accessible websites, prototypes and web apps.
             </p>
         </main>
+        </DefaultPage_>
     </>
   )
 }
