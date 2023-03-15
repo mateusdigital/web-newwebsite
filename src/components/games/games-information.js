@@ -5,7 +5,7 @@ function GamesInformation_(name) {
             title:    "El Jamon Volador",
             year:     "2020",
             platform: "Web",
-            type:     "personal_game",
+            type:     "personal",
         },
 
             // name:"personal/simple_snake",
@@ -14,6 +14,7 @@ function GamesInformation_(name) {
             title:   "Simple Snake",
             year:    "2020",
             platform:"Web",
+            type:     "personal",
         },
 
             // name:"personal/nuclear_rain"
@@ -23,6 +24,7 @@ function GamesInformation_(name) {
             title:"Nuclear Rain",
             year:"2020",
             platform:"Web",
+            type:     "personal",
         },
 
             // name:"personal/cosmic_intruders"
@@ -32,6 +34,7 @@ function GamesInformation_(name) {
             title:"Cosmic Intruders",
             year:"2020",
             platform:"Web",
+            type:     "personal",
         },
 
             // name:"personal/the_mistral_report"
@@ -41,6 +44,7 @@ function GamesInformation_(name) {
             title:"The Mistral Report",
             year:"2020",
             platform:"Web",
+            type:     "personal",
         },
 
             // name:"personal/color_grid"
@@ -50,6 +54,7 @@ function GamesInformation_(name) {
             title:"Color Grid",
             year:"2020",
             platform:"Web",
+            type:     "personal",
         },
 
             // name:"personal/memory_amazing_cow"
@@ -59,10 +64,11 @@ function GamesInformation_(name) {
             title:"Memory - Amazing Cow!",
             year:"2020",
             platform:"Web",
+            type:     "personal",
         },
 
 
-
+        // --------------------------------------------------------------------
         {
             name:    "farcry6",
             title:   "Far Cry 6",

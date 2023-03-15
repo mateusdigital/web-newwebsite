@@ -6,11 +6,11 @@ import ProjectTitleAndCompany_ from "@/components/project-detail-page/project-ti
 
 export default function ProjectDetailPage_({info, children}) {
 
-    let elem = null;
+    let title_and_details = null;
     if(info.type == "demo") {
-        elem = ProjectTitle_({info});
+        title_and_details = ProjectTitle_({info});
     } else if(info.type == "professional") {
-        elem = ProjectTitleAndCompany_({info});
+        title_and_details = ProjectTitleAndCompany_({info});
     }
 
     return (
@@ -18,7 +18,7 @@ export default function ProjectDetailPage_({info, children}) {
              <DefaultPage_>
                 <main className="project-details">
                     <ProjectPresentation_ info={info}/>
-                    {elem}
+                    {title_and_details}
                     {children}
                 </main>
             </DefaultPage_>

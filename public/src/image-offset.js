@@ -7,7 +7,7 @@ imgs.forEach(element => {
 
         const h = 50; // (x / element.offsetWidth) * 100;
         const v = (y / element.offsetHeight) * 100;
-
+        // debugger
         element.style.objectPosition = `${h}% ${v}%`;
     });
 });
