@@ -1,63 +1,46 @@
-
-import Head_       from "@/components/head";
-import Header_     from "@/components/header";
-import Nav_        from "@/components/nav";
-import DemoCanvas_ from "@/components/demo-canvas";
-import DemoScripts from "@/components/demo-scripts";
-import GamesInformation_ from "@/components/games/games-information";
-
+import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
+import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
 import Link_ from "@/components/link";
-import YTVideo_ from "@/components/yt-video";
-import FirehorseLogo_ from "@/components/logos/firehorse-logo";
 
-
-export default function Roses() {
-    const info = GamesInformation_("the_banner_saga_2");
-    const info_name  = info.name;
-    const info_title = info.title;
-    const info_url   = `/modules/demos/${info_name}/website/index.html`;
-    const info_repo_url = `https://github.com/mateus-earth/${info_name}`;
-
+export default function Page() {
+    const info = GetProjectPageInfo()
     return (
         <>
-            <Head_ />
-            <Header_ />
-            <Nav_ />
-
-            <main className="project-details">
-                <div className="proj-canvas-container">
-                    <YTVideo_ video_id="NRoaB0iSsJE"></YTVideo_>
-                </div>
-
-                <header>
-                    <h1>{info_title}</h1>
-                    <FirehorseLogo_/>
-                </header>
-
-                <section>
+            <ProjectDetailPage_ info={info}>
+            <section>
+                    <p>
+                        Firehorse and Stoic Studio had the same publisher at the time - VersusEvil, which
+                        allowed them to collaborate very interestingly and I ended up working with
+                        those amazing award wining games.
+                    </p>
 
                     <p>
-                                For the second installment of The Maze Runner we had yet another world to turn into a hazardous obstacle run. Organic landscapes with curves, bends and hills set these environments apart from the previous title. I've designed well over 150 level segments for this game, while making sure every single one of them had a unique catch and feel. I was closesly involved in the design and development of obstacles.
+                        I was responsible to maintain and improve both games for Stoic Studio.
+                        At the time it was a huge challenge, since the games were written in a totally
+                        different stack that I was used to. Also the scope of the project - then, the
+                        biggest project I'd worked on - made it a true challenge.
+                    </p>
 
-                Designed over 150 level segments
-                Design of obstacles + tech implementation
-                Designed multiple particle effects
-Actively participated in game design brainstorms
+                    <p>
+                        The game was written in mixture of languages with Action Script 3 as the primally
+                        language for the game and tools, and lots of different middleware for multiple
+                        platforms. Ant was used as the build system, and Mercurial was the versioning
+                        used by the team.
+                    </p>
 
+                    <p>
+                        I've a pair of meetings with the Stoic team, but mostly of the work was simple
+                        done by picking the assigned tasks from Jira and chatting with the devs when
+                        problems popped up.
                     </p>
                 </section>
 
-
                 <section>
-                    Links:
-                    <ul>
-                        <li><Link_ href={info_url}>Fullpage view</Link_></li>
-                        <li><Link_ href={info_repo_url}>Source Code (github)</Link_></li>
-                    </ul>
+                    This is one of the most beloved projects that I've worked, it helped to open
+                    so many doors and gave me so nice opportunities.
+                    After this project I got the opportunity to make Stoic Studio's <Link_ href="/projects/killers_and_thives">Killers and Thieves</Link_>.
                 </section>
-            </main>
-
-            {/* <DemoScripts /> */}
+            </ProjectDetailPage_>
         </>
     )
 }

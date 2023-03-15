@@ -1,63 +1,26 @@
+import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
+import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
 
-import Head_       from "@/components/head";
-import Header_     from "@/components/header";
-import Nav_        from "@/components/nav";
-import DemoCanvas_ from "@/components/demo-canvas";
-import DemoScripts from "@/components/demo-scripts";
-import GamesInformation_ from "@/components/games/games-information";
-
-import Link_ from "@/components/link";
-import YTVideo_ from "@/components/yt-video";
-import WargamingLogo_ from "@/components/logos/wargaming-logo";
-
-
-export default function Roses() {
-    const info = GamesInformation_("wot_blitz");
-    const info_name  = info.name;
-    const info_title = info.title;
-    const info_url   = `/modules/demos/${info_name}/website/index.html`;
-    const info_repo_url = `https://github.com/mateus-earth/${info_name}`;
-
+export default function Page() {
+    const info = GetProjectPageInfo()
     return (
         <>
-            <Head_ />
-            <Header_ />
-            <Nav_ />
-
-            <main className="project-details">
-                <div className="proj-canvas-container">
-                    <YTVideo_ video_id="_Vtvjg8dYqI"/>
-                </div>
-
-                <header>
-                    <h1>{info_title}</h1>
-                    <WargamingLogo_ className="company"/>
-                </header>
-
+            <ProjectDetailPage_ info={info}>
                 <section>
-
                     <p>
-                                For the second installment of The Maze Runner we had yet another world to turn into a hazardous obstacle run. Organic landscapes with curves, bends and hills set these environments apart from the previous title. I've designed well over 150 level segments for this game, while making sure every single one of them had a unique catch and feel. I was closesly involved in the design and development of obstacles.
+                        It is the studio's main game, Like a Boss is an Action RPG where
+                        you are the epic Raid Boss at the end of a dungeon, crushing
+                        players (the heroes) as they come to steal your treasures.
+                    </p>
+                    <p>
+                        As an additional programmer, I was responsible for numerous code
+                        refactoring, improvements, bug fixes, and other optimizations
+                        that are typically not available to the main team.
 
-                Designed over 150 level segments
-                Design of obstacles + tech implementation
-                Designed multiple particle effects
-Actively participated in game design brainstorms
-
+                        I created custom <i>Editor Scripts</i> to ease some game development operations
                     </p>
                 </section>
-
-
-                <section>
-                    Links:
-                    <ul>
-                        <li><Link_ href={info_url}>Fullpage view</Link_></li>
-                        <li><Link_ href={info_repo_url}>Source Code (github)</Link_></li>
-                    </ul>
-                </section>
-            </main>
-
-            {/* <DemoScripts /> */}
+            </ProjectDetailPage_>
         </>
     )
 }

@@ -1,7 +1,6 @@
 
 
 export default function WargamingLogo_(props) {
-  const { className } = props;
   return (
     <>
       <svg

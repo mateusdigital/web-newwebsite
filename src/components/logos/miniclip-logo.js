@@ -1,5 +1,4 @@
 export default function MiniclipLogo_(props) {
-  const { className } = props;
   return (
     <>
       <svg

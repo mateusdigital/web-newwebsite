@@ -96,7 +96,9 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Wargaming",
-            role: "Programmer"
+            role: "Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "_Vtvjg8dYqI",
         },
         {
             name:"8_ball_pool",
@@ -105,7 +107,10 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Miniclip",
-            role: "Programmer"
+            role: "Programmer",
+            show_youtube_video: true,
+            // youtube_video_id: "MarGQrmbPm0",
+            youtube_video_id: "f0xHb8pxMco",
         },
         {
             name:"pacman_io",
@@ -114,8 +119,11 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Miniclip",
-            role: "Programmer"
+            role: "Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "u4sEgDM0EZ0",
         },
+
         {
             name:"the_banner_saga",
             thumbnail_path:"img/games/professional/the_banner_saga.png",
@@ -123,8 +131,11 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Additional Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "y-42WWUOD1M",
         },
+
         {
             name:"the_banner_saga_2",
             thumbnail_path:"img/games/professional/the_banner_saga_2.png",
@@ -132,8 +143,11 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Additional Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "NRoaB0iSsJE",
         },
+
         {
             name:"killers_and_thieves",
             thumbnail_path:"img/games/professional/killers_and_thieves.png",
@@ -141,7 +155,9 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "2HhmN1_SvFA",
         },
         {
             name:"like_a_boss",
@@ -150,7 +166,9 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Additional Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "gqNCs0slp8U",
         },
         {
             name:"at_sundown",
@@ -159,7 +177,9 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Additional Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "AbZGdmOC-eM",
         },
         {
             name:"let_them_come",
@@ -168,7 +188,10 @@ export default function GamesInformation_(name) {
             year:"",
             platform:"PC",
             company: "Firehorse",
-            role: "Programmer"
+            role: "Additional Programmer",
+            show_youtube_video: true,
+            youtube_video_id: "IJT5mlPa3Io",
+
         },
         {
             name:"fist_punch_2",

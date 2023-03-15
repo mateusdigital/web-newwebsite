@@ -1,39 +1,12 @@
 
-import Head_       from "@/components/head";
-import Header_     from "@/components/header";
-import Nav_        from "@/components/nav";
-import DemoCanvas_ from "@/components/demo-canvas";
-import DemoScripts from "@/components/demo-scripts";
-import GamesInformation_ from "@/components/games/games-information";
+import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
+import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
 
-import Link_ from "@/components/link";
-import YTVideo_ from "@/components/yt-video";
-import FirehorseLogo_ from "@/components/logos/firehorse-logo";
-
-
-export default function Roses() {
-    const info = GamesInformation_("like_a_boss");
-    const info_name  = info.name;
-    const info_title = info.title;
-    const info_url   = `/modules/demos/${info_name}/website/index.html`;
-    const info_repo_url = `https://github.com/mateus-earth/${info_name}`;
-
+export default function Page() {
+    const info = GetProjectPageInfo()
     return (
         <>
-            <Head_ />
-            <Header_ />
-            <Nav_ />
-
-            <main className="project-details">
-                <div className="proj-canvas-container">
-                    <YTVideo_ video_id="gqNCs0slp8U"></YTVideo_>
-                </div>
-
-                <header>
-                    <h1>{info_title}</h1>
-                    <FirehorseLogo_/>
-                </header>
-
+            <ProjectDetailPage_ info={info}>
                 <section>
                     <p>
                         It is the studio's main game, Like a Boss is an Action RPG where
@@ -48,7 +21,7 @@ export default function Roses() {
                         I created custom <i>Editor Scripts</i> to ease some game development operations
                     </p>
                 </section>
-            </main>
+            </ProjectDetailPage_>
         </>
     )
 }
