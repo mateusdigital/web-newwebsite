@@ -1,17 +1,18 @@
 import Link from 'next/link'
 
-const Link_ = ({ href, ...rest }) => {
-  if (!href.endsWith('.html')) {
+const Link_ = ({ active, href, ...rest }) => {
+    const class_name= (active) ? "active" : "no-active";
 
-    if (process.env.NODE_ENV === 'development') {
-      href = href; // + '.html'
+    if (!href.endsWith('.html')) {
+        if (process.env.NODE_ENV === 'development') {
+            href = href; // + '.html'
+        }
+        else {
+            href = href + '.html'
+        }
     }
-    else {
-      href = href + '.html'
-    }
-  }
 
-  return <Link href={href} {...rest} />
+    return <Link className={class_name} href={href} {...rest} />
 }
 
 export default Link_

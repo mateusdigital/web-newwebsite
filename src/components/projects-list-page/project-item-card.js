@@ -5,7 +5,7 @@ export default function ProjectItemCard_({name}) {
     const info = GamesInformation_(name);
 
     if(!info) {
-        // debugger;
+        debugger;
         console.log(name);
         return (<></>)
     }

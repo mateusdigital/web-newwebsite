@@ -39,11 +39,13 @@ export default function DefaultPage_({page, children}) {
                     <Link_ href="/">mateus-earth</Link_>
                 </div>
                     <div>
-                        <Link_ href="/games">Games</Link_>
-                        <Link_ href="/projects">Projects</Link_>
-                        <Link_ href="/blog">Blog</Link_>
-                        <Link_ href="/resume">Resume</Link_>
-                        <Link_ href="/about" >About</Link_>
+                        <Link_ active={"games"    == page} href="/games">Games</Link_>
+                        <Link_ active={"projects" == page} href="/projects">Projects</Link_>
+                        <Link_ active={"blog"     == page} href="/blog">Blog</Link_>
+                        <Link_ active={"resume"   == page} href="/resume">Resume</Link_>
+                        <Link_ active={"about"    == page} href="/about" >About</Link_>
+
+                        <Link_ href="/about" >☰&nbsp;</Link_>
                     </div>
             </nav>
 

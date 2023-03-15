@@ -219,8 +219,8 @@ function GamesInformation_(name) {
 
         },
         {
-            name:     "fist_punch",
-            title:    "Fist Punch",
+            name:     "fist_punch_2",
+            title:    "Fist Punch 2",
             year:     "2016",
             platform: ["Web" ],
 
