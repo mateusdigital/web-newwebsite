@@ -3,7 +3,9 @@ import Script from "next/script";
 
 import Link_ from "@/components/link";
 
-export default function DefaultPage_({children}) {
+export default function DefaultPage_({page, children}) {
+    const page_title = `${page} - mateus-earth`;
+
     return (
         <>
             {/* ------------------------------------------------------------ */}
@@ -25,7 +27,7 @@ export default function DefaultPage_({children}) {
                 <meta name="description" content="Mateus Mesquita is a game programmer living in Kyiv." />
 
                 {/* @todo: Add title */}
-                <title></title>
+                <title>{page_title}</title>
 
                 <Script src="/src/main.js" defer/>
             </Head>
@@ -47,7 +49,9 @@ export default function DefaultPage_({children}) {
 
 
             {/* ------------------------------------------------------------ */}
-            {children}
+            <main className={page}>
+                {children}
+            </main>
         </>
     )
 }

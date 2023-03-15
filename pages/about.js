@@ -5,8 +5,7 @@ import Link_ from "@/components/link";
 export default function About() {
   return (
     <>
-        <DefaultPage_>
-        <main className="about">
+        <DefaultPage_ page="about">
             <p className="looking-for-resume">
                 -- You might be probably looking for my <Link_ href="/resume">Resume</Link_>
             </p>
@@ -118,9 +117,8 @@ export default function About() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet itaque libero earum dolore magnam magni, et, nisi perferendis iusto dicta numquam voluptas, eveniet tempora officia nulla nihil ratione maiores dolorem.
                 </p>
             </AboutSection_>
-        </main>
 
-        <script src="/src/image-offset.js" defer></script>
+            <script src="/src/image-offset.js" defer></script>
         </DefaultPage_>
     </>
   )

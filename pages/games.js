@@ -4,8 +4,7 @@ import ProjectItemCard_ from '@/components/projects-list-page/project-item-card'
 export default function Games() {
   return (
     <>
-        <DefaultPage_>
-        <main className="projects-list">
+        <DefaultPage_ page="games">
             <section>
                 <h1>Professional <span>Games</span></h1>
                 <div className='grid-container'>
@@ -53,7 +52,6 @@ export default function Games() {
                     <ProjectItemCard_ name='taz' />
                 </div>
             </section>
-        </main>
         </DefaultPage_>
     </>
 )

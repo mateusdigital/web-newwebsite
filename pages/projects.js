@@ -4,8 +4,7 @@ import ProjectItemCard_ from '@/components/projects-list-page/project-item-card'
 export default function Projects() {
     return (
       <>
-        <DefaultPage_>
-        <main className="projects-list">
+        <DefaultPage_ page="projects">
             <section>
                 <h1>Creative <span>Coding</span></h1>
                 <div className="grid-container">
@@ -58,7 +57,6 @@ export default function Projects() {
                 <li>Pirates Treasure</li>
                 <li>Tic Tac Toe</li>
             </section>
-        </main>
         </DefaultPage_>
     </>
   )
