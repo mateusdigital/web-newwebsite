@@ -15,15 +15,15 @@ export default function Games() {
             <section>
                 <h1>Creative <span>Coding</span></h1>
                 <div className="grid-container">
-                    <ProjectItemCard_ name="roses"        title="Roses"         year="2020" platform="Web" />
-                    <ProjectItemCard_ name="flowfield"    title="Flowfield"     year="2020" platform="Web" />
-                    <ProjectItemCard_ name="lissajous"    title="Lissajous"     year="2020" platform="Web" />
-                    <ProjectItemCard_ name="doom_fire"    title="Doom Fire!"    year="2020" platform="Web" />
-                    <ProjectItemCard_ name="game_of_life" title="Game of Life"  year="2020" platform="Web" />
-                    <ProjectItemCard_ name="simple_tree"  title="Simple Tree!"  year="2020" platform="Web" />
-                    <ProjectItemCard_ name="simple_clock" title="Simple Clock!" year="2020" platform="Web" />
-                    <ProjectItemCard_ name="metaballs"    title="Metaballs"     year="2020" platform="Web" />
-                    <ProjectItemCard_ name="starfield"    title="Starfield"     year="2020" platform="Web" />
+                    <ProjectItemCard_ name="roses"       />
+                    <ProjectItemCard_ name="flowfield"   />
+                    <ProjectItemCard_ name="lissajous"   />
+                    <ProjectItemCard_ name="doom_fire"   />
+                    <ProjectItemCard_ name="game_of_life"/>
+                    <ProjectItemCard_ name="simple_tree" />
+                    <ProjectItemCard_ name="simple_clock"/>
+                    <ProjectItemCard_ name="metaballs"   />
+                    <ProjectItemCard_ name="starfield"   />
                 </div>
             </section>
 

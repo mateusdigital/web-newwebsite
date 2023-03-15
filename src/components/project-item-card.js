@@ -2,23 +2,26 @@ import Link_             from "@/components/link";
 import GamesInformation_ from "@/components/games/games-information";
 
 export default function ProjectItemCard_({name}) {
-    const game_info = GamesInformation_(name);
+    const info = GamesInformation_(name);
 
-    if(!game_info) {
+    if(!info) {
+        // debugger;
         console.log(name);
         return (<></>)
     }
 
+    const title     = info.title;
+    const year      = info.year;
+    const platform  = info.platform;
+    const type      = info.type;
 
-    // const alt_text = `Screenshot of "${title}"`
-    const title            = game_info.title;
-    const year             = game_info.year;
-    const platform         = game_info.platform;
-    const thumbnail_path   = game_info.thumbnail_path;
+    const game_or_demo = (info.is_demo) ? "demos" : "games";
+
     const details_page_url = `/projects/${name}`;
+    const img_path         = `/img/${game_or_demo}/${type}/${name}.png`;
 
     const alt_text = `Screenshot of "${title}"`;
-    const img_path = thumbnail_path;
+
 
     return (
         <>

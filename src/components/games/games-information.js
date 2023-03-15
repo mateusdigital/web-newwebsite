@@ -1,19 +1,18 @@
 export default function GamesInformation_(name) {
     const list = [
         {
-            name:"el_jamon_volador",
-            thumbnail_path: "img/games/personal/el_jamon_volador.png",
-            title:"El Jamon Volador",
-            year:"2020",
-            platform:"Web",
+            name:"     el_jamon_volador",
+            title:    "El Jamon Volador",
+            year:     "2020",
+            platform: "Web",
+            type:     "personal_game",
         },
 
             // name:"personal/simple_snake",
         {
-            name:"simple_snake",
-            thumbnail_path: "img/games/personal/simple_snake.png",
-            title:"Simple Snake",
-            year:"2020",
+            name:    "simple_snake",
+            title:   "Simple Snake",
+            year:    "2020",
             platform:"Web",
         },
 
@@ -64,144 +63,171 @@ export default function GamesInformation_(name) {
 
 
 
-
-
         {
-            name:"farcry6",
-            thumbnail_path:"img/games/professional/farcry6.png",
-            title:"Far Cry 6",
-            year:"",
-            platform:"PC",
+            name:    "farcry6",
+            title:   "Far Cry 6",
+            year:    "2022",
+            platform: ["DLC" ],
+
+            type:    "professional",
             company: "Ubisoft",
-            role: "Senior Programmer",
-            show_youtube_video: true,
+            role:    "Senior Programmer",
+            tech:    ["Dunia", "C++", "Perforce", "A11Y"],
+
             youtube_video_id: "LRMbuyJyUzU",
         },
-        {
-            name:"skull_and_bones",
-            thumbnail_path:"img/games/professional/skull_and_bones.png",
-            title:"Skull and Bones",
-            year:"",
-            platform:"PC",
-            company: "Ubisoft",
-            role: "Senior Programmer",
-            show_youtube_video: true,
-            youtube_video_id: "fgy4WZ9ta7E",
 
-        },
         {
-            name:"wot_blitz",
-            thumbnail_path:"img/games/professional/world_of_wartanks_blitz.png",
-            title:"WoT Blitz",
-            year:"",
-            platform:"PC",
+            name:    "skull_and_bones",
+            title:   "Skull & Bones",
+            year:    "2022",
+            platform: ["PC", "XB", "PS", "Luna" ],
+
+            type:    "professional",
+            company: "Ubisoft",
+            role:    "Senior Programmer",
+            tech:    ["Anvil", "C++", "Perforce", "A11Y"],
+
+            youtube_video_id: "fgy4WZ9ta7E",
+        },
+
+
+        {
+            name:     "wot_blitz",
+            title:    "World of Tanks - Blitz",
+            year:     "2020",
+            platform: ["Mobile" ],
+
+            type:    "professional",
             company: "Wargaming",
-            role: "Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Unreal Engine 4", "Blueprints", "C++", "Git"],
+
             youtube_video_id: "_Vtvjg8dYqI",
         },
+
+        // --------------------------------------------------------------------
         {
-            name:"8_ball_pool",
-            thumbnail_path:"img/games/professional/8_ball_pool.png",
-            title:"8 Ball Pool",
-            year:"",
-            platform:"PC",
+            name:     "8_ball_pool",
+            title:    "8 Ball Pool",
+            year:     "2019",
+            platform: ["Mobile", "Web" ],
+
+            type:    "professional",
             company: "Miniclip",
-            role: "Programmer",
-            show_youtube_video: true,
-            // youtube_video_id: "MarGQrmbPm0",
+            role:    "Programmer",
+            tech:    ["Cocos2d-x", "Emscripten", "C++", "JS", "Obj-C", "Git"],
+
             youtube_video_id: "f0xHb8pxMco",
         },
         {
-            name:"pacman_io",
-            thumbnail_path:"img/games/professional/pacman_io.png",
-            title:"Pacman.io",
-            year:"",
-            platform:"PC",
+            name:     "pacman_io",
+            title:    "PACMAN.IO",
+            year:     "2018",
+            platform: ["Web" ],
+
+            type:    "professional",
             company: "Miniclip",
-            role: "Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Canvas API", "Emscripten", "C++", "JS", "Git"],
+
             youtube_video_id: "u4sEgDM0EZ0",
         },
 
+        // --------------------------------------------------------------------
         {
-            name:"the_banner_saga",
-            thumbnail_path:"img/games/professional/the_banner_saga.png",
-            title:"The Banner Saga",
-            year:"",
-            platform:"PC",
+            name:     "the_banner_saga",
+            title:    "The Banner Saga",
+            year:     "2017",
+            platform: ["Mobile" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Additional Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Action Script 3", "Ant", "Mercurial"],
+
             youtube_video_id: "y-42WWUOD1M",
         },
 
         {
-            name:"the_banner_saga_2",
-            thumbnail_path:"img/games/professional/the_banner_saga_2.png",
-            title:"The Banner Saga 2",
-            year:"",
-            platform:"PC",
+            name:     "the_banner_saga_2",
+            title:    "The Banner Saga 2",
+            year:     "2017",
+            platform: ["Mobile" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Additional Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Action Script 3", "Ant", "Mercurial"],
+
             youtube_video_id: "NRoaB0iSsJE",
         },
 
         {
-            name:"killers_and_thieves",
-            thumbnail_path:"img/games/professional/killers_and_thieves.png",
-            title:"Killers and Thieves",
-            year:"",
-            platform:"PC",
+            name:     "killers_and_thieves",
+            title:    "Killers and Thieves",
+            year:     "2017",
+            platform: ["PC" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Unity", "Lua", "C#", "Middleware"],
+
             youtube_video_id: "2HhmN1_SvFA",
         },
+
         {
-            name:"like_a_boss",
-            thumbnail_path:"img/games/professional/like_a_boss.png",
-            title:"Like a Boss",
-            year:"",
-            platform:"PC",
+            name:     "like_a_boss",
+            title:    "Like a Boss",
+            year:     "2017",
+            platform: ["Mobile" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Additional Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Unity", "C#",],
+
             youtube_video_id: "gqNCs0slp8U",
         },
         {
-            name:"at_sundown",
-            thumbnail_path:"img/games/professional/at_sundown.png",
-            title:"At Sundown",
-            year:"",
-            platform:"PC",
+            name:     "at_sundown",
+            title:    "At Sundown",
+            year:     "2017",
+            platform: ["Middleware" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Additional Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Unity", "AlienFX", "C#", "C++" ],
+
             youtube_video_id: "AbZGdmOC-eM",
         },
         {
-            name:"let_them_come",
-            thumbnail_path:"img/games/professional/let_them_come.png",
-            title:"Let Them Come",
-            year:"",
-            platform:"PC",
+            name:     "let_them_come",
+            title:    "Let them Come",
+            year:     "2017",
+            platform: ["Middleware" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Additional Programmer",
-            show_youtube_video: true,
-            youtube_video_id: "IJT5mlPa3Io",
+            role:    "Programmer",
+            tech:    ["GameMaker", "AlienFX", "C++" ],
+
+            youtube_video_id: "AbZGdmOC-eM",
 
         },
         {
-            name:"fist_punch_2",
-            thumbnail_path:"img/games/professional/fist_punch_2.png",
-            title:"Fist Punch 2",
-            year:"",
-            platform:"PC",
+            name:     "fist_punch",
+            title:    "Fist Punch",
+            year:     "2016",
+            platform: ["Web" ],
+
+            type:    "professional",
             company: "Firehorse",
-            role: "Additional Programmer",
-            show_youtube_video: true,
+            role:    "Programmer",
+            tech:    ["Unity" ],
+
             youtube_video_id: "V1tX-iznvSI",
         },
 

@@ -1,6 +1,5 @@
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
 import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
-import Link_ from "@/components/link";
 
 export default function Page() {
     const info = GetProjectPageInfo()
