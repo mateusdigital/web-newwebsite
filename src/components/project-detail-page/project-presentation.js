@@ -2,13 +2,15 @@ import DemoCanvas_ from "../demo-canvas";
 import YTVideo_ from "../yt-video";
 
 export default function ProjectPresentation_({info}) {
-    console.log(info)
+    const project_type = info.type;
+
     let top_element = null;
-    if(info.show_youtube_video) {
+    if(project_type == "professional") {
         const video_id = info.youtube_video_id;
         top_element = YTVideo_({video_id});
     } else if (info.show_canvas) {
-        top_element = DemoCanvas_(info.name);
+        const name = info.name;
+        top_element = DemoCanvas_({name});
     }
 
     return (
