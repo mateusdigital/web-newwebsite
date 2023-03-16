@@ -1,18 +1,18 @@
 
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import DemoPage_ from "@/components/project-detail-page/demo-page";
 
 export default function Page() {
     const info = GetProjectPageInfo()
     return (
         <>
-            <ProjectDetailPage_ info={info}>
+            <DemoPage_ info={info}>
                 <section>
                     <p>
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at similique labore sed rerum consequatur quaerat ut deserunt quisquam dicta.
                     </p>
                 </section>
-            </ProjectDetailPage_>
+            </DemoPage_>
         </>
     )
 }

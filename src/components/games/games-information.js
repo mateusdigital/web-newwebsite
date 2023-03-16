@@ -276,15 +276,15 @@ function GamesInformation_(name) {
 
 
         ////////////////////////////////////////////////////////////////////////
-        { type: "demo", name:"roses"       , title:"Roses"        , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"flowfield"   , title:"Flowfield"    , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"lissajous"   , title:"Lissajous"    , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"doom_fire"   , title:"Doom Fire!"   , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"game_of_life", title:"Game of Life" , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"simple_tree",  title:"Simple Trees!", year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"simple_clock", title:"Simple Clock!", year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"metaballs"   , title:"Metaballs"    , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
-        { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"roses"       , title:"Roses"        , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"flowfield"   , title:"Flowfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"lissajous"   , title:"Lissajous"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"doom_fire"   , title:"Doom Fire!"   , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"game_of_life", title:"Game of Life" , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"simple_tree",  title:"Simple Trees!", year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"simple_clock", title:"Simple Clock!", year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"metaballs"   , title:"Metaballs"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
     ];
 
     if(!name) {
