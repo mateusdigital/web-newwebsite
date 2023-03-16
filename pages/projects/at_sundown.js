@@ -1,11 +1,11 @@
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import ProfessionalPage_  from "@/components/project-detail-page/professional-page";
 
 export default function Page() {
     const info = GetProjectPageInfo()
     return (
         <>
-            <ProjectDetailPage_ info={info}>
+            <ProfessionalPage_ info={info}>
                 <section>
                     <p>
                         In this project I was responsible to integrate the AlienFx SDK to YoYo Games' Game Maker.
@@ -15,7 +15,7 @@ export default function Page() {
                         I write some shell scripting to ease the studio day to day stuff and I wrote an texture packer algorithm to improve the performance of the particle system.
                     </p>
                 </section>
-            </ProjectDetailPage_>
+            </ProfessionalPage_>
         </>
     )
 }

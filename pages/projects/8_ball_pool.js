@@ -1,11 +1,11 @@
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import ProfessionalPage_  from "@/components/project-detail-page/professional-page";
 
 export default function Page() {
     const info = GetProjectPageInfo()
     return (
         <>
-            <ProjectDetailPage_ info={info}>
+            <ProfessionalPage_ info={info}>
             <section>
                     <p>
                         Firehorse and Stoic Studio had the same publisher at the time - VersusEvil, which
@@ -13,7 +13,7 @@ export default function Page() {
                         those amazing award wining games.
                     </p>
                 </section>
-            </ProjectDetailPage_>
+            </ProfessionalPage_>
         </>
     )
 }

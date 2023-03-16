@@ -306,9 +306,9 @@ h2 {
 
 
 /*----------------------------------------------------------------------------*/
-.project-details .company {
-    max-width:  fit-content;
-    max-height: 50px;
+.project-detail-page-company-logo {
+    /* height: 40px; */
+    max-height: 40px;
     max-width:  150px;
 
 }

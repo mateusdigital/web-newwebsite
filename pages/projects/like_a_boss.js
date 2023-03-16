@@ -1,12 +1,13 @@
 
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import ProfessionalPage_  from "@/components/project-detail-page/professional-page";
+
 
 export default function Page() {
     const info = GetProjectPageInfo()
     return (
         <>
-            <ProjectDetailPage_ info={info}>
+            <ProfessionalPage_ info={info}>
                 <section>
                     <p>
                         It is the studio's main game, Like a Boss is an Action RPG where
@@ -21,7 +22,7 @@ export default function Page() {
                         I created custom <i>Editor Scripts</i> to ease some game development operations
                     </p>
                 </section>
-            </ProjectDetailPage_>
+            </ProfessionalPage_>
         </>
     )
 }

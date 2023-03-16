@@ -1,12 +1,13 @@
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import ProfessionalPage_  from "@/components/project-detail-page/professional-page";
+
 import Link_ from "@/components/link";
 
 export default function Page() {
     const info = GetProjectPageInfo()
     return (
         <>
-            <ProjectDetailPage_ info={info}>
+            <ProfessionalPage_ info={info}>
             <section>
                     <p>
                         Firehorse and Stoic Studio had the same publisher at the time - VersusEvil, which
@@ -40,7 +41,7 @@ export default function Page() {
                     so many doors and gave me so nice opportunities.
                     After this project I got the opportunity to make Stoic Studio's <Link_ href="/projects/killers_and_thives">Killers and Thieves</Link_>.
                 </section>
-            </ProjectDetailPage_>
+            </ProfessionalPage_>
         </>
     )
 }
