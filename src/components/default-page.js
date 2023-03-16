@@ -35,18 +35,17 @@ export default function DefaultPage_({page, children}) {
 
             {/* ------------------------------------------------------------ */}
             <nav>
-                <div>
-                    <Link_ href="/">mateus-earth</Link_>
+                <div >
+                    <Link_ className="logo" href="/">mateus-earth</Link_>
                 </div>
-                    <div>
-                        <Link_ active={"games"    == page} href="/games">Games</Link_>
-                        <Link_ active={"projects" == page} href="/projects">Projects</Link_>
-                        <Link_ active={"blog"     == page} href="/blog">Blog</Link_>
-                        <Link_ active={"resume"   == page} href="/resume">Resume</Link_>
-                        <Link_ active={"about"    == page} href="/about" >About</Link_>
-
-                        <Link_ href="/about" >☰&nbsp;</Link_>
-                    </div>
+                <div >
+                    <Link_ className="button" active={"games"    == page} href="/games">Games</Link_>
+                    <Link_ className="button" active={"projects" == page} href="/projects">Projects</Link_>
+                    {/* <Link_ className="button" active={"blog"     == page} href="/blog">Blog</Link_> */}
+                    <Link_ className="button" active={"resume"   == page} href="/resume">Resume</Link_>
+                    <Link_ className="button" active={"about"    == page} href="/about" >About</Link_>
+                    <Link_ className="hamburger" href="">☰&nbsp;</Link_>
+                </div>
             </nav>
 
 

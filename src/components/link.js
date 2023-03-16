@@ -1,8 +1,7 @@
 import Link from 'next/link'
 
-const Link_ = ({ active, href, ...rest }) => {
-    const class_name= (active) ? "active" : "no-active";
 
+export default function Link_({className, active, href, children}) {
     if (!href.endsWith('.html')) {
         if (process.env.NODE_ENV === 'development') {
             href = href; // + '.html'
@@ -12,7 +11,13 @@ const Link_ = ({ active, href, ...rest }) => {
         }
     }
 
-    return <Link className={class_name} href={href} {...rest} />
-}
+    const active_class_name = (active) ? "active" : "no-active";
+    const modified_class_name = `${className} ${active_class_name}`;
 
-export default Link_
+
+    return (
+        <>
+            <Link className={modified_class_name} href={href}>{children}</Link>
+        </>
+    )
+}

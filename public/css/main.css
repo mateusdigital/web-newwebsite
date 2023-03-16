@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Chivo+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 
 :root {
     --background-color: #eaeaea;
     --link-color:       #6E6D7A;
+
+    --azeret:     "Azeret Mono", monospace;
+    --chivo:      "Chivo Mono", monospace;
+    --ibm:        "IBM Plex Mono", monospace;
+    --inconsolata:"Inconsolata", monospace;
+    --jetbrains:  "JetBrains Mono", monospace;
+    --noto:       "Noto Sans Mono", monospace;
+    --roboto:     "Roboto Mono", monospace;
+    --source:     "Source Code Pro", monospace;
 
     --item-border-radius: 0.8rem;
 }
@@ -14,7 +23,7 @@
 }
 
 body {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: --font-1;
     /* font-family: 'Roboto Mono', monospace; */
 
     max-width: 1200px;
@@ -40,9 +49,7 @@ body {
 /*----------------------------------------------------------------------------*/
 nav {
     width: 100%;
-
-    padding-top:    1.75rem;
-    padding-bottom: 1.75rem;
+    height: 4rem;
 
     margin-bottom: 2rem;
 
@@ -52,17 +59,52 @@ nav {
     justify-content: space-between;
     align-items:     center;
 
-    font-size: 1rem;
+    /* background-color: #c83456; */
+    /* font-size: 1rem; */
 }
 
 /*----------------------------------------------------------------------------*/
 nav a {
+    display: inline-block;
     font-weight: bold;
+    padding: 0.5rem 1rem;
     color: var(--link-color);
 
     text-decoration: none;
-    padding:         1rem;
+    /* background-color: aquamarine; */
+
+    font-size: 1rem;
+    font-family: var(--chivo);
 }
+
+nav a.logo {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+nav a.button:hover {
+    color: var(--background-color);
+    background-color: var(--link-color);
+}
+
+nav a.active {
+    text-decoration: underline solid var(--link-color);
+    text-underline-offset:     0.5rem;
+    text-decoration-thickness:   2px;
+}
+
+nav a.active:hover{
+    text-decoration: underline solid var(--background-color);
+    text-decoration-thickness:   3px;
+}
+
+
+nav a.hamburger {
+    font-size: large;
+    font-weight: bolder;
+}
+
+
 
 /*----------------------------------------------------------------------------*/
 /* Makes the left-most item and right-most item to be aligned without padding */
