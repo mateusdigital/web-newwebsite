@@ -16,7 +16,7 @@
     --source:     "Source Code Pro", monospace;
 
     --item-border-radius: 0.8rem;
-    --grid-gap: 1.25rem
+    --grid-gap: 1.55rem
 }
 
 *, *:before, *:after {
@@ -193,7 +193,7 @@ h2 {
 }
 
 .project-list-card:hover img {
-    border-bottom-left-radius: 0;
+    border-bottom-left-radius:  0;
     border-bottom-right-radius: 0;
 }
 
