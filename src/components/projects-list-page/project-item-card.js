@@ -24,19 +24,21 @@ export default function ProjectItemCard_({name}) {
 
     return (
         <>
-            <article className="project-list-card">
+            <div className="project-list-card">
                 <Link_ href={details_page_url}>
-                    <header>
+                    <div>
                         <img src={img_path} alt={alt_text}/>
-                    </header>
+                    </div>
 
-                    <section className="info">
-                        <span>{title}</span>
-                        <span>{year}</span>
-                        <span>{platform}</span>
-                    </section>
+                    <div className="project-list-card-info">
+                        <span className="project-list-card-info-title">{title}</span>
+                        <div >
+                            <span className="project-list-card-info-platform">({platform})</span>
+                            <span className="project-list-card-info-year">{year}</span>
+                        </div>
+                    </div>
                 </Link_>
-            </article>
+            </div>
         </>
     )
 }
