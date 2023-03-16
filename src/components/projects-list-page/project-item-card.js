@@ -10,9 +10,10 @@ export default function ProjectItemCard_({name}) {
         return (<></>)
     }
 
+        // debugger;
     const title     = info.title;
     const year      = info.year;
-    const platform  = info.platform;
+    const platform  = info.platform.join( "|");
     const type      = info.type;
 
     const img_extension = (type == "demo") ? "gif" : "png";

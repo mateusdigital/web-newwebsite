@@ -43,6 +43,20 @@ body {
     background-color: var(--background-color);
 }
 
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: underline dotted black;
+    /* text-decoration-thickness: 2px; */
+    text-underline-offset: 0.3rem;
+}
+
+a:hover {
+    color:            var(--background-color);
+    background-color: var(--link-color);
+}
+
+
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /* Navigation Bar                                                             */

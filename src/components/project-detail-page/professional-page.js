@@ -7,6 +7,8 @@ export default function ProfessionalPage_({info, children}) {
     const role = info.role;
     const tech = info.tech.join(", ");
     const year = info.year;
+    const platform_title = "Platform" + ((info.platform.length != 1) ? "s" : "");
+    const platform_content = info.platform.join( ", ");
 
     return (
         <>
@@ -20,6 +22,7 @@ export default function ProfessionalPage_({info, children}) {
                         <li><b>Role:</b> {role}</li>
                         <li><b>Tech:</b> {tech}</li>
                         <li><b>Year:</b> {year}</li>
+                        <li><b>{platform_title}:</b> {platform_content}</li>
                     </ul>
                 </main>
             </DefaultPage_>
