@@ -187,7 +187,7 @@ h2 {
 
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
-/* Projects List Page                                                         */
+/* Projects List Card                                                         */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /* -------------------------------------------------------------------------- */
@@ -201,14 +201,10 @@ h2 {
 }
 
 .project-list-card:hover {
-    transform: scale(1.005);
     background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
-.project-list-card:hover img {
-    border-bottom-left-radius:  0;
-    border-bottom-right-radius: 0;
+    transform: scale(1.010);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -216,8 +212,6 @@ h2 {
     text-decoration: none;
     color: black;
 }
-
-
 
 /* -------------------------------------------------------------------------- */
 .project-list-card img {
@@ -232,8 +226,14 @@ h2 {
     object-fit:    cover;
 }
 
+.project-list-card:hover img {     /* Make the bottom of cards to have no radius */
+    border-bottom-left-radius:  0;
+    border-bottom-right-radius: 0;
+}
+
+
 /* -------------------------------------------------------------------------- */
-.project-list-card-info {
+.project-list-card-info {  /* That description under the card */
     display:         flex;
     justify-content: space-between;
 
@@ -245,14 +245,16 @@ h2 {
     /* background-color: red; */
 }
 
+/* -------------------------------------------------------------------------- */
 .project-list-card-info-title {
-    /* background-color: aqua; */
     font-weight: 700;
 }
+
 .project-list-card:hover .project-list-card-info-title {
     font-weight: 900;
 }
 
+/* -------------------------------------------------------------------------- */
 .project-list-card-info-year {
     font-weight: 500;
     /* margin-right: 0.5rem; */
@@ -262,6 +264,7 @@ h2 {
     font-weight: 600;
 }
 
+/* -------------------------------------------------------------------------- */
 .project-list-card-info-platform {
     font-weight: 400;
     font-size: 90%;
@@ -270,6 +273,25 @@ h2 {
     font-weight: 600;
 }
 
+
+/*----------------------------------------------------------------------------*/
+/*                                                                            */
+/* Projects Page                                                              */
+/*                                                                            */
+/*----------------------------------------------------------------------------*/
+.projects ul {
+    margin: 0;
+    padding: 0 auto;
+}
+
+.projects li > span {
+    display: inline-block;
+    /* background-color: #c83456; */
+    min-width: 120px;
+}
+.projects li > a {
+    margin-right: 0.5rem;
+}
 
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -454,4 +476,9 @@ h2 {
     /* background-color: #c83456; */
     margin-top:    1.5rem;
     margin-bottom: 2.5rem;
+}
+
+
+.text-detail {
+    font-size: 85%;
 }
