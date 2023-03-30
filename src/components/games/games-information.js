@@ -3,36 +3,64 @@ function GamesInformation_(name) {
         {
             name:     "el_jamon_volador",
             title:    "El Jamon Volador",
-            year:     "2020",
-            platform: ["Web"],
+            year:     "2019",
             type:     "personal",
+
+            tech:     ["C", "gbdk"],
+            platform: ["Game Boy"],
+
+            download: [
+                ["download-rom", "/dist/el-ramon-volador-gb.zip"],
+                ["play-browser", "/modules/games/el_jamon_volador/website/index.html"]
+            ]
         },
 
             // name:"personal/simple_snake",
         {
-            name:    "simple_snake",
-            title:   "Simple Snake",
-            year:    "2020",
-            platform: ["Web"],
+            name:     "simple_snake",
+            title:    "Simple Snake!",
+            year:     "2018",
             type:     "personal",
+            platform: ["Web"],
+            tech:     ["Javascript", "Canvas API"],
+
+            is_playable_on_canvas: true,
+
+            download: [
+                ["play-browser", "/modules/games/nuclear_rain/website/index.html"],
+            ]
         },
 
             // name:"personal/nuclear_rain"
         {
-            name:"nuclear_rain",
-            title:"Nuclear Rain",
-            year:"2020",
-            platform: ["Web"],
+            name:     "nuclear_rain",
+            title:    "Nuclear Rain",
+            year:     "2018",
             type:     "personal",
+            platform: ["Web"],
+            tech:     ["Javascript", "Canvas API"],
+
+            is_playable_on_canvas: true,
+
+            download: [
+                ["play-browser", "/modules/games/nuclear_rain/website/index.html"],
+            ]
         },
 
             // name:"personal/cosmic_intruders"
         {
-            name:"cosmic_intruders",
-            title:"Cosmic Intruders",
-            year:"2020",
-            platform: ["Web"],
+            name:     "cosmic_intruders",
+            title:    "Cosmic Intruders",
+            year:     "2018",
             type:     "personal",
+            platform: ["Web"],
+            tech:     ["C++", "Emscripten, Javascript"],
+
+            is_playable_on_canvas: true,
+
+            download: [
+                ["play-browser", "/modules/games/nuclear_rain/website/index.html"],
+            ]
         },
 
             // name:"personal/the_mistral_report"
@@ -42,6 +70,10 @@ function GamesInformation_(name) {
             year:"2020",
             platform: ["Web"],
             type:     "personal",
+
+            download: [
+                ["play-browser", "/modules/games/cosmic_intruders/website/index.html"],
+            ]
         },
 
             // name:"personal/color_grid"

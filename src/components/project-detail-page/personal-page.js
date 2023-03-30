@@ -3,14 +3,14 @@ import ProjectPresentation_ from "@/components/project-detail-page/project-prese
 import Link_ from "../link";
 import ProjectTitle_ from "./project-title";
 
-export default function DemoPage_({info, children}) {
+export default function PersonalPage_({info, children}) {
 
     const name = info.name;
     const tech = info.tech.join(", ");
     const year = info.year;
 
-    const license  = "GPLv3";
-    const git_url  = `https://github.com/mateus-earth/${name}`;
+    const license = "GPLv3";
+    const git_url = `https://github.com/mateus-earth/${name}`;
 
     return (
         <>
@@ -25,6 +25,7 @@ export default function DemoPage_({info, children}) {
                         <li><b>Year:</b> {year}</li>
                         <li><b>License:</b> {license}</li>
                         <li><b>Source Code:</b> <Link_ href={git_url}>{git_url}</Link_></li>
+                        <li><b>Download:</b> </li>
                     </ul>
                 </main>
             </DefaultPage_>
