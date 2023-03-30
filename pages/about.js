@@ -41,8 +41,8 @@ export default function About() {
                     No Instutudo de Telecomuicacoes e Pontificia Universade Catolica de Minas Gerais - e outros.
 
                     Esse foi um periodo de muito estudo no qual me resulto em duas certificoes da Microsfot:
-                    <li>Microsoft - MTA-98-373</li>
-                    <li>Microsoft - MTA-98-361</li>
+                    {/* <li>Microsoft - MTA-98-373</li>
+                    <li>Microsoft - MTA-98-361</li> */}
                     E mais de 123 outras certificoes menores.
             </AboutSection_>
 
