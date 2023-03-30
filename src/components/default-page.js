@@ -53,6 +53,11 @@ export default function DefaultPage_({page, children}) {
             <main className={page}>
                 {children}
             </main>
+
+            {/* ------------------------------------------------------------ */}
+            <div className="footer">
+                <span className="footer-copyright">Made with love - mateus-earth MMXXIII</span>
+            </div>
         </>
     )
 }
