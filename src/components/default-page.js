@@ -10,6 +10,7 @@ export default function DefaultPage_({page, children}) {
         <>
             {/* ------------------------------------------------------------ */}
             <Head>
+                <link href="https://cdn.skypack.dev/sanitize.css" rel="stylesheet" />
                 <link href="/css/main.css" rel="stylesheet" type="text/css" />
 
                 <link rel="apple-touch-icon"      sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
@@ -34,17 +35,18 @@ export default function DefaultPage_({page, children}) {
 
 
             {/* ------------------------------------------------------------ */}
-            <nav>
-                <div >
+            <nav className="top-nav">
+                <div className="top-nav-logo-container">
                     <Link_ className="logo" href="/">mateus-earth</Link_>
                 </div>
-                <div >
-                    <Link_ className="button" active={"games"    == page} href="/games">Games</Link_>
-                    <Link_ className="button" active={"projects" == page} href="/projects">Projects</Link_>
+                <div className="top-nav-buttons-container">
+                    {/* <Link_ className="button" active={"games"    == page} href="/games">Games</Link_> */}
+                    {/* <Link_ className="button" active={"projects" == page} href="/projects">Projects</Link_> */}
                     {/* <Link_ className="button" active={"blog"     == page} href="/blog">Blog</Link_> */}
-                    <Link_ className="button" active={"resume"   == page} href="/resume">Resume</Link_>
-                    <Link_ className="button" active={"about"    == page} href="/about" >About</Link_>
-                    <Link_ className="hamburger" href="">☰&nbsp;</Link_>
+                    {/* <Link_ className="button" active={"resume"   == page} href="/resume">Resume</Link_> */}
+                    {/* <Link_ className="button" active={"about"    == page} href="/about" >About</Link_> */}
+
+                    <Link_ className="hamburger" href="">☰</Link_>
                 </div>
             </nav>
 

@@ -6,7 +6,7 @@ export default function Projects() {
       <>
         <DefaultPage_ page="projects">
             <section>
-                <h1>Creative <span>Coding</span></h1>
+                <h1 className="projects-section-title">Creative <span>Coding</span></h1>
                 <div className="grid-container">
                     <ProjectItemCard_ name="roses"       />
                     <ProjectItemCard_ name="flowfield"   />
@@ -21,7 +21,7 @@ export default function Projects() {
             </section>
 
             <section>
-                <h1>FLOSS <span>Contributions</span></h1>
+                <h1 className="projects-section-title">FLOSS <span>Contributions</span></h1>
                 <ul>
                     <li>
                         <span><a href="http://www.libreflix.org">libreflix</a>:</span>
@@ -42,23 +42,23 @@ export default function Projects() {
             </section>
 
             <section>
-                <h1>Past <span>Work</span></h1>
+                <h1 className="projects-section-title">Past <span>Work</span></h1>
 
                 <ul>
                     <span><b>Ginga.One</b></span>
-                        <li>Pequenos Criativos <span className="text-detail"> - iOS</span></li>
-                        <li>Porto Seguro Auto <span className="text-detail"> - iOS</span></li>
+                        <li><span>Pequenos Criativos </span><span className="text-detail"> - iOS</span></li>
+                        <li><span>Porto Seguro Auto </span><span className="text-detail"> - iOS</span></li>
                     <br/>
 
                     <span><b>Imidiar</b></span>
-                        <li>Photo Totem <span className="text-detail"> - Python</span></li>
+                        <li><span>Photo Totem</span><span className="text-detail"> - Python</span></li>
                     <br/>
 
                     <span><b>Eazz</b></span>
-                        <li>Metro Genius <span className="text-detail"> - Windows Phone </span></li>
-                        <li>donkey.bas <span className="text-detail"> - Windows Phone </span></li>
-                        <li>Pirates Treasure <span className="text-detail"> - Windows Phone </span></li>
-                        <li>Tic Tac Toe <span className="text-detail"> - Windows Phone </span></li>
+                        <li><span>Metro Genius</span><span className="text-detail"> - Windows Phone </span></li>
+                        <li><span>donkey.bas</span><span className="text-detail"> - Windows Phone </span></li>
+                        <li><span>Pirates Treasure</span><span className="text-detail"> - Windows Phone </span></li>
+                        <li><span>Tic Tac Toe</span><span className="text-detail"> - Windows Phone </span></li>
                 </ul>
             </section>
         </DefaultPage_>

@@ -10,11 +10,10 @@ export default function ProjectItemCard_({name}) {
         return (<></>)
     }
 
-        // debugger;
-    const title     = info.title;
-    const year      = info.year;
-    const platform  = info.platform.join( "|");
-    const type      = info.type;
+    const title    = info.title;
+    const year     = info.year;
+    const platform = info.platform.join( "|");
+    const type     = info.type;
 
     const img_extension = (type == "demo") ? "gif" : "png";
 
@@ -33,7 +32,7 @@ export default function ProjectItemCard_({name}) {
 
                     <div className="project-list-card-info">
                         <span className="project-list-card-info-title">{title}</span>
-                        <div >
+                        <div className="project-list-card-info-right-container">
                             <span className="project-list-card-info-platform">({platform})</span>
                             <span className="project-list-card-info-year">{year}</span>
                         </div>

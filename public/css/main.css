@@ -3,239 +3,131 @@
 
 
 :root {
-    --background-color: white;
-    --link-color:       black;
+    --background-color:   hsl(60,   20%, 92%);
+    --text-color:         hsl(28,   13%, 38%);
+    --link-color:         hsl(191, 100%, 33%);
+    --border-color:      #d7d6ce;
 
-    --azeret:     "Azeret Mono", monospace;
-    --chivo:      "Chivo Mono", monospace;
-    --ibm:        "IBM Plex Mono", monospace;
-    --inconsolata:"Inconsolata", monospace;
+
     --jetbrains:  "JetBrains Mono", monospace;
-    --noto:       "Noto Sans Mono", monospace;
-    --roboto:     "Roboto Mono", monospace;
-    --source:     "Source Code Pro", monospace;
-
-    --item-border-radius: 0.8rem;
-    --grid-gap: 1.55rem
 }
 
 *, *:before, *:after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
 }
 
+html {
+    background-color: var(--background-color);
+    color:            var(--text-color);
 
-
-body {
     font-family: var(--jetbrains);
+    font-size: 1rem;
 
-    max-width: 1200px;
+    /* max-width: 1200px; */
 
     padding: 0;
     margin:  0;
+}
 
-    padding-left:  2rem;
-    padding-right: 2rem;
+body {
+    max-width: 1200px;
 
     margin-left:  auto;
     margin-right: auto;
 
-    font-size: 1.2rem;
-    background-color: var(--background-color);
+    padding: 0 0.5rem;
 }
 
 a {
-    color: black;
-    font-weight: 600;
-    text-decoration: underline dotted black;
-    /* text-decoration-thickness: 2px; */
+    color: var(--link-color);
+    text-decoration: underline dotted;
     text-underline-offset: 0.3rem;
 }
 
-a:hover {
-    color:            var(--background-color);
-    background-color: var(--link-color);
+main {
+    /* padding: 0rem 0.5rem; */
+}
+
+.text-detail {
+    font-size: 85%;
+    opacity:   85%;
 }
 
 
-/*----------------------------------------------------------------------------*/
-/*                                                                            */
-/* Navigation Bar                                                             */
-/*                                                                            */
-/*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
-nav {
-    width: 100%;
-    height: 4rem;
+/* -------------------------------------------------------------------------- */
+.top-nav {
+    /* background-color: rebeccapurple; */
+    width:  100%;
+    height: 3rem;
 
-    margin-bottom: 2rem;
-    border-bottom: 1px solid #c7c7c7;
+    border-bottom: 1px solid var(--border-color);
 
     display:         flex;
     justify-content: space-between;
     align-items:     center;
-
-    /* background-color: #c83456; */
-    /* font-size: 1rem; */
 }
 
-/*----------------------------------------------------------------------------*/
-nav a {
-    display: inline-block;
+.top-nav-logo-container {
+    /* padding: 0rem 0.5rem; */
 
-    padding: 0.5rem 1rem;
-    color: var(--link-color);
+    width: 100%;
+}
 
+.top-nav-buttons-container {
+    /* padding: 0rem 0.5rem; */
+    display: grid;
+    gap: 1.3rem;
+    width: 100%;
+    justify-content: end;
+    grid-template-columns: repeat(5, auto);
+}
+
+.top-nav a {
     text-decoration: none;
-    /* background-color: aquamarine; */
-
-    font-family: var(--noto);
-    font-weight: 600;
-    font-size:   1rem;
-
-}
-
-/*----------------------------------------------------------------------------*/
-nav a.logo {
-    font-size:   1.2rem;
-    font-weight: 700;
-}
-
-/*----------------------------------------------------------------------------*/
-nav a.button {
-    font-family: var(--font-nav-buttons);
-}
-
-nav a.button:hover {
-    color:            var(--background-color);
-    background-color: var(--link-color);
-    font-weight:      900;
-}
-
-/*----------------------------------------------------------------------------*/
-nav a.active {
-    text-decoration: underline solid var(--link-color);
-    text-underline-offset:     0.5rem;
-    text-decoration-thickness:   2px;
-}
-
-nav a.active:hover{
-    text-decoration: underline solid var(--background-color);
-    text-decoration-thickness:   3px;
-}
-
-/*----------------------------------------------------------------------------*/
-nav a.hamburger {
-    font-family: var(--noto);
-    font-size:   1.2rem;
-    font-weight: 900;
-}
-
-nav a.hamburger:hover {
-    color:            var(--background-color);
-    background-color: var(--link-color);
+    font-size: 90%;
 }
 
 
-
-/*----------------------------------------------------------------------------*/
-/* Makes the left-most item and right-most item to be aligned without padding */
-nav div:first-of-type :first-child {
-    /* background-color: red; */
-    padding-left: 0;
+/* -------------------------------------------------------------------------- */
+.projects section {
+    /* background-color: aqua; */
+    margin-bottom: 2rem;
+}
+.projects li {
+    list-style:disc;
+    list-style-position:outside;
+    margin-left: 2rem;
+    padding: 0.2rem 0;
 }
 
-nav div:last-of-type :last-child {
-    /* background-color: red; */
-    padding-right: 0;
-}
-
-/*----------------------------------------------------------------------------*/
-/*                                                                            */
-/* Footer                                                                     */
-/*                                                                            */
-/*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
-.footer {
-    /* background-color: #c83456; */
-    width: 100%;
-    height: 2rem;
-    display: block;
-
-    border-top: 1px solid #c7c7c7;
-
-    margin-top:    3rem;
-    padding-top:   0.5rem;
-    margin-bottom: 0.5rem;
-}
-/*----------------------------------------------------------------------------*/
-.footer-copyright {
-    /* background-color: #c83456; */
-    display: block;
-    width: 100%;
-    text-align: center;
-}
-
-/*----------------------------------------------------------------------------*/
-/*                                                                            */
-/* Headers                                                                    */
-/*                                                                            */
-/*----------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------*/
-h1 {
-    font-family: var(--font-section-big);
-
-    margin-bottom: 1.0rem;
-    font-size:     2rem;
+.projects-section-title {
+    display: inline-block;
+    font-size: 1.8rem;
     font-weight:   600;
+    margin: 1rem 0 0.75rem;
 }
 
-h1::before {
+.projects-section-title::before {
     content: "\25A0";   /* That square */
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
-h1 span {              /* The second word that's lighter */
+.projects-section-title span {
     font-weight: 100;
 }
 
 
-/*----------------------------------------------------------------------------*/
-h2 {
-    font-family: var(--font-section-medium);
-
-    margin-bottom: 1.0rem;
-    font-size:     1.3rem;
-    font-weight:   600;
-}
-
-
-/*----------------------------------------------------------------------------*/
-/*                                                                            */
-/* Projects List Card                                                         */
-/*                                                                            */
-/*----------------------------------------------------------------------------*/
-/* -------------------------------------------------------------------------- */
-.project-list-card {
-    cursor:        pointer;
-
-    background-color: var(--background-color);
-    border-radius:    var(--item-border-radius);
-
-    font-size: 1rem;
-}
-
-.project-list-card:hover {
-    background-color: #ffffff;
-
-    transform: scale(1.010);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-/* -------------------------------------------------------------------------- */
-.project-list-card a {
-    text-decoration: none;
-    color: black;
-}
 
 /* -------------------------------------------------------------------------- */
 .project-list-card img {
@@ -246,76 +138,45 @@ h2 {
     min-height: 225px;
     object-fit: cover;
 
-    border-radius: var(--item-border-radius);
+    border-radius: 1rem;
     object-fit:    cover;
 }
 
-.project-list-card:hover img {     /* Make the bottom of cards to have no radius */
-    border-bottom-left-radius:  0;
-    border-bottom-right-radius: 0;
+.project-list-card {
+    position: relative;
 }
 
+.project-list-card-info {
+    visibility:collapse;
 
-/* -------------------------------------------------------------------------- */
-.project-list-card-info {  /* That description under the card */
+    position: absolute;
+    left:   0;
+    bottom: 0%;
+
     display:         flex;
     justify-content: space-between;
 
-    padding-top:    0.4rem;
-    padding-bottom: 0.6rem;
+    width:   100%;
+    padding: 1rem;
 
-    padding-left:  0.5rem;
-    padding-right: 0.5rem;
-    /* background-color: red; */
-}
+    border-bottom-left-radius:  1rem;
+    border-bottom-right-radius: 1rem;
 
-/* -------------------------------------------------------------------------- */
-.project-list-card-info-title {
-    font-weight: 700;
+    background-color: hsla(26, 10%, 10%, 0.824);
+    color: #fefff6;
 }
 
-.project-list-card:hover .project-list-card-info-title {
-    font-weight: 900;
+.project-list-card:hover .project-list-card-info {
+    visibility:visible;
 }
 
-/* -------------------------------------------------------------------------- */
-.project-list-card-info-year {
-    font-weight: 500;
-    /* margin-right: 0.5rem; */
-    margin-left: 0.5rem;
-}
-.project-list-card:hover .project-list-card-info-year {
-    font-weight: 600;
-}
-
-/* -------------------------------------------------------------------------- */
-.project-list-card-info-platform {
-    font-weight: 400;
-    font-size: 90%;
-}
-.project-list-card:hover .project-list-card-info-platform {
-    font-weight: 600;
+.project-list-card-info-right-container {
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0.8;
 }
 
 
-/*----------------------------------------------------------------------------*/
-/*                                                                            */
-/* Projects Page                                                              */
-/*                                                                            */
-/*----------------------------------------------------------------------------*/
-.projects ul {
-    margin: 0;
-    padding: 0 auto;
-}
-
-.projects li > span {
-    display: inline-block;
-    /* background-color: #c83456; */
-    min-width: 120px;
-}
-.projects li > a {
-    margin-right: 0.5rem;
-}
 
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -330,76 +191,23 @@ h2 {
     width:  100%;
     height:  60vh;
     display: block;
-    border-radius: var(--item-border-radius);
+    border-radius: 1rem;
 }
 
-.project-detail-personal-game-img {
-    background-color: rgba(0, 0, 0, 0.032);
-
-    /* width:  100%; */
-    height:  60vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: var(--item-border-radius);
-}
-
-/*----------------------------------------------------------------------------*/
-.project-details header {
-    display: flex;
-    margin: 0.75rem 0;
-    justify-content: space-between;
+.project-detail-header {
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
     align-items: center;
-
-}
-
-/*----------------------------------------------------------------------------*/
-.project-details section {
-    padding: 0rem 2rem;
-}
-
-/*----------------------------------------------------------------------------*/
-.project-details .label-container{
-    display: flex;
-    gap: 1rem
 }
 
 
-/*----------------------------------------------------------------------------*/
 .project-detail-page-company-logo {
     /* height: 40px; */
     max-height: 40px;
     max-width:  150px;
 
 }
-/*----------------------------------------------------------------------------*/
-.project-details svg path {
-    fill: black;
-}
-
-/*----------------------------------------------------------------------------*/
-/* This is the bubbles that represents what i did */
-.project-details span {
-    background-color: #c83456;
-    color: white;
-    font-size: 0.9rem;
-    padding:     0.5rem;
-    border-radius: calc(var(--item-border-radius) * 0.7);
-}
-
-.project-details .js {
-    background-color: hsl(340, 42%, 34%);
-}
-.project-details .demolib {
-    background-color: hsl(340, 51%, 43%);
-}
-.project-details .csharp {
-    background-color: hsl(251, 23%, 23%);
-}
-.project-details .monogame {
-    background-color: hsl(251, 59%, 49%);
-}
-
 
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
@@ -407,33 +215,15 @@ h2 {
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------*/
-.grid-flow-container {    /* Container for Personal Games - better for mixed sizes */
-    display:        flex;
-    flex-direction: column;
-    gap:            var(--grid-gap);
-}
-
-.grid-flow-container .column {
-    display:        flex;
-    flex-direction: column;
-    gap:            var(--grid-gap);
-}
-
-
-/*----------------------------------------------------------------------------*/
 .grid-container {
     display: grid;
-    gap:     var(--grid-gap);
+    gap:     1.3rem;
 }
 
 /* For screens 600px and above */
 @media (min-width: 600px) {
-  /* CSS rules here */
-    .grid-flow-container {
-        flex-direction: row;
-    }
     .grid-container {
-        grid-template-columns: auto;
+        grid-template-columns: 1fr;
         /* background-color: red; */
         align-items: stretch;
     }
@@ -442,7 +232,7 @@ h2 {
 /* For screens 800px and above */
 @media (min-width: 800px) {
     .grid-container {
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
         /* background-color: blue; */
         align-items: stretch;
     }
@@ -459,66 +249,4 @@ h2 {
         align-content:   space-between;
         align-items:     baseline;
     }
-}
-
-
-/* -------------------------------------------------------------------------- */
-/* Resume Page                                                                */
-/* -------------------------------------------------------------------------- */
-.resume iframe{
-    width:  100%;
-    height: 100vh;
-}
-
-/* -------------------------------------------------------------------------- */
-/* About Page                                                                 */
-/* -------------------------------------------------------------------------- */
-.about .looking-for-resume {
-    background-color: #e3e3e3;
-    display:     block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-
-    /* margin-left: 2rem; */
-    padding: 0.5rem;
-}
-
-.about .header-img {
-    width: 100%;
-    height:388px;
-    border-radius: var(--item-border-radius);
-
-    object-fit: cover;
-}
-
-.about h2 {
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-.about-section-text {
-    margin-top:    0.5rem;
-    margin-bottom: 2rem;
-}
-.about section {
-    /* background-color: #c83456; */
-}
-
-
-
-
-
-.iframe-wrapper {
-    width: 500px;
-    height: 300px;
-  }
-
-  .iframe-wrapper iframe {
-    width: 100%;
-    height: 100%;
-  }
-
-
-.text-detail {
-    font-size: 85%;
 }

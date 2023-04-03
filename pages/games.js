@@ -4,9 +4,9 @@ import ProjectItemCard_ from '@/components/projects-list-page/project-item-card'
 export default function Games() {
   return (
     <>
-        <DefaultPage_ page="games">
+        <DefaultPage_ page="projects">
             <section>
-                <h1>Professional <span>Games</span></h1>
+                <h1 className="projects-section-title">Professional <span>Games</span></h1>
                 <div className='grid-container'>
                     <ProjectItemCard_ name='farcry6' />
                     <ProjectItemCard_ name='skull_and_bones' />
@@ -24,26 +24,20 @@ export default function Games() {
             </section>
 
             <section>
-                <h1>Personal <span>Games</span></h1>
-                <div className='grid-flow-container'>
-                    <div className='column'>
-                        <ProjectItemCard_ name='el_jamon_volador' />
-                        <ProjectItemCard_ name='simple_snake'     />
-                    </div>
-                    <div className='column'>
-                        <ProjectItemCard_ name='nuclear_rain' />
-                        <ProjectItemCard_ name='cosmic_intruders' />
-                        <ProjectItemCard_ name='the_mistral_report' />
-                    </div>
-                    <div className='column'>
-                        <ProjectItemCard_ name='color_grid' />
-                        <ProjectItemCard_ name='memory_amazing_cow' />
-                    </div>
+                <h1 className="projects-section-title">Personal <span>Games</span></h1>
+                <div className='grid-container'>
+                    <ProjectItemCard_ name='el_jamon_volador' />
+                    <ProjectItemCard_ name='simple_snake'     />
+                    <ProjectItemCard_ name='nuclear_rain' />
+                    <ProjectItemCard_ name='cosmic_intruders' />
+                    <ProjectItemCard_ name='the_mistral_report' />
+                    <ProjectItemCard_ name='color_grid' />
+                    <ProjectItemCard_ name='memory_amazing_cow' />
                 </div>
             </section>
 
             <section>
-                <h1>Very Old<span> Games</span></h1>
+                <h1 className="projects-section-title">Very Old<span> Games</span></h1>
                 <div className='grid-container'>
                     <ProjectItemCard_ name='bow_and_arrow' />
                     <ProjectItemCard_ name='kaboom' />
