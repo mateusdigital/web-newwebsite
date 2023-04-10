@@ -4,7 +4,6 @@ import Link_ from "../link";
 import ProjectTitle_ from "./project-title";
 
 export default function DemoPage_({info, children}) {
-
     const name = info.name;
     const tech = info.tech.join(", ");
     const year = info.year;
@@ -18,9 +17,12 @@ export default function DemoPage_({info, children}) {
                 <main className="project-details">
                     <ProjectPresentation_ info={info}/>
                     <ProjectTitle_ info={info}/>
-                    {children}
 
-                    <ul>
+                    <div className="project-detail-content">
+                        {children}
+                    </div>
+
+                    <ul className="project-detail-info-list">
                         <li><b>Tech:</b> {tech}</li>
                         <li><b>Year:</b> {year}</li>
                         <li><b>License:</b> {license}</li>
