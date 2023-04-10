@@ -40,11 +40,11 @@ export default function DefaultPage_({page, children}) {
                     <Link_ className="logo" href="/">mateus-earth</Link_>
                 </div>
                 <div className="top-nav-buttons-container">
-                    {/* <Link_ className="button" active={"games"    == page} href="/games">Games</Link_> */}
-                    {/* <Link_ className="button" active={"projects" == page} href="/projects">Projects</Link_> */}
-                    {/* <Link_ className="button" active={"blog"     == page} href="/blog">Blog</Link_> */}
-                    {/* <Link_ className="button" active={"resume"   == page} href="/resume">Resume</Link_> */}
-                    {/* <Link_ className="button" active={"about"    == page} href="/about" >About</Link_> */}
+                    <Link_ className="button" active={"games"    == page} href="/games">Games</Link_>
+                    <Link_ className="button" active={"projects" == page} href="/projects">Projects</Link_>
+                    <Link_ className="button" active={"blog"     == page} href="/blog">Blog</Link_>
+                    <Link_ className="button" active={"resume"   == page} href="/resume">Resume</Link_>
+                    <Link_ className="button" active={"about"    == page} href="/about" >About</Link_>
 
                     <Link_ className="hamburger" href="">☰</Link_>
                 </div>
