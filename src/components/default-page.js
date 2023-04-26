@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Script from "next/script";
 import NavBar_ from "./nav-bar";
 
-import Link_ from "@/components/link";
 
 export default function DefaultPage_({ title, page_id, children }) {
   return (
@@ -10,7 +8,7 @@ export default function DefaultPage_({ title, page_id, children }) {
       {/* ------------------------------------------------------------ */}
       <Head>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="/css/default.css"/>
 
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -26,23 +24,15 @@ export default function DefaultPage_({ title, page_id, children }) {
         <meta name="author" content="mateus-earth" />
         <meta name="description" content="Mateus Mesquita is a game programmer living in Kyiv." />
 
-        {/* @todo: Add title */}
         <title>{title}</title>
-
-        <Script src="/src/main.js" defer />
       </Head>
-
 
       <NavBar_ page_id={page_id}/>
 
-      
-
-      {/* ------------------------------------------------------------ */}
-      <main className={page_id}>
+      <main>
         {children}
       </main>
 
-      {/* ------------------------------------------------------------ */}
       <div className="footer">
         <span className="footer-copyright">Made with love - mateus-earth MMXXIII</span>
       </div>
