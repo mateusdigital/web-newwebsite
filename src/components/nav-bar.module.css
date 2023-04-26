@@ -1,0 +1,49 @@
+
+/* -------------------------------------------------------------------------- */
+.topNav {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.topNav > * { 
+    /* outline: saddlebrown solid 1px; */
+}
+
+.topNavLogoContainer {
+    display: inline-block;
+}
+
+.topNavButtonsContainer {
+    display: flex;
+    /* background-color: aquamarine; */
+    gap: 0.5rem
+
+    /* display: grid;
+    grid-gap: 1.2rem;
+    grid-auto-flow: column; */
+}
+
+
+.topNavButtonsContainer > * {
+    outline: saddlebrown solid 1px;
+}
+
+.topNavButtonsContainer a { 
+    /* background-color: aqua; */
+    padding: 0 0.3rem;
+}
+
+
+@media (max-width: 600px) {
+    .button span {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) { 
+    .button i { 
+        display: none;
+    }
+}
+
+
