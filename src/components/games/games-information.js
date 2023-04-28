@@ -145,7 +145,7 @@ function GamesInformation_(name) {
         {
             name:    "skull_and_bones",
             title:   "Skull & Bones",
-            year:    "2022",
+            year:    "2021",
             platform: ["PC", "XBOX", "PLAYSTATION"],
 
             type:    "professional",
