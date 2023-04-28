@@ -9,14 +9,18 @@
 }
 
 :root { 
-    --background-color: #050505;
+    --background-color:       hsl(0, 0%, 2%);
+    --background-color-light: hsl(0, 0%, 5%);
+    --background-color-light: hsl(0, 0%, 15%);
     
     
-    --text-color-dark:            #8b8d8f;
-    --text-color-base:            #BBBBBB;
-    --text-color-highlight:       #e5e7eb;
-    --text-color-highlight-extra: #FFFFFF;
+    --text-color-dark:            hsl(0,  2%, 50%);
+    --text-color-base:            hsl(0,  0%, 70%);
+    --text-color-highlight:       hsl(0,  0%, 90%);
+    --text-color-highlight-extra: hsl(0,  0%, 100%);
 
+
+    --small-border-radius: 0.3rem;
 
     /* --text-color-dark:            red;
     --text-color-base:            green;
@@ -47,6 +51,25 @@ main {
 
 h1 { 
     color: var(--text-color-highlight);
+
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight:   600;
+    margin: 1rem 0 0.75rem;
+}
+
+h1::before {
+    content: "\25A0";   /* That square */
+    font-size: 80%;
+    margin-right: 0.75rem;
+    opacity: 0.85;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 span {
+    font-weight: 100;
+    opacity: 0.85;
 }
 
 p { 
@@ -71,7 +94,15 @@ a:hover{
     color: var(--text-color-highlight-extra);
 }
 
+hr { 
+    border-color: var(--background-color-light);
+    /* margin-bottom: 1rem; */
+}
 
+section { 
+    /* background-color: red; */
+    margin-bottom: 1.5rem;
+}
 
 /* -------------------------------------------------------------------------- */
 /*  Navigation Bar                                                            */
@@ -136,3 +167,28 @@ a.topNavButtonActive  {
 }
 
 
+/* -------------------------------------------------------------------------- */
+/*  Navigation Bar                                                            */
+/* -------------------------------------------------------------------------- */
+
+.aboutPageLookingForResume {
+    background-color: var(--background-color-light);
+    display:     block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: var(--small-border-radius);
+    padding: 0.5rem;
+    
+}
+
+.aboutPageHeaderImage {
+    width: 100%;
+    height:388px;
+    border-radius: var(--item-border-radius);
+
+    margin-top: 1rem;
+    object-fit: cover;
+
+    border-radius: var(--small-border-radius);
+}

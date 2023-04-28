@@ -15,7 +15,7 @@ export default function Index() {
         </div>
 
         <h1>Mateus Mesquita</h1>
-        <div className={styles.indexContent}>
+        <section>
           <p>
             Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently living in my hometown, <Link_ href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link_> with my family.
           </p>
@@ -65,7 +65,7 @@ export default function Index() {
             It's nice to see you here! <br />
             I hope that you enjoy ;D
           </p>
-        </div>
+        </section>
 
       </DefaultPage_>
     </>

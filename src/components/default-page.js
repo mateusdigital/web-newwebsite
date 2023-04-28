@@ -29,7 +29,7 @@ export default function DefaultPage_({ title, page_id, children }) {
 
       <NavBar_ page_id={page_id}/>
 
-      <main>
+      <main className={page_id}>
         {children}
       </main>
 
