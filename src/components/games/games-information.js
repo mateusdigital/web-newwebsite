@@ -1,3 +1,35 @@
+function make_platform_icons(platforms) { 
+    const icons = [];
+    for(let i = 0; i < platforms.length; ++i) { 
+        const platform = platforms[i].trim().toLowerCase();
+
+
+        if(platform == "xbox") { 
+            icons.push('<i class="fab fa-xbox"></i>');
+        } else if(platform == "playstation") {
+            icons.push('<i class="fab fa-playstation"></i>');
+        } else if(platform == "pc") { 
+            icons.push('<i class="fas fa-desktop"></i>');
+        } else if(platform == "steam") { 
+            icons.push('<i class="fab fa-steam">');
+        } else if(platform == "mobile") { 
+            icons.push('<i class="fas fa-mobile-alt"></i>');
+        } else if(platform == "web") { 
+            icons.push('<i class="fas fa-code">');        
+        } else if(platform == "game boy") { 
+            icons.push('<i class="fab fa-gg"></i>');        
+        } else if(platform == "dlc") { 
+            icons.push('<i class="fas fa-file-download"></i>');
+        } else if(platform == "middleware") { 
+            icons.push('<i class="fas fa-cogs"></i>');
+        }
+        else { 
+            debugger;
+        }
+    }
+    return icons;
+}
+
 function GamesInformation_(name) {
     const list = [
         {
@@ -114,7 +146,7 @@ function GamesInformation_(name) {
             name:    "skull_and_bones",
             title:   "Skull & Bones",
             year:    "2022",
-            platform: ["PC", "XB", "PS", "Luna" ],
+            platform: ["PC", "XBOX", "PLAYSTATION"],
 
             type:    "professional",
             company: "Ubisoft",
@@ -200,7 +232,7 @@ function GamesInformation_(name) {
             name:     "killers_and_thieves",
             title:    "Killers and Thieves",
             year:     "2017",
-            platform: ["PC" ],
+            platform: ["STEAM" ],
 
             type:    "professional",
             company: "Firehorse",
@@ -306,7 +338,6 @@ function GamesInformation_(name) {
             tech:     ["Pygame", "python"],
         },
 
-
         ////////////////////////////////////////////////////////////////////////
         { type: "demo", name:"roses"       , title:"Roses"        , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
         { type: "demo", name:"flowfield"   , title:"Flowfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
@@ -318,6 +349,11 @@ function GamesInformation_(name) {
         { type: "demo", name:"metaballs"   , title:"Metaballs"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
         { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
     ];
+
+    for(let i = 0; i < list.length; ++i) { 
+        const item = list[i];
+        item.platform_icons = make_platform_icons(item.platform)
+    }
 
     if(!name) {
         return list;

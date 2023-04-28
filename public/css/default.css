@@ -6,23 +6,28 @@
 *::after { 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
 }
 
 :root { 
-    --background-color:       hsl(0, 0%, 2%);
-    --background-color-light: hsl(0, 0%, 5%);
+    --background-color:           hsl(0, 0%, 2%);
+    --background-color-alpha-7:  hsla(0, 0%, 2%, 0.7);
+
     --background-color-light: hsl(0, 0%, 15%);
+    
     
     
     --text-color-dark:            hsl(0,  2%, 50%);
     --text-color-base:            hsl(0,  0%, 70%);
     --text-color-highlight:       hsl(0,  0%, 90%);
     --text-color-highlight-extra: hsl(0,  0%, 100%);
-
+    
+    
 
     --small-border-radius: 0.3rem;
-
-    /* --text-color-dark:            red;
+/* 
+    --text-color-dark:            red;
     --text-color-base:            green;
     --text-color-highlight:       blue;
     --text-color-highlight-extra: yellow; */
@@ -42,7 +47,7 @@ body {
     background-color: var(--background-color);
     color:            var(--text-color-base);
 
-    max-width: 1000px;    
+    max-width: 1200px;    
 }
 
 main { 
@@ -168,7 +173,7 @@ a.topNavButtonActive  {
 
 
 /* -------------------------------------------------------------------------- */
-/*  Navigation Bar                                                            */
+/*  About Page                                                                */
 /* -------------------------------------------------------------------------- */
 
 .aboutPageLookingForResume {
@@ -192,3 +197,72 @@ a.topNavButtonActive  {
 
     border-radius: var(--small-border-radius);
 }
+
+/* -------------------------------------------------------------------------- */
+/*  Projects Grid                                                             */
+/* -------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------------*/
+.projectsGridContainer {
+    display: grid;
+    gap:     1rem;
+    align-items: stretch;    
+}
+
+@media (min-width: 1000px) {
+    .projectsGridContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        justify-content: center;
+        align-content:   space-between;
+        align-items:     baseline;
+    }
+}
+
+.projectsGridCard {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.projectsGridCard img { 
+    max-width:  100%;
+    max-height: 100%;
+    border-radius: var(--small-border-radius);
+}
+
+
+.projectsGridCardInfo {
+    visibility:collapse;
+
+    position: absolute;
+    left:   0;
+    bottom: 1%;
+
+    display:         flex;
+    justify-content: space-between;
+
+    width:  100%;
+    border-bottom-left-radius:  var(--small-border-radius);
+    border-bottom-right-radius: var(--small-border-radius);
+
+    background-color: var(--background-color-alpha-7);    
+    color: var(--text-color-highlight-extra);
+
+    padding: 1rem;
+}
+
+.projectsGridCard:hover .projectsGridCardInfo {
+    visibility:visible;
+}
+
+.projectListCardInfoRightContainer {
+    display: flex;
+    gap:   0.5rem;        
+}
+
+.projectListCardInfoPlatform,
+.projectListCardInfoYear {
+    color: var(--text-color-base);
+}
+

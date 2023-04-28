@@ -12,9 +12,9 @@ export default function ProjectItemCard_({name}) {
 
     const title    = info.title;
     const year     = info.year;
-    const platform = info.platform.join( "|");
+    const platform = info.platform_icons.join(" ");
     const type     = info.type;
-
+    console.log(platform);
     const img_extension = (type == "demo") ? "gif" : "png";
 
     const details_page_url = `/projects/${name}`;
@@ -24,17 +24,18 @@ export default function ProjectItemCard_({name}) {
 
     return (
         <>
-            <div className="project-list-card">
+            <div className="projectsGridCard">
                 <Link_ href={details_page_url}>
                     <div>
                         <img src={img_path} alt={alt_text}/>
                     </div>
 
-                    <div className="project-list-card-info">
+                    <div className="projectsGridCardInfo">
+
                         <span className="project-list-card-info-title">{title}</span>
-                        <div className="project-list-card-info-right-container">
-                            <span className="project-list-card-info-platform">({platform})</span>
-                            <span className="project-list-card-info-year">{year}</span>
+                        <div className="projectListCardInfoRightContainer">
+                            <span className="projectListCardInfoPlatform" dangerouslySetInnerHTML={{__html: platform}} />
+                            <span className="projectListCardInfoYear">{year}</span>
                         </div>
                     </div>
                 </Link_>

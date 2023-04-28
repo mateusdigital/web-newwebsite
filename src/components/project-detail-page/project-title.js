@@ -4,7 +4,7 @@ export default function ProjectTitle_({info}) {
     return (
         <>
             <header className="project-detail-header">
-                <h1 className="projects-section-title">{title}</h1>
+                <h1>{title}</h1>
             </header>
         </>
     )

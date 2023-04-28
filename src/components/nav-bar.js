@@ -10,7 +10,7 @@ export default function NavBar_({ page_id }) {
         <div className="topNavButtonsContainer">
           <Link_ className={`topNavButton ${page_id == "games"    ? "topNavButtonActive" : ""}`}  href="/games"><i className="fas fa-gamepad"></i><span>Games</span></Link_>
           <Link_ className={`topNavButton ${page_id == "projects" ? "topNavButtonActive" : ""}`}  href="/projects"><i className="fas fa-project-diagram"></i><span>Projects</span></Link_>
-          <Link_ className={`topNavButton ${page_id == "blog"     ? "topNavButtonActive" : ""}`}  href="/blog"><i className="fas fa-blog"></i> <span>Blog</span></Link_>
+          <Link_ className={`topNavButton ${page_id == "contacts" ? "topNavButtonActive" : ""}`}  href="/contacts"><i className="fas fa-blog"></i> <span>Contacts</span></Link_>
           <Link_ className={`topNavButton ${page_id == "resume"   ? "topNavButtonActive" : ""}`}  href="/resume"><i className="fas fa-file-alt"></i> <span>Resume</span></Link_>
           <Link_ className={`topNavButton ${page_id == "about"    ? "topNavButtonActive" : ""}`}  href="/about"><i className="fas fa-user"></i> <span>About</span></Link_>
 

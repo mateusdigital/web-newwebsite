@@ -8,7 +8,7 @@ export default function ProjectTitleAndCompany_({info}) {
     return (
         <>
             <header className="project-detail-header">
-                <h1 className="projects-section-title">{title}</h1>
+                <h1>{title}</h1>
                 <img className="project-detail-page-company-logo" src={logo_src}></img>
             </header>
         </>

@@ -6,7 +6,7 @@ export default function Projects() {
       <>
         <DefaultPage_ page="projects">
             <section>
-                <h1 className="projects-section-title">Creative <span>Coding</span></h1>
+                <h1>Creative <span>Coding</span></h1>
                 <div className="grid-container">
                     <ProjectItemCard_ name="roses"       />
                     <ProjectItemCard_ name="flowfield"   />
@@ -21,7 +21,7 @@ export default function Projects() {
             </section>
 
             <section>
-                <h1 className="projects-section-title">FLOSS <span>Contributions</span></h1>
+                <h1>FLOSS <span>Contributions</span></h1>
                 <ul>
                     <li>
                         <span><a href="http://www.libreflix.org">libreflix</a>:</span>
@@ -42,7 +42,7 @@ export default function Projects() {
             </section>
 
             <section>
-                <h1 className="projects-section-title">Past <span>Work</span></h1>
+                <h1>Past <span>Work</span></h1>
 
                 <ul>
                     <span><b>Ginga.One</b></span>

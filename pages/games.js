@@ -6,8 +6,8 @@ export default function Games() {
     <>
         <DefaultPage_ page_id="games">
             <section>
-                <h1 className="projects-section-title">Professional <span>Games</span></h1>
-                <div className='grid-container'>
+                <h1>Professional <span>Games</span></h1>
+                <div className='projectsGridContainer'>
                     <ProjectItemCard_ name='farcry6' />
                     <ProjectItemCard_ name='skull_and_bones' />
                     <ProjectItemCard_ name='wot_blitz' />
@@ -24,7 +24,7 @@ export default function Games() {
             </section>
 
             <section>
-                <h1 className="projects-section-title">Personal <span>Games</span></h1>
+                <h1>Personal <span>Games</span></h1>
                 <div className='grid-container'>
                     <ProjectItemCard_ name='el_jamon_volador' />
                     <ProjectItemCard_ name='simple_snake'     />
@@ -37,7 +37,7 @@ export default function Games() {
             </section>
 
             <section>
-                <h1 className="projects-section-title">Very Old<span> Games</span></h1>
+                <h1>Very Old<span> Games</span></h1>
                 <div className='grid-container'>
                     <ProjectItemCard_ name='bow_and_arrow' />
                     <ProjectItemCard_ name='kaboom' />
