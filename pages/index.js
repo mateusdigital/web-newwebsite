@@ -26,10 +26,10 @@ export default function Index() {
 
           <p>
             I have worked at&nbsp;
-            <b>Ubisoft</b> <span className={styles.citySmallText}>(Kyiv)</span>,&nbsp;
-            <b>Wargaming</b> <span className={styles.citySmallText}>(Minsk)</span>,&nbsp;
-            <b>Miniclip</b> <span className={styles.citySmallText}>(Lisbon)</span>,&nbsp;
-            <b>Firehorse</b> <span className={styles.citySmallText}>(Sao Paulo)</span> and others, working in projects such&nbsp;
+            <b>Ubisoft</b> <span className="textDetail">(Kyiv)</span>,&nbsp;
+            <b>Wargaming</b> <span className="textDetail">(Minsk)</span>,&nbsp;
+            <b>Miniclip</b> <span className="textDetail">(Lisbon)</span>,&nbsp;
+            <b>Firehorse</b> <span className="textDetail">(Sao Paulo)</span> and others, working in projects such&nbsp;
             <Link_ href="">Skull and Bones</Link_>,&nbsp;
             <Link_ href="">Far Cry 6</Link_>,&nbsp;
             <Link_ href="">WoT Blitz</Link_>,&nbsp;
