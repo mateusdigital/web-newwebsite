@@ -25,20 +25,21 @@ export default function Games() {
 
             <section>
                 <h1>Personal <span>Games</span></h1>
-                <div className='grid-container'>
+                <div className='projectsGridContainer'>
                     <ProjectItemCard_ name='el_jamon_volador' />
-                    <ProjectItemCard_ name='simple_snake'     />
+                    <ProjectItemCard_ name='the_mistral_report' />
                     <ProjectItemCard_ name='nuclear_rain' />
                     <ProjectItemCard_ name='cosmic_intruders' />
-                    <ProjectItemCard_ name='the_mistral_report' />
-                    <ProjectItemCard_ name='color_grid' />
+                    <ProjectItemCard_ name='simple_snake'     />
+                    <ProjectItemCard_ name='cosmic_intruders' />
+                    <ProjectItemCard_ name='color_grid'/>
                     <ProjectItemCard_ name='memory_amazing_cow' />
                 </div>
             </section>
 
             <section>
                 <h1>Very Old<span> Games</span></h1>
-                <div className='grid-container'>
+                <div className='projectsGridContainer'>
                     <ProjectItemCard_ name='bow_and_arrow' />
                     <ProjectItemCard_ name='kaboom' />
                     <ProjectItemCard_ name='ram_it' />

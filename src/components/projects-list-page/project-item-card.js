@@ -32,7 +32,7 @@ export default function ProjectItemCard_({name}) {
 
                     <div className="projectsGridCardInfo">
 
-                        <span className="project-list-card-info-title">{title}</span>
+                        <span className="projectListCardInfoTitle">{title}</span>
                         <div className="projectListCardInfoRightContainer">
                             <span className="projectListCardInfoPlatform" dangerouslySetInnerHTML={{__html: platform}} />
                             <span className="projectListCardInfoYear">{year}</span>
