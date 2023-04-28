@@ -9,21 +9,19 @@ export default function Index() {
     <>
       <DefaultPage_ title="Welcome to Mateus Mesquita's homepage" page_id="index">
         <div className={styles.heroContainer}>
-
           <div className={styles.indexDemoContainer}>
             <img className={styles.indexDemo} src="/img/planet.png"></img>
           </div>
-
-          <h1>Mateus Mesquita</h1>
         </div>
 
+        <h1>Mateus Mesquita</h1>
         <div className={styles.indexContent}>
           <p>
-            Hello, my name is Mateus Mesquita, and I am a creative developer currently living in my hometown, <a href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</a> with my family.
+            Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently living in my hometown, <Link_ href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link_> with my family.
           </p>
 
           <p>
-            I'm enthusiastic about <b>FREE SOFTWARE</b> and <b>FREE CULTURE</b>.
+            I'm enthusiastic about <b>FREE SOFTWARE</b>, <b>FREE CULTURE</b> and <b>Accessibility</b>.
           </p>
 
           <p>
@@ -31,9 +29,7 @@ export default function Index() {
             <b>Ubisoft</b> <span className={styles.citySmallText}>(Kyiv)</span>,&nbsp;
             <b>Wargaming</b> <span className={styles.citySmallText}>(Minsk)</span>,&nbsp;
             <b>Miniclip</b> <span className={styles.citySmallText}>(Lisbon)</span>,&nbsp;
-            <b>Firehorse</b> <span className={styles.citySmallText}>(Sao Paulo)</span>&nbsp;
-
-            and others, working in projects such&nbsp;
+            <b>Firehorse</b> <span className={styles.citySmallText}>(Sao Paulo)</span> and others, working in projects such&nbsp;
             <Link_ href="">Skull and Bones</Link_>,&nbsp;
             <Link_ href="">Far Cry 6</Link_>,&nbsp;
             <Link_ href="">WoT Blitz</Link_>,&nbsp;
@@ -44,25 +40,25 @@ export default function Index() {
           </p>
 
           <p>
-            I love retro-programming and co-created <a href="/games/the_mistral_report.html">The Mistral Report</a> for MSDOS,
-            awarded at Retro Zaragozza 2018. Also I make some <Link_ href="">games</Link_> for the Nintendo Game Boy.
+            I love retro-programming and co-created <Link_ href="/games/the_mistral_report.html">The Mistral Report</Link_> for MSDOS,
+            awarded 🥇 at Retro Zaragozza 2018. Also I make some <Link_ href="">GAMES</Link_> for the Nintendo Game Boy.
           </p>
 
           <p>
-            Also I interested in <Link_ href="">creative-coding</Link_> and generative art. 
+            Also I'm interested in <Link_ href="">CREATIVE-CODING</Link_> and generative art. 
           </p>
 
           <p>
-            Well, there a lot of stuff that I'd made! <br />
-            If you want you can check all of them in the <a href="/games.html">GAMES</a>
-            or <a href="/projects.html">PROJECTS</a> section.
+            Well, there a lot of stuff that I've made! <br />
+            If you want you can check all of them in the <Link_ href="/games.html">GAMES</Link_> or <Link_ href="/projects.html">PROJECTS</Link_> section.
           </p>
 
           <p>
-            You can take a look at my <a href="/resume.html">RESUME</a>,
-            check my code at <a href="https://gitlab.com/stdmatt">gitlab</a>
-            find me at <a href="https://www.linkedin.com/in/stdmatt/">linkedin</a> or <a href="/contacts.html">contacts</a>
-            or perhaps read my <a href="/blog.html">blog</a>.
+            You can take a look at my <Link_ href="/resume.html">RESUME</Link_>,
+            check my code at <Link_ href="https://gitlab.com/stdmatt">GITHUB</Link_> connect with me 
+            at <Link_ href="https://www.linkedin.com/in/stdmatt/">Linkedin</Link_>, 
+            check my <Link_ href="/contacts.html">CONTACTS</Link_> or
+            perhaps read my <Link_ href="/blog.html">BLOG</Link_>.
           </p>
 
           <p>
