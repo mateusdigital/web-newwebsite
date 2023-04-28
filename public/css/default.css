@@ -16,9 +16,17 @@
     --text-color-base:            #BBBBBB;
     --text-color-highlight:       #e5e7eb;
     --text-color-highlight-extra: #FFFFFF;
-    
+
+
+    /* --text-color-dark:            red;
+    --text-color-base:            green;
+    --text-color-highlight:       blue;
+    --text-color-highlight-extra: yellow; */
 }
 
+/* -------------------------------------------------------------------------- */
+/*  General Selectors                                                         */
+/* -------------------------------------------------------------------------- */
 body {
     padding: 2rem 2rem;
     
@@ -108,21 +116,20 @@ a.topNavButtonActive  {
 }
 
 /* When screen is small reduce the gap of the buttons */
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .topNavButtonsContainer {
-        background-color: aqua;
         gap: 0.3rem;
     }
 }
 
 /* Controls the Label x Icons on the menu */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
     .topNavButton span {
         display: none;
     }
 }
 
-@media (min-width: 601px) { 
+@media (min-width: 641px) { 
     .topNavButton i { 
         display: none;
     }
