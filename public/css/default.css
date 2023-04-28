@@ -7,10 +7,15 @@
     margin: 0;
     padding: 0;
 }
+
 :root { 
     --background-color: #050505;
-    --text-color: #8b8d8f;
-    --text-color-highlight: #e5e7eb;
+    
+    
+    --text-color-dark:            #8b8d8f;
+    --text-color-base:            #BBBBBB;
+    --text-color-highlight:       #e5e7eb;
+    --text-color-highlight-extra: #FFFFFF;
     
 }
 
@@ -23,7 +28,7 @@ body {
     font-family: 'JetBrains Mono', monospace;
     
     background-color: var(--background-color);
-    color: var(--text-color);
+    color:            var(--text-color-base);
 
     max-width: 1000px;    
 }
@@ -38,9 +43,89 @@ h1 {
 
 p { 
     padding: 0.75rem 0rem;
-    color: #BBBBBB;
+    color: var(--text-color-base);
+    line-height: 150%;
 }
 
 b { 
     color: var(--text-color-highlight);
 }
+
+a {
+    text-decoration: var(--text-color-dark) dotted underline;
+    text-underline-offset: 0.3rem;
+    color: var(--text-color-highlight);
+}
+
+a:hover{ 
+    text-decoration: var(--text-color-base) solid underline;
+    text-underline-offset: 0.3rem;
+    color: var(--text-color-highlight-extra);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*  Navigation Bar                                                            */
+/* -------------------------------------------------------------------------- */
+.topNav {
+    display: flex;    
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+    border-bottom: #ffffff33 solid 1px;
+}
+
+/* The menu links */
+.topNav a { 
+    text-decoration: none;
+}
+
+/* mateus.digital text */
+.topNavLogoContainer a {
+    display: inline-block;
+    color: var(--text-color-highlight-extra);
+}
+
+.topNavButtonsContainer a { 
+    padding: 0 0.3rem; /* Make button larger horizontally */
+    color: var(--text-color-dark);
+}
+
+.topNavButtonsContainer a:hover { 
+    color: var(--text-color-highlight-extra);
+    text-decoration: var(--text-color-base) solid underline;
+}
+
+a.topNavButtonActive  { 
+    color: var(--text-color-base) ;
+    text-decoration: var(--text-color-dark) solid underline;
+}
+
+.topNavButtonsContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+/* When screen is small reduce the gap of the buttons */
+@media (max-width: 400px) {
+    .topNavButtonsContainer {
+        background-color: aqua;
+        gap: 0.3rem;
+    }
+}
+
+/* Controls the Label x Icons on the menu */
+@media (max-width: 600px) {
+    .topNavButton span {
+        display: none;
+    }
+}
+
+@media (min-width: 601px) { 
+    .topNavButton i { 
+        display: none;
+    }
+}
+
+

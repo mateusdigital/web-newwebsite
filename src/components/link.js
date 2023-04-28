@@ -11,13 +11,9 @@ export default function Link_({className, active, href, children}) {
         }
     }
 
-    const active_class_name = (active) ? "active" : "no-active";
-    const modified_class_name = `${className} ${active_class_name}`;
-
-
     return (
         <>
-            <Link className={modified_class_name} href={href}>{children}</Link>
+            <Link className={className} href={href}>{children}</Link>
         </>
     )
 }

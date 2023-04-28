@@ -2,11 +2,11 @@
     /* background-color: black; */
 }
 
-
 .heroContainer {
     margin-bottom: 1rem;
 }
 
+/* @todo: PLACEHOLDER */
 img.indexDemo {
     display: block;
     width: 100%;
@@ -25,11 +25,4 @@ img.indexDemo {
     opacity: 0.9;
 }
 
-.indexContent {
-    line-height: 150%;
-}
 
-.indexContent a {
-    text-decoration: var(--text-color) dotted underline;
-    color: var(--text-color-highlight);
-}

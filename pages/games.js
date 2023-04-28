@@ -4,7 +4,7 @@ import ProjectItemCard_ from '@/components/projects-list-page/project-item-card'
 export default function Games() {
   return (
     <>
-        <DefaultPage_ page="projects">
+        <DefaultPage_ page_id="games">
             <section>
                 <h1 className="projects-section-title">Professional <span>Games</span></h1>
                 <div className='grid-container'>
