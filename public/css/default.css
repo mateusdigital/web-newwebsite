@@ -330,3 +330,17 @@ svg {
     max-width: 10rem;
     fill: var(--text-color-base);
 }
+
+/* -------------------------------------------------------------------------- */
+/*  Contacts Page                                                             */
+/* -------------------------------------------------------------------------- */
+.contacts li { 
+    font-size: 150%;
+    list-style-type: none;
+    margin-left: 0rem;
+    padding: 0.2rem 0
+}
+
+.contacts i {
+    color: var(--text-color-highlight)
+}
