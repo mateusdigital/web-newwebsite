@@ -28,9 +28,7 @@ html, body {
 
     margin: 0;
     padding: 0;
-    background-color: rgb(18, 18, 18);
-
-    overflow: hidden; 
+    /* background-color: rgb(18, 18, 18); */
 }
 
 header {

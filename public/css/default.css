@@ -356,26 +356,30 @@ svg {
     width: 100%; 
     height: 100%; 
     overflow: hidden;
+    
+    background-color: blue;
 }
 
 .resumeIFrame {
+    --hgap:  5rem;
+    --hhgap: 10rem;
+
+    background-color: white;
+    margin:  0rem   10rem;    
+    padding: 1rem 0;
+    width:  calc(100% - 20rem);
+    height: calc(2158px + 2rem); 
     /* @HACK: Need fo find a way to make the iframe says the size that it wants
               and the container to expand itself to acommodate it. 
               We doing this cause we wanna avoid the scroll in the iframe itself.
               mateus - 29/04/23
     */
-
-    
-}
-
-iframe { 
     overflow: hidden;
     display: block;
     border: none;       
-    width: 100%;
 	overflow-y: hidden; 
     
     
-    height: 2158px; 
     border: none;
+    border-radius: var(--small-border-radius);
 }
