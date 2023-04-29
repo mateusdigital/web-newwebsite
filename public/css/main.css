@@ -108,21 +108,6 @@ main {
     border-radius: 1rem;
 }
 
-.project-detail-header {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.project-detail-page-company-logo {
-    /* height: 40px; */
-    margin-right: 0;
-
-    max-height: 40px;
-    max-width:  150px;
-}
-
 
 .project-detail-content {
     background-color: aqua;

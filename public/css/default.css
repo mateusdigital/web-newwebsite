@@ -110,6 +110,16 @@ section {
 }
 
 /* -------------------------------------------------------------------------- */
+/*  Projects Page                                                             */
+/* -------------------------------------------------------------------------- */
+li {
+    /* background-color: red; */
+    margin-left: 2rem;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
 /*  Custom Selectors                                                          */
 /* -------------------------------------------------------------------------- */
 .textDetail { 
@@ -290,18 +300,33 @@ a.topNavButtonActive  {
     color: var(--text-color-base);
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Projects Page                                                             */
-/* -------------------------------------------------------------------------- */
-.projects li {
-    /* background-color: red; */
-    margin-left: 2rem;
-}
-
 
 /* -------------------------------------------------------------------------- */
 /*  Project Detail Page                                                       */
 /* -------------------------------------------------------------------------- */
-.projectDetailPageCanvasContainer {
+.projectDetailPageCanvasContainer canvas, 
+.projectDetailPageCanvasContainer iframe {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 60vh;
+    display: block;
+    border-radius: var(--small-border-radius);
+}    
 
+.projectDetailPageTitleContainer {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectDetailPageCompanyLogo {
+    /* background-color: red; */
+}
+
+svg { 
+    height: 2.5rem;
+    max-height: 2.5rem;
+    max-width: 10rem;
+    fill: var(--text-color-base);
 }
