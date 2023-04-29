@@ -11,9 +11,8 @@ const root_dir   = path.dirname(script_dir);
 
 
 function git_clone(name, git_path) {
-    const user = "mateusdigital";
-
-    const git_url = `https://github.com/${user}/${name}`;
+    const git_user = "mateusdigital";
+    const git_url = `https://github.com/${git_user}/${name}`;
     const git_cmd = `git clone --recursive "${git_url}" "${git_path}"`;
 
     console.log(`[gitclone] ${git_url} ${git_path}`);
@@ -23,9 +22,10 @@ function git_clone(name, git_path) {
             console.error(`exec error: ${error}`);
             return;
         }
+    
         console.log(`---> Downloading ${name}`);
-        console.log(`stdout: ${stdout}`);
-        console.error(`stderr: ${stderr}`);
+        // console.log(`stdout: ${stdout}`);
+        // console.error(`stderr: ${stderr}`);
     });
 }
 
