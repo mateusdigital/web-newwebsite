@@ -48,8 +48,29 @@ body {
     color:            var(--text-color-base);
 
     max-width: 1200px;    
+    min-height: 100%; /* To make footer stick on the bottom */
 }
 
+.footer { 
+    height:2rem;
+    /* background-color: red; */
+    clear:both;
+    position:relative;
+    bottom:0;
+    width: 100%;
+
+    color: var(--text-color-dark);
+    text-align: center;
+}
+
+.footerCopyright {
+    display: block;
+}
+
+.footerCopyrightSmall {
+    display: block;
+    font-size: 80%;
+}
 main { 
     padding-top: 1rem;
 }

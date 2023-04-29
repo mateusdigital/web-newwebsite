@@ -8,7 +8,7 @@ export default function DefaultPage_({ title, page_id, children }) {
       {/* ------------------------------------------------------------ */}
       <Head>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="/css/default.css"/>
+        <link rel="stylesheet" href="/css/default.css" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -27,14 +27,18 @@ export default function DefaultPage_({ title, page_id, children }) {
         <title>{title}</title>
       </Head>
 
-      <NavBar_ page_id={page_id}/>
+      <NavBar_ page_id={page_id} />
 
       <main className={page_id}>
         {children}
       </main>
 
       <div className="footer">
-        <span className="footer-copyright">Made with love - mateus-earth MMXXIII</span>
+        <hr />
+        <p>
+          <span className="footerCopyright">Made with <i class="fa fa-heart"></i> by mateus.digital at MMXXIII - <i class="fas fa-tag"> v1.0.0</i></span>
+          <span className="footerCopyrightSmall">Licensed as GPLv3 (code) - CC-0 (data)</span>
+        </p>
       </div>
     </>
   )

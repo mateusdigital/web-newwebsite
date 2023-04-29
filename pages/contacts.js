@@ -22,6 +22,7 @@ export default function About() {
           <ul>
             <li><i class="far fa-envelope"></i> hi@mateus.digital </li>
             <li><i class="fas fa-phone"></i> +55 35 997 787 567</li>
+            <li><i class="fab fa-github"></i> <a href="https://github.com/mateusdigital">github.com/mateusdigital</a></li>
             <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mateus-earth">linkedin.com/in/mateus-earth</a></li>
           </ul>
         </section>
