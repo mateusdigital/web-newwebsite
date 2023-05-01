@@ -36,7 +36,7 @@ export default function DefaultPage_({ title, page_id, children }) {
       <div className="footer">
         <hr />
         <p>
-          <span className="footerCopyright">Made with <i class="fa fa-heart"></i> by mateus.digital at MMXXIII - <i class="fas fa-tag"> v1.0.0</i></span>
+          <span className="footerCopyright">Made with <i class="fa fa-heart"></i> by mateus.digital at MMXXIII</span>
           <span className="footerCopyrightSmall">Licensed as GPLv3 (code) - CC-0 (data)</span>
         </p>
       </div>

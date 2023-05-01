@@ -129,6 +129,8 @@ li {
   margin-right: auto;
 
   font-size: 1rem;
+  color: var(--text-color-highlight-extra);
+  animation: in-out-color 20s ease-in-out infinite;
 }
 
 /* Makes the font to be smaller and keep the ascii art inside  */
@@ -147,6 +149,18 @@ li {
 @media (min-width: 601px) {
   .indexAsciiArt {
     font-size: 0.9rem;
+  }
+}
+
+@keyframes in-out-color {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
   }
 }
 
@@ -246,6 +260,12 @@ a.topNavButtonActive {
     display: block;
     font-size: 80%;
 }
+
+/*  */
+.fa-heart {
+  color: #f24747;
+}
+
 
 /* -------------------------------------------------------------------------- */
 /*  About Page                                                                */
