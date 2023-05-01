@@ -349,10 +349,11 @@ a.topNavButtonActive {
     display: flex;
     justify-content: space-between;
 
-    width: 100%;
+    width: calc(100% - 2rem);
     border-bottom-left-radius: var(--small-border-radius);
     border-bottom-right-radius: var(--small-border-radius);
 
+    /* background-color: red;  */
     background-color: var(--background-color-alpha-7);
     color: var(--text-color-highlight-extra);
 
