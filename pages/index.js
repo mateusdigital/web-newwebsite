@@ -1,17 +1,38 @@
-
 import Link_ from "@/components/link";
 import DefaultPage_ from "@/components/default-page";
-import styles from './index.module.css';
 
+
+const ASCII_ART = [
+  "                                            ,o88888",
+  "                                       ,o8888888'",
+  "                 ,:o:o:oooo.        ,8O88Pd8888\"",
+  "             ,.::.::o:ooooOoOoO. ,oO8O8Pd888'\"",
+  "           ,.:.::o:ooOoOoOO8O8OOo.8OOPd8O8O\"",
+  "          , ..:.::o:ooOoOOOO8OOOOo.FdO8O8\"",
+  "         , ..:.::o:ooOoOO8O888O8O,COCOO\"",
+  "        , . ..:.::o:ooOoOOOO8OOOOCOCO\"",
+  "         . ..:.::o:ooOoOoOO8O8OCCCC\"o",
+  "            . ..:.::o:ooooOoCoCCC\"o:o",
+  "            . ..:.::o:o:,cooooCo\"oo:o:",
+  "         `   . . ..:.:cocoooo\"'o:o:::'",
+  "         .`   . ..::ccccoc\"'o:o:o:::'",
+  "        :.:.    ,c:cccc\"':.:.:.:.:.'",
+  "      ..:.:\"'`::::c:\"'..:.:.:.:.:.'",
+  "    ...:.'.:.::::\"'    . . . . .'",
+  "   .. . ....:.\"' `   .  . . ''",
+  " . . . ....\"'",
+  " .. . .\"'     -hrr-",
+  ".",
+].join("<br/>");
+
+const HTML_TEXT = `<pre>${ASCII_ART}</pre>`;
 
 export default function Index() {
   return (
     <>
       <DefaultPage_ title="Welcome to Mateus Mesquita's homepage" page_id="index">
-        <div className={styles.heroContainer}>
-          <div className={styles.indexDemoContainer}>
-            <img className={styles.indexDemo} src="/img/planet.png"></img>
-          </div>
+        <div className="indexAsciiArtContainer">
+          <pre className="indexAsciiArt" dangerouslySetInnerHTML={{ __html: ASCII_ART }}></pre>
         </div>
 
         <h1>Mateus Mesquita</h1>
@@ -45,7 +66,7 @@ export default function Index() {
           </p>
 
           <p>
-            Also I'm interested in <Link_ href="">CREATIVE-CODING</Link_> and generative art. 
+            Also I'm interested in <Link_ href="">CREATIVE-CODING</Link_> and generative art.
           </p>
 
           <p>
@@ -55,8 +76,8 @@ export default function Index() {
 
           <p>
             You can take a look at my <Link_ href="/resume.html">RESUME</Link_>,
-            check my code at <Link_ href="https://gitlab.com/stdmatt">GITHUB</Link_> connect with me 
-            at <Link_ href="https://www.linkedin.com/in/stdmatt/">Linkedin</Link_>, 
+            check my code at <Link_ href="https://gitlab.com/stdmatt">GITHUB</Link_> connect with me
+            at <Link_ href="https://www.linkedin.com/in/stdmatt/">Linkedin</Link_>,
             check my <Link_ href="/contacts.html">CONTACTS</Link_> or
             perhaps read my <Link_ href="/blog.html">BLOG</Link_>.
           </p>
