@@ -1,18 +1,29 @@
 
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import PersonalPage_ from "@/components/project-detail-page/personal-page";
+
 
 export default function Page() {
-    const info = GetProjectPageInfo()
-    return (
-        <>
-            <ProjectDetailPage_ info={info}>
-                <section>
-                    <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at similique labore sed rerum consequatur quaerat ut deserunt quisquam dicta.
-                    </p>
-                </section>
-            </ProjectDetailPage_>
-        </>
-    )
+  const info = GetProjectPageInfo()
+  return (
+    <>
+      <PersonalPage_ info={info}>
+        <section>
+          <p>
+            It is the studio's main game, Like a Boss is an Action RPG where
+            you are the epic Raid Boss at the end of a dungeon, crushing
+            players (the heroes) as they come to steal your treasures.
+          </p>
+          <p>
+            As an additional programmer, I was responsible for numerous code
+            refactoring, improvements, bug fixes, and other optimizations
+            that are typically not available to the main team.
+
+            I created custom <i>Editor Scripts</i> to ease some game development operations
+          </p>
+        </section>
+      </PersonalPage_>
+    </>
+  )
 }
+

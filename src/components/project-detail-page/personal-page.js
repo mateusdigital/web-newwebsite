@@ -4,7 +4,6 @@ import Link_ from "../link";
 import ProjectTitle_ from "./project-title";
 
 export default function PersonalPage_({info, children}) {
-
     const name = info.name;
     const tech = info.tech.join(", ");
     const year = info.year;

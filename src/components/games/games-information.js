@@ -17,7 +17,10 @@ function make_platform_icons(platforms) {
         } else if(platform == "web") { 
             icons.push('<i class="fas fa-code">');        
         } else if(platform == "game boy") { 
-            icons.push('<i class="fab fa-gg"></i>');        
+            // icons.push('<i class="fab fa-gg"></i>');
+            icons.push('<i class="fas fa-microchip"></i>');        
+        } else if(platform == "retro") { 
+            icons.push('<i class="fas fa-microchip"></i>');        
         } else if(platform == "dlc") { 
             icons.push('<i class="fas fa-file-download"></i>');
         } else if(platform == "middleware") { 
@@ -100,8 +103,9 @@ function GamesInformation_(name) {
             name:"the_mistral_report",
             title:"The Mistral Report",
             year:"2020",
-            platform: ["Web"],
             type:     "personal",
+            platform: ["RETRO"],
+            tech:     ["C++", "Emscripten, Javascript"],
 
             download: [
                 ["play-browser", "/modules/games/cosmic_intruders/website/index.html"],

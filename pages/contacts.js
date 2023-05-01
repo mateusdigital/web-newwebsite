@@ -1,8 +1,6 @@
-import AboutSection_ from "@/components/about/about-section";
 import DefaultPage_ from "@/components/default-page";
-import Link_ from "@/components/link";
 
-export default function About() {
+export default function Contacts() {
   return (
     <>
       <DefaultPage_ page_id="contacts">
