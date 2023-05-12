@@ -12,9 +12,10 @@ export default function Page() {
             It is played on a virtual pool table and allows players to compete against
             each other from around the world.
           </p>
+
           <p>
             It's the of Miniclip's main - 10 years on going - game, with the biggest team of 20+ programmers.
-            With an agile mindset, the 8 Ball Pool team heavily uses SCRUM in the day routines.
+            With an agile mindset, the 8 Ball Pool team heavily uses <i>SCRUM</i> in the day routines.
           </p>
           <p>
             The whole team is further divided into 3 smaller groups, which wwo of them are focused into active development,

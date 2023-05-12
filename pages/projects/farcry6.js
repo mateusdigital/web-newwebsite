@@ -9,10 +9,11 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            After working in Skull and Bones I went to help the release of LOST BETWEEN WORLDS DLC.
-
-            Bug fixing for <i>A11Y</i> components.
-            Worked with Ubisoft's Dunia engine and Phoenix UI.
+            After working in Skull and Bones I went to help the release of LOST BETWEEN WORLDS DLC. <br/>
+            I was primally doing bug busing for <i><b>A11Y</b></i> components. <br/>
+            </p>
+            <p> 
+            In this project I've worked with Ubisoft's <b>Dunia engine</b> and <b>Phoenix UI</b>.
           </p>
         </section>
       </ProfessionalPage_>
