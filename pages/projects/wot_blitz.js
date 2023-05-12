@@ -9,16 +9,13 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            It is the studio's main game, Like a Boss is an Action RPG where
-            you are the epic Raid Boss at the end of a dungeon, crushing
-            players (the heroes) as they come to steal your treasures.
+            I went to Minsk, Belarus to join the World of Tanks - Blitz team in 2019.
           </p>
+          
           <p>
-            As an additional programmer, I was responsible for numerous code
-            refactoring, improvements, bug fixes, and other optimizations
-            that are typically not available to the main team.
-
-            I created custom <i>Editor Scripts</i> to ease some game development operations
+            Working with Unreal Engine 4, I was responsible for the implementation of UI 
+            using UE4 UMG system and also have worked in game play elements for the new 
+            game modes.
           </p>
         </section>
       </ProfessionalPage_>
