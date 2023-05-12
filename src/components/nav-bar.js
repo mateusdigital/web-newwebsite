@@ -15,7 +15,7 @@ export default function NavBar_({ page_id }) {
           <Link_ className={`topNavButton ${page_id == "about"    ? "topNavButtonActive" : ""}`}  href="/about"><i className="fas fa-user"></i> <span>About</span></Link_>
 
           {/* @todo as fa-caret-down, fa-chevron-down, and fa-angle-down.  */}
-          <Link_ className="hamburger" href=""><i className="fas fa-bars"></i></Link_>
+          {/* <Link_ className="hamburger" href=""><i className="fas fa-bars"></i></Link_> */}
         </div>
       </nav>
     </>
