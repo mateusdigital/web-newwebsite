@@ -1,19 +1,9 @@
 #!/usr/bin/env bash
 
-readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
-readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
+readonly curr_build=$(cat pages/index.js | grep "// build:" | cut -d" " -f3); 
+readonly next_build=$((curr_build + 1)); 
 
-readonly OUT_DIR="${ROOT_DIR}/out";
-readonly PUBLISH_DIR="${HOME}/github_out";
+cat pages/index.js | sed s/"build: $curr_build"/"build: $next_build"/g \
+    > pages/index.js.tmp; 
 
-if [ ! -d "$PUBLISH_DIR" ]; then 
-    git clone git@github.com:mateusdigital/mateusdigital.github.io.git "$PUBLISH_DIR";
-else 
-    cd "$PUBLISH_DIR";
-    git pull --force;
-    cd "$ROOT_DIR";
-fi;
-
-npm run export;
-rsync -av --update "$OUT_DIR" "$PUBLISH_DIR";
-
+mv pages/index.js.tmp pages/index.js

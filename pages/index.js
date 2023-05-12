@@ -1,6 +1,8 @@
+const version = "1.0.0";
+const build = 1;
+
 import Link_ from "@/components/link";
 import DefaultPage_ from "@/components/default-page";
-
 
 const ASCII_ART = [
   "                                            ,o88888",
@@ -21,7 +23,7 @@ const ASCII_ART = [
   "    ...:.'.:.::::\"'    . . . . .'",
   "   .. . ....:.\"' `   .  . . ''",
   " . . . ....\"'",
-  " .. . .\"'     -hrr-",
+  " .. . .\"'     -hrr-" + `${version} - ${build}`,
   ".",
 ].join("<br/>");
 
@@ -32,7 +34,7 @@ export default function Index() {
     <>
       <DefaultPage_ title="Welcome to Mateus Mesquita's homepage" page_id="index">
         <div className="indexAsciiArtContainer">
-          <pre className="indexAsciiArt" dangerouslySetInnerHTML={{ __html: ASCII_ART }}></pre>
+          <pre className="indexAsciiArt" dangerouslySetInnerHTML={{ __html: HTML_TEXT }}></pre>
         </div>
 
         <h1>Mateus Mesquita</h1>
