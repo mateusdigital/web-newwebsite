@@ -38,7 +38,9 @@ export default function Index() {
         <h1>Mateus Mesquita</h1>
         <section>
           <p>
-            Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently living in my hometown, <Link_ href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link_> with my family.
+            Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently 
+            living in my hometown, <Link_ href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link_> with 
+            my family.
           </p>
 
           <p>
@@ -51,35 +53,36 @@ export default function Index() {
             <b>Wargaming</b> <span className="textDetail">(Minsk)</span>,&nbsp;
             <b>Miniclip</b> <span className="textDetail">(Lisbon)</span>,&nbsp;
             <b>Firehorse</b> <span className="textDetail">(Sao Paulo)</span> and others, working in projects such&nbsp;
-            <Link_ href="">Skull and Bones</Link_>,&nbsp;
-            <Link_ href="">Far Cry 6</Link_>,&nbsp;
-            <Link_ href="">WoT Blitz</Link_>,&nbsp;
-            <Link_ href="">pacman.io</Link_>,&nbsp;
-            <Link_ href="">8 Ball Pool</Link_>,&nbsp;
-            <Link_ href="">The Banner Saga</Link_>,&nbsp;
-            <Link_ href="">Killers and Thieves</Link_> and more...
+            <Link_ href="/projects/skull_and_bones">Skull and Bones</Link_>,&nbsp;
+            <Link_ href="/projects/farcry6">Far Cry 6</Link_>,&nbsp;
+            <Link_ href="/projects/wot_blitz">WoT Blitz</Link_>,&nbsp;
+            <Link_ href="/projects/pacman_io">pacman.io</Link_>,&nbsp;
+            <Link_ href="/projects/8_ball_pool">8 Ball Pool</Link_>,&nbsp;
+            <Link_ href="/projects/the_banner_saga">The Banner Saga</Link_>,&nbsp;
+            <Link_ href="/projects/killers_and_thieves">Killers and Thieves</Link_> and more...
           </p>
 
           <p>
-            I love retro-programming and co-created <Link_ href="/games/the_mistral_report.html">The Mistral Report</Link_> for MSDOS,
-            awarded 🥇 at Retro Zaragozza 2018. Also I make some <Link_ href="">GAMES</Link_> for the Nintendo Game Boy.
+            I love retro-programming and co-created <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> for MSDOS,
+            awarded 🥇 at Retro Zaragozza 2018. <br/>
+            Also I make some <Link_ href="/projects/el_jamon_volador">GAMES</Link_> for the Nintendo Game Boy.
           </p>
 
           <p>
-            Also I'm interested in <Link_ href="">CREATIVE-CODING</Link_> and generative art.
+            Also I'm interested in <Link_ href="/projects">CREATIVE-CODING</Link_> and generative art.
           </p>
 
           <p>
             Well, there a lot of stuff that I've made! <br />
-            If you want you can check all of them in the <Link_ href="/games.html">GAMES</Link_> or <Link_ href="/projects.html">PROJECTS</Link_> section.
+            If you want you can check all of them in the <Link_ href="/games">GAMES</Link_> or <Link_ href="/projects">PROJECTS</Link_> section.
           </p>
 
           <p>
-            You can take a look at my <Link_ href="/resume.html">RESUME</Link_>,
-            check my code at <Link_ href="https://gitlab.com/stdmatt">GITHUB</Link_> connect with me
-            at <Link_ href="https://www.linkedin.com/in/stdmatt/">Linkedin</Link_>,
-            check my <Link_ href="/contacts.html">CONTACTS</Link_> or
-            perhaps read my <Link_ href="/blog.html">BLOG</Link_>.
+            You can take a look at my <Link_ href="/resume">RESUME</Link_>,
+            check my code at <Link_ href="https://github.com/mateusdigital">GITHUB</Link_> connect with me
+            at <Link_ href="https://www.linkedin.com/in/mateusdigital/">Linkedin</Link_>,
+            check my <Link_ href="/contacts">CONTACTS</Link_> or
+            perhaps read my <Link_ href="/blog">BLOG</Link_>.
           </p>
 
           <p>
