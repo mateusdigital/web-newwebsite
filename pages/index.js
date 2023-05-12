@@ -1,5 +1,5 @@
 const version = "1.0.0";
-const build = 4;
+const build = 5;
 
 import Link_ from "@/components/link";
 import DefaultPage_ from "@/components/default-page";
