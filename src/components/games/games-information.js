@@ -11,11 +11,11 @@ function make_platform_icons(platforms) {
         } else if(platform == "pc") { 
             icons.push('<i class="fas fa-desktop"></i>');
         } else if(platform == "steam") { 
-            icons.push('<i class="fab fa-steam">');
+            icons.push('<i class="fab fa-steam"></i>');
         } else if(platform == "mobile") { 
             icons.push('<i class="fas fa-mobile-alt"></i>');
         } else if(platform == "web") { 
-            icons.push('<i class="fas fa-code">');        
+            icons.push('<i class="fas fa-code"></i>');        
         } else if(platform == "game boy") { 
             // icons.push('<i class="fab fa-gg"></i>');
             icons.push('<i class="fas fa-microchip"></i>');        
