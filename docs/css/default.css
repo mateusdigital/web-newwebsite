@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --background-color: hsl(0, 0%, 2%);
+    --background-color-alpha-7: hsla(0, 0%, 2%, 0.7);
+
+    --background-color-light: hsl(0, 0%, 15%);
+
+
+
+    --text-color-dark: hsl(0, 2%, 50%);
+    --text-color-base: hsl(0, 0%, 70%);
+    --text-color-highlight: hsl(0, 0%, 90%);
+    --text-color-highlight-extra: hsl(0, 0%, 100%);
+
+
+
+    --small-border-radius: 0.5rem;
+    /* 
+    --text-color-dark:            red;
+    --text-color-base:            green;
+    --text-color-highlight:       blue;
+    --text-color-highlight-extra: yellow; */
+}
+
+/* -------------------------------------------------------------------------- */
+/*  General Selectors                                                         */
+/* -------------------------------------------------------------------------- */
+body {
+    padding: 2rem 2rem;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: 'JetBrains Mono', monospace;
+
+    background-color: var(--background-color);
+    color: var(--text-color-base);
+
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    min-height: 100%;
+    /* To make footer stick on the bottom */
+    position: relative;
+}
+
+main {
+    padding-top: 1rem;
+}
+
+h1 {
+    color: var(--text-color-highlight);
+
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0 0.75rem;
+}
+
+h1::before {
+    content: "\25A0";
+    /* That square */
+    font-size: 80%;
+    margin-right: 0.75rem;
+    opacity: 0.85;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 span {
+    font-weight: 100;
+    opacity: 0.85;
+}
+
+p {
+    padding: 0.75rem 0rem;
+    color: var(--text-color-base);
+    line-height: 150%;
+}
+
+b {
+    color: var(--text-color-highlight);
+}
+
+a {
+    text-decoration: var(--text-color-dark) dotted underline;
+    text-underline-offset: 0.3rem;
+    color: var(--text-color-highlight);
+}
+
+a:hover {
+    text-decoration: var(--text-color-base) solid underline;
+    text-underline-offset: 0.3rem;
+    color: var(--text-color-highlight-extra);
+} 
+
+hr {
+    border-color: var(--background-color-light);
+    /* margin-bottom: 1rem; */
+}
+
+section {
+    /* background-color: red; */
+    margin-bottom: 1.5rem;
+}
+
+
+li {
+  margin-left: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Index Page                                                             */
+/* -------------------------------------------------------------------------- */
+.indexAsciiArtContainer {
+  display: grid;
+  padding: 2rem;
+}
+
+.indexAsciiArt {
+  margin-left:  auto;
+  margin-right: auto;
+
+  font-size: 1rem;
+  color: var(--text-color-highlight-extra);
+  animation: in-out-color 20s ease-in-out infinite;
+}
+
+/* Makes the font to be smaller and keep the ascii art inside  */
+@media (min-width: 301px) {
+  .indexAsciiArt {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 401px) {
+  .indexAsciiArt {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 601px) {
+  .indexAsciiArt {
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes in-out-color {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*  Custom Selectors                                                          */
+/* -------------------------------------------------------------------------- */
+.textDetail {
+    font-size: 85%;
+    opacity: 0.9;
+    /* background-color: red; */
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Navigation Bar                                                            */
+/* -------------------------------------------------------------------------- */
+.topNav {
+    display: flex;
+    justify-content: space-between;
+
+    padding-bottom: 1rem;
+    border-bottom: #ffffff33 solid 1px;
+}
+
+/* The menu links */
+.topNav a {
+    text-decoration: none;
+}
+
+/* mateus.digital text */
+.topNavLogoContainer a {
+    display: inline-block;
+    color: var(--text-color-highlight-extra);
+}
+
+.topNavButtonsContainer a {
+    padding: 0 0.3rem;
+    /* Make button larger horizontally */
+    color: var(--text-color-dark);
+}
+
+.topNavButtonsContainer a:hover {
+    color: var(--text-color-highlight-extra);
+    text-decoration: var(--text-color-base) solid underline;
+}
+
+a.topNavButtonActive {
+    color: var(--text-color-base);
+    text-decoration: var(--text-color-dark) solid underline;
+}
+
+.topNavButtonsContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+/* When screen is small reduce the gap of the buttons */
+@media (max-width: 450px) {
+    .topNavButtonsContainer {
+        gap: 0.3rem;
+    }
+}
+
+/* Controls the Label x Icons on the menu */
+@media (max-width: 640px) {
+    .topNavButton span {
+        display: none;
+    }
+}
+
+@media (min-width: 641px) {
+    .topNavButton i {
+        display: none;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Footer                                                                    */
+/* -------------------------------------------------------------------------- */
+.footer {
+    height: 2rem;
+    /* background-color: red; */
+    clear: both;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    color: var(--text-color-dark);
+    text-align: center;
+}
+
+.footerCopyright {
+    display: block;
+}
+
+.footerCopyrightSmall {
+    display: block;
+    font-size: 80%;
+}
+
+/*  */
+.fa-heart {
+  color: #f24747;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*  About Page                                                                */
+/* -------------------------------------------------------------------------- */
+.aboutPageLookingForResume {
+    background-color: var(--background-color-light);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: var(--small-border-radius);
+    padding: 0.5rem;
+
+}
+
+.aboutPageHeaderImage {
+    width: 100%;
+    height: 388px;
+    border-radius: var(--item-border-radius);
+
+    margin-top: 1rem;
+    object-fit: cover;
+
+    border-radius: var(--small-border-radius);
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Projects Grid                                                             */
+/* -------------------------------------------------------------------------- */
+.projectsGridContainer {
+    display: grid;
+    gap: 1rem;
+}
+
+
+@media (max-width: 600px) {
+    .projectsGridContainer {
+        /* background-color: red; */
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (min-width: 601px) {
+    .projectsGridContainer {
+        /* background-color: blue; */
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 801px) {
+    .projectsGridContainer {
+        /* background-color: green; */
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+.projectsGridCard {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.projectsGridCard img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: var(--small-border-radius);
+}
+
+
+.projectsGridCardInfo {
+    visibility: collapse;
+
+    position: absolute;
+    left: 0;
+    bottom: 1%;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: calc(100% - 0rem);
+    border-bottom-left-radius: var(--small-border-radius);
+    border-bottom-right-radius: var(--small-border-radius);
+
+    /* background-color: red;  */
+    background-color: var(--background-color-alpha-7);
+    color: var(--text-color-highlight-extra);
+
+    padding: 1rem;
+}
+
+.projectListCardInfoTitle {
+    font-weight: bold;
+}
+
+.projectsGridCard:hover .projectsGridCardInfo {
+    visibility: visible;
+}
+
+.projectListCardInfoRightContainer {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.projectListCardInfoPlatform,
+.projectListCardInfoYear {
+    color: var(--text-color-base);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*  Project Detail Page                                                       */
+/* -------------------------------------------------------------------------- */
+.projectDetailPageCanvasContainer canvas,
+.projectDetailPageCanvasContainer iframe {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 60vh;
+    display: block;
+    border-radius: var(--small-border-radius);
+}
+
+.projectDetailPageTitleContainer {
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectDetailPageCompanyLogo {
+    /* background-color: red; */
+}
+
+svg {
+    height: 2.5rem;
+    max-height: 2.5rem;
+    max-width: 10rem;
+    fill: var(--text-color-base);
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Contacts Page                                                             */
+/* -------------------------------------------------------------------------- */
+.contacts ul {
+    margin-top: 1rem;
+}
+
+.contacts li {
+    font-size: 150%;
+    list-style-type: none;
+    margin-left: 0rem;
+    padding: 0.2rem 0
+}
+
+.contacts i {
+    color: var(--text-color-highlight)
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Resume Page                                                               */
+/* -------------------------------------------------------------------------- */
+.resumeIFrameContainer {
+    width: min(840px, 100%);
+    height: 100%;
+    overflow: hidden;
+
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: blue; */
+}
+
+.resumeIFrame {
+    background-color: white;
+    padding: 1rem 1rem;
+    width: 100%;
+    height: calc(2208px + 3rem);
+
+    /* @HACK: Need fo find a way to make the iframe says the size that it wants
+              and the container to expand itself to acommodate it. 
+              We doing this cause we wanna avoid the scroll in the iframe itself.
+              mateus - 29/04/23
+    */
+    overflow: hidden;
+    display: block;
+    border: none;
+    border-radius: var(--small-border-radius);
+}
+
+@media (min-width: 840px) {
+    .resumeIFrame {
+        overflow: hidden;
+    }
+}

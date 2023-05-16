@@ -2,9 +2,10 @@ import Link from 'next/link'
 
 
 export default function Link_({className, active, href, children}) {
-    if (!href.endsWith('.html')) {
+
+    if (!href.endsWith('.html') && !href.startsWith("http")) {
         if (process.env.NODE_ENV === 'development') {
-            href = href; // + '.html'
+            href = href; 
         }
         else {
             href = href + '.html'
