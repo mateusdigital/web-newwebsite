@@ -343,6 +343,8 @@ function GamesInformation_(name) {
         },
 
         ////////////////////////////////////////////////////////////////////////
+        { type: "demo", name:"gameboy-css" , title:"Gameboy CSS"  , year:"2023", platform: ["Web"], tech: ["CSS"] },
+
         { type: "demo", name:"roses"       , title:"Roses"        , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
         { type: "demo", name:"flowfield"   , title:"Flowfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
         { type: "demo", name:"lissajous"   , title:"Lissajous"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
@@ -356,7 +358,7 @@ function GamesInformation_(name) {
 
     for(let i = 0; i < list.length; ++i) { 
         const item = list[i];
-        item.platform_icons = make_platform_icons(item.platform)
+        item.platform_icons = make_platform_icons(item.platform);
     }
 
     if(!name) {

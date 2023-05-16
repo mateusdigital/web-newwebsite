@@ -9,10 +9,11 @@ export default function DemoPage_({ info, children }) {
   const year = info.year;
 
   const license = "GPLv3";
-  const git_url = `https://github.com/mateus-earth/${name}`;
+  const git_url = `https://github.com/mateusdigital/${name}`;
+  
   return (
     <>
-      <DefaultPage_ page_id="games">
+      <DefaultPage_ page_id="projects">
         <section className="projectDetailPageContainer">
           <ProjectPresentation_ info={info} />
           <ProjectTitle_ info={info} />

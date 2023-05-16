@@ -1,22 +1,25 @@
 import DefaultPage_ from "@/components/default-page";
 import ProjectItemCard_ from '@/components/projects-list-page/project-item-card'
+import GamesInformation_ from "@/components/games/games-information";
 
 export default function Projects() {
+
+  const games_info = GamesInformation_();
+  
+  const projectCards = [];
+  for (let info of games_info) {
+    if (info.type === "demo") {
+      projectCards.push(<ProjectItemCard_ name={info.name} />);
+    }
+  }
+
   return (
     <>
       <DefaultPage_ page_id="projects">
         <section>
           <h1>Creative <span>Coding</span></h1>
           <div className='projectsGridContainer'>
-            <ProjectItemCard_ name="roses" />
-            <ProjectItemCard_ name="flowfield" />
-            <ProjectItemCard_ name="lissajous" />
-            <ProjectItemCard_ name="doom_fire" />
-            <ProjectItemCard_ name="game_of_life" />
-            <ProjectItemCard_ name="simple_tree" />
-            <ProjectItemCard_ name="simple_clock" />
-            <ProjectItemCard_ name="metaballs" />
-            <ProjectItemCard_ name="starfield" />
+            {projectCards}
           </div>
         </section>
 
