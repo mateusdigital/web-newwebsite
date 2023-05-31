@@ -5,33 +5,17 @@ readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
 
 pushd $ROOT_DIR;
 
-##
-##
-##
-
 readonly curr_build=$(cat pages/index.js | grep "const build = " | cut -d" " -f4 | tr -d ";"); 
-readonly next_build=$((curr_build + 1)); 
-
 echo "CURR BUILD: $curr_build";
-echo "NEXT BUILD: $next_build";
-
-cat pages/index.js | sed s/"const build = $curr_build"/"const build = $next_build"/g \
-    > pages/index.js.tmp; 
-
-mv pages/index.js.tmp pages/index.js
 
 ##
 ##
 ##
 
-npm run export;
-
-
-##
-##
-##
 readonly PUBLISH_DIR="mateusdigital.github.io/";
-mkdir -p "$PUBLISH_DIR";
-cp -R out/* "$PUBLISH_DIR";
+pushd "$PUBLISH_DIR";
+    git add .
+    git commit -m "$0 - Build: $curr_build";
+popd
 
 popd;

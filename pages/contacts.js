@@ -1,5 +1,12 @@
 import DefaultPage_ from "@/components/default-page";
 
+import EnvelopeIcon_ from "@/components/icons/envelop";
+import PhoneIcon_ from "@/components/icons/phone";
+import GithubIcon_ from "@/components/icons/github";
+import LinkedinIcon_ from "@/components/icons/linkedin";
+
+
+
 export default function Contacts() {
   return (
     <>
@@ -18,10 +25,10 @@ export default function Contacts() {
             Let's connect!
           </p>
           <ul>
-            <li><i class="far fa-envelope"></i> hello@mateus.digital </li>
-            <li><i class="fas fa-phone"></i> +55 35 997 787 567</li>
-            <li><i class="fab fa-github"></i> <a href="https://github.com/mateusdigital">github.com/mateusdigital</a></li>
-            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mateusdigital">linkedin.com/in/mateusdigital</a></li>
+            <li><EnvelopeIcon_/> hello@mateus.digital </li>
+            <li><PhoneIcon_/> +55 35 997 787 567</li>
+            <li><GithubIcon_/> <a href="https://github.com/mateusdigital">github.com/mateusdigital</a></li>
+            <li><LinkedinIcon_/> <a href="https://www.linkedin.com/in/mateusdigital">linkedin.com/in/mateusdigital</a></li>
           </ul>
         </section>
       </DefaultPage_>

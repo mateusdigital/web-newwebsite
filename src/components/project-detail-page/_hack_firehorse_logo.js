@@ -1,7 +1,7 @@
 export default function _HACK_UBISOFT_LOGO() {
   return (
     <>
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.000000 59.000000"
+      <svg className="projectDetailPageCompanyLogo" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 214.000000 59.000000"
         preserveAspectRatio="xMidYMid meet">
 
         <g transform="translate(0.000000,59.000000) scale(0.100000,-0.100000)" stroke="none">

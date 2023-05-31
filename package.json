@@ -7,8 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "scripts/publish.sh && next build && next export && cp -R out/* docs/"
+    "export": "next build && next export"
   },
+
   "dependencies": {
     "@next/font": "13.1.6",
     "next": "13.1.6",

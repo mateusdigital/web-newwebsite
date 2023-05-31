@@ -10,25 +10,25 @@ export default function ProjectTitleAndCompany_({ info }) {
   const logo_src = `/img/company-logos/.svg`;
 
   let item = null;
-  if(company == "ubisoft") { 
+  if(company == "ubisoft") {
       item = new _HACK_UBISOFT_LOGO();
-  } else if(company == "wargaming") { 
+  } else if(company == "wargaming") {
       item = new _HACK_WARGAMING_LOGO();
-  } else if(company == "miniclip") { 
+  } else if(company == "miniclip") {
       item = new _HACK_MINICLIP_LOGO();
-  }  else if(company == "firehorse") { 
+  }  else if(company == "firehorse") {
       item = new _HACK_FIREHORSE_LOGO();
-  } else { 
+  } else {
     debugger;
   }
-  
+
 
 
   return (
     <>
       <header className="projectDetailPageTitleContainer">
         <h1>{title}</h1>
-        <div className="projectDetailPageCompanyLogo">
+        <div className="projectDetailPageCompanyLogoContainer">
           {item}
         </div>
       </header>

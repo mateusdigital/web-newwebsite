@@ -18,12 +18,7 @@ export default function ProjectPresentation_({ info }) {
   // Demo
   else if (type == "demo") {    
     console.log(info.tech)
-    if(info.tech.indexOf("demolib") != -1) { 
-      top_element = DemoCanvas_({ name });
-    } 
-    else { 
-      top_element = DemoIframe_({ name });
-    }
+    top_element = DemoIframe_({ name });
   }
 
   // Personal / Old

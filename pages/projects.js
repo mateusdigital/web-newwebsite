@@ -6,6 +6,7 @@ export default function Projects() {
 
   const games_info = GamesInformation_();
   
+  // Build all the demo cards automatically.
   const projectCards = [];
   for (let info of games_info) {
     if (info.type === "demo") {
