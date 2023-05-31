@@ -165,6 +165,12 @@ svg.svgIcon {
 }
 
 /* Makes the font to be smaller and keep the ascii art inside  */
+@media (min-width: 250px) {
+    .indexAsciiArt {
+        font-size: 0.5rem;
+    }
+}
+
 @media (min-width: 301px) {
   .indexAsciiArt {
     font-size: 0.6rem;

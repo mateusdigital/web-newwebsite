@@ -23,7 +23,7 @@ const ASCII_ART = [
   "    ...:.'.:.::::\"'    . . . . .'",
   "   .. . ....:.\"' `   .  . . ''",
   " . . . ....\"'",
-  " .. . .\"'     -hrr-" + `${version} - ${build}`,
+  " .. . .\"'           " + `${version} - ${build}`,
   ".",
 ].join("<br/>");
 
@@ -40,8 +40,8 @@ export default function Index() {
         <h1>Mateus Mesquita</h1>
         <section>
           <p>
-            Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently 
-            living in my hometown, <Link_ href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link_> with 
+            Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently
+            living in my hometown, <Link_ href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link_> with
             my family.
           </p>
 
