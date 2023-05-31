@@ -1,32 +1,42 @@
-function make_platform_icons(platforms) { 
+import XboxIcon        from "@/components/icons/xbox";
+import PlaystationIcon from "@/components/icons/playstation";
+import PCIcon          from "@/components/icons/desktop-solid";
+import SteamIcon       from "@/components/icons/steam";
+import MobileIcon      from "@/components/icons/mobile-screen-solid";
+import WebIcon         from "@/components/icons/code-solid";
+import GameBoyIcon     from "@/components/icons/floppy-disk-solid";
+import RetroIcon       from "@/components/icons/floppy-disk-solid";
+import DLCIcon         from "@/components/icons/download-solid";
+import MiddlewareIcon  from "@/components/icons/puzzle-piece-solid";
+
+
+function make_platform_icons(platforms) {
     const icons = [];
-    for(let i = 0; i < platforms.length; ++i) { 
+    for(let i = 0; i < platforms.length; ++i) {
         const platform = platforms[i].trim().toLowerCase();
 
-
-        if(platform == "xbox") { 
-            icons.push('<i class="fab fa-xbox"></i>');
+        if(platform == "xbox") {
+            icons.push(<XboxIcon/>);
         } else if(platform == "playstation") {
-            icons.push('<i class="fab fa-playstation"></i>');
-        } else if(platform == "pc") { 
-            icons.push('<i class="fas fa-desktop"></i>');
-        } else if(platform == "steam") { 
-            icons.push('<i class="fab fa-steam"></i>');
-        } else if(platform == "mobile") { 
-            icons.push('<i class="fas fa-mobile-alt"></i>');
-        } else if(platform == "web") { 
-            icons.push('<i class="fas fa-code"></i>');        
-        } else if(platform == "game boy") { 
-            // icons.push('<i class="fab fa-gg"></i>');
-            icons.push('<i class="fas fa-microchip"></i>');        
-        } else if(platform == "retro") { 
-            icons.push('<i class="fas fa-microchip"></i>');        
-        } else if(platform == "dlc") { 
-            icons.push('<i class="fas fa-file-download"></i>');
-        } else if(platform == "middleware") { 
-            icons.push('<i class="fas fa-cogs"></i>');
+            icons.push(<PlaystationIcon/>);
+        } else if(platform == "pc") {
+            icons.push(<PCIcon/>);
+        } else if(platform == "steam") {
+            icons.push(<SteamIcon/>);
+        } else if(platform == "mobile") {
+            icons.push(<MobileIcon/>);
+        } else if(platform == "web") {
+            icons.push(<WebIcon/>);
+        } else if(platform == "game boy") {
+            icons.push(<GameBoyIcon/>);
+        } else if(platform == "retro") {
+            icons.push(<RetroIcon/>);
+        } else if(platform == "dlc") {
+            icons.push(<DLCIcon/>);
+        } else if(platform == "middleware") {
+            icons.push(<MiddlewareIcon/>);
         }
-        else { 
+        else {
             debugger;
         }
     }
@@ -88,7 +98,7 @@ function GamesInformation_(name) {
             title:    "Cosmic Intruders",
             year:     "2018",
             type:     "personal",
-            platform: ["Web"],
+            platform: ["PC", "Web", ],
             tech:     ["C++", "Emscripten, Javascript"],
 
             is_playable_on_canvas: true,
@@ -356,7 +366,7 @@ function GamesInformation_(name) {
         { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
     ];
 
-    for(let i = 0; i < list.length; ++i) { 
+    for(let i = 0; i < list.length; ++i) {
         const item = list[i];
         item.platform_icons = make_platform_icons(item.platform);
     }

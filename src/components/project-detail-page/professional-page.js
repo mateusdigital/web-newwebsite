@@ -8,9 +8,11 @@ export default function ProfessionalPage_({ info, children }) {
   const tech = info.tech.join(", ");
   const year = info.year;
   const platform_title = "Platform" + ((info.platform.length != 1) ? "s" : "");
+
   const platform_content = info.platform.map((element, index) => {
-    return " " + info.platform_icons[index] + " " + element;
-  }).join(", ");
+    const icon = info.platform_icons[index];
+    return <div>{icon} {element}</div>
+  })
 
   return (
     <>
@@ -27,7 +29,7 @@ export default function ProfessionalPage_({ info, children }) {
             <li><b>Year:</b> {year}</li>
             <li>
               <b>{platform_title}:</b>
-              <span dangerouslySetInnerHTML={{ __html: platform_content }}></span>
+              {platform_content}
             </li>
           </ul>
         </section>

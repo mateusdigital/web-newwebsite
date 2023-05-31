@@ -22,7 +22,7 @@ for svg_file in "$svg_directory"/*.svg; do
       echo "export default function Icon_() {" > "$js_file"
     echo "  return (" >> "$js_file"
     echo "    <>" >> "$js_file"
-    echo "      <svg className=\"navBarIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"${viewbox}\">" >> "$js_file"
+    echo "      <svg className=\"svgIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"${viewbox}\">" >> "$js_file"
     echo "        {/* <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --> */}" >> "$js_file"
     value=$(xmlstarlet sel -N svg="http://www.w3.org/2000/svg" -t -c "//svg:path" "$svg_file")
     echo "          $value" >> "$js_file"

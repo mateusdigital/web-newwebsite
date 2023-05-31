@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NavBar_ from "./nav-bar";
-
+import HeartIcon from "@/components/icons/heart-solid"
 
 export default function DefaultPage_({ title, page_id, children }) {
   return (
@@ -36,7 +36,7 @@ export default function DefaultPage_({ title, page_id, children }) {
       <div className="footer">
         <hr />
         <p>
-          <span className="footerCopyright">Made with <i class="fa fa-heart"></i> by mateus.digital at MMXXIII</span>
+          <span className="footerCopyright">Made with <HeartIcon className="heartIcon"/> by mateus.digital at MMXXIII</span>
           <span className="footerCopyrightSmall">Licensed as GPLv3 (code) - CC-0 (data)</span>
         </p>
       </div>
