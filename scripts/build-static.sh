@@ -10,42 +10,58 @@
 ##                 +                         +                                ##
 ##                      O      *        '       .                             ##
 ##                                                                            ##
-##  File      : deploy.sh                                                     ##
-##  Project   : flappy_gb                                                     ##
+##  File      : build.sh                                                      ##
+##  Project   : new-website                                                   ##
 ##  Date      : May 12, 2023                                                  ##
 ##  License   : GPLv3                                                         ##
 ##  Author    : mateus.digital <hello@mateus.digital>                         ##
 ##  Copyright : mateus.digital - 2023                                         ##
 ##                                                                            ##
 ##  Description :                                                             ##
-##   Deploys the output of scripts/build-static.sh to the remote server.      ##
-##   Current user should have remote ssh keys installed on the server.        ##
+##   Builds the static version of the website.                                ##
+##   The output should be valid to be deployed.                               ##
 ##---------------------------------------------------------------------------~##
 
-set -e; ## break on errors
-
-
-##
-##  Directories
-##
+set -e; ## break on errors.
 
 ##------------------------------------------------------------------------------
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
 
-readonly SOURCE_FOLDER="${ROOT_DIR}/out";
-readonly REMOTE_SERVER="mateus@mateus.digital";
-readonly REMOTE_FOLDER="/var/www/mateus.digital";
+pushd $ROOT_DIR; ## Do things based on the ROOT_DIR.
 
-readonly curr_build=$(                  \
-    cat "${ROOT_DIR}/pages/index.js" |  \
-    grep "const build = "            |  \
-    cut -d" " -f4 | tr -d ";"           \
-);
+
+##
+## Update the Build Number.
+##
+
+##------------------------------------------------------------------------------
+readonly curr_build=$(cat pages/index.js | grep "const build = " | cut -d" " -f4 | tr -d ";");
+readonly next_build=$((curr_build + 1));
 
 echo "==> CURR BUILD: $curr_build";
+echo "==> NEXT BUILD: $next_build";
 
-rsync -avz                                       \
-      --delete "${SOURCE_FOLDER}/"               \
-      -e ssh "${REMOTE_SERVER}:${REMOTE_FOLDER}" \
-    ;
+cat pages/index.js | sed s/"const build = $curr_build"/"const build = $next_build"/g \
+    > pages/index.js.tmp;
+
+mv pages/index.js.tmp pages/index.js
+
+
+##
+## Generate the static build.
+##
+
+##------------------------------------------------------------------------------
+npm run export;
+
+
+##
+## Finish up
+##
+
+##------------------------------------------------------------------------------
+echo "==> $0 done...";
+
+
+popd;
