@@ -38,11 +38,15 @@ pushd $ROOT_DIR; ## Do things based on the ROOT_DIR.
 ##------------------------------------------------------------------------------
 readonly curr_build=$(cat pages/index.js | grep "const build = " | cut -d" " -f4 | tr -d ";");
 readonly next_build=$((curr_build + 1));
+readonly curr_version="$(git describe --abbrev=0 --tags)";
 
 echo "==> CURR BUILD: $curr_build";
 echo "==> NEXT BUILD: $next_build";
+echo "==> VERSION:    $curr_version";
 
-cat pages/index.js | sed s/"const build = $curr_build"/"const build = $next_build"/g \
+cat pages/index.js                                                   | \
+    sed s/"const version = \".*\""/"const version = \"$curr_version\""/g | \
+    sed s/"const build = $curr_build"/"const build = $next_build"/g    \
     > pages/index.js.tmp;
 
 mv pages/index.js.tmp pages/index.js
