@@ -28,13 +28,13 @@ export default function Page() {
           </p>
           <p>
             I've had the opportunity to work in both of the situations, helping
-            with performance improvements and bug fixing and with the implementation
+            with <b>performance improvements</b> and bug fixing and with the implementation
             of the <b>Season Pass</b> feature.
           </p>
 
           <p>
-            Before join the mobile team, I have worked in the task-force porting the mobile client 
-            to the web using Emscripten.
+            Before join the mobile team, I have worked in the task-force porting the mobile client
+            to the web using <b>Emscripten</b>.
           </p>
         </section>
       </ProfessionalPage_>

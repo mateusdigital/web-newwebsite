@@ -14,15 +14,8 @@ export default function Page() {
           </p>
 
           <p>
-            Navigate the maze, collect pellets and power-ups, while avoiding ghosts.
-            Eat other players to gain points. <br />
-            It's a fast-paced, competitive twist on the nostalgic Pac-Man experience.
-          </p>
-
-          <p>
-            I've worked both in the client - using Emscripten - and the server side, implement features
-            and optimizations until the release of the game.
-          </p>
+            I've worked both in the client using <b>Emscripten</b> - and the server side, implement features
+            and optimizations until the release of the game. The nicest was some improvements to rendering routines, gaining ~36% (~30fps -  ~41fps).</p>
 
           <p>
             Also in this project I've the pleasure to work with <a href="https://hugojustcode.com/">Hugo Ferreira</a>,

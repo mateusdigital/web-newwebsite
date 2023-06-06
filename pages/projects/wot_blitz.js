@@ -11,10 +11,10 @@ export default function Page() {
           <p>
             I went to Minsk, Belarus to join the World of Tanks - Blitz team in 2019.
           </p>
-          
+
           <p>
-            Working with Unreal Engine 4, I was responsible for the implementation of UI 
-            using UE4 UMG system and also have worked in game play elements for the new 
+            Working with <b>Unreal Engine 4</b>, I was responsible for the implementation of UI
+            using <b>UE4 UMG</b> system and also have worked in game play elements for the, then, new
             game modes.
           </p>
         </section>

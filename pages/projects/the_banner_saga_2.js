@@ -39,7 +39,7 @@ export default function Page() {
                 <section>
                     This is one of the most beloved projects that I've worked, it helped to open
                     so many doors and gave me so nice opportunities.
-                    After this project I got the opportunity to make Stoic Studio's <Link_ href="/projects/killers_and_thives">Killers and Thieves</Link_>.
+                    After this project I got the opportunity to make Stoic Studio's <Link_ href="/projects/killers_and_thieves">Killers and Thieves</Link_>.
                 </section>
             </ProfessionalPage_>
         </>
