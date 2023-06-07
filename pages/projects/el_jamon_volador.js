@@ -49,6 +49,10 @@ export default function Page() {
               for the project, also I created the <Link_ href="/projects/gameboy-css">Game Boy Frame in CSS3</Link_>.
             </p>
 
+            <span className="textDetail">
+              * Thanks for <a href="https://montyontherun.itch.io/">Monty</a> for recording the video.
+            </span>
+
             <a className="button-call-to-play-online center"
               href="https://mateus.digital/el_jamon_volador">
               <PlayIcon></PlayIcon>

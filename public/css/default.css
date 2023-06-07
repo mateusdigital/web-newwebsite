@@ -218,7 +218,14 @@ svg.svgIcon {
 .center {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
+
+.right {
+    margin-right: 0;
+    text-align: right;
+}
+
 
 .button-call-to-play-online {
     border: var(--background-color-light) solid 2px;
