@@ -11,18 +11,17 @@
 }
 
 :root {
+    /* Background Colors */
     --background-color: hsl(0, 0%, 2%);
     --background-color-alpha-7: hsla(0, 0%, 2%, 0.7);
 
     --background-color-light: hsl(0, 0%, 15%);
 
-
-
+    /* Text Colors */
     --text-color-dark: hsl(0, 2%, 50%);
     --text-color-base: hsl(0, 0%, 70%);
     --text-color-highlight: hsl(0, 0%, 90%);
     --text-color-highlight-extra: hsl(0, 0%, 100%);
-
 
 
     --small-border-radius: 0.5rem;
@@ -131,7 +130,12 @@ section {
 }
 
 li {
-  margin-left: 2rem;
+    margin-left: 2rem;
+}
+ul {
+
+    margin-top:    0.75rem;
+    margin-bottom: 0.75rem;
 }
 
 
@@ -148,7 +152,7 @@ svg.svgIcon {
 
 
 /* -------------------------------------------------------------------------- */
-/*  Index Page                                                             */
+/*  Index Page                                                                */
 /* -------------------------------------------------------------------------- */
 .indexAsciiArtContainer {
   display: grid;
@@ -209,6 +213,44 @@ svg.svgIcon {
     font-size: 85%;
     opacity: 0.9;
     /* background-color: red; */
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-call-to-play-online {
+    border: var(--background-color-light) solid 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    border-radius: var(--small-border-radius);
+    display: flex;
+    width: fit-content;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--text-color-dark);
+}
+
+.button-call-to-play-online svg {
+    width:  1.3rem;
+    height: 1.3rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0px;
+    fill:  var(--text-color-dark);
+}
+
+.button-call-to-play-online:hover {
+    border: var(--text-color-dark) solid 2px;
+    text-decoration: none;
+    color: var(--text-color-highlight);
+}
+.button-call-to-play-online:hover svg {
+    fill: var(--text-color-highlight);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -341,6 +383,7 @@ svg.heartIcon {
     border-radius: var(--small-border-radius);
 }
 
+
 /* -------------------------------------------------------------------------- */
 /*  Projects Grid                                                             */
 /* -------------------------------------------------------------------------- */
@@ -387,7 +430,6 @@ svg.heartIcon {
     border-radius: var(--small-border-radius);
 }
 
-
 .projectsGridCardInfo {
     visibility: collapse;
 
@@ -402,8 +444,8 @@ svg.heartIcon {
     border-bottom-left-radius: var(--small-border-radius);
     border-bottom-right-radius: var(--small-border-radius);
 
-    /* background-color: red;  */
     background-color: var(--background-color-alpha-7);
+    /* background-color: red;  */
     color: var(--text-color-highlight-extra);
 
     padding: 1rem;
@@ -432,11 +474,20 @@ svg.heartIcon {
 /*  Project Detail Page                                                       */
 /* -------------------------------------------------------------------------- */
 .projectDetailPageCanvasContainer canvas,
-.projectDetailPageCanvasContainer iframe {
+.projectDetailPageCanvasContainer iframe,
+.projectDetailPageCanvasContainer img
+{
     /* background-color: aqua; */
     width: 100%;
     height: 60vh;
     display: block;
+    border-radius: var(--small-border-radius);
+}
+
+.projectDetailPageCanvasContainer img
+{
+    width: auto;
+    height: auto;
     border-radius: var(--small-border-radius);
 }
 

@@ -48,16 +48,11 @@ function GamesInformation_(name) {
         {
             name:     "el_jamon_volador",
             title:    "El Jamon Volador",
-            year:     "2019",
+            year:     "2019 - 2023 (website)",
             type:     "personal",
 
-            tech:     ["C", "gbdk"],
+            tech:     ["C", "GBDK", "HTML + CSS + JS (website)"],
             platform: ["Game Boy"],
-
-            download: [
-                ["download-rom", "/dist/el-ramon-volador-gb.zip"],
-                ["play-browser", "/modules/games/el_jamon_volador/website/index.html"]
-            ]
         },
 
             // name:"personal/simple_snake",
@@ -70,10 +65,6 @@ function GamesInformation_(name) {
             tech:     ["Javascript", "Canvas API"],
 
             is_playable_on_canvas: true,
-
-            download: [
-                ["play-browser", "/modules/games/nuclear_rain/website/index.html"],
-            ]
         },
 
             // name:"personal/nuclear_rain"
@@ -86,26 +77,16 @@ function GamesInformation_(name) {
             tech:     ["Javascript", "Canvas API"],
 
             is_playable_on_canvas: true,
-
-            download: [
-                ["play-browser", "/modules/games/nuclear_rain/website/index.html"],
-            ]
         },
 
-            // name:"personal/cosmic_intruders"
+        // name:"personal/cosmic_intruders"
         {
             name:     "cosmic_intruders",
             title:    "Cosmic Intruders",
             year:     "2018",
             type:     "personal",
             platform: ["PC", "Web", ],
-            tech:     ["C++", "Emscripten, Javascript"],
-
-            is_playable_on_canvas: true,
-
-            download: [
-                ["play-browser", "/modules/games/nuclear_rain/website/index.html"],
-            ]
+            tech:     ["C++", "Emscripten", "Javascript"],
         },
 
             // name:"personal/the_mistral_report"
