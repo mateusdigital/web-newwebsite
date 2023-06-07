@@ -46,6 +46,6 @@ readonly curr_build=$(                  \
 echo "==> CURR BUILD: $curr_build";
 
 rsync -avz                                       \
-      --delete "${SOURCE_FOLDER}/"               \
+      "${SOURCE_FOLDER}/"                        \
       -e ssh "${REMOTE_SERVER}:${REMOTE_FOLDER}" \
     ;

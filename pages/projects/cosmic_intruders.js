@@ -1,18 +1,84 @@
 
+import DefaultPage_ from "@/components/default-page";
+import Link_ from "@/components/link";
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import ProjectDetailPage_ from "@/components/project-detail-page/project-detail-page";
+import YTVideo_ from "@/components/yt-video";
+import ProjectTitle_ from "@/components/project-detail-page/project-title"
+import PlayIcon from "@/components/icons/play-solid"
 
 export default function Page() {
-    const info = GetProjectPageInfo()
-    return (
-        <>
-            <ProjectDetailPage_ info={info}>
-                <section>
-                    <p>
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at similique labore sed rerum consequatur quaerat ut deserunt quisquam dicta.
-                    </p>
-                </section>
-            </ProjectDetailPage_>
-        </>
-    )
+  const info = GetProjectPageInfo()
+
+  const name = info.name;
+  const tech = info.tech.join(", ");
+  const year = info.year;
+
+  const license = "GPLv3";
+
+  const git_url = `https://github.com/mateusdigital/${name}`;
+  const itch_url = `https://mateusdigital.itch.io/${name}`;
+  const project_url = `https://mateus.digital/${name}`;
+  const play_url = `https://mateus.digital/${name}`;
+
+  const git_url_clean = git_url.replace("https://", "");
+  const itch_url_clean = itch_url.replace("https://", "");
+  const project_url_clean = project_url.replace("https://", "");
+  return (
+    <>
+      <DefaultPage_ >
+        <div className="projectDetailPageCanvasContainer" info={info}>
+          <YTVideo_ video_id="mV4ZHWxk7Gc">
+          </YTVideo_>
+          <ProjectTitle_ info={info} />
+
+          <section>
+            <p>
+              Cosmic Intruders is Space Invaders clone was made as a test for Miniclip Web Client Developer vacancy by the end of 2017.
+            </p>
+
+            <p>
+              The project was made in C++ with SDL2 as rendering library, to develop the web version I've used Emscripten
+            </p>
+
+            <p>
+              I was so lucky to have the opportunity to make this game, since Space Invaders is on my top 10 list (deserving even a tattoo).
+              I got hired and in 2018 I went to Portugal to work abroad for the first time :)
+            </p>
+
+            <p>
+              In 2023, I got interested in some web development and saw a good opportunity to create a landing page
+              for the project. I tried to make it <i>vibing</i> as the real old cabinet.
+            </p>
+
+            <span className="textDetail">
+              * Thanks for <a href="https://montyontherun.itch.io/">Monty</a> for recording the video.
+            </span>
+
+            <a className="button-call-to-play-online center" href={play_url}>
+              <PlayIcon></PlayIcon>
+              Play online
+            </a>
+
+            <ul>
+              <b>General Info:</b><br />
+              <li><b>Tech:</b> {tech}</li>
+              <li><b>Year:</b> {year}</li>
+              <li><b>License:</b> {license}</li>
+            </ul>
+            <ul>
+              <b>Links:</b><br />
+              <li><b>Project Website:</b> <Link_ href={project_url}>{project_url_clean}</Link_></li>
+              <li><b>Source Code:</b> <Link_ href={git_url}>{git_url_clean}</Link_></li>
+              <li><b>Itch.io:</b> <Link_ href={itch_url}>{itch_url_clean}</Link_></li>
+            </ul>
+          </section>
+
+
+        </div>
+      </DefaultPage_>
+    </>
+  )
 }
+
+
+//
