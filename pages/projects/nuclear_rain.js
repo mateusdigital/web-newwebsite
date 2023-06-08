@@ -1,22 +1,73 @@
+
+import DefaultPage_ from "@/components/default-page";
 import Link_ from "@/components/link";
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import PersonalPage_  from "@/components/project-detail-page/personal-page";
+import DemoIframe_ from "@/components/demo-iframe";
+import ProjectTitle_ from "@/components/project-detail-page/project-title"
+
+import CallToPlayButton_ from "@/components/call-to-play-button";
 
 export default function Page() {
-    const info = GetProjectPageInfo()
-    return (
-        <>
-            <PersonalPage_ info={info}>
-            <section>
-                <p>
-                    Roses was created in 2020, after I got interested with the patterns
-                    that can be created with the formulas.
-                </p>
-                <p>
-                    It was created with <Link_ href="">demolib</Link_>, it's licensed as <Link_ href="">GPLv3</Link_>.
-                </p>
-            </section>
-            </PersonalPage_>
-        </>
-    )
+  const info = GetProjectPageInfo()
+
+  const name = info.name;
+  const tech = info.tech.join(", ");
+  const year = info.year;
+
+  const license = "GPLv3";
+
+  const git_url = `https://github.com/mateusdigital/${name}`;
+  const itch_url = `https://mateusdigital.itch.io/${name}`;
+  const project_url = `https://mateus.digital/${name}`;
+
+  const git_url_clean = git_url.replace("https://", "");
+  const itch_url_clean = itch_url.replace("https://", "");
+  const project_url_clean = project_url.replace("https://", "");
+
+  const url = project_url;
+  return (
+    <>
+      <DefaultPage_ page_id="games">
+        <div className="projectDetailPageCanvasContainer" info={info}>
+          <a href={url}>
+            <div>
+              <iframe src={url} style={{ pointerEvents: 'none' }}></iframe>
+            </div>
+          </a>
+
+          <ProjectTitle_ info={info} />
+
+          <section>
+            <p>
+              I always enjoyed to play Missile Command in my Atari when I was a kid,
+              so this project is make my take in that nostalgia.
+            </p>
+
+            <p>
+              It was one of my first web games, I made it back when I was living in Portugal.
+            </p>
+
+            <p>
+              For this project I used plain Javascript and the Canvas API.
+            </p>
+
+            <CallToPlayButton_ info={info} />
+
+            <ul>
+              <b>General Info:</b><br />
+              <li><b>Tech:</b> {tech}</li>
+              <li><b>Year:</b> {year}</li>
+              <li><b>License:</b> {license}</li>
+            </ul>
+            <ul>
+              <b>Links:</b><br />
+              <li><b>Project Website:</b> <Link_ href={project_url}>{project_url_clean}</Link_></li>
+              <li><b>Source Code:</b> <Link_ href={git_url}>{git_url_clean}</Link_></li>
+              <li><b>Itch.io:</b> <Link_ href={itch_url}>{itch_url_clean}</Link_></li>
+            </ul>
+          </section>
+        </div>
+      </DefaultPage_>
+    </>
+  )
 }
