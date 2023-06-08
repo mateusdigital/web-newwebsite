@@ -1,4 +1,3 @@
-import DemoCanvas_ from "../demo-canvas";
 import DemoIframe_ from "../demo-iframe";
 import PersonalGameCanvas_ from "../personal-game-canvas";
 import YTVideo_ from "../yt-video";
@@ -14,9 +13,9 @@ export default function ProjectPresentation_({ info }) {
     const video_id = info.youtube_video_id;
     top_element = YTVideo_({ video_id });
   }
-  
+
   // Demo
-  else if (type == "demo") {    
+  else if (type == "demo") {
     console.log(info.tech)
     top_element = DemoIframe_({ name });
   }

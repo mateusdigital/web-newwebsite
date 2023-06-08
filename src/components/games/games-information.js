@@ -62,7 +62,7 @@ function GamesInformation_(name) {
             year:     "2018",
             type:     "personal",
             platform: ["Web"],
-            tech:     ["Javascript", "Canvas API"],
+            tech:     ["Javascript", "Canvas API", "chroma.js"],
 
             is_playable_on_canvas: true,
         },

@@ -1,7 +1,5 @@
 
-import path from "path";
-
-export default function DemoCanvas_({ name }) {
+export default function DemoIframe_({ name }) {
   name = name.trim();
   const url = `https://mateus.digital/${name}`;
 

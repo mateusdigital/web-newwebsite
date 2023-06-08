@@ -4,7 +4,8 @@ import Link_ from "@/components/link";
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
 import YTVideo_ from "@/components/yt-video";
 import ProjectTitle_ from "@/components/project-detail-page/project-title"
-import PlayIcon from "@/components/icons/play-solid"
+
+import CallToPlayButton_ from "@/components/call-to-play-button";
 
 export default function Page() {
   const info = GetProjectPageInfo()
@@ -15,25 +16,24 @@ export default function Page() {
 
   const license = "GPLv3";
 
-  const git_url = `https://github.com/mateusdigital/${name}`;
-  const itch_url = `https://mateusdigital.itch.io/${name}`;
+  const git_url     = `https://github.com/mateusdigital/${name}`;
+  const itch_url    = `https://mateusdigital.itch.io/${name}`;
   const project_url = `https://mateus.digital/${name}`;
 
-  const git_url_clean = git_url.replace("https://", "");
-  const itch_url_clean = itch_url.replace("https://", "");
+  const git_url_clean     = git_url.replace("https://", "");
+  const itch_url_clean    = itch_url.replace("https://", "");
   const project_url_clean = project_url.replace("https://", "");
 
   return (
     <>
-      <DefaultPage_ >
+      <DefaultPage_ page_id="games">
         <div className="projectDetailPageCanvasContainer" info={info}>
           <YTVideo_ video_id="VlpMRj9wwLw">
           </YTVideo_>
+
           <ProjectTitle_ info={info} />
 
           <section>
-
-
             <p>
               After of releasing the <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> I
               got very interested in develop to retro machines, and have chosen the Nintendo Game Boy as the target to make a new game.
@@ -53,11 +53,7 @@ export default function Page() {
               * Thanks for <a href="https://montyontherun.itch.io/">Monty</a> for recording the video.
             </span>
 
-            <a className="button-call-to-play-online center"
-              href="https://mateus.digital/el_jamon_volador">
-              <PlayIcon></PlayIcon>
-              Play online
-            </a>
+            <CallToPlayButton_ info={info}/>
 
             <ul>
               <b>General Info:</b><br />
@@ -72,8 +68,6 @@ export default function Page() {
               <li><b>Itch.io:</b> <Link_ href={itch_url}>{itch_url_clean}</Link_></li>
             </ul>
           </section>
-
-
         </div>
       </DefaultPage_>
     </>
