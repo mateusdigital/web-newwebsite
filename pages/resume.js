@@ -18,7 +18,7 @@ export default function Resume() {
           <hr />
           <br />
           <div className="resumeIFrameContainer">
-            <iframe src="html/resume.html" className="resumeIFrame"></iframe>
+            <iframe src="/html/resume.html" className="resumeIFrame"></iframe>
           </div>
         </section>
 

@@ -10,16 +10,17 @@
 ##                 +                         +                                ##
 ##                      O      *        '       .                             ##
 ##                                                                            ##
-##  File      : deploy.sh                                                     ##
-##  Project   : flappy_gb                                                     ##
-##  Date      : May 12, 2023                                                  ##
+##  File      : generate-index-for-dirs.sh                                    ##
+##  Project   : website                                                       ##
+##  Date      : 2023-08-08                                                    ##
 ##  License   : GPLv3                                                         ##
 ##  Author    : mateus.digital <hello@mateus.digital>                         ##
 ##  Copyright : mateus.digital - 2023                                         ##
 ##                                                                            ##
 ##  Description :                                                             ##
-##   Deploys the output of scripts/build-static.sh to the remote server.      ##
-##   Current user should have remote ssh keys installed on the server.        ##
+##    The output from next generates the page.html but when we access via     ##
+##    page/ it shows 404 - This script just create an index.html with the     ##
+##    dir name of the file and copy its contents.                             ##
 ##---------------------------------------------------------------------------~##
 
 set -e; ## break on errors
@@ -34,20 +35,10 @@ readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
 
 readonly SOURCE_FOLDER="${ROOT_DIR}/out";
-readonly REMOTE_SERVER="mateus@mateus.digital";
-readonly REMOTE_FOLDER="/var/www/mateus.digital/html";
-
-readonly curr_build=$(                  \
-    cat "${ROOT_DIR}/pages/index.js" |  \
-    grep "const build = "            |  \
-    cut -d" " -f4 | tr -d ";"           \
-);
-
 
 ##------------------------------------------------------------------------------
-echo "==> CURR BUILD: $curr_build";
-
-rsync -avz                                       \
-      "${SOURCE_FOLDER}/"                        \
-      -e ssh "${REMOTE_SERVER}:${REMOTE_FOLDER}" \
-    ;
+readonly list="games projects contacts resume about";
+for item in $list; do
+  mkdir -p "${SOURCE_FOLDER}/$item";
+  cp "${SOURCE_FOLDER}/${item}.html" "${SOURCE_FOLDER}/${item}/index.html";
+done;
