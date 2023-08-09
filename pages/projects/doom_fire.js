@@ -3,20 +3,20 @@ import GetProjectPageInfo from "@/components/project-detail-page/get-project-det
 import DemoPage_ from "@/components/project-detail-page/demo-page";
 
 export default function Page() {
-    const info = GetProjectPageInfo()
-    return (
-        <>
-            <DemoPage_ info={info}>
-            <section>
-                <p>
-                    Roses was created in 2020, after I got interested with the patterns
-                    that can be created with the formulas.
-                </p>
-                <p>
-                    It was created with <Link_ href="">demolib</Link_>, it's licensed as <Link_ href="">GPLv3</Link_>.
-                </p>
-            </section>
-            </DemoPage_>
-        </>
-    )
+  const info = GetProjectPageInfo()
+  return (
+    <>
+      <DemoPage_ info={info}>
+        <section>
+          <p>
+            DOOM FIRE! is a creative experience inspired by the <a href="https://fabiensanglard.net/doom_fire_psx/index.html">amazing blog post</a> of <a href="https://fabiensanglard.net/about/index.html">Fabian Sanglard</a>.
+          </p>
+
+          <p>
+            It was created with <Link_ href="">demolib</Link_>, it's licensed as <Link_ href="">GPLv3</Link_>.
+          </p>
+        </section>
+      </DemoPage_>
+    </>
+  )
 }

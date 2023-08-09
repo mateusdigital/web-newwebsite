@@ -1,0 +1,140 @@
+{
+    "saveEditorLayout.list": [
+        {
+            "name": "test",
+            "documents": [
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/src/components/projects-list-page/project-item-card.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/public/css/default.css",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/taz.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/src/components/under-construction.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/nuclear_rain.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/space_raiders.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/ram_it.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/kaboom.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/bow_and_arrow.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/color_grid.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/memory_amazing_cow.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/farcry6.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/scripts/import-svg.sh",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/src/components/games/games-information.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/el_jamon_volador.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/the_mistral_report.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/cosmic_intruders.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/roses.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/flowfield.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/lissajous.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/index.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/at_sundown.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/the_banner_saga.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/the_banner_saga_2.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/killers_and_thieves.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/like_a_boss.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/pacman_io.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/8_ball_pool.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/skull_and_bones.js",
+                    "column": 1
+                },
+                {
+                    "fsPath": "/home/mateus/Projects/new-website/pages/projects/wot_blitz.js",
+                    "column": 1
+                }
+            ],
+            "layout": {
+                "orientation": 0,
+                "groups": [
+                    {
+                        "size": 1087
+                    },
+                    {
+                        "size": 680
+                    }
+                ]
+            }
+        }
+    ]
+}
