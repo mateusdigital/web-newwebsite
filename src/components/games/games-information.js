@@ -45,17 +45,18 @@ function make_platform_icons(platforms) {
 
 function GamesInformation_(name) {
     const list = [
+        // --------------------------------------------------------------------
         {
             name:     "el_jamon_volador",
             title:    "El Jamon Volador",
-            year:     "2019 - 2023 (website)",
+            year:     "2019, 2023",
             type:     "personal",
 
-            tech:     ["C", "GBDK", "HTML + CSS + JS (website)"],
+            tech:     ["C", "GBDK", "HTML", "CSS", "JS"],
             platform: ["Game Boy"],
         },
 
-            // name:"personal/simple_snake",
+        // --------------------------------------------------------------------
         {
             name:     "simple_snake",
             title:    "Simple Snake!",
@@ -89,14 +90,14 @@ function GamesInformation_(name) {
             tech:     ["C++", "Emscripten", "Javascript"],
         },
 
-            // name:"personal/the_mistral_report"
+        // --------------------------------------------------------------------
         {
-            name:"the_mistral_report",
-            title:"The Mistral Report",
-            year:"2020",
+            name: "the_mistral_report",
+            title: "The Mistral Report",
+            year: "2018",
             type:     "personal",
             platform: ["RETRO"],
-            tech:     ["C++", "Emscripten, Javascript"],
+            tech:     ["C++", "SDL1.2", "MSDOS"],
 
             download: [
                 ["play-browser", "/modules/games/cosmic_intruders/website/index.html"],

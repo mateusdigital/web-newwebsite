@@ -33,26 +33,22 @@ export default function Page() {
 
           <section>
             <p>
-              Cosmic Intruders is Space Invaders clone was made as a test for Miniclip Web Client Developer vacancy by the end of 2017.
+              Cosmic Intruders is a Space Invaders clone that was made as a test for Miniclip Web Client Developer vacancy by the end of 2017.
             </p>
 
             <p>
-              The project was made in C++ with SDL2 as rendering library, to develop the web version I've used Emscripten
+              The project was made in C++ with <b>SDL2</b> as a rendering library, to develop the web version I've used <b>Emscripten</b>.
             </p>
 
             <p>
-              I was so lucky to have the opportunity to make this game, since Space Invaders is on my top 10 list (deserving even a tattoo).
+              I was so <b>lucky</b> to have the opportunity to make this game since Space Invaders is on my top 10 list (deserving even a tattoo).
               I got hired and in 2018 I went to Portugal to work abroad for the first time :)
             </p>
 
             <p>
               In 2023, I got interested in some web development and saw a good opportunity to create a landing page
-              for the project. I tried to make it <i>vibing</i> as the real old cabinet.
+              for the project. I tried to replicate a real old cabinet <i>"vibes"</i>.
             </p>
-
-            <span className="textDetail">
-              * Thanks for <a href="https://montyontherun.itch.io/">Monty</a> for recording the video.
-            </span>
 
             <a className="button-call-to-play-online center" href={play_url}>
               <PlayIcon></PlayIcon>

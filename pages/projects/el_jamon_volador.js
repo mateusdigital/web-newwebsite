@@ -35,13 +35,13 @@ export default function Page() {
 
           <section>
             <p>
-              After of releasing the <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> I
+              After releasing the <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> I
               got very interested in develop to retro machines, and have chosen the Nintendo Game Boy as the target to make a new game.
             </p>
 
             <p>
-              I decided to make a homage to Flappy Bird, since as a nice game play that would still let me to understand
-              better that tiny marvel that the Game Boy was.
+              I decided to make a homage to Flappy Bird, since as a nice gameplay that would still let me understand
+              better that tiny marvel machine that the Game Boy was.
             </p>
 
             <p>
