@@ -10,11 +10,18 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            After working in <Link_ href="./skull_and_bones">Skull and Bones</Link_> I went to help the release of LOST BETWEEN WORLDS DLC. <br/>
-            I was primally doing bug fixing for <i><b>A11Y</b></i> components. <br/>
-            </p>
-            <p>
-            In this project I've worked with Ubisoft's <b>Dunia engine</b> and <b>Phoenix UI</b>.
+            After contributing to the development of '<Link_ href="./skull_and_bones">Skull and Bones</Link_>'
+            I moved to the Far Cry 6 team to aid the release of the '<b>LOST BETWEEN WORLDS'</b> DLC.
+          </p>
+
+          <p>
+            My primary responsibilities involved addressing bugs within <b>A11Y</b> components,
+            ensuring accessibility standards were met.
+          </p>
+          <p>
+            Throughout this project, I had the opportunity to collaborate
+            with <b>Dunia</b> engine and <b>Phoenix UI</b> framework.
+
           </p>
         </section>
       </ProfessionalPage_>

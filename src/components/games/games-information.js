@@ -132,11 +132,12 @@ function GamesInformation_(name) {
             type:    "professional",
             company: "Ubisoft",
             role:    "Senior Programmer",
-            tech:    ["Dunia", "C++", "Perforce", "A11Y"],
+            tech:    [ "C++", "Dunia", "Perforce", "A11Y"],
 
             youtube_video_id: "LRMbuyJyUzU",
         },
 
+        // --------------------------------------------------------------------
         {
             name:    "skull_and_bones",
             title:   "Skull & Bones",
@@ -146,22 +147,23 @@ function GamesInformation_(name) {
             type:    "professional",
             company: "Ubisoft",
             role:    "Senior Programmer",
-            tech:    ["Anvil", "C++", "Perforce", "A11Y"],
+            tech:    ["C++", "Anvil", "Perforce", "A11Y"],
 
             youtube_video_id: "fgy4WZ9ta7E",
         },
 
-
+        // --------------------------------------------------------------------
         {
             name:     "wot_blitz",
             title:    "World of Tanks - Blitz",
+            short_title: "WoT - Blitz",
             year:     "2020",
             platform: ["Mobile" ],
 
             type:    "professional",
             company: "Wargaming",
             role:    "Programmer",
-            tech:    ["Unreal Engine 4", "Blueprints", "C++", "Git"],
+            tech:    ["C++", "Unreal Engine 4", "Blueprints", "UMG", "Git"],
 
             youtube_video_id: "_Vtvjg8dYqI",
         },
@@ -176,20 +178,22 @@ function GamesInformation_(name) {
             type:    "professional",
             company: "Miniclip",
             role:    "Programmer",
-            tech:    ["Cocos2d-x", "Emscripten", "C++", "JS", "Obj-C", "Git"],
+            tech:    ["C++", "JS", "Obj-C", "Cocos2d-x", "Emscripten", "Git"],
 
             youtube_video_id: "f0xHb8pxMco",
         },
+
+        // --------------------------------------------------------------------
         {
             name:     "pacman_io",
             title:    "PACMAN.IO",
             year:     "2018",
-            platform: ["Web" ],
+            platform: ["Web"],
 
             type:    "professional",
             company: "Miniclip",
             role:    "Programmer",
-            tech:    ["Canvas API", "Emscripten", "C++", "JS", "Git"],
+            tech:    ["C++", "JS", "Canvas API", "Emscripten", "Git"],
 
             youtube_video_id: "u4sEgDM0EZ0",
         },
@@ -226,13 +230,14 @@ function GamesInformation_(name) {
         {
             name:     "killers_and_thieves",
             title:    "Killers and Thieves",
+            short_title: "Killers & Thieves",
             year:     "2017",
             platform: ["STEAM" ],
 
             type:    "professional",
             company: "Firehorse",
             role:    "Programmer",
-            tech:    ["Unity", "Lua", "C#", "Middleware"],
+            tech:    ["Lua", "C#", "Unity", "Middleware", "Git"],
 
             youtube_video_id: "2HhmN1_SvFA",
         },
@@ -246,7 +251,7 @@ function GamesInformation_(name) {
             type:    "professional",
             company: "Firehorse",
             role:    "Programmer",
-            tech:    ["Unity", "C#",],
+            tech:    ["C#", "Unity", "Editor Scripts", "Git"],
 
             youtube_video_id: "gqNCs0slp8U",
         },
@@ -259,7 +264,7 @@ function GamesInformation_(name) {
             type:    "professional",
             company: "Firehorse",
             role:    "Programmer",
-            tech:    ["Unity", "AlienFX", "C#", "C++" ],
+            tech:    ["C#", "C++", "Unity", "AlienFX" ],
 
             youtube_video_id: "AbZGdmOC-eM",
         },
@@ -272,7 +277,7 @@ function GamesInformation_(name) {
             type:    "professional",
             company: "Firehorse",
             role:    "Programmer",
-            tech:    ["GameMaker", "AlienFX", "C++" ],
+            tech:    ["C++", "GML", "GameMaker", "AlienFX", ],
 
             youtube_video_id: "AbZGdmOC-eM",
 

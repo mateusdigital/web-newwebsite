@@ -1,6 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*
+    Fonts
+*/
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+
+
+/*
+    Variables
+*/
+:root {
+    /* Dark mode background and text colors */
+
+    --gray-200: hsl(0, 0%, 68%);
+    --gray-300: hsl(0, 0%, 61%);
+    --gray-400: hsl(0, 0%, 54%);
+    --gray-500: hsl(0, 0%, 47%);
+    --gray-600: hsl(0, 0%, 40%);
+    --gray-700: hsl(0, 0%, 33%);
+    --gray-800: hsl(0, 0%, 26%);
+    --gray-900: #111111;
+
+    /* Darkest */
+    --background-color: hsl(0, 0%, 0%);
+    --background-callout-color: hsl(0, 0%, 7%);
+    --background-callout-text-color: var(--gray-300);
+    --background-decoration-color: hsl(0, 0%, 17%);
+
+
+
+    /* Accent colors */
+    --primary-color: #3490dc;
+    --success-color: #38c172;
+    --warning-color: #f6993f;
+    --error-color: #e3342f;
+
+    --heading-color: var(--gray-300);
+    --footer-color:  var(--gray-500);
+
+    --icon-color: var(--gray-500);
+
+    --text-color:           var(--gray-500);
+    --text-highlight-color: var(--gray-400);
+
+    --link-color:            var(--gray-300);
+    --link-decoration-color: var(--gray-800);
+
+    --link-color-hover:            var(--gray-200);
+    --link-decoration-color-hover: var(--gray-600);
+
+    --cta-button-color:        var(--gray-600);
+    --cta-button-icon-color:   var(--gray-600);
+    --cta-button-border-color: var(--gray-800);
+
+    --cta-button-color-hover:        var(--gray-400);
+    --cta-button-icon-color-hover:   var(--gray-400);
+    --cta-button-border-color-hover: var(--gray-600);
+
+    --main-logo-color: var(--gray-200);
+    --main-name-color: var(--gray-300);
+
+    --main-menu-item-color:                   var(--gray-400);
+    --main-menu-item-color-active:            var(--gray-300);
+    --main-menu-item-decoration-color-active: var(--gray-600);
+
+    --main-menu-item-color-hover:            var(--gray-200);
+    --main-menu-item-decoration-color-hover: var(--gray-400);
+
+    --projects-card-border-color:  hsla(0, 0%, 7%, 0.4);
+    --projects-card-desc-background-color: hsla(0, 0%, 7%, 0.9);
+    --projects-card-desc-text-color: var(--gray-200);
+    /*
+     */
+     --small-border-radius: 0.35rem;
+
+}
+/* TODO FIX
+    - main name is not reacting to mouse input
+    - icons in the menu is not reacting to mouse input
+     */
+
+/*
+    Fonts
+*/
 *,
 *::before,
 *::after {
@@ -8,29 +89,6 @@
     padding: 0;
     box-sizing: border-box;
     /* outline: 1px solid magenta; */
-}
-
-:root {
-    /* Background Colors */
-    --background-color: hsl(0, 0%, 2%);
-    --background-color-alpha-7: hsla(0, 0%, 2%, 0.7);
-
-    --background-color-light: hsl(0, 0%, 15%);
-
-    /* Text Colors */
-    --text-color-dark: hsl(0, 2%, 50%);
-    --text-color-base: hsl(0, 0%, 70%);
-    --text-color-highlight: hsl(0, 0%, 90%);
-    --text-color-highlight-extra: hsl(0, 0%, 100%);
-
-
-    --small-border-radius: 0.5rem;
-
-    /* --text-color-dark:            red;
-    --text-color-base:            green;
-    --text-color-highlight:       blue;
-    --text-color-highlight-extra: yellow;
-     */
 }
 
 /* -------------------------------------------------------------------------- */
@@ -45,12 +103,12 @@ body {
     font-family: 'JetBrains Mono', monospace;
 
     background-color: var(--background-color);
-    color: var(--text-color-base);
+    color: var(--text-color);
 
-    width:  100%;
+    width: 100%;
     height: 100%;
 
-    max-width:  1200px;
+    max-width: 1200px;
     min-height: 100%;
     /* To make footer stick on the bottom */
     position: relative;
@@ -78,7 +136,7 @@ iframe {
 }
 
 h1 {
-    color: var(--text-color-highlight);
+    color: var(--heading-color);
 
     display: inline-block;
     font-size: 180%;
@@ -104,29 +162,29 @@ h1 span {
 
 p {
     padding: 0.75rem 0rem;
-    color: var(--text-color-base);
+    color: var(--text-color);
     line-height: 150%;
 }
 
 b {
-    color: var(--text-color-highlight);
+    color: var(--text-highlight-color);
 }
 
 a {
-    text-decoration: var(--text-color-dark) dotted underline;
+    text-decoration: var(--link-decoration-color) dotted underline;
     text-underline-offset: 0.3rem;
-    color: var(--text-color-highlight);
+    color: var(--link-color);
 }
 
 a:hover {
-    text-decoration: var(--text-color-base) solid underline;
+    text-decoration: var(--link-decoration-color-hover) solid underline;
     text-underline-offset: 0.3rem;
-    color: var(--text-color-highlight-extra);
+    color: var(--link-color-hover);
 }
 
 hr {
-    border-color: var(--background-color-light);
-    /* margin-bottom: 1rem; */
+    border: none;
+    border-top: 1px solid var(--background-decoration-color);
 }
 
 section {
@@ -137,21 +195,22 @@ section {
 li {
     margin-left: 2rem;
 }
+
 ul {
 
-    margin-top:    0.75rem;
+    margin-top: 0.75rem;
     margin-bottom: 0.75rem;
 }
 
-
+/* This is the font awesome SVG that we import with the import-svg.sh script. */
 svg.svgIcon {
     display: inline-block;
     /* Just to make the icons centered with the text */
     position: relative;
     top: 2px;
 
-    fill: var(--text-color-base);
-    width:  1rem;
+    fill: var(--icon-color);
+    width: 1rem;
     height: 1rem;
 }
 
@@ -160,17 +219,17 @@ svg.svgIcon {
 /*  Index Page                                                                */
 /* -------------------------------------------------------------------------- */
 .indexAsciiArtContainer {
-  display: grid;
-  padding: 2rem;
+    display: grid;
+    padding: 2rem;
 }
 
 .indexAsciiArt {
-  margin-left:  auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 
-  font-size: 1rem;
-  color: var(--text-color-highlight-extra);
-  animation: in-out-color 20s ease-in-out infinite;
+    font-size: 1rem;
+    color: var(--main-logo-color);
+    animation: in-out-color 20s ease-in-out infinite;
 }
 
 /* Makes the font to be smaller and keep the ascii art inside  */
@@ -181,33 +240,35 @@ svg.svgIcon {
 }
 
 @media (min-width: 301px) {
-  .indexAsciiArt {
-    font-size: 0.6rem;
-  }
+    .indexAsciiArt {
+        font-size: 0.6rem;
+    }
 }
 
 @media (min-width: 401px) {
-  .indexAsciiArt {
-    font-size: 0.7rem;
-  }
+    .indexAsciiArt {
+        font-size: 0.7rem;
+    }
 }
 
 @media (min-width: 601px) {
-  .indexAsciiArt {
-    font-size: 0.9rem;
-  }
+    .indexAsciiArt {
+        font-size: 0.9rem;
+    }
 }
 
 @keyframes in-out-color {
-  0% {
-    opacity: 0.6;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.6;
-  }
+    0% {
+        opacity: 0.6;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.6;
+    }
 }
 
 
@@ -233,7 +294,7 @@ svg.svgIcon {
 
 
 .button-call-to-play-online {
-    border: var(--background-color-light) solid 2px;
+    border: var(--cta-button-border-color) solid 2px;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 8px 16px;
@@ -244,25 +305,26 @@ svg.svgIcon {
     align-items: center;
 
     text-decoration: none;
-    color: var(--text-color-dark);
+    color: var(--cta-button-color);
 }
 
 .button-call-to-play-online svg {
-    width:  1.3rem;
+    width: 1.3rem;
     height: 1.3rem;
     margin-right: 0.5rem;
     position: relative;
     top: 0px;
-    fill:  var(--text-color-dark);
+    fill: var(--cta-button-icon-color);
 }
 
 .button-call-to-play-online:hover {
-    border: var(--text-color-dark) solid 2px;
+    border: var(--cta-button-border-color-hover) solid 2px;
     text-decoration: none;
-    color: var(--text-color-highlight);
+    color: var(--cta-button-color-hover);
 }
+
 .button-call-to-play-online:hover svg {
-    fill: var(--text-color-highlight);
+    fill: var(--cta-button-icon-color-hover);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -273,7 +335,7 @@ svg.svgIcon {
     justify-content: space-between;
 
     padding-bottom: 1rem;
-    border-bottom: #ffffff33 solid 1px;
+    border-bottom: var(--background-decoration-color) solid 1px;
     align-items: center;
 }
 
@@ -285,23 +347,23 @@ svg.svgIcon {
 /* mateus.digital text */
 .topNavLogoContainer a {
     display: inline-block;
-    color: var(--text-color-highlight-extra);
+    color: var(--main-name-color);
 }
 
 .topNavButtonsContainer a {
-    padding: 0 0.3rem;
     /* Make button larger horizontally */
-    color: var(--text-color-dark);
+    padding: 0 0.3rem;
+    color: var(--main-menu-item-color);
 }
 
 .topNavButtonsContainer a:hover {
-    color: var(--text-color-highlight-extra);
-    text-decoration: var(--text-color-base) solid underline;
+    color: var(--main-menu-item-color-hover);
+    text-decoration: var(--main-menu-item-decoration-color-hover) solid underline;
 }
 
 a.topNavButtonActive {
-    color: var(--text-color-base);
-    text-decoration: var(--text-color-dark) solid underline;
+    color: var(--main-menu-item-color-active);
+    text-decoration: var(--main-menu-item-decoration-color-active) solid underline;
 }
 
 .topNavButtonsContainer {
@@ -315,8 +377,8 @@ a.topNavButtonActive {
 }
 
 /* Make the icons a little bigger */
-.topNavButton > svg.svgIcon {
-    width:  1.5rem;
+.topNavButton>svg.svgIcon {
+    width: 1.5rem;
     height: 1.5rem;
 }
 
@@ -335,7 +397,7 @@ a.topNavButtonActive {
 }
 
 @media (min-width: 641px) {
-    .topNavButton > svg.svgIcon {
+    .topNavButton>svg.svgIcon {
         display: none;
     }
 }
@@ -351,7 +413,7 @@ a.topNavButtonActive {
     bottom: 0;
     width: 100%;
 
-    color: var(--text-color-dark);
+    color: var(--footer-color);
     text-align: center;
 }
 
@@ -374,7 +436,9 @@ svg.heartIcon {
 /*  About Page                                                                */
 /* -------------------------------------------------------------------------- */
 .aboutPageLookingForResume {
-    background-color: var(--background-color-light);
+    background-color: var(--background-callout-color);
+    color: var(--background-callout-text-color);
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -431,6 +495,8 @@ svg.heartIcon {
     display: block;
     max-width: 100%;
     max-height: 100%;
+    font-size: 95%;
+
 }
 
 .projectsGridCard img {
@@ -440,6 +506,8 @@ svg.heartIcon {
     object-fit: cover;
 
     border-radius: var(--small-border-radius);
+
+    border: 1px solid var(--projects-card-border-color);
 }
 
 .projectsGridCardInfo {
@@ -456,9 +524,8 @@ svg.heartIcon {
     border-bottom-left-radius: var(--small-border-radius);
     border-bottom-right-radius: var(--small-border-radius);
 
-    background-color: var(--background-color-alpha-7);
-    /* background-color: red;  */
-    color: var(--text-color-highlight-extra);
+    background-color: var(--projects-card-desc-background-color);
+    color: var(--projects-card-desc-text-color);
 
     padding: 1rem;
 }
@@ -478,16 +545,14 @@ svg.heartIcon {
 
 .projectListCardInfoPlatform,
 .projectListCardInfoYear {
-    color: var(--text-color-base);
+    color: var(--projects-card-desc-text-color);
 }
-
 
 /* -------------------------------------------------------------------------- */
 /*  Project Detail Page                                                       */
 /* -------------------------------------------------------------------------- */
 .projectDetailPageCanvasContainer canvas,
-.projectDetailPageCanvasContainer iframe
-{
+.projectDetailPageCanvasContainer iframe {
     /* background-color: aqua; */
     width: 100%;
     height: 60vh;
@@ -503,16 +568,16 @@ svg.heartIcon {
     justify-content: space-between;
 }
 
-.projectDetailPageTitleContainer h1  {
-    margin:  0;
+.projectDetailPageTitleContainer h1 {
+    margin: 0;
     padding: 0;
 }
 
 svg.projectDetailPageCompanyLogo {
-    height:     2rem;
+    height: 2rem;
     max-height: 2rem;
-    max-width:  10rem;
-    fill: var(--text-color-base);
+    max-width: 10rem;
+    fill: var(--text-color);
 }
 
 @media (max-width: 460px) {
@@ -521,10 +586,10 @@ svg.projectDetailPageCompanyLogo {
     }
 
     svg.projectDetailPageCompanyLogo {
-        height:     1rem;
+        height: 1rem;
         max-height: 1rem;
-        max-width:  10rem;
-        fill: var(--text-color-base);
+        max-width: 10rem;
+        fill: var(--text-color);
     }
 }
 
@@ -547,7 +612,7 @@ svg.projectDetailPageCompanyLogo {
 
 
 .contacts svg.svgIcon {
-    width:  1.5rem;
+    width: 1.5rem;
     height: 1.5rem;
 
     margin-right: 1rem;
@@ -555,21 +620,21 @@ svg.projectDetailPageCompanyLogo {
 
 
 @media (max-width: 500px) {
-    .contacts li  {
+    .contacts li {
         font-size: 100%;
     }
 
     .contacts svg.svgIcon {
-        width:  1rem;
+        width: 1rem;
         height: 1rem;
     }
 }
 
 
 @media (max-width: 400px) {
-    .contacts li  {
-        margin-left:   0rem;
-        margin-top:    0.5rem;
+    .contacts li {
+        margin-left: 0rem;
+        margin-top: 0.5rem;
         margin-bottom: 1rem;
 
         font-size: 95%;
@@ -585,7 +650,7 @@ svg.projectDetailPageCompanyLogo {
     .contacts svg.svgIcon {
         display: block;
 
-        width:  1.2rem;
+        width: 1.2rem;
         height: 1.2rem;
 
         margin-right: 0;
@@ -632,5 +697,18 @@ svg.projectDetailPageCompanyLogo {
 
 
 /* -------------------------------------------------------------------------- */
-/*  Resume Page                                                               */
+/*  Under Construction                                                        */
 /* -------------------------------------------------------------------------- */
+.underConstructionContainer {
+    display: block;
+
+    max-width: calc(38px * 9);
+    min-width: calc(38px * 5);
+    height:    calc(38px * 6);
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("http://www.textfiles.com/underconstruction/CaCapeCanaveralGalaxy8999construction5.gif");
+    background-repeat: repeat;
+}

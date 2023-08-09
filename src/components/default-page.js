@@ -7,7 +7,6 @@ export default function DefaultPage_({ title, page_id, children }) {
     <>
       {/* ------------------------------------------------------------ */}
       <Head>
-        <script src="https://kit.fontawesome.com/4da06b246b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/css/default.css" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />

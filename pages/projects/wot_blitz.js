@@ -8,15 +8,16 @@ export default function Page() {
     <>
       <ProfessionalPage_ info={info}>
         <section>
-          <p>
-            I went to Minsk, Belarus to join the World of Tanks - Blitz team in 2019.
-          </p>
+          <section>
+            <p>
+              In 2019, I embarked on a journey to Minsk, Belarus, to join the World of Tanks - Blitz team.
+            </p>
 
           <p>
-            Working with <b>Unreal Engine 4</b>, I was responsible for the implementation of UI
-            using <b>UE4 UMG</b> system and also have worked in game play elements for the, then, new
-            game modes.
+              Working with <b>Unreal Engine 4</b>, I was involved in implementing user interfaces using UE4's <b>UMG</b> system.
+              Additionally, I contributed to the development of gameplay elements for the then-new game modes.
           </p>
+          </section>
         </section>
       </ProfessionalPage_>
     </>

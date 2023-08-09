@@ -14,8 +14,8 @@ export default function Page() {
           </p>
 
           <p>
-            I've worked both in the client using <b>Emscripten</b> - and the server side, implement features
-            and optimizations until the release of the game. The nicest was some improvements to rendering routines, gaining ~36% (~30fps -  ~41fps).</p>
+            I've worked both in the client using <b>Emscripten</b>, and the server side, implement features
+            and optimizations until the release of the game. The most notable one was some improvements to rendering routines, gaining ~36% (~30fps -&gt; ~41fps).</p>
 
           <p>
             Also in this project I've the pleasure to work with <a href="https://hugojustcode.com/">Hugo Ferreira</a>,

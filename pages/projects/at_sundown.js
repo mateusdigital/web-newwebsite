@@ -9,9 +9,9 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            Similar to the <Link_ href="/projects/let_them_come">Let them Come</Link_> my work here
-            was to create bindings to the <b>AlienFx SDK</b> in <b>Unity</b>, so the game developers would have
-            access to it in the environment that they're used to.
+            Much like my involvement with <Link_ href="/projects/let_them_come">Let them Come</Link_>,
+            my role in this project was creating bindings to the <b>AlienFx SDK</b> within the <b>Unity</b> environment.
+            This initiative aimed to provide game developers with seamless access to the SDK's capabilities within their familiar development setting.
           </p>
         </section>
       </ProfessionalPage_>

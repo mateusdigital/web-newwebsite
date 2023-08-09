@@ -11,15 +11,18 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            After my work at Stoic's Studio <Link_ href="./the_banner_saga">The Banner Saga</Link_>, I've invited to work in Killers and Thieves, a
-            game that they would be publishing back then.
+            Following my contributions to Stoic Studio's <Link_ href="./the_banner_saga">The Banner Saga</Link_>,
+            I received an invitation to join the team working on Killers and Thieves, a game they were
+            preparing to publish at the time.
           </p>
+
           <p>
-            I had improved and finalized game for publishing by adding features and fixing bugs.
-            Also extensively work was done to optimize <b>Lua</b> and <b>Unity</b> interop code, implement UI features in Unity and game play features in Lua.
+            I was responsible for enhancing and finalizing the game for publication by adding new
+            features, rectifying bugs, and conducting significant optimization work on the <b>Lua</b> and <b>Unity</b> interop code.
           </p>
+
           <p>
-            Besides Implement <b>Steamworks API</b> integration I've implemented and refine AI algorithms for heists.
+            Additionally, I undertook the integration of the <b>Steamworks API</b> and refined AI algorithms for in-game heists.
           </p>
         </section>
       </ProfessionalPage_>

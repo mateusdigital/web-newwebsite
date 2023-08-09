@@ -1,19 +1,36 @@
 
+import DefaultPage_ from "@/components/default-page";
 import GetProjectPageInfo from "@/components/project-detail-page/get-project-detail-page-info";
-import DemoPage_ from "@/components/project-detail-page/demo-page";
+import ProjectTitle_ from "@/components/project-detail-page/project-title"
+import UnderConstruction from "@/components/under-construction";
 
 export default function Page() {
   const info = GetProjectPageInfo()
-  debugger
   return (
     <>
-      {/* <DemoPage_ info={info}>
+      <DefaultPage_ page_id="games">
+        <UnderConstruction />
+        <ProjectTitle_ info={info} />
+
         <section>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur at similique labore sed rerum consequatur quaerat ut deserunt quisquam dicta.
+            This page is under construction <b>:)</b>
           </p>
+
+          <ul>
+            <b>General Info:</b><br />
+            <li><b>Tech:</b> </li>
+            <li><b>Year:</b></li>
+            <li><b>License:</b></li>
+          </ul>
+          <ul>
+            <b>Links:</b><br />
+            <li><b>Project Website:</b></li>
+            <li><b>Source Code:</b></li>
+            <li><b>Itch.io:</b></li>
+          </ul>
         </section>
-      </DemoPage_> */}
+      </DefaultPage_ >
     </>
   )
 }

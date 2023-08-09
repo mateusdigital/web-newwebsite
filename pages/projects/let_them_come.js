@@ -8,15 +8,11 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            In this project I was responsible to integrate the <b>AlienFx SDK</b> to YoYo Games' <b>Game Maker</b>.
-            The AlienFx SDK is written in C++ and provided as an DLL file, but it isn't readily usable in Game Maker.
+            In this project, I was responsible to integrate the <b>AlienFx SDK</b> to YoYo Games' <b>Game Maker</b>.
+            The AlienFx SDK is written in C++ and provided as a DLL file, but it isn't readily usable in Game Maker.
             <br/>
-            My job was write a binding that maps more 1:1 possible the C++ in GML (the Game Maker scripting language).
-            It was very challenging since I had no experience in Game Maker at all, but at end we managed to get it right.
-          </p>
-
-          <p>
-            I also wrote an texture packer algorithm to improve the performance of the particle system.
+            My job was to write a binding that maps more 1:1 possible the C++ in GML (the Game Maker scripting language).
+            It was very challenging since I had no experience in Game Maker at all, but in the end, we managed to get it right.
           </p>
         </section>
       </ProfessionalPage_>

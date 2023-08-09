@@ -8,24 +8,16 @@ export default function Page() {
       <ProfessionalPage_ info={info}>
         <section>
           <p>
-            8 Ball Pool is an online multiplayer game developed by Miniclip.
-            It is played on a virtual pool table and allows players to compete against
-            each other from around the world.
+            8 Ball Pool, the Miniclip's flagship game, thrives as a global online multiplayer game,
+            gathering players for virtual pool matches.
           </p>
 
           <p>
-            It's the of Miniclip's main - 10 years on going - game, with the biggest team of 20+ programmers.
-            With an agile mindset, the 8 Ball Pool team heavily uses <i>SCRUM</i> in the day routines.
+              With 20+ programmers, the agile 8 Ball Pool team adeptly employs SCRUM,
+              dividing into 3 groups: 2 for active development and 1 for bug fixes,
+              refactoring, and performance enhancements.
           </p>
-          <p>
-            The whole team is further divided into 3 smaller groups, which wwo of them are focused into active development,
-            while the third is responsible for bug-fixes, refactoring, performance improvements.
-          </p>
-          <p>
-            The smaller teams rotate their roles - development x fixes - as per feature basis.
-            So sometimes will be doing new feature development, sometimes will be helping
-            to keep the tech dept in control.
-          </p>
+
           <p>
             I've had the opportunity to work in both of the situations, helping
             with <b>performance improvements</b> and bug fixing and with the implementation
