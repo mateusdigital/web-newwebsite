@@ -63,7 +63,7 @@ function GamesInformation_(name) {
             year:     "2018",
             type:     "personal",
             platform: ["Web"],
-            tech:     ["Javascript", "Canvas API", "chroma.js"],
+            tech:     ["JS", "Canvas API", "chroma.js"],
 
             is_playable_on_canvas: true,
         },
@@ -75,7 +75,7 @@ function GamesInformation_(name) {
             year:     "2018",
             type:     "personal",
             platform: ["Web"],
-            tech:     ["Javascript", "Canvas API"],
+            tech:     ["JS", "Canvas API"],
 
             is_playable_on_canvas: true,
         },
@@ -87,7 +87,7 @@ function GamesInformation_(name) {
             year:     "2018",
             type:     "personal",
             platform: ["PC", "Web", ],
-            tech:     ["C++", "Emscripten", "Javascript"],
+            tech:     ["C++", "JS", "Emscripten"],
         },
 
         // --------------------------------------------------------------------
@@ -341,16 +341,15 @@ function GamesInformation_(name) {
 
         ////////////////////////////////////////////////////////////////////////
         { type: "demo", name:"gameboy-css" , title:"Gameboy CSS"  , year:"2023", platform: ["Web"], tech: ["CSS"] },
-
-        { type: "demo", name:"roses"       , title:"Roses"        , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"flowfield"   , title:"Flowfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"lissajous"   , title:"Lissajous"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"doom_fire"   , title:"Doom Fire!"   , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"game_of_life", title:"Game of Life" , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"simple_tree",  title:"Simple Trees!", year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"simple_clock", title:"Simple Clock!", year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"metaballs"   , title:"Metaballs"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
-        { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2020", platform: ["Web"], tech: ["Javascript", "demolib"] },
+        { type: "demo", name:"roses"       , title:"Roses"        , year:"2022", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"flowfield"   , title:"Flowfield"    , year:"2022", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"lissajous"   , title:"Lissajous"    , year:"2021", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"doom_fire"   , title:"Doom Fire!"   , year:"2021", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"game_of_life", title:"Game of Life" , year:"2020", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"simple_tree",  title:"Simple Trees!", year:"2019", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"simple_clock", title:"Simple Clock!", year:"2019", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"metaballs"   , title:"Metaballs"    , year:"2019", platform: ["Web"], tech: ["JS", "demolib"] },
+        { type: "demo", name:"starfield"   , title:"Starfield"    , year:"2019", platform: ["Web"], tech: ["JS", "demolib"] },
     ];
 
     for(let i = 0; i < list.length; ++i) {
