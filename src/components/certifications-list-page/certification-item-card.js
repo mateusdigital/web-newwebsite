@@ -12,11 +12,12 @@ export default function Card_({ index, year, provider, name, display_name, img_p
       <div className="certificationGridCard">
         <Link_ href={page_detail_url}>
           <div>
-            <img src={img_path} alt={alt_text} />
-            {title}
-            {/* <span className="certificationCardTitle"> */}
 
-              {/* </span> */}
+            <img src={img_path} alt={alt_text} />
+            <span className="certificationCardTitle">
+            {index} - {title}
+
+              </span>
           </div>
         </Link_>
       </div>

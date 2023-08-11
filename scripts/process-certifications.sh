@@ -80,6 +80,7 @@ for item in $(find $SCRIPT_ROOT_DIR/public/res/certifications -iname "*.pdf"); d
         sed -i "s|__header_img_url__|$img_url|g" "${SCRIPT_ROOT_DIR}/pages/certifications/${clean_output_name}.js"
         sed -i "s|__pdf_url__|$pdf_url|g" "${SCRIPT_ROOT_DIR}/pages/certifications/${clean_output_name}.js"
 
+        item_count=$(( item_count + 1 ));
     popd >/dev/null
 done
 

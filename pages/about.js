@@ -61,7 +61,7 @@ export default function About() {
           <li><Link_ href="certifications/2012_06_28_MTA-98-373_Mobile_Development_Fundamentals">Microsoft - MTA-98-361 </Link_></li>
 
           <p>
-            And more than <Link_ href="certifications"> 123 other <i>minor</i> certifications</Link_>.
+            And more than <Link_ href="certifications"> +95 other <i>minor</i> certifications</Link_>.
           </p>
 
           <p>
