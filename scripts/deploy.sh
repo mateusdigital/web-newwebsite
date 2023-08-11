@@ -33,6 +33,12 @@ set -e; ## break on errors
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
 
+##------------------------------------------------------------------------------
+"${SCRIPT_DIR}"/build-static.sh;
+
+
+##------------------------------------------------------------------------------
+
 readonly SOURCE_FOLDER="${ROOT_DIR}/out";
 readonly REMOTE_SERVER="mateus@mateus.digital";
 readonly REMOTE_FOLDER="/var/www/mateus.digital/html";

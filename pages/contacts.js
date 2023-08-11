@@ -31,7 +31,7 @@ export default function Contacts() {
             <li><GithubIcon_/> <a href="https://github.com/mateusdigital">github.com/mateusdigital</a></li>
             <li><LinkedinIcon_/> <a href="https://www.linkedin.com/in/mateusdigital">linkedin.com/in/mateusdigital</a></li>
             <li><ItchIcon_/> <a href="https://mateusdigital.itch.io">mateusdigital.itch.io</a></li>
-            <li><TwitterIcon_/> <a href="https://twitter.com/_mateusidgital">twitter.com/_mateusdigital</a></li>
+            <li><TwitterIcon_/> <a href="https://twitter.com/_mateusdigital">twitter.com/_mateusdigital</a></li>
           </ul>
         </section>
       </DefaultPage_>
