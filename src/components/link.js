@@ -2,25 +2,26 @@ import Link from 'next/link'
 
 
 export default function Link_({ className, href, children }) {
+  const is_abs_url = href.startsWith("http")
+  if(is_abs_url) {
+    return (<Link className={className} href={href}>{children}</Link>);
+  }
+
+  const has_extension = href.endsWith('.html');
+  if(has_extension) {
+    return (<Link className={className} href={href}>{children}</Link>);
+  }
 
   if (process.env.NODE_ENV === 'development') {
-    const has_extension = href.endsWith('.html');
-    const has_http      = href.startsWith("http");
-
-    if(has_http == false) {
-      if (has_extension == false) {
-        console.log("Normal:", href);
+    console.log("IS IN DEVELOPMENT");
+    if(!has_extension) {
         href = href;
-      } else {
-        console.log("----> ", href);
-        href = href + '.html'
-      }
+    }
+  } else {
+    if(!has_extension) {
+      href = href + ".html"
     }
   }
 
-  return (
-    <>
-      <Link className={className} href={href}>{children}</Link>
-    </>
-  )
+  return (<Link className={className} href={href}>{children}</Link>);
 }

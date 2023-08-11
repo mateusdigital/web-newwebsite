@@ -36,9 +36,18 @@ readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
 
 readonly SOURCE_FOLDER="${ROOT_DIR}/out";
 
+
 ##------------------------------------------------------------------------------
-readonly list="games projects contacts resume about";
-for item in $list; do
-  mkdir -p "${SOURCE_FOLDER}/$item";
-  cp "${SOURCE_FOLDER}/${item}.html" "${SOURCE_FOLDER}/${item}/index.html";
+for item in $(find "$SOURCE_FOLDER" -iname "*.html"); do ## ASSUMING NO SPACES
+  dir_name="$(dirname "$item")";
+  file_name="$(basename "$item")";
+  item_name="$(basename "$item" ".html")";
+
+  echo "$dir_name";
+  echo "$file_name";
+  echo "$item_name";
+  echo "";
+
+  mkdir -pv "${dir_name}/${item_name}";
+  cp -v "${dir_name}/${file_name}" "${dir_name}/${item_name}/index.html";
 done;

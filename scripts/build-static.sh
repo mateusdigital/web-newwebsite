@@ -68,4 +68,7 @@ npm run export;
 echo "==> $0 done...";
 
 
+##------------------------------------------------------------------------------
+"${ROOT_DIR}"/scripts/generate-index-for-dirs.sh;
+
 popd;
