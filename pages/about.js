@@ -13,23 +13,21 @@ export default function About() {
         <h1>About <span>me</span></h1>
         <section>
           <p>
-            Hello, my name is Mateus Mesquita and I'm a programmer living in my hometown with beautiful wife and loved
-            daughter.
+            Hello, my name is Mateus Mesquita and I'm a programmer living in my hometown with my beautiful wife and our loved daughter.
           </p>
           <p>
-            This is my personal website, you can find here most of the code and ideas I came up with during my
-            extra-professional time.
+            This is my personal website, you can find here most of the code and ideas I came up with during my extra-professional time.
           </p>
         </section>
 
         <AboutSection_ title="latino americano!" photo="srs_1">
           <p>
-            I'm from a small city called Santa Rita do Sapucai, in the state of Minas Gerais, Brazil!
+            I'm from a small city called Santa Rita do Sapucaí, in the state of Minas Gerais, Brazil!
           </p>
 
           <p>
             In the first 28 years of my life, I lived and visited many places. My hometown,
-            Contagem, Belo Horizonte, Jundiai, Cajamar, Curitiba, and Sao Paulo were some of them.
+            Contagem, Belo Horizonte, Jundiaí, Cajamar, Curitiba, and São Paulo were some of them.
           </p>
 
           <p>
@@ -37,7 +35,7 @@ export default function About() {
           </p>
 
           <p>
-            In 2010, I enrolled in the Computer Science course in Belo Horizonte, the capital of my state.
+            In 2010, I enrolled in a Computer Science course in Belo Horizonte, the capital of my state.
             Although I didn't complete the course, it was during this time that I joined the Microsoft Innovation Center (MicBH).
           </p>
 
@@ -59,16 +57,17 @@ export default function About() {
             This was a period of intense study that resulted in two Microsoft certifications for me:
           </p>
 
-          <li>Microsoft - MTA-98-373</li>
-          <li>Microsoft - MTA-98-361</li>
+          <li><Link_ href="certifications/2012_06_28_MTA-98-373_Mobile_Development_Fundamentals">Microsoft - MTA-98-373 </Link_></li>
+          <li><Link_ href="certifications/2012_06_28_MTA-98-373_Mobile_Development_Fundamentals">Microsoft - MTA-98-361 </Link_></li>
 
           <p>
-            And more than 123 other minor certifications.
+            And more than <Link_ href="certifications"> 123 other <i>minor</i> certifications</Link_>.
           </p>
 
           <p>
-            In 2016, I became a programmer at Firehorse Studios in Sao Paulo, an opportunity that allowed
-            me to work on games like The Banner Saga 1 and 2, Killers and Thieves, and others.
+            In 2016, I became a programmer at Firehorse Studios in São Paulo, an opportunity that allowed
+            me to work on games like <Link_ href="/projects/the_banner_saga">The Banner Saga 1</Link_> and <Link_ href="/projects/the_banner_saga_2">2</Link_>,
+            <Link_ href="/projects/killers_and_thieves">Killers and Thieves</Link_>, and others.
           </p>
         </AboutSection_>
 
@@ -83,28 +82,28 @@ export default function About() {
             During that time, I visited Croatia, France, Spain, and almost all of Portugal.
           </p>
           <p>
-            In addition to working on Pacman.io and 8 Ball Pool, I co-authored The Mistral Report
-            with <a href="https://montyontherun.itch.io">Monty</a>, a 1st person stealth dungeon crawler
+            In addition to working on <Link_ href="/projects/pacman_io">Pacman.io</Link_> and <Link_ href="/projects/8_ball_pool">8 Ball Pool</Link_>,
+            I co-authored <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> with <a href="https://montyontherun.itch.io">Monty</a>, a 1st person stealth dungeon crawler
             for MS-DOS that won the <a href="http://www.retrozaragoza.com/">Retro Zaragozza 2018</a>🏆.
           </p>
 
           <p>
-            With the interest in retro computers high, I also launched El Jamon Volador for the Game Boy.
+            With the interest in retro computers high, I also launched <Link_ href="/projects/el_jamon_volador">El Jamon Volador</Link_> for the Game Boy.
           </p>
 
         </AboutSection_>
 
         <AboutSection_ title="Minsk" photo="belarus_1">
           <p>
-            In the end of 2019, my career progressed with an invitation to join the Wargaming team, and in October,
+            At the end of 2019, my career progressed with an invitation to join the <b>Wargaming</b> team, and in October,
             I moved to the capital of Belarus. Initially, the cultural shift and language barrier proved to be
             challenging, but the sheer excitement helped me overcome it!
           </p>
 
           <p>
-            At Wargaming, I worked on two games. First, as a Server Programmer, I was responsible for implementing
-            the game metaservers. Unfortunately, I'm under NDA, so I can't discuss it further.
-            Secondly, I worked with Unreal Engine 4 to create UI and some gameplay elements for the successful World of Tanks - Blitz.
+            At Wargaming, I worked on two games. First, as a <b>Server Programmer</b>, I was responsible for implementing
+            the game metaservers, unfortunately, I'm under NDA, so I can't discuss it further.
+            Secondly, I worked with <b>Unreal Engine 4</b> to create UI and some gameplay elements for the successful <Link_ href="/projects/el_jamon_volador">World of Tanks - Blitz</Link_>.
           </p>
 
           <p>
@@ -116,14 +115,14 @@ export default function About() {
         <AboutSection_ title="Kyiv" photo="kyiv_4">
           <p>
             Due to political instability following the 2020 elections in Belarus, I decided to accept an offer
-            from Ubisoft Kyiv to join as Senior Programmer for the upcoming Skull and Bones.
+            from <b>Ubisoft Kyiv</b> to join as <b>Senior Programmer</b> for the upcoming <Link_ href="/projects/el_jamon_volador">Skull and Bones</Link_>.
           </p>
           <p>
-            My job was to implement state-of-the-art accessibility solutions, which focused on text-to-speech
-            and speech-to-text. I worked with a multi-studio effort involving Kyiv, Odessa, Berlin, and Belgrade.
+            My job was to implement <b>state-of-the-art accessibility solutions</b>, which focused on <b>text-to-speech</b>
+            and <b>speech-to-text</b>. I worked with a multi-studio effort involving Kyiv, Odesa, Berlin, and Belgrade.
           </p>
           <p>
-            Kyiv was the most awesome place I had lived in to date, with a vibrant culture, wonderful places
+            Kyiv was the most awesome place I had lived into date, with a vibrant culture, wonderful places
             to chill or hang out with friends, and the hospitality of the people I met made me love the city.
           </p>
           <p>
@@ -135,11 +134,11 @@ export default function About() {
 
         <AboutSection_ title="Brasil again..." photo="guaruja_1">
           <p>
-            After deciding to leave the territory of Ukraine, I felt it was time for a break. My daughter was about
+            After deciding to leave the territory of Ukraine, I felt it was time for a <b>break</b>. My daughter was about
             to be born, and the outcome of the invasion was unclear, so we decided to move back to Brazil.
           </p>
           <p>
-            Initially, my family and I lived in the coastal city of Guaruja, where Marla was born, and we enjoyed
+            Initially, my family and I lived in the coastal city of Guarujá, where Marla was born, and we enjoyed
             long walks at sunset with our dog, Pingo.
           </p>
           <p>

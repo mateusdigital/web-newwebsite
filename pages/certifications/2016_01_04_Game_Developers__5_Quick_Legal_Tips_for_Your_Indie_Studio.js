@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/udemy/2016_01_04_Game_Developers__5_Quick_Legal_Tips_for_Your_Indie_Studio.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/udemy/2016_01_04_Game_Developers:_5_Quick_Legal_Tips_for_Your_Indie_Studio.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/Bradesco/2012_10_21_C_plus__plus__Desenvolvimento_Orientado_a_Objeto.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/Bradesco/2012_10_21_C++_Desenvolvimento_Orientado_a_Objeto.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

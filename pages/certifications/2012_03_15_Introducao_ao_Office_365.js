@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2012_03_15_Introducao_ao_Office_365.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2012_03_15_Introdução_ao_Office_365.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

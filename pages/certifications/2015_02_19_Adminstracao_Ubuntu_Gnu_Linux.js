@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/Tux4You/2015_02_19_Adminstracao_Ubuntu_Gnu_Linux.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/Tux4You/2015_02_19_Adminstração_Ubuntu_Gnu:Linux.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2012_05_30_Introducao_ao_SQL_Server_2008_R2.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2012_05_30_Introdução_ao_SQL_Server_2008_R2.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2012_03_14_Introducao_à_Business_Intelligence.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2012_03_14_Introdução_à_Business_Intelligence.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

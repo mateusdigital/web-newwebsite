@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2013_06_27_Organizing__and__Sharing_with_OneNote_Jump_Start.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2013_06_27_Organizing___pdf_url___Sharing_with_OneNote_Jump_Start.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/udemy/2015_02_19_Aprendendo_Terminal_Linux_pondo_a_mao_na_massa_.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/udemy/2015_02_19_Aprendendo_Terminal_Linux_pondo_a_mão_na_massa!.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>

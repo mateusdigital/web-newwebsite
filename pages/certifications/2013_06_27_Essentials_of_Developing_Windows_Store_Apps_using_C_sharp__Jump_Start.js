@@ -12,7 +12,7 @@ export default function Page() {
         <section>
           <ul>
             <b>Links:</b><br />
-            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2013_06_27_Essentials_of_Developing_Windows_Store_Apps_using_C_sharp__Jump_Start.pdf">Download</Link_></li>
+            <li><b>PDF Version:</b> <Link_ href="/res/certifications/MVA/2013_06_27_Essentials_of_Developing_Windows_Store_Apps_using_C#_Jump_Start.pdf">Download</Link_></li>
           </ul>
         </section>
       </DefaultPage_>
