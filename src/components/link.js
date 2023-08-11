@@ -18,7 +18,7 @@ export default function Link_({ className, href, children }) {
         href = href;
     }
   } else {
-    if(!has_extension) {
+    if(!has_extension && href.length > 1) {
       href = href + ".html"
     }
   }

@@ -33,22 +33,9 @@ set -e; ## break on errors
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)";
 readonly ROOT_DIR="$(dirname "$SCRIPT_DIR")";
 
-##------------------------------------------------------------------------------
-readonly SOURCE_FOLDER="${ROOT_DIR}/out";
-readonly REMOTE_SERVER="mateus@mateus.digital";
-readonly REMOTE_FOLDER="/var/www/mateus.digital/html";
-
-readonly curr_build=$(                  \
-    cat "${ROOT_DIR}/pages/index.js" |  \
-    grep "const build = "            |  \
-    cut -d" " -f4 | tr -d ";"           \
-);
-
 
 ##------------------------------------------------------------------------------
-echo "==> CURR BUILD: $curr_build";
-
-rsync -avz                                       \
-      "${SOURCE_FOLDER}/"                        \
-      -e ssh "${REMOTE_SERVER}:${REMOTE_FOLDER}" \
-    ;
+$SCRIPT_DIR/build-static.sh
+$SCRIPT_DIR/generate-index-for-dirs.sh
+$SCRIPT_DIR/process-certifications.sh
+$SCRIPT_DIR/deploy.sh

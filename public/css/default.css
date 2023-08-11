@@ -719,13 +719,15 @@ svg.projectDetailPageCompanyLogo {
     position: relative;
     display: block;
     width: 100%;
-    min-height: 226px;
+    min-height: 280px;
     font-size: 80%;
+
+    max-width: 500px;;
 }
 
 .certificationGridCard img {
     width: 100%;
-    min-height: 226px;
+    min-height: 280px;
     object-fit: cover;
     /* min-height: 218px; */
 
