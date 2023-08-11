@@ -13,7 +13,7 @@ export default function Link_({ className, href, children }) {
   }
 
   if (process.env.NODE_ENV === 'development') {
-    console.log("IS IN DEVELOPMENT");
+    // console.log("IS IN DEVELOPMENT");
     if(!has_extension) {
         href = href;
     }

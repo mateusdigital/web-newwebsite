@@ -496,7 +496,6 @@ svg.heartIcon {
     max-width: 100%;
     max-height: 100%;
     font-size: 95%;
-
 }
 
 .projectsGridCard img {
@@ -711,4 +710,81 @@ svg.projectDetailPageCompanyLogo {
 
     background-image: url("http://www.textfiles.com/underconstruction/CaCapeCanaveralGalaxy8999construction5.gif");
     background-repeat: repeat;
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Certifications                                                            */
+/* -------------------------------------------------------------------------- */
+.certificationGridCard {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 226px;
+    font-size: 90%;
+}
+
+.certificationGridCard img {
+    width: 100%;
+    min-height: 226px;
+    object-fit: cover;
+    /* min-height: 218px; */
+
+
+    border-radius: var(--small-border-radius);
+
+    border: 1px solid var(--projects-card-border-color);
+}
+
+.certificationCardTitle::before {
+    content: "\25A0";
+    /* That square */
+    font-size: 80%;
+    margin-right: 0.75rem;
+    opacity: 0.85;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+}
+
+
+.certificationGridContainer {
+    display: grid;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 400px) {
+    .certificationGridContainer {
+        /* background-color: red; */
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (min-width: 401px) {
+    .certificationGridContainer {
+        /* background-color: red; */
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+@media (min-width: 601px) {
+    .certificationGridContainer {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 801px) {
+    .certificationGridContainer {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+img.certificationDetailPageHeader {
+    /* background-color: aqua; */
+    width: min(100%, 700px);
+    display: block;
+    border-radius: var(--small-border-radius);
+    margin-left: auto;
+    margin-right: auto;
 }
