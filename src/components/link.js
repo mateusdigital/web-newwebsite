@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 
 export default function Link_({ className, href, children }) {
-  const is_abs_url = href.startsWith("http")
+  const is_abs_url = href.startsWith("http") || href == "/";
   if(is_abs_url) {
     return (<Link className={className} href={href}>{children}</Link>);
   }
