@@ -5,7 +5,7 @@ import GamesInformation_ from "@/components/games/games-information";
 export default function Projects() {
 
   const games_info = GamesInformation_();
-  
+
   // Build all the demo cards automatically.
   const projectCards = [];
   for (let info of games_info) {
