@@ -84,6 +84,28 @@ function GamesInformation_(name) {
     //
     // Personal
     //
+    // -------------------------------------------------------------------------
+    {
+      name: "same_game",
+      title: "The Same Game",
+      year: "2020",
+      type: "personal",
+      platform: ["Web"],
+      tech: ["JS", "PixiJS", "NextJS"],
+
+      is_playable_on_canvas: true,
+    },
+    // -------------------------------------------------------------------------
+    {
+      name: "koliery",
+      title: "Koliery",
+      year: "2020",
+      type: "personal",
+      platform: ["Web"],
+      tech: ["JS", "Canvas API", "chroma.js"],
+
+      is_playable_on_canvas: true,
+    },
 
     // -------------------------------------------------------------------------
     {
@@ -119,6 +141,10 @@ function GamesInformation_(name) {
       tech: ["C++", "JS", "Emscripten"],
     },
 
+
+    //
+    // Very Old Games
+    //
 
     // -------------------------------------------------------------------------
     {

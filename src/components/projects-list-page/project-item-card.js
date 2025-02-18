@@ -29,7 +29,7 @@ export default function ProjectItemCard_({ name }) {
   return (<>
     <div className="projectsGridCard" key={name}>
       <Link_ href={details_page_url}>
-        <div>
+        <div className="projectsGridCardImage">
           <img src={img_path} alt={alt_text} />
         </div>
 

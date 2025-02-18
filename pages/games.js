@@ -14,7 +14,7 @@ export default function Games() {
       <section>
         {/* ---------------------------------------------------------------- */}
         <h1>Professional <span>Games</span></h1>
-        <div className="gamesGridContainer">
+        <div className="gridContainer3">
           <ProjectItemCard_ name="uniqkiller" />
           <ProjectItemCard_ name="fortnite" />
           <ProjectItemCard_ name="farcry6" />
@@ -36,7 +36,7 @@ export default function Games() {
       {/* ---------------------------------------------------------------- */}
       <section>
         <h1>Retro <span>Games</span></h1>
-        <div className="retroGridContainer">
+        <div className="gridContainer3">
           <ProjectItemCard_ name="el_jamon_volador" />
           <ProjectItemCard_ name="the_mistral_report" />
         </div>
@@ -45,18 +45,20 @@ export default function Games() {
       {/* ---------------------------------------------------------------- */}
       <section>
         <h1>Personal <span>Games</span></h1>
-        <div className="personalGridContainer">
+        <div className="gridContainer3">
+          <ProjectItemCard_ name="koliery" />
+          <ProjectItemCard_ name="same_game" />
           <ProjectItemCard_ name="nuclear_rain" />
           <ProjectItemCard_ name="cosmic_intruders" />
           <ProjectItemCard_ name="simple_snake" />
-          <ProjectItemCard_ name="color_grid" />
-          <ProjectItemCard_ name="memory_amazing_cow" />
         </div>
       </section>
 
       <section>
         <h1>Very Old<span> Games</span></h1>
-        <div className="veryOldGridContainer">
+        <div className="gridContainer5">
+          <ProjectItemCard_ name="color_grid" />
+          <ProjectItemCard_ name="memory_amazing_cow" />
           <ProjectItemCard_ name="bow_and_arrow" />
           <ProjectItemCard_ name="kaboom" />
           <ProjectItemCard_ name="ram_it" />

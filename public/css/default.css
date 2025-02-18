@@ -66,7 +66,7 @@
     --main-menu-item-color-hover:            var(--gray-200);
     --main-menu-item-decoration-color-hover: var(--gray-400);
 
-    --projects-card-border-color:  hsla(0, 0%, 7%, 0.4);
+    --projects-card-border-color:  rgb(30, 30, 30);
     --projects-card-desc-background-color: hsla(0, 0%, 7%, 0.9);
     --projects-card-desc-text-color: var(--gray-200);
     /*
@@ -464,82 +464,55 @@ svg.heartIcon {
 /* -------------------------------------------------------------------------- */
 /*  Projects Grid                                                             */
 /* -------------------------------------------------------------------------- */
-.gamesGridContainer {
-    display: grid;
-    gap: 1rem;
-
-}
-.personalGridContainer {
+.gridContainer3 {
     display: grid;
     gap: 1rem;
 }
-
-.retroGridContainer {
+.gridContainer4 {
     display: grid;
     gap: 1rem;
 }
 
-.veryOldGridContainer {
+.gridContainer5 {
     display: grid;
     gap: 1rem;
 }
 
-.projectsGridContainer {
-    display: grid;
-    gap: 1rem;
-}
 
 
 @media (max-width: 600px) {
-    .gamesGridContainer {
+    .gridContainer3 {
         grid-template-columns: repeat(1, auto);
     }
-    .personalGridContainer {
+    .gridContainer4 {
         grid-template-columns: repeat(2, auto);
     }
-    .retroGridContainer {
+    .gridContainer5 {
         grid-template-columns: repeat(3, auto);
     }
-    .veryOldGridContainer {
-        grid-template-columns: repeat(3, auto);
-    }
-    .projectsGridContainer {
-        grid-template-columns: repeat(3, auto);
-    }
+
 }
 
 @media (min-width: 601px) {
-    .gamesGridContainer {
+    .gridContainer3 {
         grid-template-columns: repeat(2, auto);
     }
-    .personalGridContainer {
+    .gridContainer4 {
         grid-template-columns: repeat(3, auto);
     }
-    .retroGridContainer {
-        grid-template-columns: repeat(4, auto);
-    }
-    .veryOldGridContainer {
-        grid-template-columns: repeat(4, auto);
-    }
-    .projectsGridContainer {
+    .gridContainer5 {
         grid-template-columns: repeat(4, auto);
     }
 }
 
 @media (min-width: 801px) {
-    .gamesGridContainer {
+    .gridContainer3 {
         grid-template-columns: repeat(3, auto);
     }
-    .personalGridContainer {
+    .gridContainer4 {
         grid-template-columns: repeat(4, auto);
     }
-    .retroGridContainer {
-        grid-template-columns: repeat(5, auto);
-    }
-    .veryOldGridContainer {
-        grid-template-columns: repeat(5, auto);
-    }
-    .projectsGridContainer {
+    .gridContainer5 {
         grid-template-columns: repeat(5, auto);
     }
 }
@@ -550,6 +523,7 @@ svg.heartIcon {
     max-width: 100%;
     max-height: 100%;
     font-size: 95%;
+    border-radius: var(--small-border-radius);
 }
 
 .projectsGridCard img {
@@ -832,7 +806,7 @@ svg.projectDetailPageCompanyLogo {
 
 @media (min-width: 801px) {
     .certificationGridContainer {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(4, auto);
     }
 }
 

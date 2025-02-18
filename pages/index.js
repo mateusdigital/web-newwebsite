@@ -1,5 +1,5 @@
 const version = "1.1.0";
-const build   = 45;
+const build = 45;
 
 import Link_ from "@/components/link";
 import DefaultPage_ from "@/components/default-page";
@@ -35,7 +35,7 @@ export default function Index() {
     <>
       <DefaultPage_ title="Welcome to Mateus Mesquita's homepage" page_id="index">
         <div className="indexAsciiArtContainer">
-          <pre className="indexAsciiArt" dangerouslySetInnerHTML={{__html: HTML_TEXT}}></pre>
+          <pre className="indexAsciiArt" dangerouslySetInnerHTML={{ __html: HTML_TEXT }}></pre>
         </div>
 
         <h1>Mateus Mesquita</h1>
@@ -43,7 +43,7 @@ export default function Index() {
           <p>
             Hello, my name is <b>Mateus Mesquita</b>, and I am a creative developer currently living in Brasil.
           </p>
-          
+
           <p>
             Currently, I'm a <b>Tech Lead</b> at <Link_ href="https://hypejoe.com"><b>HypeJoe Games</b></Link_> leading
             the development of <Link_ href="/projects/uniqkiller">UniqKiller</Link_>.
@@ -51,7 +51,7 @@ export default function Index() {
 
           <p>
             With over <b>10 years in game development</b>, I have contributed to major projects at&nbsp;
-            <b>Epic</b> <span className="textDetail">(Remote)</span>,&nbsp;
+            <b>Epic Games</b> <span className="textDetail">(Remote)</span>,&nbsp;
             <b>Ubisoft</b> <span className="textDetail">(Kyiv)</span>,&nbsp;
             <b>Wargaming</b> <span className="textDetail">(Minsk)</span>,&nbsp;
             <b>Miniclip</b> <span className="textDetail">(Lisbon)</span>,&nbsp;
@@ -70,7 +70,7 @@ export default function Index() {
             I love retro-programming and co-created <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> for MSDOS
             <span className="textDetail"> (awarded 🥇 at Retro Zaragozza 2018)</span> and also released
             the <Link_ href="/projects/el_jamon_volador">El Jamon Volador</Link_> the Nintendo Game Boy.
-            
+
             Also I like to make small, but complete, clone games releasing them
             at <Link_ href="https://mateusdigital.itch.io">mateusdigital.itch.io</Link_>
           </p>
@@ -78,44 +78,44 @@ export default function Index() {
           <p>
             Also I'm interested in <Link_ href="/projects">CREATIVE-CODING</Link_> and generative art.
           </p>
-          
+
           <p>
             I've participated in some talks and about game dev and career development, you can check them at:
-            <br/>
-            
+            <br />
+
             <li>
               <Link_
                 className="mediaTalkContainer"
                 href="https://www.youtube.com/watch?v=diSLvMutYH0"
               >
-              {/*<img src="https://img.youtube.com/vi/diSLvMutYH0/default.jpg"/>*/}
+                {/*<img src="https://img.youtube.com/vi/diSLvMutYH0/default.jpg"/>*/}
                 <span>CTRL ALT - Tudo Sobre Unreal Engine #1</span>&nbsp;
                 <span className="textDetail">(Youtube)</span>
               </Link_>
             </li>
-             
+
             <li>
               <Link_
                 className="mediaTalkContainer"
                 href="https://www.youtube.com/watch?v=InM81C0S65E"
               >
-                 {/*<img src="https://img.youtube.com/vi/InM81C0S65E/default.jpg"/>*/}
-                <span>CTRL ALT - Tudo Sobre Unreal Engine #1</span>&nbsp;
+                {/*<img src="https://img.youtube.com/vi/InM81C0S65E/default.jpg"/>*/}
+                <span>CTRL ALT - Tudo Sobre Unreal Engine #2</span>&nbsp;
                 <span className="textDetail">(Youtube)</span>
-               </Link_>
+              </Link_>
             </li>
-             
+
             <li>
               <Link_
                 className="mediaTalkContainer"
                 href="https://www.youtube.com/watch?v=zKkm6iGo5uE"
               >
-              {/*<img src="https://img.youtube.com/vi/zKkm6iGo5uE/default.jpg"/>*/}
+                {/*<img src="https://img.youtube.com/vi/zKkm6iGo5uE/default.jpg"/>*/}
                 <span>GDTK - Bate Papo Game Dev</span>&nbsp;
                 <span className="textDetail">(Youtube)</span>
               </Link_>
             </li>
-        
+
             <li>
               <Link_
                 className="mediaTalkContainer"
@@ -126,13 +126,13 @@ export default function Index() {
               </Link_>
             </li>
           </p>
-          
-          
+
+
           <p>
-            Well, there a lot of stuff that I've made! <br/>
+            Well, there a lot of stuff that I've made! <br />
             If you want you can check all of them in the <Link_ href="/games">GAMES</Link_> or <Link_
-            href="/projects"
-          >PROJECTS</Link_> section.
+              href="/projects"
+            >PROJECTS</Link_> section.
           </p>
 
           <p>
@@ -144,7 +144,7 @@ export default function Index() {
           </p>
 
           <p>
-            It's nice to see you here! <br/>
+            It's nice to see you here! <br />
             I hope that you enjoy ;D
           </p>
         </section>
