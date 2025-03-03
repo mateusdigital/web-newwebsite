@@ -1,10 +1,14 @@
-const version = "1.1.0";
-const build = 45;
-
+// -----------------------------------------------------------------------------
 import Link_ from "@/components/link";
 import DefaultPage_ from "@/components/default-page";
+// -----------------------------------------------------------------------------
+import packageJson from '../package.json';
 
+// -----------------------------------------------------------------------------
+const version = packageJson.version;
+const build   = packageJson.build;
 
+// -----------------------------------------------------------------------------
 const ASCII_ART = [
   "                                            ,o88888",
   "                                       ,o8888888'",
