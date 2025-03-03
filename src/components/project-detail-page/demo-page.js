@@ -1,21 +1,25 @@
 import DefaultPage_ from "@/components/default-page";
-import ProjectPresentation_ from "@/components/project-detail-page/project-presentation";
-import Link_ from "../link";
-import ProjectTitle_ from "./project-title";
+import ProjectPresentation_ from
+  "@/components/project-detail-page/project-presentation";
 
-export default function DemoPage_({ info, children }) {
+import ProjectTitle_ from "./project-title";
+import Link_ from "../link";
+
+export default function DemoPage_({info, children})
+{
   const name = info.name;
   const tech = info.tech.join(", ");
   const year = info.year;
 
   const license = "GPLv3";
   const git_url = `https://github.com/mateusdigital/${name}`;
-  
+
   return (
     <>
       <DefaultPage_ page_id="projects">
         <section className="projectDetailPageContainer">
-          <ProjectPresentation_ info={info} />
+          <ProjectPresentation_ info={
+    info} />
           <ProjectTitle_ info={info} />
           {children}
 

@@ -60,23 +60,25 @@ export default function Index() {
             <Link_ href="/projects/skull_and_bones">Skull and Bones</Link_>,&nbsp;
             <Link_ href="/projects/farcry6">Far Cry 6</Link_>,&nbsp;
             <Link_ href="/projects/wot_blitz">WoT Blitz</Link_>,&nbsp;
-            <Link_ href="/projects/pacman_io">pacman.io</Link_>,&nbsp;
+            <Link_ href="/projects/wot_blitz">Warframe</Link_>,&nbsp;
+            <Link_ href="/projects/pacman_io">PacMan.io</Link_>,&nbsp;
             <Link_ href="/projects/8_ball_pool">8 Ball Pool</Link_>,&nbsp;
             <Link_ href="/projects/the_banner_saga">The Banner Saga</Link_>,&nbsp;
             <Link_ href="/projects/killers_and_thieves">Killers and Thieves</Link_> and more...
           </p>
 
           <p>
-            I love retro-programming and co-created <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> for MSDOS
-            <span className="textDetail"> (awarded 🥇 at Retro Zaragozza 2018)</span> and also released
-            the <Link_ href="/projects/el_jamon_volador">El Jamon Volador</Link_> the Nintendo Game Boy.
+            I love retro-programming - Co-created <Link_ href="/projects/the_mistral_report">The Mistral Report</Link_> for MS-DOS
+            <span className="textDetail"> (🥇 at Retro Zaragozza 2018)</span> and also
+            the <Link_ href="/projects/el_jamon_volador">El Jamon Volador</Link_> for the Nintendo Game Boy.
 
-            Also I like to make small, but complete, clone games releasing them
-            at <Link_ href="https://mateusdigital.itch.io">mateusdigital.itch.io</Link_>
           </p>
 
           <p>
-            Also I'm interested in <Link_ href="/projects">CREATIVE-CODING</Link_> and generative art.
+            I make small, but yet complete, clone games releasing them
+            at <Link_ href="https://mateusdigital.itch.io">mateusdigital.itch.io</Link_>
+            <br/>
+            Also I'm interested in <Link_ href="/projects">creative coding</Link_> and generative art.
           </p>
 
           <p>
