@@ -50,7 +50,8 @@ export default function Index() {
 
           <p>
             Currently, I'm a <b>Tech Lead</b> at <Link_ href="https://hypejoe.com"><b>HypeJoe Games</b></Link_> leading
-            the development of <Link_ href="/projects/uniqkiller">UniqKiller</Link_>.
+            the development of <Link_ href="/projects/uniqkiller">UniqKiller</Link_>,
+            I'm also an Epic's <Link_ href="https://forums.unrealengine.com/t/how-does-one-obtain-access-to-udn-unrealengine-com/334708">UDN Partner</Link_>.
           </p>
 
           <p>

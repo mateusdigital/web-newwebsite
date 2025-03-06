@@ -9,6 +9,7 @@ import InstagramIcon_ from "@/components/icons/instagram";
 import LinkedinIcon_ from "@/components/icons/linkedin";
 import ItchIcon_ from "@/components/icons/itchio-textless-black";
 import TwitterIcon_ from "@/components/icons/twitter";
+import VSCodeIcon_ from "@/components/icons/vscode";
 
 //
 //
@@ -34,13 +35,24 @@ export default function Contacts() {
           Let's connect!
         </p>
 
-        <ul>
+        <ul className="extra-space">
+          Basic:
           <li><EnvelopeIcon_/> <a href="mailto:hello@mateus.digital">hello@mateus.digital</a></li>
           <li><PhoneIcon_/> <a href="tel:+5535984765140">+55 35 987 465 140</a></li>
+        </ul>
+        <ul className="extra-space">
+          Professional:
           <li><GithubIcon_/> <a href="https://github.com/mateusdigital">github.com/mateusdigital</a></li>
-          <li><ItchIcon_/> <a href="https://mateusdigital.itch.io">mateusdigital.itch.io</a></li>
-          <li><YoutubeIcon_/> <a href="https://www.youtube.com/@_mateusdigital">youtube.com/@_mateusdigital</a></li>
           <li><LinkedinIcon_/> <a href="https://www.linkedin.com/in/mateusdigital">linkedin.com/in/mateusdigital</a></li>
+          <li><YoutubeIcon_/> <a href="https://www.youtube.com/@_mateusdigital">youtube.com/@_mateusdigital</a></li>
+        </ul>
+        <ul className="extra-space">
+          Stores:
+          <li><ItchIcon_/> <a href="https://mateusdigital.itch.io">mateusdigital.itch.io</a></li>
+          <li><VSCodeIcon_/> <a href="https://marketplace.visualstudio.com/publishers/mateusdigital">Visual Studio Marketplace</a></li>
+        </ul>
+        <ul className="extra-space">
+          Social:
           <li><TwitterIcon_/> <a href="https://twitter.com/_mateusdigital">twitter.com/_mateusdigital</a></li>
           <li><InstagramIcon_/> <a href="https://instagram.com/_mateusdigital_">instagram.com/_mateusdigital_</a></li>
         </ul>
