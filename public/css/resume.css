@@ -149,7 +149,7 @@ ul {
     /* background-color: aquamarine; */
 
     margin-top:    0.75rem;
-    margin-bottom: 1.00rem;
+    margin-bottom: 0.0rem;
 }
 
 /*
@@ -158,14 +158,25 @@ ul {
 */
 /* -------------------------------------------------------------------------  */
 .exp_company_container * {
-    /* outline: #4CAF50 solid 1px; */
 }
 
 .exp_company_container {
 }
 
-.exp_company_container img {
-    width:        5rem;
+.exp_company_container {
+
+}
+
+.exp_company_logo {
+    width:        4rem;
+    display:      block;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+}
+
+.exp_company_logo_big {
+    width: 6rem;
     display:      block;
     margin-left:  auto;
     margin-right: auto;
@@ -219,10 +230,10 @@ ul {
 
 /* -------------------------------------------------------------------------  */
 .exp_item  {
-    /* background-color: red; */
-    /* margin-bottom: 1rem; */
+    margin-bottom: 0.5rem;
 }
-
+.exp_items_container {
+}
 .exp_item_title {
     display: block;
     text-transform: uppercase;
@@ -260,6 +271,8 @@ ul {
     font-weight: bold;
     font-size:   var(--small);
     margin-bottom: 0.25rem;
+
+    text-transform: uppercase;
 }
 
 .exp_item_description ul {
