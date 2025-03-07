@@ -80,8 +80,8 @@ export default function Index() {
           </p>
 
           <p>
-            I make small, but yet complete, clone games releasing them
-            at <Link_ href="https://mateusdigital.itch.io">mateusdigital.itch.io</Link_>
+            I make small, but yet complete, clone ga mes releasing them
+            at <Link_ href="https://mateusdigital.itch.io">mateusdigital.itch.io</Link_>, Visual Studio Extensions
             <br/>
             Also I'm interested in <Link_ href="/projects">creative coding</Link_> and generative art.
           </p>
