@@ -18,7 +18,7 @@ export default function Document() {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
                 <meta name="author" content="mateus-earth" />
-                <meta name="description" content="Mateus Mesquita is a game programmer living in Kyiv." />
+                <meta name="description" content="Mateus Mesquita is a game programmer living in Brazil." />
 
                 <title></title>
 

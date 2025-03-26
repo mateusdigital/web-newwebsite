@@ -1,7 +1,7 @@
 {
  "name": "new-website",
  "version": "1.5.1",
- "build": 60,
+ "build": 62,
  "private": true,
  "scripts": {
   "dev": "next dev",
