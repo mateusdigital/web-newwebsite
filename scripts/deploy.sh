@@ -38,16 +38,7 @@ readonly SOURCE_FOLDER="${ROOT_DIR}/out";
 readonly REMOTE_SERVER="mateus@mateus.digital";
 readonly REMOTE_FOLDER="/var/www/mateus.digital/html";
 
-readonly curr_build=$(                  \
-    cat "${ROOT_DIR}/pages/index.js" |  \
-    grep "const build = "            |  \
-    cut -d" " -f4 | tr -d ";"           \
-);
-
-
 ##------------------------------------------------------------------------------
-echo "==> CURR BUILD: $curr_build";
-
 rsync -avz                                       \
       "${SOURCE_FOLDER}/"                        \
       -e ssh "${REMOTE_SERVER}:${REMOTE_FOLDER}" \
