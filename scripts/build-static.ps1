@@ -23,5 +23,10 @@
 ##---------------------------------------------------------------------------~##
 
 ##------------------------------------------------------------------------------
-bump-version.exe  --build;
+if(Get-Command -Name "bump-version" -ErrorAction SilentlyContinue) {
+  bump-version --build;
+} else {
+  Write-Output "bump-version not found. Skipping version bump.";
+}
+
 npm run export;
