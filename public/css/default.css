@@ -9,265 +9,285 @@
     Variables
 */
 :root {
-    /* Dark mode background and text colors */
+  /* Dark mode background and text colors */
 
-    --gray-200: hsl(0, 0%, 68%);
-    --gray-300: hsl(0, 0%, 61%);
-    --gray-400: hsl(0, 0%, 54%);
-    --gray-500: hsl(0, 0%, 47%);
-    --gray-600: hsl(0, 0%, 40%);
-    --gray-700: hsl(0, 0%, 33%);
-    --gray-800: hsl(0, 0%, 26%);
-    --gray-900: #111111;
+  --gray-200: hsl(0, 0%, 68%);
+  --gray-300: hsl(0, 0%, 61%);
+  --gray-400: hsl(0, 0%, 54%);
+  --gray-500: hsl(0, 0%, 47%);
+  --gray-600: hsl(0, 0%, 40%);
+  --gray-700: hsl(0, 0%, 33%);
+  --gray-800: hsl(0, 0%, 26%);
+  --gray-900: #111111;
 
-    /* Darkest */
-    --background-color: hsl(0, 0%, 0%);
-    --background-callout-color: hsl(0, 0%, 7%);
-    --background-callout-text-color: var(--gray-300);
-    --background-decoration-color: hsl(0, 0%, 17%);
+  /* Darkest */
+  --background-color: hsl(0, 0%, 0%);
+  --background-callout-color: hsl(0, 0%, 7%);
+  --background-callout-text-color: var(--gray-300);
+  --background-decoration-color: hsl(0, 0%, 17%);
 
 
 
-    /* Accent colors */
-    --primary-color: #3490dc;
-    --success-color: #38c172;
-    --warning-color: #f6993f;
-    --error-color: #e3342f;
+  /* Accent colors */
+  --primary-color: #3490dc;
+  --success-color: #38c172;
+  --warning-color: #f6993f;
+  --error-color: #e3342f;
 
-    --heading-color: var(--gray-300);
-    --footer-color:  var(--gray-500);
+  --heading-color: var(--gray-300);
+  --footer-color: var(--gray-500);
 
-    --icon-color: var(--gray-500);
+  --icon-color: var(--gray-500);
 
-    --text-color:           var(--gray-500);
-    --text-highlight-color: var(--gray-400);
+  --text-color: var(--gray-500);
+  --text-highlight-color: var(--gray-400);
 
-    --link-color:            var(--gray-300);
-    --link-decoration-color: var(--gray-800);
+  --link-color: var(--gray-300);
+  --link-decoration-color: var(--gray-800);
 
-    --link-color-hover:            var(--gray-200);
-    --link-decoration-color-hover: var(--gray-600);
+  --link-color-hover: var(--gray-200);
+  --link-decoration-color-hover: var(--gray-600);
 
-    --cta-button-color:        var(--gray-600);
-    --cta-button-icon-color:   var(--gray-600);
-    --cta-button-border-color: var(--gray-800);
+  --cta-button-color: var(--gray-600);
+  --cta-button-icon-color: var(--gray-600);
+  --cta-button-border-color: var(--gray-800);
 
-    --cta-button-color-hover:        var(--gray-400);
-    --cta-button-icon-color-hover:   var(--gray-400);
-    --cta-button-border-color-hover: var(--gray-600);
+  --cta-button-color-hover: var(--gray-400);
+  --cta-button-icon-color-hover: var(--gray-400);
+  --cta-button-border-color-hover: var(--gray-600);
 
-    --main-logo-color: var(--gray-200);
-    --main-name-color: var(--gray-300);
+  --main-logo-color: var(--gray-200);
+  --main-name-color: var(--gray-300);
 
-    --main-menu-item-color:                   var(--gray-400);
-    --main-menu-item-color-active:            var(--gray-300);
-    --main-menu-item-decoration-color-active: var(--gray-600);
+  --main-menu-item-color: var(--gray-400);
+  --main-menu-item-color-active: var(--gray-300);
+  --main-menu-item-decoration-color-active: var(--gray-600);
 
-    --main-menu-item-color-hover:            var(--gray-200);
-    --main-menu-item-decoration-color-hover: var(--gray-400);
+  --main-menu-item-color-hover: var(--gray-200);
+  --main-menu-item-decoration-color-hover: var(--gray-400);
 
-    --projects-card-border-color:  rgb(30, 30, 30);
-    --projects-card-desc-background-color: hsla(0, 0%, 7%, 0.9);
-    --projects-card-desc-text-color: var(--gray-200);
-    /*
+  --projects-card-border-color: rgb(30, 30, 30);
+  --projects-card-desc-background-color: hsla(0, 0%, 7%, 0.9);
+  --projects-card-desc-text-color: var(--gray-200);
+  /*
      */
-     --small-border-radius: 0.35rem;
+  --small-border-radius: 0.35rem;
 
+
+  --sm: 576px;  /* Small devices (phones) */
+  --md: 768px;  /* Medium devices (tablets) */
+  --lg: 992px;  /* Large devices (small laptops) */
+  --xl: 1200px; /* Extra Large devices (desktops) */
+  --body-padding:    1rem; /* Default padding for mobile */
+  --body-padding-md: 1rem; /* Padding for medium screens */
+  --body-padding-lg: 2rem;
+  --body-padding-xl: 2rem; /* Padding for extra large screens */
 }
+
 /* TODO FIX
     - main name is not reacting to mouse input
     - icons in the menu is not reacting to mouse input
      */
 
-/*
-    Fonts
-*/
+/* -------------------------------------------------------------------------- */
+/* Fonts                                                                       */
+/* -------------------------------------------------------------------------- */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid magenta; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid magenta; */
 }
 
 /* -------------------------------------------------------------------------- */
-/*  General Selectors                                                         */
+/* General Selectors                                                         */
 /* -------------------------------------------------------------------------- */
 body {
-    padding: 2rem 2rem;
+  margin-left: auto;
+  margin-right: auto;
 
-    margin-left: auto;
-    margin-right: auto;
+  font-family: 'JetBrains Mono', monospace;
 
-    font-family: 'JetBrains Mono', monospace;
+  background-color: var(--background-color);
+  color: var(--text-color);
 
-    background-color: var(--background-color);
-    color: var(--text-color);
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  min-height: 100%;
 
-    width: 100%;
-    height: 100%;
-
-    max-width: 1000px;
-    min-height: 100%;
-    /* To make footer stick on the bottom */
-    position: relative;
+  position: relative;
+  padding: var(--body-padding); /* Default padding for mobile */
 }
 
-@media (max-width: 500px) {
-    body {
-        padding: 2rem 1rem;
-        font-size: 0.9rem;
-    }
+/* -------------------------------------------------------------------------- */
+/* Responsive Breakpoints                                                     */
+/* -------------------------------------------------------------------------- */
+/* Medium (md) devices: ≥ 576px */
+@media (min-width: 576px) {
+  body {
+    padding: var(--body-padding-md);
+  }
 }
 
-@media (max-width: 400px) {
-    body {
-        font-size: 0.8rem;
-    }
+/* Large (lg) devices: ≥ 768px */
+@media (min-width: 768px) {
+  body {
+    padding: var(--body-padding-lg);
+  }
 }
+
+/* Extra Large (xl) devices: ≥ 992px */
+@media (min-width: 992px) {
+  body {
+    padding: var(--body-padding-xl);
+  }
+}
+
 
 main {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 iframe {
-    border: none;
+  border: none;
 }
 
 h1 {
-    color: var(--heading-color);
+  color: var(--heading-color);
 
-    display: inline-block;
-    font-size: 180%;
-    font-weight: 600;
-    margin: 1rem 0 0.75rem;
+  display: inline-block;
+  font-size: 180%;
+  font-weight: 600;
+  margin: 1rem 0 0.75rem;
 }
 
 h1::before {
-    content: "\25A0";
-    /* That square */
-    font-size: 80%;
-    margin-right: 0.75rem;
-    opacity: 0.85;
-    display: inline-block;
-    position: relative;
-    top: -2px;
+  content: "\25A0";
+  /* That square */
+  font-size: 80%;
+  margin-right: 0.75rem;
+  opacity: 0.85;
+  display: inline-block;
+  position: relative;
+  top: -2px;
 }
 
 h1 span {
-    font-weight: 100;
-    opacity: 0.85;
+  font-weight: 100;
+  opacity: 0.85;
 }
 
 p {
-    padding: 0.75rem 0rem;
-    color: var(--text-color);
-    line-height: 150%;
+  padding: 0.75rem 0rem;
+  color: var(--text-color);
+  line-height: 150%;
 }
 
 b {
-    color: var(--text-highlight-color);
+  color: var(--text-highlight-color);
 }
 
 a {
-    text-decoration: var(--link-decoration-color) dotted underline;
-    text-underline-offset: 0.3rem;
-    color: var(--link-color);
+  text-decoration: var(--link-decoration-color) dotted underline;
+  text-underline-offset: 0.3rem;
+  color: var(--link-color);
 }
 
 a:hover {
-    text-decoration: var(--link-decoration-color-hover) solid underline;
-    text-underline-offset: 0.3rem;
-    color: var(--link-color-hover);
+  text-decoration: var(--link-decoration-color-hover) solid underline;
+  text-underline-offset: 0.3rem;
+  color: var(--link-color-hover);
 }
 
 hr {
-    border: none;
-    border-top: 1px solid var(--background-decoration-color);
+  border: none;
+  border-top: 1px solid var(--background-decoration-color);
 }
 
 section {
-    /* background-color: red; */
-    margin-bottom: 1.5rem;
+  /* background-color: red; */
+  margin-bottom: 1.5rem;
 }
 
 li {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 ul {
 
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 /* This is the font awesome SVG that we import with the import-svg.sh script. */
 svg.svgIcon {
-    display: inline-block;
-    /* Just to make the icons centered with the text */
-    position: relative;
-    top: 2px;
+  display: inline-block;
+  /* Just to make the icons centered with the text */
+  position: relative;
+  top: 2px;
 
-    fill: var(--icon-color);
-    width: 1rem;
-    height: 1rem;
+  fill: var(--icon-color);
+  width: 1rem;
+  height: 1rem;
 }
 
 /* -------------------------------------------------------------------------- */
 /*  Index Page                                                                */
 /* -------------------------------------------------------------------------- */
 .indexAsciiArtContainer {
-    display: grid;
-    padding: 2rem;
+  display: grid;
+  padding: 2rem;
 }
 
 .indexAsciiArt {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    font-size: 1rem;
-    color: var(--main-logo-color);
-    animation: in-out-color 20s ease-in-out infinite;
+  font-size: 1rem;
+  color: var(--main-logo-color);
+  animation: in-out-color 20s ease-in-out infinite;
 }
 
 /* Makes the font to be smaller and keep the ascii art inside  */
 @media (min-width: 250px) {
-    .indexAsciiArt {
-        font-size: 0.5rem;
-    }
+  .indexAsciiArt {
+    font-size: 0.5rem;
+  }
 }
 
 @media (min-width: 301px) {
-    .indexAsciiArt {
-        font-size: 0.6rem;
-    }
+  .indexAsciiArt {
+    font-size: 0.6rem;
+  }
 }
 
 @media (min-width: 401px) {
-    .indexAsciiArt {
-        font-size: 0.7rem;
-    }
+  .indexAsciiArt {
+    font-size: 0.7rem;
+  }
 }
 
 @media (min-width: 601px) {
-    .indexAsciiArt {
-        font-size: 0.9rem;
-    }
+  .indexAsciiArt {
+    font-size: 0.9rem;
+  }
 }
 
 @keyframes in-out-color {
-    0% {
-        opacity: 0.6;
-    }
+  0% {
+    opacity: 0.6;
+  }
 
-    50% {
-        opacity: 1;
-    }
+  50% {
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 0.6;
-    }
+  100% {
+    opacity: 0.6;
+  }
 }
 
 
@@ -275,160 +295,115 @@ svg.svgIcon {
 /*  Custom Selectors                                                          */
 /* -------------------------------------------------------------------------- */
 .textDetail {
-    font-size: 80%;
-    opacity: 0.8;
-    text-decoration: none;
-    /* background-color: red; */
+  font-size: 80%;
+  opacity: 0.8;
+  text-decoration: none;
+  /* background-color: red; */
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .right {
-    margin-right: 0;
-    text-align: right;
+  margin-right: 0;
+  text-align: right;
 }
 
 
 .button-call-to-play-online {
-    border: var(--cta-button-border-color) solid 2px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 8px 16px;
-    font-size: 1.5rem;
-    border-radius: var(--small-border-radius);
-    display: flex;
-    width: fit-content;
-    align-items: center;
+  border: var(--cta-button-border-color) solid 2px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  border-radius: var(--small-border-radius);
+  display: flex;
+  width: fit-content;
+  align-items: center;
 
-    text-decoration: none;
-    color: var(--cta-button-color);
+  text-decoration: none;
+  color: var(--cta-button-color);
 }
 
 .button-call-to-play-online svg {
-    width: 1.3rem;
-    height: 1.3rem;
-    margin-right: 0.5rem;
-    position: relative;
-    top: 0px;
-    fill: var(--cta-button-icon-color);
+  width: 1.3rem;
+  height: 1.3rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0px;
+  fill: var(--cta-button-icon-color);
 }
 
 .button-call-to-play-online:hover {
-    border: var(--cta-button-border-color-hover) solid 2px;
-    text-decoration: none;
-    color: var(--cta-button-color-hover);
+  border: var(--cta-button-border-color-hover) solid 2px;
+  text-decoration: none;
+  color: var(--cta-button-color-hover);
 }
 
 .button-call-to-play-online:hover svg {
-    fill: var(--cta-button-icon-color-hover);
+  fill: var(--cta-button-icon-color-hover);
 }
 
 /* -------------------------------------------------------------------------- */
 /*  Navigation Bar                                                            */
 /* -------------------------------------------------------------------------- */
 .topNav {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    padding-bottom: 1rem;
-    border-bottom: var(--background-decoration-color) solid 1px;
-    align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: var(--background-decoration-color) solid 1px;
+  align-items: center;
 }
 
 /* The menu links */
 .topNav a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-/* mateus.digital text */
-.topNavLogoContainer a {
-    display: inline-block;
-    color: var(--main-name-color);
+.dropdownMenu {
+  position: absolute;
+  display: inline-block;
+  background: red;
+  width: 100%;
+  height: 100%;
 }
 
-.topNavButtonsContainer a {
-    /* Make button larger horizontally */
-    padding: 0 0.3rem;
-    color: var(--main-menu-item-color);
-}
-
-.topNavButtonsContainer a:hover {
-    color: var(--main-menu-item-color-hover);
-    text-decoration: var(--main-menu-item-decoration-color-hover) solid underline;
-}
-
-a.topNavButtonActive {
-    color: var(--main-menu-item-color-active);
-    text-decoration: var(--main-menu-item-decoration-color-active) solid underline;
-}
-
-.topNavButtonsContainer {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-.topNavLogo {
-    font-size: 1.2em;
-}
-
-/* Make the icons a little bigger */
-.topNavButton>svg.svgIcon {
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-/* When screen is small reduce the gap of the buttons */
-@media (max-width: 450px) {
-    .topNavButtonsContainer {
-        gap: 0.3rem;
-    }
-}
-
-/* Controls the Label x Icons on the menu */
-@media (max-width: 640px) {
-    .topNavButton span {
-        display: none;
-    }
-}
-
-@media (min-width: 641px) {
-    .topNavButton>svg.svgIcon {
-        display: none;
-    }
+.dropdownMenuItemsContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 /* -------------------------------------------------------------------------- */
 /*  Footer                                                                    */
 /* -------------------------------------------------------------------------- */
 .footer {
-    height: 2rem;
-    /* background-color: red; */
-    clear: both;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  height: 2rem;
+  /* background-color: red; */
+  clear: both;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 
-    color: var(--footer-color);
-    text-align: center;
+  color: var(--footer-color);
+  text-align: center;
 }
 
 .footerCopyright {
-    display: block;
+  display: block;
 }
 
 .footerCopyrightSmall {
-    display: block;
-    font-size: 80%;
+  display: block;
+  font-size: 80%;
 }
 
 /*  */
 svg.heartIcon {
-    fill: #f24747;
+  fill: #f24747;
 }
 
 
@@ -436,27 +411,27 @@ svg.heartIcon {
 /*  About Page                                                                */
 /* -------------------------------------------------------------------------- */
 .aboutPageLookingForResume {
-    background-color: var(--background-callout-color);
-    color: var(--background-callout-text-color);
+  background-color: var(--background-callout-color);
+  color: var(--background-callout-text-color);
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border-radius: var(--small-border-radius);
-    padding: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-radius: var(--small-border-radius);
+  padding: 0.5rem;
 
 }
 
 .aboutPageHeaderImage {
-    width: 100%;
-    height: 388px;
-    border-radius: var(--item-border-radius);
+  width: 100%;
+  height: 388px;
+  border-radius: var(--item-border-radius);
 
-    margin-top: 1rem;
-    object-fit: cover;
+  margin-top: 1rem;
+  object-fit: cover;
 
-    border-radius: var(--small-border-radius);
+  border-radius: var(--small-border-radius);
 }
 
 
@@ -464,114 +439,121 @@ svg.heartIcon {
 /*  Projects Grid                                                             */
 /* -------------------------------------------------------------------------- */
 .gridContainer3 {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
+
 .gridContainer4 {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 .gridContainer5 {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 
 
 @media (max-width: 600px) {
-    .gridContainer3 {
-        grid-template-columns: repeat(1, auto);
-    }
-    .gridContainer4 {
-        grid-template-columns: repeat(2, auto);
-    }
-    .gridContainer5 {
-        grid-template-columns: repeat(3, auto);
-    }
+  .gridContainer3 {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .gridContainer4 {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .gridContainer5 {
+    grid-template-columns: repeat(3, auto);
+  }
 
 }
 
 @media (min-width: 601px) {
-    .gridContainer3 {
-        grid-template-columns: repeat(2, auto);
-    }
-    .gridContainer4 {
-        grid-template-columns: repeat(3, auto);
-    }
-    .gridContainer5 {
-        grid-template-columns: repeat(4, auto);
-    }
+  .gridContainer3 {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .gridContainer4 {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .gridContainer5 {
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 @media (min-width: 801px) {
-    .gridContainer3 {
-        grid-template-columns: repeat(3, auto);
-    }
-    .gridContainer4 {
-        grid-template-columns: repeat(4, auto);
-    }
-    .gridContainer5 {
-        grid-template-columns: repeat(5, auto);
-    }
+  .gridContainer3 {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .gridContainer4 {
+    grid-template-columns: repeat(4, auto);
+  }
+
+  .gridContainer5 {
+    grid-template-columns: repeat(5, auto);
+  }
 }
 
 .projectsGridCard {
-    position: relative;
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-    font-size: 95%;
-    border-radius: var(--small-border-radius);
+  position: relative;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 95%;
+  border-radius: var(--small-border-radius);
 }
 
 .projectsGridCard img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
 
-    border-radius: var(--small-border-radius);
+  border-radius: var(--small-border-radius);
 
-    border: 1px solid var(--projects-card-border-color);
+  border: 1px solid var(--projects-card-border-color);
 }
 
 .projectsGridCardInfo {
-    visibility: collapse;
+  visibility: collapse;
 
-    position: absolute;
-    left: 0;
-    bottom: 1%;
+  position: absolute;
+  left: 0;
+  bottom: 1%;
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    width: calc(100% - 0rem);
-    border-bottom-left-radius: var(--small-border-radius);
-    border-bottom-right-radius: var(--small-border-radius);
+  width: calc(100% - 0rem);
+  border-bottom-left-radius: var(--small-border-radius);
+  border-bottom-right-radius: var(--small-border-radius);
 
-    background-color: var(--projects-card-desc-background-color);
-    color: var(--projects-card-desc-text-color);
+  background-color: var(--projects-card-desc-background-color);
+  color: var(--projects-card-desc-text-color);
 
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .projectListCardInfoTitle {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .projectsGridCard:hover .projectsGridCardInfo {
-    visibility: visible;
+  visibility: visible;
 }
 
 .projectListCardInfoRightContainer {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .projectListCardInfoPlatform,
 .projectListCardInfoYear {
-    color: var(--projects-card-desc-text-color);
+  color: var(--projects-card-desc-text-color);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -579,44 +561,44 @@ svg.heartIcon {
 /* -------------------------------------------------------------------------- */
 .projectDetailPageCanvasContainer canvas,
 .projectDetailPageCanvasContainer iframe {
-    /* background-color: aqua; */
-    width: 100%;
-    height: 60vh;
-    display: block;
-    border-radius: var(--small-border-radius);
+  /* background-color: aqua; */
+  width: 100%;
+  height: 60vh;
+  display: block;
+  border-radius: var(--small-border-radius);
 }
 
 .projectDetailPageTitleContainer {
-    /* background-color: blue; */
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  /* background-color: blue; */
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .projectDetailPageTitleContainer h1 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 svg.projectDetailPageCompanyLogo {
-    height: 2rem;
-    max-height: 2rem;
-    max-width: 10rem;
-    fill: var(--text-color);
+  height: 2rem;
+  max-height: 2rem;
+  max-width: 10rem;
+  fill: var(--text-color);
 }
 
 @media (max-width: 460px) {
-    .projectDetailPageTitleContainer {
-        /* display: block; */
-    }
+  .projectDetailPageTitleContainer {
+    /* display: block; */
+  }
 
-    svg.projectDetailPageCompanyLogo {
-        height: 1rem;
-        max-height: 1rem;
-        max-width: 10rem;
-        fill: var(--text-color);
-    }
+  svg.projectDetailPageCompanyLogo {
+    height: 1rem;
+    max-height: 1rem;
+    max-width: 10rem;
+    fill: var(--text-color);
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -624,64 +606,64 @@ svg.projectDetailPageCompanyLogo {
 /* -------------------------------------------------------------------------- */
 .contacts li {
 
-    display: flex;
-    list-style-type: none;
+  display: flex;
+  list-style-type: none;
 
-    margin-left: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 
-    font-size: 120%;
+  font-size: 120%;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 
 .contacts svg.svgIcon {
-    width: 1.5rem;
-    height: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
 
 
 @media (max-width: 500px) {
-    .contacts li {
-        font-size: 100%;
-    }
+  .contacts li {
+    font-size: 100%;
+  }
 
-    .contacts svg.svgIcon {
-        width: 1rem;
-        height: 1rem;
-    }
+  .contacts svg.svgIcon {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 
 @media (max-width: 400px) {
-    .contacts li {
-        margin-left: 0rem;
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
+  .contacts li {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 
-        font-size: 95%;
+    font-size: 95%;
 
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
-        display: grid;
-        justify-items: center;
-    }
+    display: grid;
+    justify-items: center;
+  }
 
-    .contacts svg.svgIcon {
-        display: block;
+  .contacts svg.svgIcon {
+    display: block;
 
-        width: 1.2rem;
-        height: 1.2rem;
+    width: 1.2rem;
+    height: 1.2rem;
 
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-    }
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
 }
 
 
@@ -689,36 +671,36 @@ svg.projectDetailPageCompanyLogo {
 /*  Resume Page                                                               */
 /* -------------------------------------------------------------------------- */
 .resumeIFrameContainer {
-    width: min(840px, 100%);
-    height: 100%;
-    overflow: hidden;
+  width: min(840px, 100%);
+  height: 100%;
+  overflow: hidden;
 
-    margin-left: auto;
-    margin-right: auto;
-    /* background-color: blue; */
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: blue; */
 }
 
 .resumeIFrame {
-    background-color: white;
-    padding: 1rem 1rem;
-    width: 100%;
-    height: calc(2208px + 3rem);
+  background-color: white;
+  padding: 1rem 1rem;
+  width: 100%;
+  height: calc(2208px + 3rem);
 
-    /* @HACK: Need fo find a way to make the iframe says the size that it wants
+  /* @HACK: Need fo find a way to make the iframe says the size that it wants
               and the container to expand itself to acommodate it.
               We doing this cause we wanna avoid the scroll in the iframe itself.
               mateus - 29/04/23
     */
-    overflow: hidden;
-    display: block;
-    border: none;
-    border-radius: var(--small-border-radius);
+  overflow: hidden;
+  display: block;
+  border: none;
+  border-radius: var(--small-border-radius);
 }
 
 @media (min-width: 840px) {
-    .resumeIFrame {
-        overflow: hidden;
-    }
+  .resumeIFrame {
+    overflow: hidden;
+  }
 }
 
 
@@ -726,109 +708,108 @@ svg.projectDetailPageCompanyLogo {
 /*  Under Construction                                                        */
 /* -------------------------------------------------------------------------- */
 .underConstructionContainer {
-    display: block;
+  display: block;
 
-    max-width: calc(38px * 9);
-    min-width: calc(38px * 5);
-    height:    calc(38px * 6);
+  max-width: calc(38px * 9);
+  min-width: calc(38px * 5);
+  height: calc(38px * 6);
 
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-image: url("http://www.textfiles.com/underconstruction/CaCapeCanaveralGalaxy8999construction5.gif");
-    background-repeat: repeat;
+  background-image: url("http://www.textfiles.com/underconstruction/CaCapeCanaveralGalaxy8999construction5.gif");
+  background-repeat: repeat;
 }
 
 /* -------------------------------------------------------------------------- */
 /*  Certifications                                                            */
 /* -------------------------------------------------------------------------- */
 .certificationGridCard {
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 280px;
-    font-size: 80%;
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 280px;
+  font-size: 80%;
 
-    max-width: 500px;;
+  max-width: 500px;
+  ;
 }
 
 .certificationGridCard img {
-    width: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    /* min-height: 218px; */
+  width: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  /* min-height: 218px; */
 
 
-    border-radius: var(--small-border-radius);
+  border-radius: var(--small-border-radius);
 
-    border: 1px solid var(--projects-card-border-color);
+  border: 1px solid var(--projects-card-border-color);
 }
 
 .certificationCardTitle::before {
-    content: "\25A0";
-    /* That square */
-    font-size: 80%;
-    margin-right: 0.75rem;
-    opacity: 0.85;
-    display: inline-block;
-    position: relative;
-    top: -2px;
+  content: "\25A0";
+  /* That square */
+  font-size: 80%;
+  margin-right: 0.75rem;
+  opacity: 0.85;
+  display: inline-block;
+  position: relative;
+  top: -2px;
 }
 
 
 .certificationGridContainer {
-    display: grid;
-    gap: 1rem;
+  display: grid;
+  gap: 1rem;
 }
 
 
 
 @media (max-width: 400px) {
-    .certificationGridContainer {
-        /* background-color: red; */
-        grid-template-columns: repeat(1, auto);
-    }
+  .certificationGridContainer {
+    /* background-color: red; */
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 @media (min-width: 401px) {
-    .certificationGridContainer {
-        /* background-color: red; */
-        grid-template-columns: repeat(1, auto);
-    }
+  .certificationGridContainer {
+    /* background-color: red; */
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 @media (min-width: 601px) {
-    .certificationGridContainer {
-        grid-template-columns: repeat(2, auto);
-    }
+  .certificationGridContainer {
+    grid-template-columns: repeat(2, auto);
+  }
 }
 
 @media (min-width: 801px) {
-    .certificationGridContainer {
-        grid-template-columns: repeat(4, auto);
-    }
+  .certificationGridContainer {
+    grid-template-columns: repeat(4, auto);
+  }
 }
 
 img.certificationDetailPageHeader {
-    /* background-color: aqua; */
-    width: min(100%, 700px);
-    display: block;
-    border-radius: var(--small-border-radius);
-    margin-left: auto;
-    margin-right: auto;
+  /* background-color: aqua; */
+  width: min(100%, 700px);
+  display: block;
+  border-radius: var(--small-border-radius);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
 /* -------------------------------------------------------------------------- */
-.mediaTalkContainer {
-}
+.mediaTalkContainer {}
 
-.mediaTalkContainer img {
-}
+.mediaTalkContainer img {}
 
 /* -------------------------------------------------------------------------- */
 .extra-space::after {
-    content: "";
-    display: block;
-    height: 0.5rem;
+  content: "";
+  display: block;
+  height: 0.5rem;
 }
