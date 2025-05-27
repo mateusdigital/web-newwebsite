@@ -1,4 +1,149 @@
 [
+
+  //
+  // VSCODE EXTENSIONS
+  //
+
+  // --- mdcomments -------------------------------------------------------------
+  {
+    "project_name":  "mdcomments",
+    "project_title": "MDComments",
+    "project_type": "vscode",
+    "project_subtype": "tool",
+    "year_start": 2020,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["typescript", "javascript"],
+    "platform": ["PC"]
+  },
+
+  // --- mdheader ---------------------------------------------------------------
+  { "project_name":  "mdheader",
+    "project_title": "MDHeader",
+    "project_type": "vscode",
+    "project_subtype": "tool",
+    "year_start": 2020,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["typescript", "javascript"],
+    "platform": ["PC"]
+  },
+
+  // --- autopeacock ------------------------------------------------------------
+  { "project_name":  "autopeacock",
+    "project_title": "AutoPeacock",
+    "project_type": "vscode",
+    "project_subtype": "theme",
+    "year_start": 2020,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["typescript", "javascript"],
+    "platform": ["PC"]
+  },
+
+
+  //
+  // Tools
+  //
+
+  // --- gosh ------------------------------------------------------------------
+  {
+    "project_name": "gosh",
+    "project_title": "gosh",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["python", "powershell", "shellscript"],
+    "platform": ["PC"]
+  },
+
+
+  // --- repochecker -----------------------------------------------------------
+  {
+    "project_name": "repochecker",
+    "project_title": "RepoChecker",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["python", "powershell", "shellscript"],
+    "platform": ["PC"]
+  },
+
+
+  // --- psd-to-png ------------------------------------------------------------
+  {
+    "project_name": "psd-to-png",
+    "project_title": "PSD to PNG",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["JS", "nodejs"],
+    "platform": ["PC"]
+  },
+
+  // --- sprite-sheet-to-png ---------------------------------------------------
+  {
+    "project_name": "sprite-sheet-to-png",
+    "project_title": "Sprite Sheet to PNG",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["JS", "nodejs"],
+    "platform": ["PC"]
+  },
+
+  // --- simple-sprite-sheet ---------------------------------------------------
+  {
+    "project_name": "simple-sprite-sheet",
+    "project_title": "Simple Sprite Sheet",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["JS", "nodejs"],
+    "platform": ["PC"]
+  },
+
+  // --- spritesheet-to-tile ---------------------------------------------------
+  {
+    "project_name": "spritesheet-to-tile",
+    "project_title": "Simple Sprite to Tile",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["JS", "nodejs"],
+    "platform": ["PC"]
+  },
+
+  // --- tile-to-map -----------------------------------------------------------
+  {
+    "project_name": "tile-to-map",
+    "project_title": "Tile to Map",
+    "project_type": "tool",
+    "project_subtype": "terminal",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["JS", "nodejs"],
+    "platform": ["PC"]
+  },
+
+  //
+  // PERSONAL GAMES
+  //
+
+  // --- el jamon volador ------------------------------------------------------
   {
     "project_name": "el-jamon-volador",
     "project_title": "El Jamon Volador",
@@ -10,6 +155,7 @@
     "tech": ["C", "GBDK", "HTML", "CSS", "JS"],
     "platform": ["gameboy"]
   },
+  // --- the mistral report ----------------------------------------------------
   {
     "project_name": "the-mistral-report",
     "project_title": "The Mistral Report",
@@ -21,6 +167,7 @@
     "tech": ["C++", "SDL1.2", "MSDOS"],
     "platform": ["msdos"]
   },
+  // --- the same game ---------------------------------------------------------
   {
     "project_name": "same-game",
     "project_title": "The Same Game",
@@ -33,6 +180,7 @@
     "platform": ["web"],
     "is_playable_on_canvas": true
   },
+  // --- // Koliery ------------------------------------------------------------
   {
     "project_name": "koliery",
     "project_title": "Koliery",
@@ -45,6 +193,7 @@
     "platform": ["web"],
     "is_playable_on_canvas": true
   },
+  // --- simple snake ----------------------------------------------------------
   {
     "project_name": "simple-snake",
     "project_title": "Simple Snake!",
@@ -57,6 +206,7 @@
     "platform": ["web"],
     "is_playable_on_canvas": true
   },
+  // --- nuclear rain ----------------------------------------------------------
   {
     "project_name": "nuclear-rain",
     "project_title": "Nuclear Rain",
@@ -69,6 +219,7 @@
     "platform": ["web"],
     "is_playable_on_canvas": true
   },
+  // --- cosmic intruders ------------------------------------------------------
   {
     "project_name": "cosmic-intruders",
     "project_title": "Cosmic Intruders",
@@ -81,7 +232,7 @@
     "tech": ["C++", "JS", "Emscripten"],
     "is_playable_on_canvas": true
   },
-  // ---------------------------------------------------------------------------
+  // --- color grid -------------------------------------------------------------
   {
     "project_name": "color-grid",
     "project_title": "Color Grid",
@@ -94,6 +245,7 @@
     "tech": ["C++", "JS", "Emscripten"],
     "is_playable_on_canvas": true
   },
+  // --- memory amazing cow -----------------------------------------------------
   {
     "project_name": "memory-amazing-cow",
     "project_title": "Memory - Amazing Cow!",
@@ -105,6 +257,7 @@
     "platform": ["mobile"],
     "tech": ["C++", "Cocos2dX", "Android SDK"]
   },
+  // --- bow and arrow ---------------------------------------------------------
   {
     "project_name": "bow-and-arrow",
     "project_title": "Bow and Arrow",
@@ -116,6 +269,7 @@
     "platform": ["pc"],
     "tech": ["Monogame", "C#"]
   },
+  // --- kaboom ----------------------------------------------------------------
   {
     "project_name": "kaboom",
     "project_title": "Kaboom",
@@ -127,6 +281,7 @@
     "platform": ["pc"],
     "tech": ["C++", "SDL2"]
   },
+  // --- ram it ----------------------------------------------------------------
   {
     "project_name": "ram-it",
     "project_title": "Ram It",
@@ -138,6 +293,7 @@
     "platform": ["pc"],
     "tech": ["Pygame", "Python"]
   },
+  // --- space raiders ---------------------------------------------------------
   {
     "project_name": "space-raiders",
     "project_title": "Space Raiders",
@@ -149,6 +305,7 @@
     "platform": ["pc"],
     "tech": ["Terminal", "C++"]
   },
+  // --- taz -------------------------------------------------------------------
   {
     "project_name": "taz",
     "project_title": "Taz",
@@ -160,6 +317,10 @@
     "platform": ["pc"],
     "tech": ["Pygame", "Python"]
   },
+
+  //
+  // PROFESSIONAL GAMES
+  //
 
   // ---------------------------------------------------------------------------
   {
@@ -434,11 +595,16 @@
     "youtube_video_id": "V1tX-iznvSI"
   },
 
+  //
+  // DEMOS
+  //
+
   // ---------------------------------------------------------------------------
   {
     "project_name": "gameboy-css",
     "project_title": "Gameboy CSS",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2023,
     "year_end": 2023,
@@ -451,6 +617,7 @@
     "project_name": "roses",
     "project_title": "Roses",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2022,
     "year_end": 2022,
@@ -463,43 +630,8 @@
     "project_name": "flowfield",
     "project_title": "Flowfield",
     "project_type": "demo",
+    "project_subtype": "demo",
 
-    "year_start": 2022,
-    "year_end": 2022,
-    "year_release": 2022,
-
-    "platform": ["web"],
-    "tech": ["JS", "demolib"]
-  },
-  {
-    "project_name": "gameboy-css",
-    "project_title": "Gameboy CSS",
-    "project_type": "demo",
-
-    "year_start": 2023,
-    "year_end": 2023,
-    "year_release": 2023,
-
-    "platform": ["web"],
-    "tech": ["CSS"]
-  },
-  {
-    "project_name": "roses",
-    "project_title": "Roses",
-    "project_type": "demo",
-
-    "year_start": 2022,
-    "year_end": 2022,
-    "year_release": 2022,
-
-    "platform": ["web"],
-    "tech": ["JS", "demolib"]
-  },
-  {
-    "project_name": "flowfield",
-    "project_title": "Flowfield",
-
-    "project_type": "demo",
     "year_start": 2022,
     "year_end": 2022,
     "year_release": 2022,
@@ -511,6 +643,7 @@
     "project_name": "lissajous",
     "project_title": "Lissajous",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2021,
     "year_end": 2021,
@@ -523,6 +656,7 @@
     "project_name": "doom-fire",
     "project_title": "Doom Fire!",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2021,
     "year_end": 2021,
@@ -535,6 +669,7 @@
     "project_name": "game-of-life",
     "project_title": "Game of Life",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2020,
     "year_end": 2020,
@@ -547,6 +682,7 @@
     "project_name": "simple-tree",
     "project_title": "Simple Trees!",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2019,
     "year_end": 2019,
@@ -559,6 +695,7 @@
     "project_name": "simple-clock",
     "project_title": "Simple Clock!",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2019,
     "year_end": 2019,
@@ -571,6 +708,7 @@
     "project_name": "metaballs",
     "project_title": "Metaballs",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2019,
     "year_end": 2019,
@@ -583,6 +721,7 @@
     "project_name": "starfield",
     "project_title": "Starfield",
     "project_type": "demo",
+    "project_subtype": "demo",
 
     "year_start": 2019,
     "year_end": 2019,

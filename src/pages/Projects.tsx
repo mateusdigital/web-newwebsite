@@ -21,168 +21,137 @@
 //----------------------------------------------------------------------------//
 
 // -----------------------------------------------------------------------------
-import DefaultPage from "../components/DefaultPage";
-import ProjectItemCard from '../components/projects/ProjectItemCard'
 import Link from "../components/Link";
+import DefaultPage from "../components/DefaultPage";
+import ProjectItemCard from "../components/projects/ProjectItemCard";
+import { ProjectsInfo } from "../models/ProjectsInfo";
 
+//
+// Component
+//
+
+// -----------------------------------------------------------------------------
+export default function Projects() {
+  const projects = ProjectsInfo();
+
+  const demos = projects.FindProject((item: any) => {
+    return item.project_type === "demo";
+  });
+
+  return (
+    <>
+      <DefaultPage pageId="projects">
+        <_Section title="Creative" subtitle="Coding" columns="4">
+          {demos.map((item: any, index: number) => (
+            <ProjectItemCard key={index} item={item} />
+          ))}
+        </_Section>
+
+        <_Section title="Talks" subtitle="/ Podcasts" columns="3">
+          {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2023)}
+          {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2023)}
+          {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2023)}
+        </_Section>
+
+        {_CreateImgCard(
+          "/img/projects/talks/Carreira-86-300x300-1.png",
+          "https://web.archive.org/web/20210512050831/https://www.carreirasemfronteiras.com.br/desenvolvedor-de-jogos-em-minsk-belarus-carreira-sem-fronteiras-86/",
+          "Carreiras Sem Fronteiras #86",
+          "",
+          2020
+        )}
+        <br/>
+
+        <_Section title="Open Source" subtitle="Contributions" columns="0">
+          <ul>
+            <li>
+              <span><a href="http://www.libreflix.org">libreflix</a>:</span>
+              <a href="https://notabug.org/libreflix/libreflix/pulls/17">(#17)</a>
+            </li>
+
+            <li>
+              <span>Cocos2d-x:</span>
+              <a href="https://github.com/cocos2d/cocos2d-x/pull/16466">(#16466)</a>
+              <a href="https://github.com/cocos2d/cocos2d-x/pull/16789">(#16789)</a>
+            </li>
+
+            <li>
+              <span>2048py:</span>
+              <a href="https://github.com/davidsousarj/2048py/pull/2">(#2)</a>
+            </li>
+          </ul>
+        </_Section>
+
+        <_Section title="Past" subtitle="Work" columns="0">
+          <ul>
+            <span><b>Ginga.One</b></span>
+            <li><span>Pequenos Criativos</span><span className="textDetail"> - iOS</span></li>
+            <li><span>Porto Seguro Auto</span><span className="textDetail"> - iOS</span></li>
+            <br />
+
+            <span><b>Imidiar</b></span>
+            <li><span>Photo Totem</span><span className="textDetail"> - Python</span></li>
+            <br />
+
+            <span><b>Eazz</b></span>
+            <li><span>Metro Genius</span><span className="textDetail"> - Windows Phone</span></li>
+            <li><span>donkey.bas</span><span className="textDetail"> - Windows Phone</span></li>
+            <li><span>Pirates Treasure</span><span className="textDetail"> - Windows Phone</span></li>
+            <li><span>Tic Tac Toe</span><span className="textDetail"> - Windows Phone</span></li>
+          </ul>
+        </_Section>
+      </DefaultPage>
+    </>
+  );
+}
 
 //
 // Helpers
 //
 
 // -----------------------------------------------------------------------------
-function _CreateYTCard(ytId: string, title: string, detail: string, year: number) {
-  const yt_url = `https://www.youtube.com/watch?v=${ytId}`;
-  const img_path = `https://img.youtube.com/vi/${ytId}/default.jpg`;
-  const alt_text = title;
+function _Section({ title, subtitle, columns, children }: any) {
   return (
-    <div className="projectsGridCard">
-      <Link href={yt_url} >
-      </Link>
-      <div className="projectsGridCardImage">
-        <img src={img_path} alt={alt_text} />
+    <section>
+      <h1>{title} <span>{subtitle}</span></h1>
+      <div className={"gridContainer" + columns}>
+        {children}
       </div>
-      <div className="projectsGridCardInfo">
-        <span className="projectListCardInfoTitle">{title}</span>
-        <div className="projectListCardInfoRightContainer">
-          ({detail})
-          <span className="projectListCardInfoYear">{year}</span>
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }
 
 // -----------------------------------------------------------------------------
-function _CreateImgCard(imgUrl: string, href: string, title: string, detail?: string, year?: string) {
+function _CreateYTCard(ytId: string, title: string, detail: string, year: number) {
+  const yt_url = `https://www.youtube.com/watch?v=${ytId}`;
+  const img_path = `https://img.youtube.com/vi/${ytId}/maxresdefault.jpg`;
   const alt_text = title;
-  return (<>
-    <div className="projectsGridCard">
-      <Link href={href} >
-      </Link>
-      <div className="projectsGridCardImage">
-        <img src={imgUrl} alt={alt_text} />
-      </div>
-      <div className="projectsGridCardInfo">
-        <span className="projectListCardInfoTitle">{title}</span>
-        <div className="projectListCardInfoRightContainer">
-          ({detail})
-          <span className="projectListCardInfoYear">{year}</span>
+
+  return (
+    <div className="projectCard" key={title}>
+      <Link href={yt_url}>
+        <div className="projectCardYTandImgContainer">
+          <img src={img_path} alt={alt_text} />
+          {title}
         </div>
-      </div>
+      </Link>
     </div>
-  </>);
+  )
 }
 
-
 // -----------------------------------------------------------------------------
-export default function Projects() {
-
-  const games_info: any = [];
-
-  // Build all the demo cards automatically.
-  const projectCards = [];
-  for (let info of games_info) {
-    if (info.type === "demo") {
-      projectCards.push(<ProjectItemCard name={info.name} />);
-    }
-  }
-
-  return (<>
-    <DefaultPage pageId="projects">
-      {/* ----------------------------------------------------------------- */}
-      <section>
-        <h1>Creative <span>Coding</span></h1>
-        <div className='gridContainer5'>
-          {projectCards}
-        </div>
-      </section>
-
-      {/* ----------------------------------------------------------------- */}
-      <section>
-        <h1>Talks / Podcasts</h1>
-        <div className='gridContainer3'>
-          {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2023)}
-          {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2023)}
-          {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2023)}
-          {_CreateImgCard(
-            "https://www.carreirasemfronteiras.com.br/wp-content/uploads/2020/10/Carreira-86-300x300-1.png",
-            "",
-            "Carreiras Sem Fronteiras #86 - Desenvolvedor de Jogos em Minsk, Belarus",
-          )}
-        </div>
-      </section>
-      {/* ----------------------------------------------------------------- */}
-      <section>
-        <h1>Other Programs</h1>
-        <ul>
-          <li> <span><a href="">tiled-to-map</a></span> <span className="textDetail">(Game Dev Utility App)</span> </li>
-          <li> <span><a href="">simple-sprite-sheet</a></span> <span className="textDetail">(Game Dev Utility App)</span> </li>
-          <li> <span><a href="">psd-to-png</a></span> <span className="textDetail">(Image Utility App)</span> </li>
-        </ul>
-
-        <ul>
-          <li> <span><a href="">mdheader</a></span> <span className="textDetail">(VSCode Extension)</span> </li>
-          <li> <span><a href="">mdcomments</a></span> <span className="textDetail">(VSCode Extension)</span> </li>
-          <li> <span><a href="">autopeacock</a></span> <span className="textDetail">(VSCode Extension)</span> </li>
-        </ul>
-
-        <ul>
-          <li><span><a href="">gosh</a></span> <span className="textDetail">(Terminal Utility)</span></li>
-          <li><span><a href="">repochecker</a></span> <span className="textDetail">(Terminal Utility)</span></li>
-        </ul>
-
-        <ul>
-          <li> <span><a href="">mdjs</a></span> <span className="textDetail">(Javascript Utility Library)</span> </li>
-          <li> <span><a href="">mdgb</a></span> <span className="textDetail">(Game Boy Utility Library)</span> </li>
-          <li> <span><a href="">mddos</a></span> <span className="textDetail">(MSDOS Utility Library)</span> </li>
-        </ul>
-      </section>
-
-      {/* ----------------------------------------------------------------- */}
-      <section>
-        <h1>Open Source <span>Contributions</span></h1>
-        <ul>
-          <li>
-            <span><a href="http://www.libreflix.org">libreflix</a>:</span>
-            <a href="https://notabug.org/libreflix/libreflix/pulls/17">(#17)</a>
-          </li>
-
-          <li>
-            <span>Cocos2d-x:</span>
-            <a href="https://github.com/cocos2d/cocos2d-x/pull/16466">(#16466)</a>
-            <a href="https://github.com/cocos2d/cocos2d-x/pull/16789">(#16789)</a>
-          </li>
-
-          <li>
-            <span>2048py:</span>
-            <a href="https://github.com/davidsousarj/2048py/pull/2">(#2)</a>
-          </li>
-        </ul>
-      </section>
-
-      {/* ----------------------------------------------------------------- */}
-      <section>
-        <h1>Past <span>Work</span></h1>
-
-        <ul>
-          <span><b>Ginga.One</b></span>
-          <li><span>Pequenos Criativos </span><span className="textDetail"> - iOS</span></li>
-          <li><span>Porto Seguro Auto </span><span className="textDetail"> - iOS</span></li>
-          <br />
-
-          <span><b>Imidiar</b></span>
-          <li><span>Photo Totem</span><span className="textDetail"> - Python</span></li>
-          <br />
-
-          <span><b>Eazz</b></span>
-          <li><span>Metro Genius</span><span className="textDetail"> - Windows Phone </span></li>
-          <li><span>donkey.bas</span><span className="textDetail"> - Windows Phone </span></li>
-          <li><span>Pirates Treasure</span><span className="textDetail"> - Windows Phone </span></li>
-          <li><span>Tic Tac Toe</span><span className="textDetail"> - Windows Phone </span></li>
-        </ul>
-      </section>
-    </DefaultPage >
-  </>
+function _CreateImgCard(imgUrl: string, href: string, title: string, detail?: string, year?: number) {
+  const alt_text = title;
+  return (
+    <div className="projectCard" key={title}>
+      <div className="projectCardYTandImgContainer">
+        <Link href={href}>
+          <img src={imgUrl} alt={alt_text} />
+        </Link>
+        <Link href={href}>
+          {title}
+        </Link>
+      </div>
+    </div >
   )
 }

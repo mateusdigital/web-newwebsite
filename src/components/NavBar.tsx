@@ -37,7 +37,7 @@ export default function NavBar({ pageId }: NavBarProps) {
           <div className="dropdownMenuItemsContainer">
             <Link href="/games"><span>Games</span></Link>
             <Link href="/projects"><span>Projects</span></Link>
-            <Link href="/projects"><span>Software</span></Link>
+            <Link href="/software"><span>Software</span></Link>
             <Link href="/contacts"><span>Contacts</span></Link>
             <Link href="/resume"><span>Resume</span></Link>
             <Link href="/certifications"><span>Certifications</span></Link>

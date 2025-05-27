@@ -16,7 +16,7 @@ interface ProjectItemCardProps {
 
 // -----------------------------------------------------------------------------
 export default function ProjectItemCard({ item }: ProjectItemCardProps) {
-  const {
+  let {
     project_name,
     project_title,
     project_type,
@@ -28,12 +28,19 @@ export default function ProjectItemCard({ item }: ProjectItemCardProps) {
     platform
   } = item;
 
+
+  if(!project_subtype) {
+    project_subtype = "";
+  }
+
   const details_page_url = `/projects/${project_name}`;
   const alt_text = `Screenshot of "${project_title} at ${year_release}"`;
 
   const png_img = `/img/projects/${project_subtype}/${project_name}.png`;
   const jpg_img = `/img/projects/${project_subtype}/${project_name}.jpg`;
   const gif_img = `/img/projects/${project_subtype}/${project_name}.gif`;
+
+  console.log(png_img, jpg_img, gif_img);
 
   const cwd = FileUtils.JoinPath(FileUtils.GetCwd(), "public");
   const img_path =
