@@ -16,11 +16,11 @@ fi;
 old_provider="";
 item_count=1;
 
-jsx_str=" import DefaultPage_ from '@/components/default-page'\n";
-jsx_str+="import CertificationItemCard_ from '@/components/certifications-list-page/certification-item-card'\n";
+jsx_str=" import DefaultPage from '../components/DefaultPage'\n";
+jsx_str+="import CertificationItemCard_ from '../components/certifications-list-page/certification-item-card'\n";
 jsx_str+="export default function Page() {\n"
 jsx_str+="return (\n <>\n"
-jsx_str+="<DefaultPage_ page_id='certifications'>\n";
+jsx_str+="<DefaultPage pageId='certifications'>\n";
 
 
 for item in $(find $SCRIPT_ROOT_DIR/public/res/certifications -iname "*.pdf"); do
@@ -85,7 +85,7 @@ for item in $(find $SCRIPT_ROOT_DIR/public/res/certifications -iname "*.pdf"); d
 done
 
 jsx_str+="</div>\n</section>\n\n";
-jsx_str+="</DefaultPage_>\n</>\n);\n}\n";
+jsx_str+="</DefaultPage>\n</>\n);\n}\n";
 
 if [ -n "$generate_jsx" ]; then
     echo -e "$jsx_str" > "${SCRIPT_ROOT_DIR}/pages/certifications.js"

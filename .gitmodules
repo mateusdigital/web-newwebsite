@@ -1,0 +1,3 @@
+[submodule "libs/mdweb"]
+	path = libs/mdweb
+	url = git@github.com:mateusdigital/mdweb

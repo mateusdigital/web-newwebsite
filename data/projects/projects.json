@@ -1,0 +1,594 @@
+[
+  {
+    "project_name": "el-jamon-volador",
+    "project_title": "El Jamon Volador",
+    "project_type": "game",
+    "project_subtype": "retro",
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["C", "GBDK", "HTML", "CSS", "JS"],
+    "platform": ["gameboy"]
+  },
+  {
+    "project_name": "the-mistral-report",
+    "project_title": "The Mistral Report",
+    "project_type": "game",
+    "project_subtype": "retro",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "tech": ["C++", "SDL1.2", "MSDOS"],
+    "platform": ["msdos"]
+  },
+  {
+    "project_name": "same-game",
+    "project_title": "The Same Game",
+    "project_type": "game",
+    "project_subtype": "personal",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "tech": ["JS", "PixiJS", "NextJS"],
+    "platform": ["web"],
+    "is_playable_on_canvas": true
+  },
+  {
+    "project_name": "koliery",
+    "project_title": "Koliery",
+    "project_type": "game",
+    "project_subtype": "personal",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "tech": ["JS", "Canvas API", "chroma.js"],
+    "platform": ["web"],
+    "is_playable_on_canvas": true
+  },
+  {
+    "project_name": "simple-snake",
+    "project_title": "Simple Snake!",
+    "project_type": "game",
+    "project_subtype": "personal",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "tech": ["JS", "Canvas API", "chroma.js"],
+    "platform": ["web"],
+    "is_playable_on_canvas": true
+  },
+  {
+    "project_name": "nuclear-rain",
+    "project_title": "Nuclear Rain",
+    "project_type": "game",
+    "project_subtype": "personal",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "tech": ["JS", "Canvas API", "chroma.js"],
+    "platform": ["web"],
+    "is_playable_on_canvas": true
+  },
+  {
+    "project_name": "cosmic-intruders",
+    "project_title": "Cosmic Intruders",
+    "project_type": "game",
+    "project_subtype": "personal",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "platform": ["pc", "web"],
+    "tech": ["C++", "JS", "Emscripten"],
+    "is_playable_on_canvas": true
+  },
+  // ---------------------------------------------------------------------------
+  {
+    "project_name": "color-grid",
+    "project_title": "Color Grid",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "platform": ["pc", "web"],
+    "tech": ["C++", "JS", "Emscripten"],
+    "is_playable_on_canvas": true
+  },
+  {
+    "project_name": "memory-amazing-cow",
+    "project_title": "Memory - Amazing Cow!",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+    "platform": ["mobile"],
+    "tech": ["C++", "Cocos2dX", "Android SDK"]
+  },
+  {
+    "project_name": "bow-and-arrow",
+    "project_title": "Bow and Arrow",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2020,
+    "year_end": 2020,
+    "year_release": 2020,
+    "platform": ["pc"],
+    "tech": ["Monogame", "C#"]
+  },
+  {
+    "project_name": "kaboom",
+    "project_title": "Kaboom",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2020,
+    "year_end": 2020,
+    "year_release": 2020,
+    "platform": ["pc"],
+    "tech": ["C++", "SDL2"]
+  },
+  {
+    "project_name": "ram-it",
+    "project_title": "Ram It",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2020,
+    "year_end": 2020,
+    "year_release": 2020,
+    "platform": ["pc"],
+    "tech": ["Pygame", "Python"]
+  },
+  {
+    "project_name": "space-raiders",
+    "project_title": "Space Raiders",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2020,
+    "year_end": 2020,
+    "year_release": 2020,
+    "platform": ["pc"],
+    "tech": ["Terminal", "C++"]
+  },
+  {
+    "project_name": "taz",
+    "project_title": "Taz",
+    "project_type": "game",
+    "project_subtype": "old-games",
+    "year_start": 2020,
+    "year_end": 2020,
+    "year_release": 2020,
+    "platform": ["pc"],
+    "tech": ["Pygame", "Python"]
+  },
+
+  // ---------------------------------------------------------------------------
+  {
+    "project_name": "uniqkiller",
+    "project_title": "UniqKiller",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["mobile", "pc"],
+    "tech": ["C++", "Typescript", "UE5", "GameLift", "AWS", "Git"],
+
+    "company": "HypeJoe",
+    "role": "TechLead",
+
+    "youtube_video_id": "04_lItaf1jY"
+  },
+  {
+    "project_name": "fortnite",
+    "project_title": "Fortnite",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["pc"],
+    "tech": ["C++", "Blueprint", "UE5"],
+
+    "company": "Epic",
+    "role": "Senior UI Programmer",
+
+    "youtube_video_id": "WJW-bzXZM8M"
+  },
+  {
+    "project_name": "farcry-6",
+    "project_title": "Far Cry 6",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["DLC"],
+    "tech": ["C++", "Dunia", "Perforce", "A11Y"],
+
+    "company": "Ubisoft",
+    "role": "Senior Programmer",
+
+    "youtube_video_id": "LRMbuyJyUzU"
+  },
+  {
+    "project_name": "skull-and-bones",
+    "project_title": "Skull & Bones",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["pc", "xbox", "playstation"],
+    "tech": ["C++", "Anvil", "Perforce", "A11Y"],
+
+    "company": "Ubisoft",
+    "role": "Senior Programmer",
+
+    "youtube_video_id": "fgy4WZ9ta7E"
+  },
+  {
+    "project_name": "wot-blitz",
+    "project_title": "World of Tanks - Blitz",
+    "short_project_title": "WoT - Blitz",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["mobile"],
+    "tech": ["C++", "UE4", "Blueprints", "UMG", "Git"],
+
+    "company": "Wargaming",
+    "role": "Programmer",
+
+    "youtube_video_id": "_Vtvjg8dYqI"
+  },
+  {
+    "project_name": "warframe",
+    "project_title": "Warframe",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["mobile"],
+    "tech": ["C++", "Evolution Engine", "Perforce", "Android", "iOS"],
+
+    "company": "Digital Extremes",
+    "role": "Programmer",
+
+    "youtube_video_id": "C3FndET_TXo"
+  },
+  {
+    "project_name": "8-ball-pool",
+    "project_title": "8 Ball Pool",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["web", "mobile"],
+    "tech" : [ "C++", "JS", "Obj-C", "Cocos2d-x", "Emscripten", "Git" ],
+
+    "company": "Miniclip",
+    "role": "Programmer",
+
+    "youtube_video_id": "f0xHb8pxMco"
+  },
+  {
+    "project_name": "pacman-io",
+    "project_title": "Pacman.io",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["web" ],
+    "tech" : [ "C++", "JS", "ObjC", "Cocos2d-x", "Emscripten", "Git" ],
+
+    "company": "Miniclip",
+    "role": "Programmer"
+  },
+  {
+    "project_name": "killers-and-thieves",
+    "project_title": "Killers and Thieves",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["Steam"],
+    "tech": ["Unity", "C#", "lua", "Mercurial", "SteamWorks" ],
+
+    "company": "Stoic Studios",
+    "role": "Programmer",
+
+    "youtube_video_id" : "2HhmN1_SvFA"
+  },
+  {
+    "project_name": "the-banner-saga-2",
+    "project_title": "Banner Saga 2",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["pc", "mobile"],
+    "tech": ["ActionScript3", "Flash", "Mercurial"],
+
+    "company": "Stoic Studios",
+    "role": "Programmer",
+
+    "youtube_video_id" : "NRoaB0iSsJE",
+  },
+  {
+    "project_name": "the-banner-saga-1",
+    "project_title": "Banner Saga 1",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["pc", "mobile"],
+    "tech": ["ActionScript3", "Flash", "Mercurial"],
+
+    "company": "Stoic Studios",
+    "role": "Programmer",
+
+    "youtube_video_id" : "y-42WWUOD1M",
+  },
+  {
+    "project_name": "like-a-boss",
+    "project_title": "Like a Boss",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["mobile"],
+    "tech" : [ "C#", "Unity", "UnityEditor", "Git" ],
+
+    "company": "FireHorse",
+    "role": "Programmer",
+
+    "youtube_video_id" : "gqNCs0slp8U",
+  },
+
+  {
+    "project_name": "let-them-come",
+    "project_title": "Let Them Come",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["pc"],
+    "tech" : [ "C++", "GML", "GameMaker", "AlienFX" ],
+
+    "company": "FireHorse",
+    "role": "Programmer",
+
+    "youtube_video_id" : "AbZGdmOC-eM",
+  },
+  {
+    "project_name": "at-sundown",
+    "project_title": "At Sundown",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2018,
+    "year_end": 2019,
+    "year_release": 2018,
+
+    "platform": ["pc"],
+    "tech" : [ "C#", "C++", "Unity", "AlienFX" ],
+
+    "company": "FireHorse",
+    "role": "Programmer",
+
+
+    "youtube_video_id" : "AbZGdmOC-eM",
+  },
+  {
+    "project_name": "fist-punch-2",
+    "project_title": "Fist Punch 2",
+    "project_type": "game",
+    "project_subtype": "professional",
+
+    "year_start": 2016,
+    "year_end": 2016,
+    "year_release": 2016,
+
+    "platform": ["web"],
+    "tech": ["Unity"],
+
+    "company": "Firehorse",
+    "role": "Programmer",
+
+    "youtube_video_id": "V1tX-iznvSI"
+  },
+
+  // ---------------------------------------------------------------------------
+  {
+    "project_name": "gameboy-css",
+    "project_title": "Gameboy CSS",
+    "project_type": "demo",
+
+    "year_start": 2023,
+    "year_end": 2023,
+    "year_release": 2023,
+
+    "platform": ["web"],
+    "tech": ["CSS"]
+  },
+  {
+    "project_name": "roses",
+    "project_title": "Roses",
+    "project_type": "demo",
+
+    "year_start": 2022,
+    "year_end": 2022,
+    "year_release": 2022,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "flowfield",
+    "project_title": "Flowfield",
+    "project_type": "demo",
+
+    "year_start": 2022,
+    "year_end": 2022,
+    "year_release": 2022,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "gameboy-css",
+    "project_title": "Gameboy CSS",
+    "project_type": "demo",
+
+    "year_start": 2023,
+    "year_end": 2023,
+    "year_release": 2023,
+
+    "platform": ["web"],
+    "tech": ["CSS"]
+  },
+  {
+    "project_name": "roses",
+    "project_title": "Roses",
+    "project_type": "demo",
+
+    "year_start": 2022,
+    "year_end": 2022,
+    "year_release": 2022,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "flowfield",
+    "project_title": "Flowfield",
+
+    "project_type": "demo",
+    "year_start": 2022,
+    "year_end": 2022,
+    "year_release": 2022,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "lissajous",
+    "project_title": "Lissajous",
+    "project_type": "demo",
+
+    "year_start": 2021,
+    "year_end": 2021,
+    "year_release": 2021,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "doom-fire",
+    "project_title": "Doom Fire!",
+    "project_type": "demo",
+
+    "year_start": 2021,
+    "year_end": 2021,
+    "year_release": 2021,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "game-of-life",
+    "project_title": "Game of Life",
+    "project_type": "demo",
+
+    "year_start": 2020,
+    "year_end": 2020,
+    "year_release": 2020,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "simple-tree",
+    "project_title": "Simple Trees!",
+    "project_type": "demo",
+
+    "year_start": 2019,
+    "year_end": 2019,
+    "year_release": 2019,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "simple-clock",
+    "project_title": "Simple Clock!",
+    "project_type": "demo",
+
+    "year_start": 2019,
+    "year_end": 2019,
+    "year_release": 2019,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "metaballs",
+    "project_title": "Metaballs",
+    "project_type": "demo",
+
+    "year_start": 2019,
+    "year_end": 2019,
+    "year_release": 2019,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  },
+  {
+    "project_name": "starfield",
+    "project_title": "Starfield",
+    "project_type": "demo",
+
+    "year_start": 2019,
+    "year_end": 2019,
+    "year_release": 2019,
+
+    "platform": ["web"],
+    "tech": ["JS", "demolib"]
+  }
+]
