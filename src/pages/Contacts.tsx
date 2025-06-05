@@ -70,6 +70,7 @@ export function Contacts() {
           <h2>Social:</h2>
           <li><TwitterIcon_ /> <a href="https://twitter.com/_mateusdigital">twitter.com/_mateusdigital</a></li>
           <li><InstagramIcon_ /> <a href="https://instagram.com/_mateusdigital_">instagram.com/_mateusdigital_</a></li>
+          <li><InstagramIcon_ /> <a href="https://hackaday.io/mateusdigital">hackaday.io/mateusdigital</a></li>
         </ul>
       </section>
     </DefaultPage>
