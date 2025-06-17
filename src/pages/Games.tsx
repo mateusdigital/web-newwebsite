@@ -11,31 +11,38 @@ import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 
 // -----------------------------------------------------------------------------
 export default function GamesPage() {
-  const projects = GetProjectsInfo();
+  const info = GetProjectsInfo();
+  const projects = info.projects;
 
-  const professional_games = projects.FindProject((item: Project) => {
-    return item.project_type == "game"
-      && item.project_subtype == "game-professional";
-  });
+  let professional_games = [];
+  let retro_games = [];
+  let personal_games = [];
+  let old_games = [];
 
-  const retro_Games = projects.FindProject((item: Project) => {
-    return item.project_type == "game"
-      && item.project_subtype == "game-retro";
-  });
+  // console.log("GamesPage - projects: ", projects);
+  console.log("GamesPage - projects.length: ", projects.length);
+  for (let i = 0; i < projects.length; i++) {
+    const item = projects[i];
+    if(item.project_type != "game") {
+      continue;
+    }
 
-  const personal_games = projects.FindProject((item: Project) => {
-    return item.project_type == "game"
-      && item.project_subtype == "game-personal";
-  });
-
-  const old_games = projects.FindProject((item: Project) => {
-    return item.project_type == "game"
-      && item.project_subtype == "game-old";
-  });
-
+    if(item.project_subtype == "game-professional") {
+      professional_games.push(item);
+    }
+    else if(item.project_subtype == "game-retro") {
+      retro_games.push(item);
+    }
+    else if(item.project_subtype == "game-personal") {
+      personal_games.push(item);
+    }
+    else if(item.project_subtype == "game-old") {
+      old_games.push(item);
+    }
+  }
 
   return (<>
-    <DefaultPage pageId="GamesPage" css="gamesPage">
+    <DefaultPage pageId="GamesPage">
       {/*  */}
       <_GamesPageSection title="Professional" subtitle="Games" columns="3">
         {professional_games.map((item: Project, index: number) => {
@@ -46,7 +53,7 @@ export default function GamesPage() {
       </_GamesPageSection>
       {/*  */}
       <_GamesPageSection title="Retro" subtitle="Games" columns="3">
-        {retro_Games.map((item: Project, index: number) => {
+        {retro_games.map((item: Project, index: number) => {
           return (
             <ProjectItemCard key={index} item={item} />
           );
