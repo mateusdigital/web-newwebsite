@@ -1,6 +1,5 @@
 // -----------------------------------------------------------------------------
-import Link from "../components/Link";
-// -----------------------------------------------------------------------------
+import { Link }  from "../components/Link";
 import { DefaultPage } from  "../components/DefaultPage";
 
 
@@ -34,8 +33,9 @@ export function About() {
       {/* Latino Americano */}
       <AboutSection title="Latino Americano!" photo="srs_1">
         <p>
-          I'm from a small city called Santa Rita do Sapucaí, in the state of
-          Minas Gerais, Brazil!
+          I'm from a small city
+          called <Link href="https://en.wikipedia.org/wiki/Santa_Rita_do_Sapuca%C3%AD">Santa Rita do Sapucaí</Link>, in
+          the state of Minas Gerais, Brazil!
         </p>
 
         <p>

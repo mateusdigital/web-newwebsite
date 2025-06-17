@@ -159,6 +159,14 @@ section {
   margin-bottom: var(--section-margin-bottom);
 }
 
+@media screen and (max-width: 360px) {
+  section {
+    text-align: justify;
+    /* background-color: #f24747; */
+  }
+
+}
+
 /* -------------------------------------------------------------------------- */
 p {
   line-height: var(--paragraph-line-height);

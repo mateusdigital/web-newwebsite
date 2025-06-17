@@ -1,6 +1,6 @@
 // -----------------------------------------------------------------------------
 import { DefaultPage } from "../components/DefaultPage";
-import Link from "../components/Link";
+import { Link } from "../components/Link";
 // -----------------------------------------------------------------------------
 import EnvelopeIcon_ from "../components/icons/envelop";
 import PhoneIcon_ from "../components/icons/phone";

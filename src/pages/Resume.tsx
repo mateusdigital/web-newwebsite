@@ -1,5 +1,6 @@
+// -----------------------------------------------------------------------------
+import { Link } from "../components/Link";
 import { DefaultPage } from "../components/DefaultPage";
-import Link from "../components/Link";
 
 
 //
@@ -21,16 +22,14 @@ export default function Resume() {
             I'm an active learner and I'm always looking for new challenges and opportunities to grow.<br />
             To this day I've obtained 150+ certificates in various areas of technology and game development.
             <br />
-            <Link href="/certifications">Check my certificates</Link>
+            <br />
+            - <Link href="/certifications">Check my certificates</Link>!!
           </p>
         </section>
 
         <section>
           <p>
-            My most up-to-date resume is shown bellow, but also you can
-            &nbsp;<a href="/res/resume/mateus-mesquita-resume.pdf">Download in PDF</a>
-            &nbsp;or
-            &nbsp;<a href="/res/resume/mateus-mesquita-resume.pdf">open in new page</a>.
+            My most up-to-date resume is shown bellow, but also you can <a href="/res/resume/mateus-mesquita-resume.pdf">Download in PDF</a> or <a href="/res/resume/mateus-mesquita-resume.pdf">Open in New Page</a>.
           </p>
 
           <div className="resumeIFrameContainer">

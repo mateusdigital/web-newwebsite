@@ -1,5 +1,6 @@
 // -----------------------------------------------------------------------------
-import Link from "../components/Link";
+import { Link }  from "../components/Link";
+
 // -----------------------------------------------------------------------------
 import GamesIcon_ from "./icons/gamepad-solid";
 import ProjectsIcon_ from "./icons/layer-group-solid";

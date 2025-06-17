@@ -1,3 +1,4 @@
+// -----------------------------------------------------------------------------
 interface LinkProps {
   className?: string;
   href: string;
@@ -5,7 +6,8 @@ interface LinkProps {
   target?: string;
 }
 
-export default function Link({ className, href, children, target }: LinkProps) {
+// -----------------------------------------------------------------------------
+export function Link({ className, href, children, target }: LinkProps) {
   const is_abs_url = href.startsWith("http") || href === "/";
   const has_extension = href.endsWith(".html");
 

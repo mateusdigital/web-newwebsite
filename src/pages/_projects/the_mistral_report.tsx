@@ -1,6 +1,6 @@
 
 import { DefaultPage } from  "../components/DefaultPage";
-import Link from "../components/link";
+import { Link }  from "../components/link";
 import GetProjectPageInfo from "../components/project-detail-page/get-project-detail-page-info";
 import YTVideo_ from "../components/yt-video";
 import ProjectTitle_ from "../components/project-detail-page/project-title"

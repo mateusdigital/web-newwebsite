@@ -2,7 +2,7 @@
 // -----------------------------------------------------------------------------
 import FileUtils from "../../libs/mdweb/source/FileUtils";
 import { MakePlatformIcons, Project } from "../models/ProjectsInfo";
-import Link from "./Link";
+import { Link }  from "./Link";
 import RetroIcon from "./icons/address-book-solid"
 
 //

@@ -1,6 +1,6 @@
 
 import { DefaultPage } from  "../components/DefaultPage";
-import Link from "../components/link";
+import { Link }  from "../components/link";
 
 export default function Page() {
   return (

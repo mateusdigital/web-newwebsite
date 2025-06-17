@@ -1,7 +1,7 @@
 import GetProjectPageInfo from "../components/project-detail-page/get-project-detail-page-info";
 import ProfessionalPage_ from "../components/project-detail-page/professional-page";
 
-import Link from "../components/link";
+import { Link }  from "../components/link";
 
 export default function Page() {
   const info = GetProjectPageInfo()

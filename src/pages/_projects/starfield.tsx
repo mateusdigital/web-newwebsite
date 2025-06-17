@@ -1,4 +1,4 @@
-import Link from "../components/link";
+import { Link }  from "../components/link";
 import GetProjectPageInfo from "../components/project-detail-page/get-project-detail-page-info";
 import DemoPage_ from "../components/project-detail-page/demo-page";
 
