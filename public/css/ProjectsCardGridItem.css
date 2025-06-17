@@ -1,9 +1,13 @@
 /* -------------------------------------------------------------------------- */
 .projectItemCard {
   position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .projectItemCard a {}
@@ -59,7 +63,28 @@
   gap: 0.5rem;
 }
 
+/*
+*  For the Projects Page
+*/
 
-.projectItemCardPlatformsContainer {
-  color: var(--projects-card-desc-text-color);
+/* -------------------------------------------------------------------------- */
+
+.projectItemCard .youtubeAndImageContainer {
+  background-color: blue;
+  gap: 0.5rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.projectItemCard .youtubeAndImageContainer img {
+  /* max-height: 180px */
 }

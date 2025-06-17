@@ -51,7 +51,6 @@ export default function Projects() {
           {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2023)}
           {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2023)}
           {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2023)}
-        </_Section>
 
         {_CreateImgCard(
           "/img/projects/talks/Carreira-86-300x300-1.png",
@@ -60,7 +59,7 @@ export default function Projects() {
           "",
           2020
         )}
-        <br/>
+        </_Section>
 
         <_Section title="Open Source" subtitle="Contributions" columns="0">
           <ul>
@@ -84,6 +83,18 @@ export default function Projects() {
 
         <_Section title="Past" subtitle="Work" columns="0">
           <ul>
+            <span><b>Banco Pine</b></span>
+            <li><span>Financial System Backend</span><span className="textDetail"> - Web</span></li>
+            <br />
+
+            <span><b>goEpik</b></span>
+            <li><span>VR / AR for industry 4.0</span><span className="textDetail"> - Mobile</span></li>
+            <br />
+
+            <span><b>noping.com</b></span>
+            <li><span>Network Tunneling</span><span className="textDetail"> - Windows</span></li>
+            <br />
+
             <span><b>Ginga.One</b></span>
             <li><span>Pequenos Criativos</span><span className="textDetail"> - iOS</span></li>
             <li><span>Porto Seguro Auto</span><span className="textDetail"> - iOS</span></li>
@@ -91,6 +102,10 @@ export default function Projects() {
 
             <span><b>Imidiar</b></span>
             <li><span>Photo Totem</span><span className="textDetail"> - Python</span></li>
+            <br />
+
+            <span><b>GSM Sistemas</b></span>
+            <li><span>Health analytics</span><span className="textDetail"> - iOS</span></li>
             <br />
 
             <span><b>Eazz</b></span>
@@ -128,9 +143,9 @@ function _CreateYTCard(ytId: string, title: string, detail: string, year: number
   const alt_text = title;
 
   return (
-    <div className="projectCard" key={title}>
+    <div className="projectItemCard" key={title}>
       <Link href={yt_url}>
-        <div className="projectCardYTandImgContainer">
+        <div className="youtubeAndImageContainer">
           <img src={img_path} alt={alt_text} />
           {title}
         </div>
@@ -143,8 +158,8 @@ function _CreateYTCard(ytId: string, title: string, detail: string, year: number
 function _CreateImgCard(imgUrl: string, href: string, title: string, detail?: string, year?: number) {
   const alt_text = title;
   return (
-    <div className="projectCard" key={title}>
-      <div className="projectCardYTandImgContainer">
+    <div className="projectItemCard" key={title}>
+      <div className="youtubeAndImageContainer">
         <Link href={href}>
           <img src={imgUrl} alt={alt_text} />
         </Link>
