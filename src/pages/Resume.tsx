@@ -1,6 +1,12 @@
-import DefaultPage from "../components/DefaultPage";
+import { DefaultPage } from "../components/DefaultPage";
 import Link from "../components/Link";
 
+
+//
+// Component
+//
+
+// -----------------------------------------------------------------------------
 export default function Resume() {
   return (
     <>
@@ -21,7 +27,10 @@ export default function Resume() {
 
         <section>
           <p>
-            My most up-to-date resume is shown bellow, but also you can <i class="fas fa-file-pdf"></i> <a href="/res/resume/mateus-mesquita-resume.pdf"> Download in PDF</a>.
+            My most up-to-date resume is shown bellow, but also you can
+            &nbsp;<a href="/res/resume/mateus-mesquita-resume.pdf">Download in PDF</a>
+            &nbsp;or
+            &nbsp;<a href="/res/resume/mateus-mesquita-resume.pdf">open in new page</a>.
           </p>
 
           <div className="resumeIFrameContainer">

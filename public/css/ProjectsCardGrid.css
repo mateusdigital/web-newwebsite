@@ -1,0 +1,67 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*  Projects Grid                                                             */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+.gridContainer3,
+.gridContainer4,
+.gridContainer5 {
+  display: grid;
+  gap: 0.5rem 0.75rem;
+  justify-content: center;
+}
+
+/* Mobile: max-width 600px */
+@media (max-width: 600px) {
+  .gridContainer3 {
+    grid-template-columns: repeat(1, auto);
+    /* background-color: red; */
+  }
+
+  .gridContainer4 {
+    grid-template-columns: repeat(2, auto);
+    /* background-color: red; */
+  }
+
+  .gridContainer5 {
+    grid-template-columns: repeat(3, auto);
+    /* background-color: red; */
+  }
+}
+
+/* Tablet: 601px to 800px */
+@media (min-width: 601px) and (max-width: 800px) {
+  .gridContainer3 {
+    grid-template-columns: repeat(3, auto);
+    /* background-color: blue; */
+  }
+
+  .gridContainer4 {
+    grid-template-columns: repeat(4, auto);
+    /* background-color: blue; */
+  }
+
+  .gridContainer5 {
+    grid-template-columns: repeat(4, auto);
+    /* background-color: blue; */
+  }
+}
+
+/* Desktop: min-width 801px */
+@media (min-width: 801px) {
+  .gridContainer3 {
+    grid-template-columns: repeat(3, auto);
+    /* background-color: green; */
+  }
+
+  .gridContainer4 {
+    grid-template-columns: repeat(4, auto);
+    /* background-color: green; */
+  }
+
+  .gridContainer5 {
+    grid-template-columns: repeat(5, auto);
+    /* background-color: green; */
+  }
+}

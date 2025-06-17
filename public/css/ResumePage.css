@@ -1,0 +1,38 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*  Resume Page                                                               */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+.resumeIFrameContainer {
+  width: min(940px, 100%);
+  height: 100%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+.resumeIFrame {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1rem;
+  width: 100%;
+  height: calc(2208px + 3rem);
+  overflow: hidden;
+  display: block;
+  border: none;
+  margin-top: 1.5rem;
+  border-radius: var(--border-radius);
+  /* @HACK: Need fo find a way to make the iframe says the size that it wants
+              and the container to expand itself to acommodate it.
+              We doing this cause we wanna avoid the scroll in the iframe itself.
+              mateus - 29/04/23
+    */
+}
+
+/* -------------------------------------------------------------------------- */
+@media (min-width: 840px) {
+  .resumeIFrame {
+    overflow: hidden;
+  }
+}

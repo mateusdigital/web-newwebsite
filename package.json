@@ -4,7 +4,7 @@
   "build": 62,
   "type": "module",
   "scripts": {
-    "build": "tsx src/render.tsx"
+    "build": "tsx src/GenerateSite.ts"
   },
   "dependencies": {
     "json5": "^2.2.3",

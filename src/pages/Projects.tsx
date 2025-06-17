@@ -22,9 +22,9 @@
 
 // -----------------------------------------------------------------------------
 import Link from "../components/Link";
-import DefaultPage from "../components/DefaultPage";
-import ProjectItemCard from "../components/projects/ProjectItemCard";
-import { ProjectsInfo } from "../models/ProjectsInfo";
+import { DefaultPage }  from "../components/DefaultPage";
+import ProjectItemCard from "../components/ProjectItemCard";
+import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 
 //
 // Component
@@ -32,9 +32,9 @@ import { ProjectsInfo } from "../models/ProjectsInfo";
 
 // -----------------------------------------------------------------------------
 export default function Projects() {
-  const projects = ProjectsInfo();
+  const projects = GetProjectsInfo();
 
-  const demos = projects.FindProject((item: any) => {
+  const demos = projects.FindProject((item: Project) => {
     return item.project_type === "demo";
   });
 
@@ -42,7 +42,7 @@ export default function Projects() {
     <>
       <DefaultPage pageId="projects">
         <_Section title="Creative" subtitle="Coding" columns="4">
-          {demos.map((item: any, index: number) => (
+          {demos.map((item: Project, index: number) => (
             <ProjectItemCard key={index} item={item} />
           ))}
         </_Section>

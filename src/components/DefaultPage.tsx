@@ -1,21 +1,27 @@
 import Head from "../components/Head";
 import NavBar from "../components/NavBar";
 // @ts-ignore
-import HeartIcon from "./icons/heart-solid"
+import HeartIcon from "./icons/heart-solid";
 
 
+//
+// Components
+//
+
+// -----------------------------------------------------------------------------
 type DefaultPageProps = {
   title?: string;
   pageId: string;
   children: any;
 };
 
-export default function DefaultPage({ title, pageId, children }: DefaultPageProps) {
+// -----------------------------------------------------------------------------
+export function DefaultPage({ title, pageId, children}: DefaultPageProps) {
   return (<>
     {/* Head */}
-    <Head />
+    <Head title={title}/>
 
-    <div className="container">
+    <div className="bodyContainer">
       {/* NavBar */}
       <NavBar pageId={pageId} />
 

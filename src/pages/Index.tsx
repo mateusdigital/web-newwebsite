@@ -21,7 +21,7 @@
 //----------------------------------------------------------------------------//
 
 // -----------------------------------------------------------------------------
-import DefaultPage from "../components/DefaultPage";
+import { DefaultPage } from  "../components/DefaultPage";
 // -----------------------------------------------------------------------------
 // import packageJson from '@/package.json' assert { type: 'json' };
 const packageJson = {

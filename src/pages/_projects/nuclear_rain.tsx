@@ -1,5 +1,5 @@
 
-import DefaultPage from "../components/DefaultPage";
+import { DefaultPage } from  "../components/DefaultPage";
 import Link from "../components/link";
 import GetProjectPageInfo from "../components/project-detail-page/get-project-detail-page-info";
 import DemoIframe_ from "../components/demo-iframe";

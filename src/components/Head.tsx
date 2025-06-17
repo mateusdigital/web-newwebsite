@@ -1,9 +1,57 @@
-export default function Head() {
-  const title = "Mateus Mesquita - Game Programmer";
+//----------------------------------------------------------------------------//
+//                               *       +                                    //
+//                         '                  |                               //
+//                     ()    .-.,="``"=.    - o -                             //
+//                           '=/_       \     |                               //
+//                        *   |  '=._    |                                    //
+//                             \     `=./`,        '                          //
+//                          .   '=.__.=' `='      *                           //
+//                 +                         +                                //
+//                      O      *        '       .                             //
+//                                                                            //
+//  File      : Head.tsx                                                      //
+//  Project   : new-website                                                   //
+//  Date      : 2025-05-26                                                    //
+//  License   : See project's COPYING.TXT for full info.                      //
+//  Author    : mateus.digital <hello@mateus.digital>                         //
+//  Copyright : mateus.digital - 2025                                         //
+//                                                                            //
+//  Description :                                                             //
+//                                                                            //
+//----------------------------------------------------------------------------//
 
-  return (
+
+
+//
+// Component
+//
+
+// -----------------------------------------------------------------------------
+export default function Head({ title }: { title?: string }) {
+
+  // ${title} - Mateus Mesquita - Game Programmer
+  title = ((title && title.length > 0)
+    ? `${title} - `
+    : "") + "Mateus Mesquita - Game Programmer";
+
+  return (<>
     <head>
-      <link rel="stylesheet" href="/css/default.css" />
+      <link rel="stylesheet" href="/css/Default.css" />
+      <link rel="stylesheet" href="/css/NavBar.css" />
+      <link rel="stylesheet" href="/css/PageTitle.css" />
+      <link rel="stylesheet" href="/css/Footer.css" />
+      <link rel="stylesheet" href="/css/IndexPage.css" />
+
+      <link rel="stylesheet" href="/css/AboutPage.css" />
+      <link rel="stylesheet" href="/css/ContactsPage.css" />
+      <link rel="stylesheet" href="/css/ResumePage.css" />
+
+
+      <link rel="stylesheet" href="/css/ProjectsCardGrid.css" />
+      <link rel="stylesheet" href="/css/ProjectsCardGridItem.css" />
+      <link rel="stylesheet" href="/css/SoftwareCardGridItem.css" />
+
+      {/* <link rel="stylesheet" href="/css/resume.css" /> */}
 
       {/* <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png" />
@@ -46,5 +94,5 @@ export default function Head() {
 
       <title>{title}</title>
     </head>
-  );
+  </>);
 }

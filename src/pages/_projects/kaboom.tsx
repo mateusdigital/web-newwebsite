@@ -1,5 +1,5 @@
 
-import DefaultPage from "../components/DefaultPage";
+import { DefaultPage } from  "../components/DefaultPage";
 import GetProjectPageInfo from "../components/project-detail-page/get-project-detail-page-info";
 import ProjectTitle_ from "../components/project-detail-page/project-title"
 import UnderConstruction from "../components/under-construction";

@@ -1,0 +1,69 @@
+
+/* -------------------------------------------------------------------------- */
+.projectCard {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.projectCard a {}
+
+.projectCard img {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 180px;
+  border-radius: var(--border-radius);
+}
+
+.projectCardYTandImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.projectCardYTandImgContainer img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: var(--border-radius);
+}
+
+
+.projectCardInfoContainer {
+  visibility: collapse;
+
+  position: absolute;
+  left: 0;
+  bottom: 1%;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: calc(100% - 0rem);
+  color: var(--gray-200);
+  background-color: color-mix(in srgb, var(--background-color-dark) 90%, transparent);
+  padding: 1rem;
+}
+
+.projectCardTitle {}
+
+/* When hover show the card info  */
+.projectCard:hover .projectCardInfoContainer {
+  visibility: visible;
+}
+
+.projectCardRightContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.projectCardPlatformsContainer {
+  color: var(--projects-card-desc-text-color);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.projectListCardInfoYear {
+  color: var(--projects-card-desc-text-color);
+}

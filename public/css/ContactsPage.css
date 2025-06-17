@@ -1,0 +1,41 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*  Contacts Page                                                             */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+.contactsItemsContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* -------------------------------------------------------------------------- */
+.contacts ul {
+  margin-bottom: 1.5rem;
+}
+
+.contacts ul h2 {
+  margin-bottom: 0.5em;
+  color: var(--bold-text-color);
+  font-weight: var(--bold-text-weight);
+  font-size: 1rem;
+}
+
+.contacts li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+
+  white-space: nowrap;
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.contacts svg.svgIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}

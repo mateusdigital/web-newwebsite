@@ -1,0 +1,36 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*  Page Title                                                                */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+h1 {
+  color: var(--section-title-color);
+  font-size: var(--section-title-size);
+  font-weight: var(--section-title-weight);
+
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* That square */
+h1::before {
+  color: var(--section-title-square-color);
+  font-size: var(--section-title-square-size);
+  font-weight: var(--section-title-square-weight);
+
+  content: "\25A0";
+  display: inline-block;
+  position: relative;
+  margin-right: 0.75rem;
+  top: -2px;
+}
+
+/* Second Word is ligther */
+h1 span {
+  color: var(--section-title-lighter-color);
+  font-size: var(--section-title-lighter-size);
+  font-weight: var(--section-title-lighter-weight);
+}

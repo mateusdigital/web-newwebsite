@@ -17,8 +17,76 @@ import { Assert } from "../../libs/mdweb/source/Assert";
 
 
 
-class Info {
-  projects: any;
+
+//
+// Types
+//
+
+// -----------------------------------------------------------------------------
+export interface Project {
+  //
+  project_name: string;
+  project_title: string;
+  project_title_short?: string;
+
+  //
+  project_type:
+    | "tool"
+    | "game"
+    | "library"
+    | "demo"
+    | "app"
+    | "web";
+
+  project_subtype:
+    | ""
+    // Game
+    | "game-professional"
+    | "game-retro"
+    | "game-personal"
+    | "game-old"
+    // Tool
+    | "tool-vscode"
+    | "tool-terminal"
+    // Theme
+    | "theme-vscode"
+
+
+  //
+  project_license?: string;
+  project_description: string;
+
+  //
+  year_start: number;
+  year_end: number;
+  year_release: number;
+
+  //
+  tech: string[];
+  platform: string[];
+
+  //
+  //
+  company?: string;
+  role?: string;
+
+  //
+  is_playable_on_canvas?: boolean;
+  youtube_video_id?: string;
+  html?: string;
+}
+
+
+type ListOProject = Project[];
+
+
+//
+//
+//
+
+// -----------------------------------------------------------------------------
+class ProjectsInfo {
+  projects: ListOProject;
 
   constructor() {
     const cwd = FileUtils.GetCwd();
@@ -31,11 +99,11 @@ class Info {
     const text_data = FileUtils.ReadAllFile(projects_json_filepath);
     const json_data = JsonUtils.Deserialize(text_data);
 
-    this.projects = json_data
+    this.projects = json_data;
   }
 
   // -----------------------------------------------------------------------------
-  FindProject(predicate: any) {
+  FindProject(predicate: any): ListOProject {
     const projects = [];
     for (const project of this.projects) {
       if (predicate(project)) {
@@ -101,9 +169,9 @@ export function MakePlatformIcons(platforms: any) {
 
 let _info: any = null;
 // -----------------------------------------------------------------------------
-export function ProjectsInfo() {
+export function GetProjectsInfo() {
   if (!_info) {
-    _info = new Info();
+    _info = new ProjectsInfo();
   }
 
   return _info;

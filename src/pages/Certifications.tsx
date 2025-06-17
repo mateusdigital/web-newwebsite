@@ -1,4 +1,4 @@
-import DefaultPage from '../components/DefaultPage'
+import { DefaultPage } from  '../components/DefaultPage'
 import CertificationItemCard from '../components/certifications/CertificationItemCard'
 
 export default function Page() {

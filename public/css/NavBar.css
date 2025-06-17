@@ -1,0 +1,104 @@
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*  Navigation Bar                                                            */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+.navBarContainer {
+  /* background-color: red;; */
+  margin-bottom: 1.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+.topNav {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin-bottom: 1.0rem;
+}
+
+/* --- mateus.digital ------------------------------------------------------- */
+.topNav .logo {
+  font-size: 1.2rem;
+  ;
+}
+
+/* --- The menu links ------------------------------------------------------- */
+.topNav a {
+  text-decoration: none;
+}
+
+/* --- The menu buttons ----------------------------------------------------- */
+.topNav button {
+  background: none;
+  border: none;
+  color: var(--main-menu-item-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                                                            */
+/*  Drop Down                                                                 */
+/*                                                                            */
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+.dropdownMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100dvh;
+  animation: slideDown 0.3s ease forwards;
+
+  background-color: var(--dropdown-background-color);
+  z-index: 9999;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* -------------------------------------------------------------------------- */
+.dropdownMenuContainer {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+/* -------------------------------------------------------------------------- */
+.dropdownMenuItemsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+/* -------------------------------------------------------------------------- */
+.hamburger {
+  font-size: 2rem;
+  margin-left: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+.dropdownMenuItemsContainer a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border-bottom: #38c172 solid 1px;
+  padding: 0.75rem 0rem;
+}
+
+/* -------------------------------------------------------------------------- */
+.dropdownMenuItemsContainer a span {
+  color: var(--main-menu-item-color);
+  font-size: 2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+.dropdownMenuItemsContainer svg.svgIcon {
+  width: 0rem;
+  height: 0rem;
+}

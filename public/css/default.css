@@ -38,6 +38,8 @@ iframe {
   --background-callout-text-color: hsl(0, 0%, 5%);
   --dropdown-background-color: hsl(0, 0%, 7%);
 
+  --text-accent-color: var(--gray-300);
+  --text-unaccent-color: var(--gray-700);
 
   /*  */
   --text-color: var(--gray-400);
@@ -47,21 +49,21 @@ iframe {
   --icon-color: var(--gray-600);
 
   /*  */
-  --section-title-size:   1.85rem;
-  --section-title-color:  var(--gray-200);
+  --section-title-size: 1.85rem;
+  --section-title-color: var(--gray-200);
   --section-title-weight: 300;
 
-  --section-title-square-size:   76%;
-  --section-title-square-color:  var(--gray-400);
+  --section-title-square-size: 76%;
+  --section-title-square-color: var(--gray-400);
   --section-title-square-weight: 100;
 
-  --section-title-lighter-size:   100%;
-  --section-title-lighter-color:  var(--gray-500);
+  --section-title-lighter-size: 100%;
+  --section-title-lighter-color: var(--gray-500);
   --section-title-lighter-weight: 100;
 
   /*  */
   --footer-text-color: var(--gray-600);
-  --footer-text-size:  0.8rem;
+  --footer-text-size: 0.8rem;
 
   /*  */
   --horizontal-line-color: var(--gray-800);
@@ -75,19 +77,20 @@ iframe {
 
   /*  */
   --bold-text-weight: 600;
-  --bold-text-color:  var(--gray-200);
+  --bold-text-color: var(--gray-200);
 
   /*  */
-  --link-text-color:             var(--gray-200);
-  --link-decoration-color:       var(--gray-600);
+  --link-text-color: var(--gray-200);
+  --link-decoration-color: var(--gray-600);
   --link-decoration-color-hover: var(--gray-400);
 
   /* */
   --border-radius: 0.5rem;
+  --border-color: var(--gray-600);
 
   /*  */
-  --about-section-subtitle-size:   1.3rem;
-  --about-section-subtitle-color:  var(--gray-300);
+  --about-section-subtitle-size: 1.3rem;
+  --about-section-subtitle-color: var(--gray-300);
   --about-section-subtitle-weight: 400;
 }
 
@@ -97,7 +100,6 @@ iframe {
 /*  Body                                                                      */
 /*                                                                            */
 /* -------------------------------------------------------------------------- */
-
 /* -------------------------------------------------------------------------- */
 body {
   font-family: 'JetBrains Mono', monospace;
@@ -120,181 +122,11 @@ body {
   margin-right: auto;
 }
 
-.container {
+.bodyContainer {
   padding: 2.0rem 1.0rem;
-  height: 100%;
   background-color: var(--background-color);
 }
 
-
-/* -------------------------------------------------------------------------- */
-hr {
-  border: none;
-  border-top: 1px solid var(--horizontal-line-color);
-}
-
-/* -------------------------------------------------------------------------- */
-section {
-  margin-bottom: var(--section-margin-bottom);
-}
-
-
-/* -------------------------------------------------------------------------- */
-p {
-  line-height:   var(--paragraph-line-height);
-  margin-bottom: var(--paragraph-margin-bottom);
-  /* padding: 0.rem 0rem; */
-}
-
-/* -------------------------------------------------------------------------- */
-b {
-  font-weight: var(--bold-text-weight);
-  color:       var(--bold-text-color);
-}
-
-/* This is the font awesome SVG that we import with the import-svg.sh script. */
-svg.svgIcon {
-  display: inline-block;
-
-  /* Just to make the icons centered with the text */
-  position: relative;
-  top: 2px;
-
-  fill: var(--icon-color);
-  width: 1rem;
-  height: 1rem;
-
-  margin-right: 0.5rem;
-}
-
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  Navigation Bar                                                            */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-
-/* -------------------------------------------------------------------------- */
-.navBarContainer {
-  /* background-color: red;; */
-  margin-bottom: 1.5rem;
-}
-
-/* -------------------------------------------------------------------------- */
-.topNav {
-  display: flex;
-  justify-content: space-between;
-
-  align-items: center;
-  margin-bottom: 1.0rem;
-}
-
-/* --- mateus.digital ------------------------------------------------------- */
-.topNav .logo {
-  font-size: 1.2rem;;
-}
-
-/* --- The menu links ------------------------------------------------------- */
-.topNav a {
-  text-decoration: none;
-}
-
-/* --- The menu buttons ----------------------------------------------------- */
-.topNav button {
-  background: none;
-  border: none;
-  color: var(--main-menu-item-color);
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* -------------------------------------------------------------------------- */
-.dropdownMenu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100dvh;
-  animation: slideDown 0.3s ease forwards;
-
-  background-color: var(--dropdown-background-color);
-  z-index: 9999;
-}
-
-body.no-scroll {
-  overflow: hidden;
-}
-.dropdownMenuContainer {
-  /* background-color: blue; */
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 1rem;
-}
-
-.dropdownMenuItemsContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-.hamburger {
-  font-size: 2rem;
-  margin-left: auto;
-}
-
-.dropdownMenuItemsContainer a {
-  text-decoration: none;
-  text-transform: uppercase;
-
-  border-bottom: #38c172 solid 1px;
-  padding: 0.75rem 0rem;
-}
-
-.dropdownMenuItemsContainer a span  {
-  color: var(--main-menu-item-color);
-  font-size: 2rem;
-}
-
-.dropdownMenuItemsContainer svg.svgIcon {
-  width:  0rem;
-  height: 0rem;
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  Page Title                                                                */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-h1 {
-  color:       var(--section-title-color);
-  font-size:   var(--section-title-size);
-  font-weight: var(--section-title-weight);
-
-  display: inline-block;
-  margin-bottom: 1rem;
-}
-
-/* That square */
-h1::before {
-  color:       var(--section-title-square-color);
-  font-size:   var(--section-title-square-size);
-  font-weight: var(--section-title-square-weight);
-
-  content: "\25A0";
-  display: inline-block;
-  position: relative;
-  margin-right: 0.75rem;
-  top: -2px;
-}
-
-/* Second Word is ligther */
-h1 span {
-  color:       var(--section-title-lighter-color);
-  font-size:   var(--section-title-lighter-size);
-  font-weight: var(--section-title-lighter-weight);
-}
 
 /* -------------------------------------------------------------------------- */
 /*                                                                            */
@@ -314,81 +146,50 @@ a:hover {
   text-underline-offset: 0.3rem;
   color: var(--link-color-hover);
 }
+
+
+/* -------------------------------------------------------------------------- */
+hr {
+  border: none;
+  border-top: 1px solid var(--horizontal-line-color);
+}
+
+/* -------------------------------------------------------------------------- */
+section {
+  margin-bottom: var(--section-margin-bottom);
+}
+
+/* -------------------------------------------------------------------------- */
+p {
+  line-height: var(--paragraph-line-height);
+  margin-bottom: var(--paragraph-margin-bottom);
+  /* padding: 0.rem 0rem; */
+}
+
+/* -------------------------------------------------------------------------- */
+b {
+  font-weight: var(--bold-text-weight);
+  color: var(--bold-text-color);
+}
+
+/* This is the font awesome SVG that we import with the import-svg.sh script. */
+svg.svgIcon {
+  display: inline-block;
+
+  /* Just to make the icons centered with the text */
+  position: relative;
+  top: 2px;
+
+  fill: var(--icon-color);
+  width: 1rem;
+  height: 1rem;
+
+  margin-right: 0.5rem;
+}
+
+
 /* @TODO: Add the icon for open new tab */
 
-
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  Contacts Page                                                             */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-.contactsItemsContainer {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.contacts ul {
-  margin-bottom: 1.5rem;
-}
-.contacts ul h2 {
-  margin-bottom: 0.5em;
-  color:       var(--bold-text-color);
-  font-weight: var(--bold-text-weight);
-  font-size:   1rem;
-}
-
-.contacts li {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-
-  white-space: nowrap;
-  list-style: none;
-  margin-bottom: 0.5rem;
-}
-
-.contacts svg.svgIcon {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  Index Page                                                                */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-.indexAsciiArtContainer {
-  display: grid;
-}
-
-.indexAsciiArt {
-  color: var(--main-logo-color);
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  Footer                                                                    */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-.footer {
-  width: 100%;
-
-  text-align: center;
-  margin-bottom: 0.5rem;
-}
-
-.footer span {
-  color: var(--footer-text-color);
-  font-size: var(--footer-text-size);
-  font-size: 0.8rem;
-}
 
 
 /*  */
@@ -397,86 +198,12 @@ svg.heartIcon {
   margin: 0;
   padding: 0;
 }
+
 svg.heartIcon:hover {
   fill: #f2e447;
   cursor: pointer;
 }
 
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  About Page                                                                */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-.aboutPageLookingForResume {
-  background-color: var(--background-callout-text-color);
-
-  display: block;
-  text-align: center;
-  padding: 0.75rem 1.0rem;
-
-  border-radius: var(--border-radius);
-  margin-bottom: 1.5rem;
-}
-
-.aboutPageHeaderImage {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 1.7 / 1;
-  object-fit: cover;
-
-  border-radius: var(--border-radius);
-  margin-bottom: 0.75rem;
-}
-
-.about section h2 {
-  display: block;
-
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid var(--horizontal-line-color);
-
-  font-size:   var(--about-section-subtitle-size);
-  font-weight: var(--about-section-subtitle-weight);
-  color:       var(--about-section-subtitle-color);
-}
-
-
-
-/* -------------------------------------------------------------------------- */
-/*                                                                            */
-/*  Resume Page                                                               */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-.resumeIFrameContainer {
-  width: min(840px, 100%);
-  height: 100%;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.resumeIFrame {
-  background-color: white;
-  padding: 1rem 1rem;
-  width: 100%;
-  height: calc(2208px + 3rem);
-  overflow: hidden;
-  display: block;
-  border: none;
-  margin-top: 1.5rem;
-  border-radius: var(--border-radius);
-  /* @HACK: Need fo find a way to make the iframe says the size that it wants
-              and the container to expand itself to acommodate it.
-              We doing this cause we wanna avoid the scroll in the iframe itself.
-              mateus - 29/04/23
-    */
-}
-
-@media (min-width: 840px) {
-  .resumeIFrame {
-    overflow: hidden;
-  }
-}
 
 
 /* -------------------------------------------------------------------------- */
@@ -485,148 +212,18 @@ svg.heartIcon:hover {
 /*                                                                            */
 /* -------------------------------------------------------------------------- */
 .projects ul {
-  margin-left: 2rem;;
+  margin-left: 2rem;
 }
+
 
 /* -------------------------------------------------------------------------- */
 /*                                                                            */
-/*  Projects Grid                                                             */
-/*                                                                            */
-/* -------------------------------------------------------------------------- */
-.gridContainer3,
-.gridContainer4,
-.gridContainer5 {
-  display: grid;
-  gap: 0.5rem 0.75rem;
-  justify-content: center;
-}
-
-/* Mobile: max-width 600px */
-@media (max-width: 600px) {
-  .gridContainer3 {
-    grid-template-columns: repeat(1, auto);
-    /* background-color: red; */
-  }
-
-  .gridContainer4 {
-    grid-template-columns: repeat(2, auto);
-    /* background-color: red; */
-  }
-
-  .gridContainer5 {
-    grid-template-columns: repeat(3, auto);
-    /* background-color: red; */
-  }
-}
-
-/* Tablet: 601px to 800px */
-@media (min-width: 601px) and (max-width: 800px) {
-  .gridContainer3 {
-    grid-template-columns: repeat(3, auto);
-    /* background-color: blue; */
-  }
-
-  .gridContainer4 {
-    grid-template-columns: repeat(4, auto);
-    /* background-color: blue; */
-  }
-
-  .gridContainer5 {
-    grid-template-columns: repeat(4, auto);
-    /* background-color: blue; */
-  }
-}
-
-/* Desktop: min-width 801px */
-@media (min-width: 801px) {
-  .gridContainer3 {
-    grid-template-columns: repeat(3, auto);
-    /* background-color: green; */
-  }
-
-  .gridContainer4{
-    grid-template-columns: repeat(4, auto);
-    /* background-color: green; */
-  }
-
-  .gridContainer5 {
-    grid-template-columns: repeat(5, auto);
-    /* background-color: green; */
-  }
-}
-
-/* -------------------------------------------------------------------------- */
-.projectCard {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.projectCard a {}
-
-.projectCard img {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 180px;
-  border-radius: var(--border-radius);
-}
-
-.projectCardYTandImgContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-
-.projectCardYTandImgContainer img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: var(--border-radius);
-}
-
-
-.projectCardInfoContainer {
-  visibility: collapse;
-
-  position: absolute;
-  left: 0;
-  bottom: 1%;
-
-  display: flex;
-  justify-content: space-between;
-
-  width: calc(100% - 0rem);
-  color: var(--gray-200);
-  background-color: color-mix(in srgb, var(--background-color-dark) 90%, transparent);
-  padding: 1rem;
-}
-
-.projectCardTitle {}
-
-/* When hover show the card info  */
-.projectCard:hover .projectCardInfoContainer {
-  visibility: visible;
-}
-
-.projectCardRightContainer {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.projectCardPlatformsContainer {
-  color: var(--projects-card-desc-text-color);
-  display: flex;
-  gap: 0.5rem;
-}
-
-.projectListCardInfoYear {
-  color: var(--projects-card-desc-text-color);
-}
-
-/* -------------------------------------------------------------------------- */
 /*  Project Detail Page                                                       */
+/*                                                                            */
 /* -------------------------------------------------------------------------- */
+.projectsDetailPageContainer {}
+
+
 .projectDetailPageCanvasContainer canvas,
 .projectDetailPageCanvasContainer iframe {
   width: 100%;
@@ -649,6 +246,7 @@ svg.projectDetailPageCompanyLogo {
   max-width: 10rem;
   fill: var(--text-color);
 }
+
 @media (max-width: 460px) {
   .projectDetailPageTitleContainer {
     /* display: block; */

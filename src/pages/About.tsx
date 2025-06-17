@@ -1,8 +1,7 @@
 // -----------------------------------------------------------------------------
 import Link from "../components/Link";
 // -----------------------------------------------------------------------------
-import AboutSection from "../components/about/AboutSection";
-import DefaultPage from "../components/DefaultPage";
+import { DefaultPage } from  "../components/DefaultPage";
 
 
 //
@@ -214,6 +213,32 @@ export function About() {
   )
 }
 
+//
+// Helpers
+//
+
+// -----------------------------------------------------------------------------
+
+type AboutSectionProps = {
+  title: string;
+  photo: string;
+  children?: any
+};
+
+// -----------------------------------------------------------------------------
+export function AboutSection({ title, photo, children }: AboutSectionProps) {
+
+  const photo_url = `/img/about/${photo}.png`;
+  return (<>
+    <section>
+      <h2>{title}</h2>
+      <img className="aboutPageHeaderImage" src={photo_url} />
+      <div class="about-section-text">
+        {children}
+      </div>
+    </section>
+  </>);
+}
 // -----------------------------------------------------------------------------
 (About as any).__location = import.meta.url;
 export default About;

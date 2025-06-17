@@ -16,7 +16,7 @@ fi;
 old_provider="";
 item_count=1;
 
-jsx_str=" import DefaultPage from '../components/DefaultPage'\n";
+jsx_str=" import { DefaultPage } from  '../components/DefaultPage'\n";
 jsx_str+="import CertificationItemCard_ from '../components/certifications-list-page/certification-item-card'\n";
 jsx_str+="export default function Page() {\n"
 jsx_str+="return (\n <>\n"

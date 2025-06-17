@@ -6,38 +6,57 @@
 
   // --- mdcomments -------------------------------------------------------------
   {
-    "project_name":  "mdcomments",
-    "project_title": "MDComments",
-    "project_type": "vscode",
-    "project_subtype": "tool",
+    "project_name":    "mdcomments",
+    "project_title":   "md:Comments",
+
+    "project_type":    "tool",
+    "project_subtype": "tool-vscode",
+
+    "project_license": "GPLv3",
+    "project_description": "A Visual Studio Code extension to add comments to source files.",
+
     "year_start": 2020,
     "year_end": 2023,
     "year_release": 2021,
-    "tech": ["typescript", "javascript"],
-    "platform": ["PC"]
+
+    "tech": ["typescript", "javascript", "vscode"],
+    "platform": ["vscode"],
   },
 
   // --- mdheader ---------------------------------------------------------------
   { "project_name":  "mdheader",
-    "project_title": "MDHeader",
-    "project_type": "vscode",
-    "project_subtype": "tool",
+    "project_title": "md:Header",
+
+    "project_type":    "tool",
+    "project_subtype": "tool-vscode",
+
+
+    "project_license": "GPLv3",
+    "project_description": "A Visual Studio Code extension to add headers to source files.",
+
     "year_start": 2020,
     "year_end": 2023,
     "year_release": 2021,
-    "tech": ["typescript", "javascript"],
+
+    "tech": ["typescript", "javascript", "vscode"],
     "platform": ["PC"]
   },
 
   // --- autopeacock ------------------------------------------------------------
   { "project_name":  "autopeacock",
     "project_title": "AutoPeacock",
-    "project_type": "vscode",
-    "project_subtype": "theme",
+
+    "project_type": "tool",
+    "project_subtype": ["tool-vscode", "theme-vscode"],
+
+    "project_license": "GPLv3",
+    "project_description": "A Visual Studio Code extension to automatically change the color of the editor background based on its path",
+
     "year_start": 2020,
     "year_end": 2023,
     "year_release": 2021,
-    "tech": ["typescript", "javascript"],
+
+    "tech": ["typescript", "javascript", "vscode", "peacock"],
     "platform": ["PC"]
   },
 
@@ -50,11 +69,18 @@
   {
     "project_name": "gosh",
     "project_title": "gosh",
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "Bookmark your most used paths and navigate efficiently...",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
+
     "tech": ["python", "powershell", "shellscript"],
     "platform": ["PC"]
   },
@@ -64,11 +90,19 @@
   {
     "project_name": "repochecker",
     "project_title": "RepoChecker",
+
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to check the status of your repositories and their dependencies.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
+
     "tech": ["python", "powershell", "shellscript"],
     "platform": ["PC"]
   },
@@ -78,12 +112,19 @@
   {
     "project_name": "psd-to-png",
     "project_title": "PSD to PNG",
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to convert PSD files to PNG files.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
     "tech": ["JS", "nodejs"],
+
     "platform": ["PC"]
   },
 
@@ -91,8 +132,13 @@
   {
     "project_name": "sprite-sheet-to-png",
     "project_title": "Sprite Sheet to PNG",
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to convert sprite sheets to PNG files.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
@@ -104,11 +150,19 @@
   {
     "project_name": "simple-sprite-sheet",
     "project_title": "Simple Sprite Sheet",
+
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to create simple sprite sheets from images.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
+
     "tech": ["JS", "nodejs"],
     "platform": ["PC"]
   },
@@ -117,11 +171,18 @@
   {
     "project_name": "spritesheet-to-tile",
     "project_title": "Simple Sprite to Tile",
+
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to convert sprite sheets to tile maps.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
     "tech": ["JS", "nodejs"],
     "platform": ["PC"]
   },
@@ -130,11 +191,17 @@
   {
     "project_name": "tile-to-map",
     "project_title": "Tile to Map",
+
     "project_type": "tool",
-    "project_subtype": "terminal",
+    "project_subtype": "tool-terminal",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to convert tile maps to JSON files.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
     "tech": ["JS", "nodejs"],
     "platform": ["PC"]
   },
@@ -147,23 +214,45 @@
   {
     "project_name": "el-jamon-volador",
     "project_title": "El Jamon Volador",
+
     "project_type": "game",
-    "project_subtype": "retro",
+    "project_subtype": "game-retro",
+
+    "project_license": "GPLv3",
+    "project_description": "A Gameboy game about a flying ham.",
+
     "year_start": 2019,
     "year_end": 2023,
     "year_release": 2021,
+
     "tech": ["C", "GBDK", "HTML", "CSS", "JS"],
-    "platform": ["gameboy"]
+    "platform": ["gameboy", "web"],
+
+    "html": [
+      "After releasing [The Mistral Report](/projects/the_mistral_report.html),\\nI became very interested in developing for retro machines and chose the Nintendo Game Boy\\nas the target for a new game.",
+      "",
+      "I decided to create a homage to Flappy Bird — its simple yet engaging gameplay offered\\na great opportunity to better understand that tiny marvel of a machine, the Game Boy.",
+      "",
+      "In 2023, I got into some web development and saw a good opportunity to create a cute landing\\npage for the project. I also built the [Game Boy Frame in CSS3](/projects/gameboy-css.html)."
+    ]
   },
+
+
   // --- the mistral report ----------------------------------------------------
   {
     "project_name": "the-mistral-report",
     "project_title": "The Mistral Report",
+
     "project_type": "game",
-    "project_subtype": "retro",
+    "project_subtype": "game-retro",
+
+    "project_license": "GPLv3",
+    "project_description": "A retro game about a detective solving a mystery.",
+
     "year_start": 2018,
     "year_end": 2019,
     "year_release": 2018,
+
     "tech": ["C++", "SDL1.2", "MSDOS"],
     "platform": ["msdos"]
   },
@@ -171,52 +260,86 @@
   {
     "project_name": "same-game",
     "project_title": "The Same Game",
+
     "project_type": "game",
-    "project_subtype": "personal",
+    "project_subtype": "game-personal",
+
+    "project_license": "GPLv3",
+    "project_description": "A simple game where you have to match the same colors.",
+
+
     "year_start": 2018,
     "year_end": 2019,
     "year_release": 2018,
+
     "tech": ["JS", "PixiJS", "NextJS"],
     "platform": ["web"],
+
+
     "is_playable_on_canvas": true
   },
   // --- // Koliery ------------------------------------------------------------
   {
     "project_name": "koliery",
     "project_title": "Koliery",
+
     "project_type": "game",
-    "project_subtype": "personal",
+    "project_subtype": "game-personal",
+
+    "project_license": "GPLv3",
+    "project_description": "A SEGA Columns inspired game",
+
     "year_start": 2018,
     "year_end": 2019,
     "year_release": 2018,
+
+
     "tech": ["JS", "Canvas API", "chroma.js"],
     "platform": ["web"],
+
     "is_playable_on_canvas": true
   },
   // --- simple snake ----------------------------------------------------------
   {
     "project_name": "simple-snake",
     "project_title": "Simple Snake!",
+
+
     "project_type": "game",
     "project_subtype": "personal",
+
+
+    "project_license": "GPLv3",
+    "project_description": "A simple snake game made with JavaScript and HTML5 Canvas.",
+
+
     "year_start": 2018,
     "year_end": 2019,
     "year_release": 2018,
+
     "tech": ["JS", "Canvas API", "chroma.js"],
     "platform": ["web"],
+
     "is_playable_on_canvas": true
   },
   // --- nuclear rain ----------------------------------------------------------
   {
     "project_name": "nuclear-rain",
     "project_title": "Nuclear Rain",
+
     "project_type": "game",
-    "project_subtype": "personal",
+    "project_subtype": "game-personal",
+
+    "project_license": "GPLv3",
+    "project_description": "Remake of the classic Atari's Missile Command game.",
+
     "year_start": 2018,
     "year_end": 2019,
     "year_release": 2018,
+
     "tech": ["JS", "Canvas API", "chroma.js"],
     "platform": ["web"],
+
     "is_playable_on_canvas": true
   },
   // --- cosmic intruders ------------------------------------------------------
@@ -448,7 +571,16 @@
     "company": "Miniclip",
     "role": "Programmer",
 
-    "youtube_video_id": "f0xHb8pxMco"
+    "youtube_video_id": "f0xHb8pxMco",
+
+    "html": [
+      "8 Ball Pool, the Miniclip's flagship game, thrives as a global online multiplayer game, gathering players for virtual pool matches.",
+
+      "With 20+ programmers, the agile 8 Ball Pool team adeptly employs SCRUM, dividing into 3 groups: 2 for active development and 1 for bug fixes, refactoring, and performance enhancements.",
+      "I've had the opportunity to work in both of the situations, helping with performance improvements and bug fixing and with the implementation of the Season Pass feature.",
+
+      "Before join the mobile team, I have worked in the task-force porting the mobile client to the web using Emscripten.",
+    ]
   },
   {
     "project_name": "pacman-io",
