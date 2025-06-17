@@ -5,7 +5,7 @@
 /*                                                                            */
 /* -------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
-h1 {
+section h1 {
   color: var(--section-title-color);
   font-size: var(--section-title-size);
   font-weight: var(--section-title-weight);
@@ -16,7 +16,7 @@ h1 {
 }
 
 /* That square */
-h1::before {
+section h1::before {
   color: var(--section-title-square-color);
   font-size: var(--section-title-square-size);
   font-weight: var(--section-title-square-weight);
@@ -29,7 +29,7 @@ h1::before {
 }
 
 /* Second Word is ligther */
-h1 span {
+section h1 span {
   color: var(--section-title-lighter-color);
   font-size: var(--section-title-lighter-size);
   font-weight: var(--section-title-lighter-weight);

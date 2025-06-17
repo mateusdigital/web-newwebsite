@@ -1,15 +1,14 @@
-
 /* -------------------------------------------------------------------------- */
-.projectCard {
+.projectItemCard {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.projectCard a {}
+.projectItemCard a {}
 
-.projectCard img {
+.projectItemCard img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -17,20 +16,7 @@
   border-radius: var(--border-radius);
 }
 
-.projectCardYTandImgContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center
-}
-
-.projectCardYTandImgContainer img {
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: var(--border-radius);
-}
-
-
-.projectCardInfoContainer {
+.projectItemCard .infoContainer {
   visibility: collapse;
 
   position: absolute;
@@ -46,24 +32,29 @@
   padding: 1rem;
 }
 
-.projectCardTitle {}
 
-/* When hover show the card info  */
-.projectCard:hover .projectCardInfoContainer {
+.projectItemCard:hover .infoContainer {
   visibility: visible;
 }
 
-.projectCardRightContainer {
+.projectItemCard .infoContainer .title {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.projectItemCard .infoContainer .rightContainer {
   display: flex;
   gap: 0.5rem;
 }
 
-.projectCardPlatformsContainer {
+.projectItemCard .infoContainer .rightContainer .platformIcons {
   color: var(--projects-card-desc-text-color);
   display: flex;
   gap: 0.5rem;
 }
 
-.projectListCardInfoYear {
+
+.projectItemCardPlatformsContainer {
   color: var(--projects-card-desc-text-color);
 }

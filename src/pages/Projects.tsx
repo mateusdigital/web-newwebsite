@@ -23,7 +23,7 @@
 // -----------------------------------------------------------------------------
 import { Link }  from "../components/Link";
 import { DefaultPage }  from "../components/DefaultPage";
-import ProjectItemCard from "../components/ProjectItemCard";
+import { ProjectItemCard } from "../components/ProjectItemCard";
 import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 
 //
