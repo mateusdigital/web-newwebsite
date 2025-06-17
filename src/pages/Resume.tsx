@@ -1,3 +1,25 @@
+//----------------------------------------------------------------------------//
+//                               *       +                                    //
+//                         '                  |                               //
+//                     ()    .-.,="``"=.    - o -                             //
+//                           '=/_       \     |                               //
+//                        *   |  '=._    |                                    //
+//                             \     `=./`,        '                          //
+//                          .   '=.__.=' `='      *                           //
+//                 +                         +                                //
+//                      O      *        '       .                             //
+//                                                                            //
+//  File      : Resume.tsx                                                    //
+//  Project   : new-website                                                   //
+//  Date      : 2025-05-26                                                    //
+//  License   : See project's COPYING.TXT for full info.                      //
+//  Author    : mateus.digital <hello@mateus.digital>                         //
+//  Copyright : mateus.digital - 2025                                         //
+//                                                                            //
+//  Description :                                                             //
+//                                                                            //
+//----------------------------------------------------------------------------//
+
 // -----------------------------------------------------------------------------
 import { Link } from "../components/Link";
 import { DefaultPage } from "../components/DefaultPage";
