@@ -47,7 +47,7 @@
     "project_title": "AutoPeacock",
 
     "project_type": "tool",
-    "project_subtype": ["tool-vscode", "theme-vscode"],
+    "project_subtype": "tool-vscode",
 
     "project_license": "GPLv3",
     "project_description": "A Visual Studio Code extension to automatically change the color of the editor background based on its path",
@@ -114,7 +114,7 @@
     "project_title": "PSD to PNG",
 
     "project_type": "tool",
-    "project_subtype": "tool-terminal",
+    "project_subtype": "tool-game",
 
     "project_license": "GPLv3",
     "project_description": "A tool to convert PSD files to PNG files.",
@@ -134,7 +134,7 @@
     "project_title": "Sprite Sheet to PNG",
 
     "project_type": "tool",
-    "project_subtype": "tool-terminal",
+    "project_subtype": "tool-game",
 
     "project_license": "GPLv3",
     "project_description": "A tool to convert sprite sheets to PNG files.",
@@ -153,7 +153,7 @@
 
 
     "project_type": "tool",
-    "project_subtype": "tool-terminal",
+    "project_subtype": "tool-game",
 
     "project_license": "GPLv3",
     "project_description": "A tool to create simple sprite sheets from images.",
@@ -174,7 +174,7 @@
 
 
     "project_type": "tool",
-    "project_subtype": "tool-terminal",
+    "project_subtype": "tool-game",
 
     "project_license": "GPLv3",
     "project_description": "A tool to convert sprite sheets to tile maps.",
@@ -193,7 +193,7 @@
     "project_title": "Tile to Map",
 
     "project_type": "tool",
-    "project_subtype": "tool-terminal",
+    "project_subtype": "tool-game",
 
     "project_license": "GPLv3",
     "project_description": "A tool to convert tile maps to JSON files.",

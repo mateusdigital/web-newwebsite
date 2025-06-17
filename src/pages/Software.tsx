@@ -1,7 +1,69 @@
 // -----------------------------------------------------------------------------
 import { DefaultPage } from "../components/DefaultPage";
-import { ProjectItemCard } from "../components/ProjectItemCard"
 import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
+
+
+//
+// Component
+//
+
+// -----------------------------------------------------------------------------
+export default function Software() {
+  const projects = GetProjectsInfo();
+
+  const terminal_tools = projects.FindProject((item: Project) => {
+    return item.project_type == "tool" && item.project_subtype == "tool-terminal";
+  });
+
+  const vscode_tools = projects.FindProject((item: Project) => {
+    return item.project_type == "tool"
+      && (item.project_subtype == "tool-vscode") ;
+  });
+
+  const game_tools = projects.FindProject((item: Project) => {
+    return item.project_type == "tool"
+      && (item.project_subtype == "tool-game");
+  });
+
+
+  return (
+    <DefaultPage pageId="software">
+      <_Section title="VSCode" subtitle="Extensions" columns="3">
+        {vscode_tools.map((item: any, index: number) => {
+          return (<>
+            <SoftwareItemCard
+              key={item.project_name}
+              project={item}
+            ></SoftwareItemCard>
+          </>);
+        })}
+      </_Section>
+
+      <_Section title="Game Dev" subtitle="Tools" columns="3">
+        {game_tools.map((item: any, index: number) => {
+          return (<>
+            <SoftwareItemCard
+              key={item.project_name}
+              project={item}
+            ></SoftwareItemCard>
+          </>);
+        })}
+      </_Section>
+
+      <_Section title="Terminal" subtitle="Tools" columns="3">
+        {terminal_tools.map((item: any, index: number) => {
+          return (<>
+            <SoftwareItemCard
+              key={item.project_name}
+              project={item}
+            ></SoftwareItemCard>
+          </>);
+        })}
+      </_Section>
+
+    </DefaultPage>
+  );
+}
 
 function SoftwareItemCard({project}: {project: Project}) {
   return (<>
@@ -17,49 +79,6 @@ function SoftwareItemCard({project}: {project: Project}) {
       <span className="projectDescription">{project.project_description}</span>
     </div>
   </>);
-}
-
-
-//
-// Component
-//
-
-// -----------------------------------------------------------------------------
-export default function Software() {
-  const projects = GetProjectsInfo();
-
-  const tools = projects.FindProject((item: Project) => {
-    return item.project_type == "tool";
-  });
-
-  const vscode_ext = projects.FindProject((item: Project) => {
-    return item.project_subtype.indexOf("vscode") >= 0;
-  });
-
-
-  return (
-    <DefaultPage pageId="software">
-      <_Section title="Tools" subtitle="" columns="3">
-        {tools.map((item: any, index: number) => {
-          return (<>
-            <SoftwareItemCard
-              key={item.project_name}
-              project={item}
-            ></SoftwareItemCard>
-          </>);
-        })}
-      </_Section>
-
-      <_Section title="VSCode" subtitle="Extensions" columns="3">
-        {vscode_ext.map((item: any, index: number) => {
-          return (<>
-           {item.project_name}
-           <br/>
-          </>);
-        })}
-      </_Section>
-    </DefaultPage>
-  );
 }
 
 //

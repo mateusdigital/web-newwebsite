@@ -21,8 +21,8 @@
 //----------------------------------------------------------------------------//
 
 // -----------------------------------------------------------------------------
-import { Link }  from "../components/Link";
-import { DefaultPage } from  "../components/DefaultPage";
+import { Link } from "../components/Link";
+import { DefaultPage } from "../components/DefaultPage";
 
 
 //
@@ -39,8 +39,8 @@ export function About() {
       </p>
 
       {/* Intro */}
-      <h1>About <span>me</span></h1>
       <section>
+        <h1>About <span>me</span></h1>
         <p>
           Hello, my name is <b>Mateus Mesquita</b> and I'm a programmer
           living in Brasil.

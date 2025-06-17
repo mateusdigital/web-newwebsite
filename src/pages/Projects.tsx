@@ -80,41 +80,6 @@ export default function Projects() {
             </li>
           </ul>
         </_Section>
-
-        <_Section title="Past" subtitle="Work" columns="0">
-          <ul>
-            <span><b>Banco Pine</b></span>
-            <li><span>Financial System Backend</span><span className="textDetail"> - Web</span></li>
-            <br />
-
-            <span><b>goEpik</b></span>
-            <li><span>VR / AR for industry 4.0</span><span className="textDetail"> - Mobile</span></li>
-            <br />
-
-            <span><b>noping.com</b></span>
-            <li><span>Network Tunneling</span><span className="textDetail"> - Windows</span></li>
-            <br />
-
-            <span><b>Ginga.One</b></span>
-            <li><span>Pequenos Criativos</span><span className="textDetail"> - iOS</span></li>
-            <li><span>Porto Seguro Auto</span><span className="textDetail"> - iOS</span></li>
-            <br />
-
-            <span><b>Imidiar</b></span>
-            <li><span>Photo Totem</span><span className="textDetail"> - Python</span></li>
-            <br />
-
-            <span><b>GSM Sistemas</b></span>
-            <li><span>Health analytics</span><span className="textDetail"> - iOS</span></li>
-            <br />
-
-            <span><b>Eazz</b></span>
-            <li><span>Metro Genius</span><span className="textDetail"> - Windows Phone</span></li>
-            <li><span>donkey.bas</span><span className="textDetail"> - Windows Phone</span></li>
-            <li><span>Pirates Treasure</span><span className="textDetail"> - Windows Phone</span></li>
-            <li><span>Tic Tac Toe</span><span className="textDetail"> - Windows Phone</span></li>
-          </ul>
-        </_Section>
       </DefaultPage>
     </>
   );

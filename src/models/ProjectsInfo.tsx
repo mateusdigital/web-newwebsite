@@ -48,6 +48,7 @@ export interface Project {
     // Tool
     | "tool-vscode"
     | "tool-terminal"
+    | "tool-game"
     // Theme
     | "theme-vscode"
 
