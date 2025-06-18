@@ -13,7 +13,7 @@
     "project_subtype": "tool-vscode",
 
     "project_license": "GPLv3",
-    "project_description": "A Visual Studio Code extension to add comments to source files.",
+    "project_description": "Add fancy comments to source files.",
 
     "year_start": 2020,
     "year_end": 2023,
@@ -32,7 +32,7 @@
 
 
     "project_license": "GPLv3",
-    "project_description": "A Visual Studio Code extension to add headers to source files.",
+    "project_description": "Add headers comments to source files.",
 
     "year_start": 2020,
     "year_end": 2023,
@@ -50,7 +50,7 @@
     "project_subtype": "tool-vscode",
 
     "project_license": "GPLv3",
-    "project_description": "A Visual Studio Code extension to automatically change the color of the editor background based on its path",
+    "project_description": "Auto editor color change based on project's path",
 
     "year_start": 2020,
     "year_end": 2023,
