@@ -45,6 +45,7 @@ export default function Head({ title }: { title?: string }) {
       <link rel="stylesheet" href="/css/AboutPage.css" />
       <link rel="stylesheet" href="/css/ContactsPage.css" />
       <link rel="stylesheet" href="/css/ResumePage.css" />
+      <link rel="stylesheet" href="/css/CertificationsPage.css" />
 
 
       <link rel="stylesheet" href="/css/ProjectsCardGrid.css" />

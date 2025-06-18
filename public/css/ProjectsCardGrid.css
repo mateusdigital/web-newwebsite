@@ -16,17 +16,17 @@
 @media (max-width: 400px) {
   .gridContainer3 {
     grid-template-columns: repeat(1, auto);
-    background-color: cyan;
+    /* background-color: cyan; */
   }
 
   .gridContainer4 {
     grid-template-columns: repeat(2, auto);
-    background-color: cyan;
+    /* background-color: cyan; */
   }
 
   .gridContainer5 {
     grid-template-columns: repeat(2, auto);
-    background-color: cyan;
+    /* background-color: cyan; */
   }
 }
 
@@ -34,17 +34,17 @@
 @media (min-width: 400px) and (max-width: 600px) {
   .gridContainer3 {
     grid-template-columns: repeat(2, auto);
-    background-color: red;
+    /* background-color: red; */
   }
 
   .gridContainer4 {
     grid-template-columns: repeat(3, auto);
-    background-color: red;
+    /* background-color: red; */
   }
 
   .gridContainer5 {
     grid-template-columns: repeat(4, auto);
-    background-color: red;
+    /* background-color: red; */
   }
 }
 
@@ -52,17 +52,17 @@
 @media (min-width: 600px) and (max-width: 800px) {
   .gridContainer3 {
     grid-template-columns: repeat(3, auto);
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .gridContainer4 {
     grid-template-columns: repeat(4, auto);
-    background-color: blue;
+    /* background-color: blue; */
   }
 
   .gridContainer5 {
     grid-template-columns: repeat(4, auto);
-    background-color: blue;
+    /* background-color: blue; */
   }
 }
 
@@ -70,16 +70,16 @@
 @media (min-width: 800px) {
   .gridContainer3 {
     grid-template-columns: repeat(3, auto);
-    background-color: green;
+    /* background-color: green; */
   }
 
   .gridContainer4 {
     grid-template-columns: repeat(4, auto);
-    background-color: green;
+    /* background-color: green; */
   }
 
   .gridContainer5 {
     grid-template-columns: repeat(5, auto);
-    background-color: green;
+    /* background-color: green; */
   }
 }

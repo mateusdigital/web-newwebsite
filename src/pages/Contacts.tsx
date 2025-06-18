@@ -44,8 +44,8 @@ export function Contacts() {
   return (
     <DefaultPage pageId="contacts">
       {/*  */}
-      <h1>Contact <span>Me</span></h1>
       <section>
+      <h1>Contact <span>Me</span></h1>
         <p>
           <Link href="https://www.youtube.com/watch?v=frszEJb0aOo" target="_blank"> Hello there!</Link>
         </p>

@@ -1,0 +1,42 @@
+.certificationGridContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificationItemCard {
+  /* display: grid;
+  grid-template-columns: 1fr 2fr 1fr; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  /* max-width: 400px; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.certificationItemCard img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+
+  margin: 1rem;;
+  /* border-radius: 50%;
+  margin-bottom: 15px; */
+}
+
+.certificationItemCard .date {
+  /* background-color: #f0f0f0; */
+  opacity: 0.8;
+}
+
+.certificationItemCard .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  flex-grow: 1;
+  flex: 1; /* grow to fill remaining space */
+}
