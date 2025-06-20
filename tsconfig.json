@@ -10,5 +10,5 @@
     "strict": true,
     "outDir": "./_dist"
   },
-  "include": ["src", "scripts"]
+  "include": ["src", "scripts", "_projects"]
 }

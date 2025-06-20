@@ -1,3 +1,4 @@
+import { fileURLToPath } from "url";
 // -----------------------------------------------------------------------------
 import { DefaultPage } from "../components/DefaultPage";
 import { ProjectItemCard } from "../components/ProjectItemCard"
@@ -10,7 +11,7 @@ import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 //
 
 // -----------------------------------------------------------------------------
-export default function GamesPage() {
+export function GamesPage() {
   const info = GetProjectsInfo();
   const projects = info.projects;
 
@@ -78,6 +79,10 @@ export default function GamesPage() {
     </DefaultPage>
   </>);
 }
+GamesPage.__metadata = {
+  path: fileURLToPath(import.meta.url)
+}
+
 
 //
 // Helpers

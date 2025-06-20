@@ -11,5 +11,7 @@ GenerateAllSitePages();
 CopyResources();
 
 function CopyResources( cwd: string = FileUtils.GetCwd()) {
+  console.log("Copy start");
   FileUtils.CopyDir( `${cwd}/public`, `${cwd}/_dist`, { force: true });
+  console.log("Copy end");
 }

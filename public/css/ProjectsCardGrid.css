@@ -12,8 +12,8 @@
   justify-content: center;
 }
 
-/* Mobile: max-width 400px */
-@media (max-width: 400px) {
+/* Mobile: max-width 350px*/
+@media (max-width: 350px) {
   .gridContainer3 {
     grid-template-columns: repeat(1, auto);
     /* background-color: cyan; */
@@ -30,8 +30,7 @@
   }
 }
 
-/* Mobile: max-width 600px */
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 350px) and (max-width: 600px) {
   .gridContainer3 {
     grid-template-columns: repeat(2, auto);
     /* background-color: red; */

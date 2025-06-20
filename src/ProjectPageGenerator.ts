@@ -26,6 +26,7 @@ export async function GenerateAllProjectPages(cwd: string = FileUtils.GetCwd()) 
     const output_filename = `${output_dir}/${project.project_name}.html`.toLowerCase();
 
     console.log("Writing page: ", output_filename);
+    console.log("Size: ", rendered.length, " bytes");
 
     FileUtils.EnsurePath(output_filename);
     FileUtils.WriteAllFile(output_filename, rendered);

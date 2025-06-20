@@ -21,26 +21,30 @@
 
     "tech": ["typescript", "javascript", "vscode"],
     "platform": ["vscode"],
+
+    "default_icon": "icons/E-H/HR2A.ICO",
   },
 
   // --- mdheader ---------------------------------------------------------------
   { "project_name":  "mdheader",
-    "project_title": "md:Header",
+  "project_title": "md:Header",
 
-    "project_type":    "tool",
-    "project_subtype": "tool-vscode",
+  "project_type":    "tool",
+  "project_subtype": "tool-vscode",
 
 
-    "project_license": "GPLv3",
-    "project_description": "Add headers comments to source files.",
+  "project_license": "GPLv3",
+  "project_description": "Add headers comments to source files.",
 
-    "year_start": 2020,
-    "year_end": 2023,
-    "year_release": 2021,
+  "year_start": 2020,
+  "year_end": 2023,
+  "year_release": 2021,
 
-    "tech": ["typescript", "javascript", "vscode"],
-    "platform": ["PC"]
-  },
+  "tech": ["typescript", "javascript", "vscode"],
+  "platform": ["PC"],
+
+  "default_icon": "icons/E-H/HR2.ICO",
+},
 
   // --- autopeacock ------------------------------------------------------------
   { "project_name":  "autopeacock",
@@ -57,7 +61,9 @@
     "year_release": 2021,
 
     "tech": ["typescript", "javascript", "vscode", "peacock"],
-    "platform": ["PC"]
+    "platform": ["PC"],
+
+    "default_icon": "icons/R-T/SLIDES1.ICO"
   },
 
 
@@ -82,7 +88,9 @@
 
 
     "tech": ["python", "powershell", "shellscript"],
-    "platform": ["PC"]
+    "platform": ["PC"],
+
+    "default_icon": "icons/C-D/C_SUNSET.ICO"
   },
 
 
@@ -104,47 +112,11 @@
 
 
     "tech": ["python", "powershell", "shellscript"],
-    "platform": ["PC"]
+    "platform": ["PC"],
+
+    "default_icon": "icons/U-Z/ZEN.ICO"
   },
 
-
-  // --- psd-to-png ------------------------------------------------------------
-  {
-    "project_name": "psd-to-png",
-    "project_title": "PSD to PNG",
-
-    "project_type": "tool",
-    "project_subtype": "tool-game",
-
-    "project_license": "GPLv3",
-    "project_description": "A tool to convert PSD files to PNG files.",
-
-    "year_start": 2019,
-    "year_end": 2023,
-    "year_release": 2021,
-
-    "tech": ["JS", "nodejs"],
-
-    "platform": ["PC"]
-  },
-
-  // --- sprite-sheet-to-png ---------------------------------------------------
-  {
-    "project_name": "sprite-sheet-to-png",
-    "project_title": "Sprite Sheet to PNG",
-
-    "project_type": "tool",
-    "project_subtype": "tool-game",
-
-    "project_license": "GPLv3",
-    "project_description": "A tool to convert sprite sheets to PNG files.",
-
-    "year_start": 2019,
-    "year_end": 2023,
-    "year_release": 2021,
-    "tech": ["JS", "nodejs"],
-    "platform": ["PC"]
-  },
 
   // --- simple-sprite-sheet ---------------------------------------------------
   {
@@ -164,8 +136,57 @@
 
 
     "tech": ["JS", "nodejs"],
-    "platform": ["PC"]
+    "platform": ["PC"],
+    "default_icon": "icons/N-Q/PLAYBALL.ICO"
   },
+
+  // --- psd-to-png ------------------------------------------------------------
+  {
+    "project_name": "psd-to-png",
+    "project_title": "PSD to PNG",
+
+    "project_type": "tool",
+    "project_subtype": "tool-game",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to convert PSD files to PNG files.",
+
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+
+    "tech": ["JS", "nodejs"],
+
+    "platform": ["PC"],
+
+    // "default_icon": "icons/U-Z/WAVE4.ICO"
+    // "default_icon": "icons/C-D/CUBEMAG.ICO"
+    "default_icon": "icons/R-T/SPIRAL1.ICO"
+  },
+
+
+  // --- sprite-sheet-to-png ---------------------------------------------------
+  {
+    "project_name": "sprite-sheet-to-png",
+    "project_title": "Sprite Sheet to PNG",
+
+    "project_type": "tool",
+    "project_subtype": "tool-game",
+
+    "project_license": "GPLv3",
+    "project_description": "A tool to convert sprite sheets to PNG files.",
+
+    "year_start": 2019,
+    "year_end": 2023,
+    "year_release": 2021,
+    "tech": ["JS", "nodejs"],
+    "platform": ["PC"],
+
+    // "default_icon": "icons/U-Z/WAVE3.ICO"
+    "default_icon": "icons/C-D/CUBEBLUE.ICO"
+  },
+
+
 
   // --- spritesheet-to-tile ---------------------------------------------------
   {
@@ -184,7 +205,11 @@
     "year_release": 2021,
 
     "tech": ["JS", "nodejs"],
-    "platform": ["PC"]
+    "platform": ["PC"],
+
+    // "default_icon": "icons/U-Z/WAVE2.ICO"
+    // "default_icon": "icons/R-T/SQUARE.ICO"
+    "default_icon": "icons/U-Z/WALL.ICO"
   },
 
   // --- tile-to-map -----------------------------------------------------------
@@ -203,7 +228,10 @@
     "year_release": 2021,
 
     "tech": ["JS", "nodejs"],
-    "platform": ["PC"]
+    "platform": ["PC"],
+
+    // "default_icon": "icons/U-Z/WAVE1.ICO"
+    "default_icon": "icons/R-T/SQSPIRL.ICO"
   },
 
   //
