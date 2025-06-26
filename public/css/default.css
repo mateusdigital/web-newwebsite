@@ -229,24 +229,73 @@ svg.heartIcon:hover {
 /*  Project Detail Page                                                       */
 /*                                                                            */
 /* -------------------------------------------------------------------------- */
-.projectsDetailPageContainer {}
+.projectsDetailPage
+{
+  /* background-color: cyan; */
+}
 
+.projectsDetailPage .videoContainer
+{
+  /* background-color: #f24747; */
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color-callout-text-color);
+}
 
-.projectDetailPageCanvasContainer canvas,
-.projectDetailPageCanvasContainer iframe {
+.projectsDetailPage canvas,
+.projectsDetailPage iframe {
   width: 100%;
   height: 60vh;
   display: block;
 
 }
 
-.projectDetailPageTitleContainer {
+.projectsDetailPage .titleContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1.0rem;
+  margin-bottom: 1.75rem;
 }
 
-.projectDetailPageTitleContainer h1 {}
+.projectsDetailPage .titleContainer  h1 {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+*
+*/
+
+/* ------------------------------------------------------------------------- */
+.projectsDetailPage .generalInfo {
+  /* background-color: #f24747; */
+  margin-top: 1.5rem;
+}
+
+.projectsDetailPage .generalInfo .title {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.projectsDetailPage .generalInfo .infoUL {
+  margin-left: 1.0rem;
+}
+
+.projectsDetailPage .generalInfo .platformUL {
+  margin-left: 1.0rem;
+}
+
+.projectsDetailPage .generalInfo li {
+  list-style: none;
+  /* margin: 0;
+  padding: 0; */
+}
 
 svg.projectDetailPageCompanyLogo {
   height: 2rem;

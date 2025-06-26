@@ -74,7 +74,7 @@ export interface Project {
   //
   is_playable_on_canvas?: boolean;
   youtube_video_id?: string;
-  html?: string;
+  html?: [];
 
   //
   default_icon?: string;
@@ -160,9 +160,10 @@ export function MakePlatformIcons(platforms: any) {
       icons.push(<XboxIcon />);
     }
     else {
-      debugger;
+      // debugger;
     }
   }
+
   return icons;
 }
 

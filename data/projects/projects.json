@@ -256,12 +256,27 @@
     "tech": ["C", "GBDK", "HTML", "CSS", "JS"],
     "platform": ["gameboy", "web"],
 
+    "youtube_video_id": "VlpMRj9wwLw",
+
     "html": [
-      "After releasing [The Mistral Report](/projects/the_mistral_report.html),\\nI became very interested in developing for retro machines and chose the Nintendo Game Boy\\nas the target for a new game.",
-      "",
-      "I decided to create a homage to Flappy Bird — its simple yet engaging gameplay offered\\na great opportunity to better understand that tiny marvel of a machine, the Game Boy.",
-      "",
-      "In 2023, I got into some web development and saw a good opportunity to create a cute landing\\npage for the project. I also built the [Game Boy Frame in CSS3](/projects/gameboy-css.html)."
+      "<p>",
+      "  After releasing the <Link href=\"/projects/the_mistral_report\">The Mistral Report</Link> I",
+      "  got very interested in develop to retro machines, and have chosen the Nintendo Game Boy as the target to make a new game.",
+      "</p>",
+
+      "<p>",
+      "  I decided to make a homage to Flappy Bird, since as a nice gameplay that would still let me understand",
+      "  better that tiny marvel machine that the Game Boy was.",
+      "</p>",
+
+      "<p>",
+      "  In 2023, I got interested in some web development and saw a good opportunity to create a cute landing page",
+      "  for the project, also I created the <Link href=\"/projects/gameboy-css\">Game Boy Frame in CSS3</Link>.",
+      "</p>",
+
+      "<span className=\"textDetail\">",
+      "  * Thanks for <a href=\"https://montyontherun.itch.io/\">Monty</a> for recording the video.",
+      "</span>"
     ]
   },
 
@@ -282,7 +297,22 @@
     "year_release": 2018,
 
     "tech": ["C++", "SDL1.2", "MSDOS"],
-    "platform": ["msdos"]
+    "platform": ["msdos"],
+
+
+    "html": [
+      "<p>",
+      "  The Mistral Report: Invisible Affairs is an espionage-themed turn-based retro RPG for your classic machine.",
+      "</p>",
+      "<p>",
+      "  I co-created the game, together with my good friend and super talented hacker <a href=\"https://montyontherun.itch.io/the-mistral-report\">\"@montyontherun\"</a>,",
+      "  for the MSDOS release. It was my first retro game and I loved the experience!",
+      "</p>",
+      "<p>",
+      "  The game is available for a myriad of platforms - 486s, Amigas, PPC Macs, OSX, Windows, etc - and it's quite nice to play!",
+      "  Check his Itch.io :)",
+      "</p>"
+    ]
   },
   // --- the same game ---------------------------------------------------------
   {
@@ -348,7 +378,22 @@
     "tech": ["JS", "Canvas API", "chroma.js"],
     "platform": ["web"],
 
-    "is_playable_on_canvas": true
+    "is_playable_on_canvas": true,
+
+    "html": [
+      "<p>",
+      "  Simple Snake is a <i>synthwave-esque</i> rendition of the classic snake game.",
+      "</p>",
+      "",
+      "<p>",
+      "  It was one of my first web games, I made it back when I was living in Portugal.",
+      "</p>",
+      "",
+      "<p>",
+      "  For this project I used plain Javascript and the Canvas API, <br/>also I have",
+      "  used <a href=\"https://www.vis4.net/chromajs/\">chroma.js</a> for the color manipulation.",
+      "</p>"
+    ]
   },
   // --- nuclear rain ----------------------------------------------------------
   {
@@ -381,7 +426,23 @@
     "year_release": 2018,
     "platform": ["pc", "web"],
     "tech": ["C++", "JS", "Emscripten"],
-    "is_playable_on_canvas": true
+    "is_playable_on_canvas": true,
+    "html": [
+      "<p>",
+      "  Cosmic Intruders is a Space Invaders clone that was made as a test for Miniclip Web Client Developer vacancy by the end of 2017.",
+      "</p>",
+      "<p>",
+      "  The project was made in C++ with <b>SDL2</b> as a rendering library, to develop the web version I've used <b>Emscripten</b>.",
+      "</p>",
+      "<p>",
+      "  I was so <b>lucky</b> to have the opportunity to make this game since Space Invaders is on my top 10 list (deserving even a tattoo).",
+      "  I got hired and in 2018 I went to Portugal to work abroad for the first time :)",
+      "</p>",
+      "<p>",
+      "  In 2023, I got interested in some web development and saw a good opportunity to create a landing page",
+      "  for the project. I tried to replicate a real old cabinet <i>\"vibes\"</i>.",
+      "</p>"
+    ]
   },
   // --- color grid -------------------------------------------------------------
   {
@@ -508,7 +569,16 @@
     "company": "Epic",
     "role": "Senior UI Programmer",
 
-    "youtube_video_id": "WJW-bzXZM8M"
+    "youtube_video_id": "WJW-bzXZM8M",
+
+    "html": [
+      "<p>",
+      "  Fortnite is a <b>free-to-play</b> battle royale game developed and published by <b>Epic Games</b>.",
+      "</p>",
+      "<p>",
+      "  I've worked as <b>Senior UI Programmer</b>, creating MVVM modules for the UI system.",
+      "</p>"
+    ]
   },
   {
     "project_name": "farcry-6",
@@ -526,7 +596,22 @@
     "company": "Ubisoft",
     "role": "Senior Programmer",
 
-    "youtube_video_id": "LRMbuyJyUzU"
+    "youtube_video_id": "LRMbuyJyUzU",
+
+    "html": [
+          "<p>",
+          "  After contributing to the development of '<a href=\"./skull_and_bones\">Skull and Bones</a>'",
+          "  I moved to the Far Cry 5 team to aid the release of the '<b>LOST BETWEEN WORLDS'</b> DLC.",
+          "</p>",
+          "<p>",
+          "  My primary responsibilities involved addressing bugs within <b>A11Y</b> components,",
+          "  ensuring accessibility standards were met.",
+          "</p>",
+          "<p>",
+          "  Throughout this project, I had the opportunity to collaborate",
+          "  with <b>Dunia</b> engine and <b>Phoenix UI</b> framework.",
+          "</p>"
+    ]
   },
   {
     "project_name": "skull-and-bones",
@@ -544,7 +629,18 @@
     "company": "Ubisoft",
     "role": "Senior Programmer",
 
-    "youtube_video_id": "fgy4WZ9ta7E"
+    "youtube_video_id": "fgy4WZ9ta7E",
+
+    "html": [
+      "<p>",
+      "  In 2020, I joined Ubisoft Kyiv as a Senior Programmer. My role was to implement cutting-edge <b>accessibility</b> solutions,",
+      "  focusing on <b>Text-to-Speech</b> and <b>Speech-to-Text</b> functionalities. I worked with a multi-studio effort involving Kyiv, Odessa, Berlin, and Belgrade.",
+      "</p>",
+      "<p>",
+      "  During this project, I had the opportunity to work extensively with <b>Anvil</b>, the same engine powering Assassin's Creed,",
+      "  as well as <b>Phoenix UI</b>, the UI engine behind Rainbow Six.",
+      "</p>"
+    ]
   },
   {
     "project_name": "wot-blitz",
@@ -563,8 +659,17 @@
     "company": "Wargaming",
     "role": "Programmer",
 
-    "youtube_video_id": "_Vtvjg8dYqI"
-  },
+    "youtube_video_id": "_Vtvjg8dYqI",
+    "html": [
+      "<p>",
+      "  In 2019, I embarked on a journey to Minsk, Belarus, to join the World of Tanks - Blitz team.",
+      "</p>",
+      "<p>",
+      "  Working with <b>Unreal Engine 4</b>, I was involved in implementing user interfaces using UE4's <b>UMG</b> system.",
+      "  Additionally, I contributed to the development of gameplay elements for the then-new game modes.",
+      "</p>"
+      ]
+    },
   {
     "project_name": "warframe",
     "project_title": "Warframe",
@@ -581,7 +686,17 @@
     "company": "Digital Extremes",
     "role": "Programmer",
 
-    "youtube_video_id": "C3FndET_TXo"
+    "youtube_video_id": "C3FndET_TXo",
+
+    "html": [
+      "<p>",
+      "  <b>Warframe</b> is a free-to-play cooperative third-person shooter video game developed and published by Digital Extremes.",
+      "</p>",
+      "<p>",
+      "  I was part of the <b>Warframe</b> initial porting team to <b>mobile platforms</b>.",
+      "  My core responsibility was get <b>Evolution Engine</b> <span className=\"textDetail\">(their proprietary engine)</span> building and running both to <b>iOS</b> and <b>Android</b>.",
+      "</p>"
+    ]
   },
   {
     "project_name": "8-ball-pool",
@@ -602,12 +717,27 @@
     "youtube_video_id": "f0xHb8pxMco",
 
     "html": [
-      "8 Ball Pool, the Miniclip's flagship game, thrives as a global online multiplayer game, gathering players for virtual pool matches.",
+      "<p>",
+      "  8 Ball Pool, the Miniclip's flagship game, thrives as a global online multiplayer game,",
+      "  gathering players for virtual pool matches.",
+      "</p>",
 
-      "With 20+ programmers, the agile 8 Ball Pool team adeptly employs SCRUM, dividing into 3 groups: 2 for active development and 1 for bug fixes, refactoring, and performance enhancements.",
-      "I've had the opportunity to work in both of the situations, helping with performance improvements and bug fixing and with the implementation of the Season Pass feature.",
+      "<p>",
+      "    With 20+ programmers, the agile 8 Ball Pool team adeptly employs SCRUM,",
+      "    dividing into 3 groups: 2 for active development and 1 for bug fixes,",
+      "    refactoring, and performance enhancements.",
+      "</p>",
 
-      "Before join the mobile team, I have worked in the task-force porting the mobile client to the web using Emscripten.",
+      "<p>",
+      "  I've had the opportunity to work in both of the situations, helping",
+      "  with <b>performance improvements</b> and bug fixing and with the implementation",
+      "  of the <b>Season Pass</b> feature.",
+      "</p>",
+
+      "<p>",
+      "  Before join the mobile team, I have worked in the task-force porting the mobile client",
+      "  to the web using <b>Emscripten</b>.",
+      "</p>"
     ]
   },
   {
@@ -661,6 +791,17 @@
     "role": "Programmer",
 
     "youtube_video_id" : "NRoaB0iSsJE",
+
+    "html": [
+      "<p>",
+      "  The history of how I worked in this game is almost the same as",
+      "  the first <a href=\"/projects/the_banner_saga\">The Banner Saga</a>,",
+      "  since I worked in both together :)",
+      "</p>",
+      "<p>",
+      "  Also, this is my favorite to play in the series!",
+      "</p>"
+    ]
   },
   {
     "project_name": "the-banner-saga-1",
@@ -679,6 +820,39 @@
     "role": "Programmer",
 
     "youtube_video_id" : "y-42WWUOD1M",
+
+    "html": [
+      "<section>",
+      "  <p>",
+      "    Firehorse and Stoic Studio had the same publisher at the time - VersusEvil, which",
+      "    allowed them to collaborate very interestingly and I ended up working with",
+      "    those amazing award-winning games.",
+      "  </p>",
+      "  <p>",
+      "    I was responsible to maintain and improve both games for Stoic Studio.",
+      "    At the time it was a huge challenge since the games were written in a totally",
+      "    different stack that I was used to. Also the scope of the project - then, the",
+      "    biggest project I had worked on - made it a true challenge.",
+      "  </p>",
+      "  <p>",
+      "    The game was written in a mixture of languages with Action Script 3 as the primally",
+      "    language for the game and tools, and lots of different middleware for multiple",
+      "    platforms. Ant was used as the build system, and Mercurial was the versioning",
+      "    used by the team.",
+      "  </p>",
+      "  <p>",
+      "    While I engaged in a couple of meetings with the Stoic team, most of my work",
+      "    centered around selecting tasks from Jira and collaborating with",
+      "    fellow developers to address any arising issues.",
+      "  </p>",
+      "</section>",
+
+      "<section>",
+      "  This is one of the most beloved projects that I've worked on, it helped to open",
+      "  so many doors and gave me so nice opportunities.",
+      "  After this project, I got the opportunity to make Stoic Studio's <Link href=\"/projects/killers_and_thieves\">Killers and Thieves</Link>.",
+      "</section>"
+    ]
   },
   {
     "project_name": "like-a-boss",
@@ -735,6 +909,14 @@
 
 
     "youtube_video_id" : "AbZGdmOC-eM",
+
+    "html": [
+      "<p>",
+      "  Much like my involvement with <Link href=\"/projects/let_them_come\">Let them Come</Link>,",
+      "  my role in this project was creating bindings to the <b>AlienFx SDK</b> within the <b>Unity</b> environment.",
+      "  This initiative aimed to provide game developers with seamless access to the SDK's capabilities within their familiar development setting.",
+      "</p>"
+    ]
   },
   {
     "project_name": "fist-punch-2",
@@ -752,7 +934,18 @@
     "company": "Firehorse",
     "role": "Programmer",
 
-    "youtube_video_id": "V1tX-iznvSI"
+    "youtube_video_id": "V1tX-iznvSI",
+
+    "html": [
+      "<p>",
+      "    Fist Punch is two-player a retro inspired beat-up created by",
+      "    Firehorse and commissioned by Cartoon Network.",
+      "</p>",
+      "<p>",
+      "    I improved the game adding keyboard navigation, refactoring",
+      "    the menu system and fixing localization problems.",
+      "</p>"
+    ]
   },
 
   //
@@ -797,7 +990,16 @@
     "year_release": 2022,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+    "html": [
+      "<p>",
+      "  Flowfield is a visual experimentation using <a href=\"https://en.wikipedia.org/wiki/Perlin_noise\">Perlin Noise</a>.",
+      "</p>",
+      "<p>",
+      "  It was created with <a href=\"\">demolib</a>, it's licensed as <a href=\"\">GPLv3</a>.",
+      "</p>"
+    ]
   },
   {
     "project_name": "lissajous",
@@ -823,7 +1025,16 @@
     "year_release": 2021,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+    "html": [
+      "<p>",
+      "  DOOM FIRE! is a creative experience inspired by the <a href=\"https://fabiensanglard.net/doom_fire_psx/index.html\">amazing blog post</a> of <a href=\"https://fabiensanglard.net/about/index.html\">Fabian Sanglard</a>.",
+      "</p>",
+      "<p>",
+      "  It was created with <Link a=\"\">demolib</a>, it's licensed as <a href=\"\">GPLv3</a>.",
+      "</p>"
+    ]
   },
   {
     "project_name": "game-of-life",
@@ -836,7 +1047,12 @@
     "year_release": 2020,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+    "html": [
+      "<p> Game of Life is an implementation of the classic <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Conway's Game of Life</a>. </p>",
+      "<p> It was created with <Link href=\"\">demolib</Link>, it's licensed as <Link href=\"\">GPLv3</Link>. </p>"
+    ]
   },
   {
     "project_name": "simple-tree",
@@ -849,7 +1065,16 @@
     "year_release": 2019,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+    "html": [
+      "<p>",
+      "  Simple Tree is a creative experience using <a href=\"https://en.wikipedia.org/wiki/L-system\">L-System</a> trees.",
+      "</p>",
+      "<p>",
+      "  It was created with <a href=\"\">demolib</a>, it's licensed as <a href=\"\">GPLv3</a>.",
+      "</p>"
+    ]
   },
   {
     "project_name": "simple-clock",
@@ -888,6 +1113,12 @@
     "year_release": 2019,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+    "html": [
+      "<p>",
+        "Starfield is my first attempt with creative-coding :)",
+      "</p>",
+    ]
   }
 ]
