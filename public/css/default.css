@@ -68,6 +68,16 @@ iframe {
   --project-item-card-text-color: hsl(0, 0%, 100%);
   --project-item-card-icon-color: hsl(0, 0%, 100%);
 
+
+  --software-card-title-size: 1rem;
+  --software-card-title-color: hsl(0, 0%, 100%);
+  --software-card-title-weight: 300;
+
+  --software-card-description-size: 0.75rem;
+  --software-card-description-color: hsl(0, 0%, 100%);
+  --software-card-description-weight: 100;
+  --software-card-border-color: hsl(0, 0%, 100%);
+
     /*  */
   --icon-color: hsl(0, 0%, 100%);
 

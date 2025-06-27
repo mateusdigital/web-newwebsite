@@ -10,7 +10,7 @@
 
   padding: 1rem;
 
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--software-card-border-color);
   border-radius: var(--border-radius);
 
   /* background-color: red; */
@@ -62,18 +62,19 @@
 }
 
 .softwareCard .projectTitle {
-  font-size: 1.2rem;
-  color: var(--text-accent-color);
+  font-size: var(--software-card-title-size);
+  color: var(--software-card-title-color);
+  font-weight: var(--software-card-title-weight);
   display: block;
-
 }
 
 .softwareCard .projectDescription {
   text-decoration: none;
   color: inherit;
-  font-size: 90%;
+  font-size: var(--software-card-description-size);
+  color: var(--software-card-description-color);
+  font-weight: var(--software-card-description-weight);
 
   max-width: 100%;
   display: block;
-
 }
