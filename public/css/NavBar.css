@@ -22,7 +22,7 @@
 /* --- mateus.digital ------------------------------------------------------- */
 .topNav .logo {
   font-size: 1.2rem;
-  ;
+  color: var(--nav-bar-logo-color);
 }
 
 /* --- The menu links ------------------------------------------------------- */
@@ -34,7 +34,7 @@
 .topNav button {
   background: none;
   border: none;
-  color: var(--main-menu-item-color);
+  color: var(--nav-bar-hamburger-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -80,6 +80,7 @@ body.no-scroll {
 .hamburger {
   font-size: 2rem;
   margin-left: auto;
+  color: var(--nav-bar-hamburger-color);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -87,13 +88,13 @@ body.no-scroll {
   text-decoration: none;
   text-transform: uppercase;
 
-  border-bottom: #38c172 solid 1px;
+  border-bottom: 1px solid var(--dropdown-menu-item-border-color);
   padding: 0.75rem 0rem;
 }
 
 /* -------------------------------------------------------------------------- */
 .dropdownMenuItemsContainer a span {
-  color: var(--main-menu-item-color);
+  color: var(--dropdown-menu-item-active-color);
   font-size: 2rem;
 }
 

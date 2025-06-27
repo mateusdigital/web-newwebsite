@@ -17,11 +17,11 @@
   margin-bottom: 1.5rem;
 }
 
-.contacts ul h2 {
+.contacts h2  {
   margin-bottom: 0.5em;
-  color: var(--bold-text-color);
-  font-weight: var(--bold-text-weight);
-  font-size: 1rem;
+  color:       var(--contacts-section-subtitle-color);
+  font-weight: var(--contacts-section-subtitle-weight);
+  font-size:   var(--contacts-section-subtitle-size);
 }
 
 .contacts li {
