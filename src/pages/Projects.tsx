@@ -25,13 +25,14 @@ import { Link }  from "../components/Link";
 import { DefaultPage }  from "../components/DefaultPage";
 import { ProjectItemCard } from "../components/ProjectItemCard";
 import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
+import { ILogger } from "../../libs/mdweb/source/Logger";
 
 //
 // Component
 //
 
 // -----------------------------------------------------------------------------
-export default function Projects() {
+export default function Projects({log}: { log: ILogger }) {
   const projects = GetProjectsInfo();
 
   const demos = projects.FindProject((item: Project) => {
@@ -43,7 +44,7 @@ export default function Projects() {
       <DefaultPage pageId="projects">
         <_Section title="Creative" subtitle="Coding" columns="4">
           {demos.map((item: Project, index: number) => (
-            <ProjectItemCard key={index} item={item} />
+            <ProjectItemCard key={index} item={item} log={log}/>
           ))}
         </_Section>
 

@@ -4,10 +4,14 @@
   "build": 62,
   "type": "module",
   "scripts": {
-    "build": "tsx src/GenerateSite.ts"
+    "build": "tsx src/BuildSite.ts",
+    "projects": "tsx src/build-project-pages-from-data.ts",
+    "pages": "tsx src/build-website-pages.ts",
+    "thumb": "tsx  src/build-certifications-thumbnails.ts"
   },
   "dependencies": {
     "json5": "^2.2.3",
+    "pdf2pic": "^3.2.0",
     "preact": "^10.26.6",
     "preact-render-to-string": "^6.5.13"
   },

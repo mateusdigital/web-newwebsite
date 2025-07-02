@@ -14,6 +14,7 @@ import XboxIcon from "../components/icons/xbox";
 import { FileUtils } from "../../libs/mdweb/source/FileUtils";
 import { JsonUtils } from "../../libs/mdweb/source/JsonUtils";
 import { Assert } from "../../libs/mdweb/source/Assert";
+import { DefaultLogger, ILogger } from "../../libs/mdweb/source/Logger";
 
 
 
@@ -31,26 +32,26 @@ export interface Project {
 
   //
   project_type:
-    | "tool"
-    | "game"
-    | "library"
-    | "demo"
-    | "app"
-    | "web";
+  | "tool"
+  | "game"
+  | "library"
+  | "demo"
+  | "app"
+  | "web";
 
   project_subtype:
-    | ""
-    // Game
-    | "game-professional"
-    | "game-retro"
-    | "game-personal"
-    | "game-old"
-    // Tool
-    | "tool-vscode"
-    | "tool-terminal"
-    | "tool-game"
-    // Theme
-    | "theme-vscode"
+  | ""
+  // Game
+  | "game-professional"
+  | "game-retro"
+  | "game-personal"
+  | "game-old"
+  // Tool
+  | "tool-vscode"
+  | "tool-terminal"
+  | "tool-game"
+  // Theme
+  | "theme-vscode"
 
 
   //
@@ -92,12 +93,14 @@ type ListOProject = Project[];
 class ProjectsInfo {
   projects: ListOProject;
 
-  constructor() {
+  // ---------------------------------------------------------------------------
+  constructor(log: ILogger = DefaultLogger) {
     const cwd = FileUtils.GetCwd();
     const projects_json_filepath = FileUtils.JoinPath(cwd, "data/projects/projects.json");
+    log.D("Loading projects info from: ", projects_json_filepath);
 
     if (!FileUtils.FileExists(projects_json_filepath)) {
-      Assert(false, "File projects.json not found");
+      Assert(false, `File projects.json not found - ${projects_json_filepath}`);
     }
 
     const text_data = FileUtils.ReadAllFile(projects_json_filepath);
@@ -106,7 +109,7 @@ class ProjectsInfo {
     this.projects = json_data;
   }
 
-  // -----------------------------------------------------------------------------
+  // ---------------------------------------------------------------------------
   FindProject(predicate: any): ListOProject {
     const projects = [];
     for (const project of this.projects) {
@@ -116,12 +119,14 @@ class ProjectsInfo {
     }
     return projects;
   }
-
-
-
 }
+
+
 // -----------------------------------------------------------------------------
-export function MakePlatformIcons(platforms: any) {
+export function MakePlatformIcons(
+  platforms: Array<string>,
+  log: ILogger = DefaultLogger) {
+
   const icons = [];
   for (let i = 0; i < platforms.length; ++i) {
     const platform = platforms[i].trim().toLowerCase();
@@ -160,7 +165,7 @@ export function MakePlatformIcons(platforms: any) {
       icons.push(<XboxIcon />);
     }
     else {
-      // debugger;
+      log.Error(`Unknown platform icon: ${platform}`);
     }
   }
 
@@ -174,9 +179,10 @@ export function MakePlatformIcons(platforms: any) {
 
 let _info: any = null;
 // -----------------------------------------------------------------------------
-export function GetProjectsInfo() {
+export function GetProjectsInfo(log: ILogger = DefaultLogger): ProjectsInfo {
   if (!_info) {
-    _info = new ProjectsInfo();
+    log.D("Loading projects info...");
+    _info = new ProjectsInfo(log);
   }
 
   return _info;

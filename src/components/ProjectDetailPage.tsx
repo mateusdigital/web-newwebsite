@@ -1,20 +1,22 @@
 import { DefaultPage } from "./DefaultPage";
 import { MakePlatformIcons, Project } from "../models/ProjectsInfo";
+import { ILogger } from "../../libs/mdweb/source/Logger";
 
 //
 // Component
 //
 
 // -----------------------------------------------------------------------------
-export function ProjectDetailPage({ info }: { info: Project }) {
+export function ProjectDetailPage({ info, log }: { info: Project, log: ILogger }) {
 
+  log.D("Rendering project detail page for: ", info.project_name);
   const raw_html = info.html || [];
   let html = raw_html.join("");
 
   return (<>
     <DefaultPage pageId={info.project_name}>
       <section className="projectsDetailPage">
-        {GetPresentationElement(info)}
+        {GetPresentationElement(info, log)}
 
         <header class="titleContainer">
           <h1>{info.project_title}</h1>
@@ -37,9 +39,7 @@ export function ProjectDetailPage({ info }: { info: Project }) {
 //
 
 // -----------------------------------------------------------------------------
-export function GetPresentationElement(project: Project) {
-
-  let top_element = null;
+export function GetPresentationElement(project: Project, log: ILogger) {
 
   // Has Youtube Video Id
   if (project.youtube_video_id) {
@@ -47,6 +47,7 @@ export function GetPresentationElement(project: Project) {
     const video_url = `https://www.youtube.com/embed/${video_id}?controls=0&autoplay=1&mute=1`;
     const video_title = `Youtube video of ${project.project_title}`;
 
+    log.D("Rendering Youtube video for project: ", project.project_name);
     return (<>
       <div className="videoContainer">
         <iframe src={video_url}
@@ -59,6 +60,7 @@ export function GetPresentationElement(project: Project) {
 
   // Is playable on canvas
   else if (project.is_playable_on_canvas) {
+    log.D("Rendering playable canvas for project: ", project.project_name);
     return (<>
       <div className="proj-canvas-container">
         {/* <iframe id="gameIFrame" data-project-name={name}></iframe> */}
@@ -67,6 +69,7 @@ export function GetPresentationElement(project: Project) {
     </>);
   }
 
+  log.D("Rendering default presentation for project: ", project.project_name);
   return (<>
   </>);
 }
@@ -92,11 +95,11 @@ function GetGeneralInfoElement(info: Project) {
         <li>
           <b>Platforms:</b>
           <ul className="platformUL">
-          {info.platform.map((p, index) => (
-            <><li>
-              <span key={index}>{MakePlatformIcons([p])}</span><span>{p}</span>
-            </li></>
-          ))}
+            {info.platform.map((p, index) => (
+              <><li>
+                <span key={index}>{MakePlatformIcons([p])}</span><span>{p}</span>
+              </li></>
+            ))}
           </ul>
         </li>
       </ul>

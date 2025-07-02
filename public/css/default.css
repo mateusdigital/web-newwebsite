@@ -38,10 +38,12 @@ iframe {
   --body-background-color: red;
   --page-background-color: blue;
 
+  /*  */
   --dropdown-background-color: var(--page-background-color);
   --dropdown-menu-item-border-color: magenta;
   --dropdown-menu-item-active-color: hsl(0, 0%, 100%);
 
+  /*  */
   --section-title-color: hsl(0, 0%, 100%);
   --section-title-size: 1.85rem;
   --section-title-weight: 300;
@@ -54,21 +56,30 @@ iframe {
   --section-title-lighter-color:hsl(0, 0%, 100%);
   --section-title-lighter-weight: 100;
 
+  /*  */
   --about-section-subtitle-size: 1.5rem;
   --about-section-subtitle-color: hsl(0, 0%, 100%);
   --about-section-subtitle-weight: 400;
+
   --about-callout-background-color: hsl(0, 0%, 5%);
   --about-callout-text-color: hsl(0, 0%, 100%);
 
+  /*  */
   --contacts-section-subtitle-size: 1.5rem;
   --contacts-section-subtitle-color: hsl(0, 0%, 100%);
   --contacts-section-subtitle-weight: 400;
 
+  /*  */
   --project-item-card-background-color: hsl(0, 0%, 5%);
+
   --project-item-card-text-color: hsl(0, 0%, 100%);
+  --project-item-card-text-size: 1rem;
+  --project-item-card-text-weight: 400;
+
   --project-item-card-icon-color: hsl(0, 0%, 100%);
 
 
+  /*  */
   --software-card-title-size: 1rem;
   --software-card-title-color: hsl(0, 0%, 100%);
   --software-card-title-weight: 300;
@@ -77,6 +88,13 @@ iframe {
   --software-card-description-color: hsl(0, 0%, 100%);
   --software-card-description-weight: 100;
   --software-card-border-color: hsl(0, 0%, 100%);
+
+  /*  */
+
+  --certification-item-card-text-color: hsl(0, 0%, 100%);
+  --certification-item-card-text-size:  0.9rem;
+  --certification-item-card-text-weight: 400;
+
 
     /*  */
   --icon-color: hsl(0, 0%, 100%);

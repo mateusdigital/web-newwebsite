@@ -47,7 +47,8 @@
 }
 
 .projectItemCard .infoContainer .title {
-  font-size: 1rem;
+  font-size: var(--project-item-card-text-size);
+  font-weight: var(--project-item-card-text-weight);
   padding: 0;
   margin: 0;
 }

@@ -1,6 +1,7 @@
 
 // -----------------------------------------------------------------------------
-import FileUtils from "../../libs/mdweb/source/FileUtils";
+import { FileUtils } from "../../libs/mdweb/source/FileUtils";
+import { ILogger } from "../../libs/mdweb/source/Logger";
 import { MakePlatformIcons, Project } from "../models/ProjectsInfo";
 import { Link } from "./Link";
 import RetroIcon from "./icons/address-book-solid"
@@ -12,10 +13,11 @@ import RetroIcon from "./icons/address-book-solid"
 // -----------------------------------------------------------------------------
 interface ProjectItemCardProps {
   item: Project;
+  log: ILogger;
 }
 
 // -----------------------------------------------------------------------------
-export function ProjectItemCard({ item }: ProjectItemCardProps) {
+export function ProjectItemCard({ item, log }: ProjectItemCardProps) {
   let {
     project_name,
     project_title,
@@ -41,7 +43,7 @@ export function ProjectItemCard({ item }: ProjectItemCardProps) {
   const jpg_img = `/img/projects/${project_subtype}/${project_name}.jpg`;
   const gif_img = `/img/projects/${project_subtype}/${project_name}.gif`;
 
-  console.log(png_img, jpg_img, gif_img);
+  log.D(png_img, jpg_img, gif_img);
 
   const cwd = FileUtils.JoinPath(FileUtils.GetCwd(), "public");
   const img_path = // Check which image exists, in this order: PNG, JPG, GIF

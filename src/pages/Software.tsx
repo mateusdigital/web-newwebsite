@@ -1,4 +1,5 @@
 // -----------------------------------------------------------------------------
+import { ILogger } from "../../libs/mdweb/source/Logger";
 import { DefaultPage } from "../components/DefaultPage";
 import { Link } from "../components/Link";
 import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
@@ -9,7 +10,7 @@ import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 //
 
 // -----------------------------------------------------------------------------
-export default function Software() {
+export default function SoftwarePage({ log }: { log: ILogger }) {
   const projects = GetProjectsInfo();
 
   const terminal_tools = projects.FindProject((item: Project) => {
@@ -26,47 +27,40 @@ export default function Software() {
       && (item.project_subtype == "tool-game");
   });
 
+  return (<>
+    <DefaultPage pageId="SoftwarePage">
+      {/*  */}
+      <_SoftwarePageSection
+        title="VSCode"
+        subtitle="Extensions"
+        columns="3"
+        projects={vscode_tools}
+        log={log} />
 
-  return (
-    <DefaultPage pageId="software">
-      <_Section title="VSCode" subtitle="Extensions" columns="3">
-        {vscode_tools.map((item: any, index: number) => {
-          return (<>
-            <SoftwareItemCard
-              key={item.project_name}
-              project={item}
-            ></SoftwareItemCard>
-          </>);
-        })}
-      </_Section>
+      <_SoftwarePageSection
+        title="Game Dev"
+        subtitle="Tools"
+        columns="3"
+        projects={game_tools}
+        log={log} />
 
-      <_Section title="Game Dev" subtitle="Tools" columns="3">
-        {game_tools.map((item: any, index: number) => {
-          return (<>
-            <SoftwareItemCard
-              key={item.project_name}
-              project={item}
-            ></SoftwareItemCard>
-          </>);
-        })}
-      </_Section>
-
-      <_Section title="Terminal" subtitle="Tools" columns="3">
-        {terminal_tools.map((item: any, index: number) => {
-          return (<>
-            <SoftwareItemCard
-              key={item.project_name}
-              project={item}
-            ></SoftwareItemCard>
-          </>);
-        })}
-      </_Section>
-
+      <_SoftwarePageSection
+        title="Terminal"
+        subtitle="Tools"
+        columns="3"
+        projects={terminal_tools}
+        log={log} />
     </DefaultPage>
-  );
+  </>);
 }
 
-function SoftwareItemCard({ project }: { project: Project }) {
+
+//
+// Private Components
+//
+
+// -----------------------------------------------------------------------------
+function SoftwareItemCard({ project, log }: { project: Project, log: ILogger }) {
   return (<>
     <Link href="" className="softwareCard" key={project.project_name}>
       <div className="vstack">
@@ -88,13 +82,22 @@ function SoftwareItemCard({ project }: { project: Project }) {
 // Helpers
 //
 
+
+//
+// Helpers
+//
+
 // -----------------------------------------------------------------------------
-function _Section({ title, subtitle, columns, children }: any) {
+function _SoftwarePageSection({ title, subtitle, columns, projects, log }: any) {
   return (
     <section>
       <h1>{title} <span>{subtitle}</span></h1>
       <div className={"gridContainer" + columns}>
-        {children}
+        {projects.map((project: Project, index: number) => {
+          return (
+            <SoftwareItemCard key={index} project={project} log={log} />
+          );
+        })}
       </div>
     </section>
   );

@@ -1,52 +1,48 @@
-.icon {
-  max-width:  48px;
-  max-height: 48px;
-}
-.icon img {
-  width: 100%;
-  height: 100%;
-}
-
 .certificationGridContainer {
-  display: flex;
-  flex-direction:row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.5rem;
+
+  align-content: center;
+  justify-content: center;  justify-content: center;
+  justify-items: center;
 }
 
 .certificationItemCard {
-  /* display: grid;
-  grid-template-columns: 1fr 2fr 1fr; */
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
   width: 100%;
-  /* max-width: 400px; */
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
+
+  max-width: 280px;
+  max-height: min-content;
+
+  text-align: center;
+  text-decoration: none;
 }
 
-.certificationItemCard img {
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
 
-  margin: 1rem;;
+.certificationItemCard img {
+  width: 100%;
+  max-height: 160px;
+  /* height: 100%; */
+  object-fit: cover;
+  border: 1px solid var(--software-card-border-color);
+  border-radius: var(--border-radius);
+
   /* border-radius: 50%;
   margin-bottom: 15px; */
+  margin: 0.5rem;
 }
 
 .certificationItemCard .date {
-  /* background-color: #f0f0f0; */
   opacity: 0.8;
 }
 
 .certificationItemCard .title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  flex-grow: 1;
-  flex: 1; /* grow to fill remaining space */
+  display: block;
+
+  font-size: var(--certification-item-card-text-size);
+  font-weight: var(--certification-item-card-text-weight);
 }

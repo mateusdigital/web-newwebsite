@@ -15,17 +15,17 @@ function git_clone(name, git_path) {
     const git_url = `https://github.com/${git_user}/${name}`;
     const git_cmd = `git clone --recursive "${git_url}" "${git_path}"`;
 
-    console.log(`[gitclone] ${git_url} ${git_path}`);
+    log.D(`[gitclone] ${git_url} ${git_path}`);
 
     exec(git_cmd, (error, stdout, stderr) => {
         if (error) {
-            console.error(`exec error: ${error}`);
+            log.E(`exec error: ${error}`);
             return;
         }
-    
-        console.log(`---> Downloading ${name}`);
-        // console.log(`stdout: ${stdout}`);
-        // console.error(`stderr: ${stderr}`);
+
+        log.D(`---> Downloading ${name}`);
+        // log.D(`stdout: ${stdout}`);
+        // log.E(`stderr: ${stderr}`);
     });
 }
 
@@ -47,7 +47,7 @@ for(let item of list) {
     const name     = item.name.trim();
     const git_path = `${root_dir}/public/modules/${folder}/${name}`;
     if(fs.existsSync(git_path)) {
-        console.log(`---> ${name} is already cloned`);
+        log.D(`---> ${name} is already cloned`);
         continue;
     }
 

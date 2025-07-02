@@ -1,7 +1,7 @@
 function $(name) {
   const element = document.getElementById(name);
   if (!element) {
-    console.error(`Element with id ${name} not found`);
+    log.E(`Element with id ${name} not found`);
     return null;
   }
   return element;

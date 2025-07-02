@@ -11,11 +11,11 @@
 
             demo_main(canvas);
         }).catch((e) => {
-            console.error(e);
+            log.E(e);
             debugger;
         });
     }).catch((e)=> {
-        console.error(e);
+        log.E(e);
         debugger;
     })
 })();
