@@ -260,21 +260,21 @@
 
     "html": [
       "<p>",
-      "  After releasing the <Link href=\"/projects/the_mistral_report\">The Mistral Report</Link> I",
+      "  After releasing the <a href=\"/projects/the-mistral-report\">The Mistral Report</a> I",
       "  got very interested in develop to retro machines, and have chosen the Nintendo Game Boy as the target to make a new game.",
       "</p>",
 
       "<p>",
-      "  I decided to make a homage to Flappy Bird, since as a nice gameplay that would still let me understand",
+      "  I decided to make a homage to <b>Flappy Bird</b>, since as a nice gameplay that would still let me understand",
       "  better that tiny marvel machine that the Game Boy was.",
       "</p>",
 
       "<p>",
-      "  In 2023, I got interested in some web development and saw a good opportunity to create a cute landing page",
-      "  for the project, also I created the <Link href=\"/projects/gameboy-css\">Game Boy Frame in CSS3</Link>.",
+      "  In 2023, I got interested in some web development and saw a good opportunity to create a <b>cute landing page</b>",
+      "  for the project, also I created the <a href=\"/projects/gameboy-css\">Game Boy Frame in CSS3</a>.",
       "</p>",
 
-      "<span className=\"textDetail\">",
+      "<span class=\"textDetail\">",
       "  * Thanks for <a href=\"https://montyontherun.itch.io/\">Monty</a> for recording the video.",
       "</span>"
     ]
@@ -302,15 +302,15 @@
 
     "html": [
       "<p>",
-      "  The Mistral Report: Invisible Affairs is an espionage-themed turn-based retro RPG for your classic machine.",
+      "  <b>The Mistral Report: Invisible Affairs</b> is an espionage-themed turn-based retro RPG for your classic machine.",
       "</p>",
       "<p>",
       "  I co-created the game, together with my good friend and super talented hacker <a href=\"https://montyontherun.itch.io/the-mistral-report\">\"@montyontherun\"</a>,",
-      "  for the MSDOS release. It was my first retro game and I loved the experience!",
+      "  for the MS-DOS release. It was my first retro game and I loved the experience!",
       "</p>",
       "<p>",
       "  The game is available for a myriad of platforms - 486s, Amigas, PPC Macs, OSX, Windows, etc - and it's quite nice to play!",
-      "  Check his Itch.io :)",
+      "  Check his <a href=\"https://montyontherun.itch.io/the-mistral-report\">Itch.io</a> :)",
       "</p>"
     ]
   },
@@ -473,6 +473,7 @@
   {
     "project_name": "bow-and-arrow",
     "project_title": "Bow and Arrow",
+    "short_project_title": "Bow & Arrow",
     "project_type": "game",
     "project_subtype": "game-old",
     "year_start": 2020,
@@ -553,6 +554,7 @@
 
     "youtube_video_id": "04_lItaf1jY"
   },
+  // ---------------------------------------------------------------------------
   {
     "project_name": "fortnite",
     "project_title": "Fortnite",
@@ -580,6 +582,7 @@
       "</p>"
     ]
   },
+  // ---------------------------------------------------------------------------
   {
     "project_name": "farcry-6",
     "project_title": "Far Cry 6",
@@ -601,7 +604,7 @@
     "html": [
           "<p>",
           "  After contributing to the development of '<a href=\"./skull_and_bones\">Skull and Bones</a>'",
-          "  I moved to the Far Cry 5 team to aid the release of the '<b>LOST BETWEEN WORLDS'</b> DLC.",
+          "  I moved to the <b>Far Cry 5</b> team to aid the release of the '<b>LOST BETWEEN WORLDS'</b> DLC.",
           "</p>",
           "<p>",
           "  My primary responsibilities involved addressing bugs within <b>A11Y</b> components,",
@@ -613,6 +616,7 @@
           "</p>"
     ]
   },
+  // --- skull and bones -------------------------------------------------------
   {
     "project_name": "skull-and-bones",
     "project_title": "Skull & Bones",
@@ -637,7 +641,7 @@
       "  focusing on <b>Text-to-Speech</b> and <b>Speech-to-Text</b> functionalities. I worked with a multi-studio effort involving Kyiv, Odessa, Berlin, and Belgrade.",
       "</p>",
       "<p>",
-      "  During this project, I had the opportunity to work extensively with <b>Anvil</b>, the same engine powering Assassin's Creed,",
+      "  During this project, I had the opportunity to work extensively with <b>Anvil</b>, the same engine powering <b>Assassin's Creed</b>,",
       "  as well as <b>Phoenix UI</b>, the UI engine behind Rainbow Six.",
       "</p>"
     ]
@@ -662,7 +666,7 @@
     "youtube_video_id": "_Vtvjg8dYqI",
     "html": [
       "<p>",
-      "  In 2019, I embarked on a journey to Minsk, Belarus, to join the World of Tanks - Blitz team.",
+      "  In 2019, I embarked on a journey to Minsk, Belarus, to join the <b>World of Tanks - Blitz</b> team.",
       "</p>",
       "<p>",
       "  Working with <b>Unreal Engine 4</b>, I was involved in implementing user interfaces using UE4's <b>UMG</b> system.",
@@ -670,6 +674,7 @@
       "</p>"
       ]
     },
+  // --- warframe --------------------------------------------------------------
   {
     "project_name": "warframe",
     "project_title": "Warframe",
@@ -694,10 +699,11 @@
       "</p>",
       "<p>",
       "  I was part of the <b>Warframe</b> initial porting team to <b>mobile platforms</b>.",
-      "  My core responsibility was get <b>Evolution Engine</b> <span className=\"textDetail\">(their proprietary engine)</span> building and running both to <b>iOS</b> and <b>Android</b>.",
+      "  My core responsibility was get <b>Evolution Engine</b> <span class=\"textDetail\">(their proprietary engine)</span> building and running both to <b>iOS</b> and <b>Android</b>.",
       "</p>"
     ]
   },
+  // --- 8 ball pool -----------------------------------------------------------
   {
     "project_name": "8-ball-pool",
     "project_title": "8 Ball Pool",
@@ -740,6 +746,7 @@
       "</p>"
     ]
   },
+  // --- pacman ----------------------------------------------------------------
   {
     "project_name": "pacman-io",
     "project_title": "Pacman.io",
@@ -754,7 +761,25 @@
     "tech" : [ "C++", "JS", "ObjC", "Cocos2d-x", "Emscripten", "Git" ],
 
     "company": "Miniclip",
-    "role": "Programmer"
+    "role": "Programmer",
+
+    "youtube_video_id": "u4sEgDM0EZ0",
+
+    "html": [
+      "<p>",
+      "  Pacman.io is an online multiplayer game based on the classic arcade game Pac-Man.",
+      "  Players control their own Pac-Man character and compete against others in real-time.",
+      "</p>",
+      "",
+      "<p>",
+      "  I've worked both in the client using <b>Emscripten</b>, and the server side, implement features",
+      "  and optimizations until the release of the game. The most notable one was some improvements to rendering routines, gaining ~36% (~30fps -&gt; ~41fps).</p>",
+      "",
+      "<p>",
+      "  Also in this project I've the pleasure to work with <a href=\"https://hugojustcode.com/\">Hugo Ferreira</a>,",
+      "  which has become my best friend :)",
+      "</p>"
+    ]
   },
   {
     "project_name": "killers-and-thieves",
@@ -772,7 +797,23 @@
     "company": "Stoic Studios",
     "role": "Programmer",
 
-    "youtube_video_id" : "2HhmN1_SvFA"
+    "youtube_video_id" : "2HhmN1_SvFA",
+
+  "html": [
+    "<p>",
+    "  Following my contributions to Stoic Studio's <a href=\"https://mateus.digital/the-banner-saga\">The Banner Saga</a>,",
+    "  I received an invitation to join the team working on <b>Killers and Thieves</b>, a game they were",
+    "  preparing to publish at the time.",
+    "</p>",
+    "<p>",
+    "  I was responsible for enhancing and finalizing the game for publication by adding new",
+    "  features, rectifying bugs, and conducting significant optimization work on the <b>Lua</b> and <b>Unity</b> interop code.",
+    "</p>",
+    "<p>",
+    "  Additionally, I undertook the integration of the <b>Steamworks API</b> and refined AI algorithms for in-game heists.",
+    "</p>"
+  ]
+
   },
   {
     "project_name": "the-banner-saga-2",
@@ -829,15 +870,15 @@
       "    those amazing award-winning games.",
       "  </p>",
       "  <p>",
-      "    I was responsible to maintain and improve both games for Stoic Studio.",
+      "    I was responsible to maintain and improve both games for <b>Stoic Studio</b>.",
       "    At the time it was a huge challenge since the games were written in a totally",
       "    different stack that I was used to. Also the scope of the project - then, the",
       "    biggest project I had worked on - made it a true challenge.",
       "  </p>",
       "  <p>",
-      "    The game was written in a mixture of languages with Action Script 3 as the primally",
+      "    The game was written in a mixture of languages with <b>Action Script 3</b> as the primally",
       "    language for the game and tools, and lots of different middleware for multiple",
-      "    platforms. Ant was used as the build system, and Mercurial was the versioning",
+      "    platforms. <b>Ant</b> was used as the build system, and <b>Mercurial</b> was the versioning",
       "    used by the team.",
       "  </p>",
       "  <p>",
@@ -850,7 +891,7 @@
       "<section>",
       "  This is one of the most beloved projects that I've worked on, it helped to open",
       "  so many doors and gave me so nice opportunities.",
-      "  After this project, I got the opportunity to make Stoic Studio's <Link href=\"/projects/killers_and_thieves\">Killers and Thieves</Link>.",
+      "  After this project, I got the opportunity to make Stoic Studio's <a href=\"/projects/killers-and-thieves\">Killers and Thieves</a>.",
       "</section>"
     ]
   },
@@ -871,6 +912,20 @@
     "role": "Programmer",
 
     "youtube_video_id" : "gqNCs0slp8U",
+    "html": [
+      "<p>",
+      "  It was Firehorse's main game, Like a Boss is an Action RPG where",
+      "  you are the epic Raid Boss at the end of a dungeon, crushing",
+      "  players <i>(the heroes)</i> as they come to steal your treasures.",
+      "<p>",
+      "  As an additional programmer, I was responsible for numerous code",
+      "  refactoring, improvements, bug fixes, and other optimizations",
+      "  that are typically not available to the main team.",
+      "</p>",
+      "<p>",
+      "  I created custom Unity's <i>Editor Scripts</i> to ease some game development operations.",
+      "</p>"
+    ]
   },
 
   {
@@ -890,6 +945,17 @@
     "role": "Programmer",
 
     "youtube_video_id" : "AbZGdmOC-eM",
+
+    "html": [
+      "<p>",
+      "  In this project, I was responsible to integrate the <b>AlienFx SDK</b> to YoYo Games' <b>Game Maker</b>.",
+      "  The AlienFx SDK is written in C++ and provided as a DLL file, but it isn't readily usable in Game Maker.",
+      "</p>",
+      "<p>",
+      "  My job was to write a binding that maps more 1:1 possible the C++ in GML (the Game Maker scripting language).",
+      "  It was very challenging since I had no experience in Game Maker at all, but in the end, we managed to get it right.",
+      "</p>"
+    ]
   },
   {
     "project_name": "at-sundown",
@@ -964,7 +1030,18 @@
     "year_release": 2023,
 
     "platform": ["web"],
-    "tech": ["CSS"]
+    "tech": ["CSS"],
+
+    "html": [
+      "<p>",
+      "  I thought that would be great to have a Gameboy",
+      "  frame for the <a href=\"https://mateus.digital/el-jamon-volador\">El Jamon Volador</Link> page,",
+      "  and I saw it as opportunity to start to get into making art with CSS.",
+      "</p>",
+      "<p>",
+      "  This is my very-first project and I'm very happy with it :)",
+      "</p>"
+    ]
   },
   {
     "project_name": "roses",

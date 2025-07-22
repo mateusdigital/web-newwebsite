@@ -50,7 +50,9 @@ export function GetPresentationElement(project: Project, log: ILogger) {
     log.D("Rendering Youtube video for project: ", project.project_name);
     return (<>
       <div className="videoContainer">
-        <iframe src={video_url}
+        <iframe
+          className="youtubeVideo"
+          src={video_url}
           title={video_title}
           frameBorder="0"
           allowFullScreen />
@@ -95,11 +97,11 @@ function GetGeneralInfoElement(info: Project) {
         <li>
           <b>Platforms:</b>
           <ul className="platformUL">
-            {info.platform.map((p, index) => (
-              <><li>
-                <span key={index}>{MakePlatformIcons([p])}</span><span>{p}</span>
-              </li></>
-            ))}
+            {info.platform.map((p, index) => (<>
+              <li>
+                <span key={index}>{MakePlatformIcons([p])}</span><span>{p.toUpperCase()}</span>
+              </li>
+            </>))}
           </ul>
         </li>
       </ul>

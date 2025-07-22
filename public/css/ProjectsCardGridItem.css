@@ -23,7 +23,7 @@
 }
 
 .projectItemCard .infoContainer {
-  visibility: collapse;
+  /* visibility: collapse; */
 
   position: absolute;
   left: 0;
@@ -33,12 +33,15 @@
   justify-content: space-between;
 
   width: calc(100% - 0rem);
+  padding: 1rem;
+
   background-color: var(--project-item-card-background-color);
   color: var(--project-item-card-text-color);
-  padding: 1rem;
 
   border-bottom-left-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
+
+  gap: 0.5rem;
 }
 
 
@@ -46,18 +49,36 @@
   visibility: visible;
 }
 
-.projectItemCard .infoContainer .title {
+.projectItemCard .infoContainer .title,
+.projectItemCard .infoContainer .year {
+  color: var(--project-item-card-text-color);
   font-size: var(--project-item-card-text-size);
   font-weight: var(--project-item-card-text-weight);
   padding: 0;
   margin: 0;
 }
+.projectItemCard .infoContainer svg.svgIcon {
+  fill: var(--project-item-card-text-color);
+  width: var(--project-item-card-text-size);
+  height: var(--project-item-card-text-size);
+}
 
-.projectItemCard .infoContainer .rightContainer {
+.projectItemCard .infoContainer .platformIcons {
   display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
   gap: 0.5rem;
 }
 
+
+.projectItemCard .infoContainer .rightContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 
 /*
 *  For the Projects Page

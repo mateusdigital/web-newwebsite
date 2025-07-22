@@ -28,7 +28,7 @@ export interface Project {
   //
   project_name: string;
   project_title: string;
-  project_title_short?: string;
+  short_project_title?: string;
 
   //
   project_type:
@@ -132,7 +132,7 @@ export function MakePlatformIcons(
     const platform = platforms[i].trim().toLowerCase();
 
     if (false) {
-
+      // empty...
     }
     else if (platform == "dlc") {
       icons.push(<DLCIcon />);

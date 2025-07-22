@@ -21,6 +21,7 @@ export function ProjectItemCard({ item, log }: ProjectItemCardProps) {
   let {
     project_name,
     project_title,
+    short_project_title,
     project_type,
     project_subtype,
     year_start,
@@ -34,7 +35,7 @@ export function ProjectItemCard({ item, log }: ProjectItemCardProps) {
   if (!project_subtype) {
     project_subtype = "";
   }
-
+  const display_project_name = (short_project_title || project_title);
   const details_page_url = `/projects/${project_name}`;
   const alt_text = `Screenshot of "${project_title} at ${year_release}"`;
 
@@ -55,14 +56,13 @@ export function ProjectItemCard({ item, log }: ProjectItemCardProps) {
   // Instead of PC, Mobile etc, we use the little cute icons instead...
   const platform_icons = MakePlatformIcons(platform);
 
-
   return (<>
     <div className="projectItemCard" key={project_name}>
       <Link href={details_page_url}>
         <img src={img_path} alt={alt_text} />
 
         <div className="infoContainer">
-          <span className="title">{project_title}</span>
+          <span className="title">{display_project_name}</span>
           <div className="rightContainer">
             <span className="platformIcons">{platform_icons}</span>
             <span className="year">{year_release}</span>
