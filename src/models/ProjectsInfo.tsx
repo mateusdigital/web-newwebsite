@@ -76,7 +76,7 @@ export interface Project {
   is_playable_on_canvas?: boolean;
   youtube_video_id?: string;
   html?: [];
-
+  urls?: {}
   //
   default_icon?: string;
 }

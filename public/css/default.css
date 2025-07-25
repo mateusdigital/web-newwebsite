@@ -53,7 +53,7 @@ iframe {
   --section-title-square-weight: 200;
 
   --section-title-lighter-size: 100%;
-  --section-title-lighter-color:hsl(0, 0%, 100%);
+  --section-title-lighter-color: hsl(0, 0%, 100%);
   --section-title-lighter-weight: 100;
 
   /*  */
@@ -73,7 +73,7 @@ iframe {
   --project-item-card-background-color: hsl(0, 0%, 5%);
 
   --project-item-card-text-color: hsla(0, 0%, 100%, 0.5);
-  --project-item-card-text-size: 0.9rem;
+  --project-item-card-text-size: 0.7rem;
   --project-item-card-text-weight: 200;
 
   --project-item-card-icon-color: hsl(0, 0%, 100%);
@@ -92,11 +92,11 @@ iframe {
   /*  */
 
   --certification-item-card-text-color: hsl(0, 0%, 100%);
-  --certification-item-card-text-size:  0.9rem;
+  --certification-item-card-text-size: 0.9rem;
   --certification-item-card-text-weight: 400;
 
 
-    /*  */
+  /*  */
   --icon-color: hsl(0, 0%, 100%);
 
   --bold-text-color: hsl(0, 0%, 100%);
@@ -288,18 +288,23 @@ svg.heartIcon:hover {
 }
 
 .projectsDetailPage canvas,
-.projectsDetailPage iframe
-.projectsDetailPage {
+.projectsDetailPage iframe .projectsDetailPage {
   width: 100%;
   height: 60vh;
   display: block;
 }
+
 .projectsDetailPage .youtubeVideo {
   border-radius: var(--border-radius);
   width: 100%;
-  height: 100%;
+  height: 60vh;
 }
 
+.projectsDetailPage .canvasContainer iframe {
+  border-radius: var(--border-radius);
+  width: 100%;
+  height: 60vh;
+}
 
 .projectsDetailPage .titleContainer {
   display: flex;
@@ -312,6 +317,57 @@ svg.heartIcon:hover {
 .projectsDetailPage .titleContainer h1 {
   margin: 0;
   padding: 0;
+}
+
+.projectsDetailPage .canvasContainer {
+  position: relative;
+}
+
+.XXX_iframeClick {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+  /* background-color: red; */
+}
+.projectsDetailPage .actionButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* default */
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+}
+
+.projectsDetailPage .actionButtons > * {
+  max-width: 300px;
+  width: 100%;
+  justify-self: center; /* center individual buttons */
+}
+
+@media (min-width: 0px) and (max-width: 460px) {
+  .projectsDetailPage .actionButtons {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.projectsDetailPage .actionButtons .actionButton {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  background-color: red;
+  color: cyan;
+  text-decoration: none;
+
+  font-weight: var(--text-weight);
 }
 
 
@@ -342,6 +398,7 @@ svg.heartIcon:hover {
 .projectsDetailPage .generalInfo li {
   list-style: none;
 }
+
 .projectsDetailPage .generalInfo li span {
   margin-right: 0.5rem;
 }

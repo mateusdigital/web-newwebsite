@@ -1,6 +1,8 @@
 import { DefaultPage } from "./DefaultPage";
 import { MakePlatformIcons, Project } from "../models/ProjectsInfo";
 import { ILogger } from "../../libs/mdweb/source/Logger";
+import GithubIcon_ from "../components/icons/github";
+import ItchIcon_ from "../components/icons/itchio-textless-black";
 
 //
 // Component
@@ -25,7 +27,7 @@ export function ProjectDetailPage({ info, log }: { info: Project, log: ILogger }
         </header>
 
         <div dangerouslySetInnerHTML={{ __html: html }} />
-
+        {GetActionButtonsElement(info, log)}
         {GetGeneralInfoElement(info)}
       </section>
     </DefaultPage >
@@ -62,12 +64,19 @@ export function GetPresentationElement(project: Project, log: ILogger) {
 
   // Is playable on canvas
   else if (project.is_playable_on_canvas) {
-    log.D("Rendering playable canvas for project: ", project.project_name);
+    const project_name = project.project_name;
+    log.D("Rendering playable canvas for project: ", project_name);
+
     return (<>
-      <div className="proj-canvas-container">
-        {/* <iframe id="gameIFrame" data-project-name={name}></iframe> */}
-        <script src="/src/load-game-iframe.js" defer></script>
-      </div>
+      <div className="canvasContainer" >
+        <iframe
+          id="gameIFrame"
+          data-project-name={project_name}
+          className="gameFrame"
+        ></iframe>
+        <div id="XXX_iframeClick" className="XXX_iframeClick"></div>
+      </div >
+      <script src="/src/load-game-iframe.js" defer></script>
     </>);
   }
 
@@ -82,9 +91,11 @@ function GetGeneralInfoElement(info: Project) {
     <section className="generalInfo">
       <span className="title">General Info:</span>
       <ul class="infoUL">
-        <li>
-          <b>Role:</b> <span>{info.role}</span>
-        </li>
+        {info.role &&
+          <li>
+            <b>Role:</b> <span>{info.role}</span>
+          </li>
+        }
 
         <li>
           <b>Tech:</b> <span>{info.tech.join(", ")}</span>
@@ -105,6 +116,46 @@ function GetGeneralInfoElement(info: Project) {
           </ul>
         </li>
       </ul>
+    </section>
+  </>);
+}
+
+function _ActionButton({ href, children }) {
+  //
+  return (<>
+    <a className="actionButton"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer">
+        {children}
+    </a>
+  </>);
+}
+
+// -----------------------------------------------------------------------------
+function GetActionButtonsElement(info: Project, log: ILogger) {
+  return (<>
+    <section className="actionButtons">
+      {info?.urls?.play &&
+        <_ActionButton href={info.urls.play}>
+          <span className="text">Play Now</span>
+        </_ActionButton>
+      }
+
+      {info?.urls?.itchio &&
+        <_ActionButton href={info.urls.itchio}>
+          <ItchIcon_/>
+          <span className="text">itch.io</span>
+        </_ActionButton>
+      }
+
+      {info?.urls?.github &&
+        <_ActionButton href={info.urls.github}>
+          <GithubIcon_ />
+          <span className="text">GitHub</span>
+        </_ActionButton>
+      }
+
     </section>
   </>);
 }

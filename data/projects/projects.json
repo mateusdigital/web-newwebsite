@@ -318,13 +318,13 @@
   {
     "project_name": "same-game",
     "project_title": "The Same Game",
+    "short_project_title": "Same Game",
 
     "project_type": "game",
     "project_subtype": "game-personal",
 
     "project_license": "GPLv3",
     "project_description": "A simple game where you have to match the same colors.",
-
 
     "year_start": 2018,
     "year_end": 2019,
@@ -333,8 +333,28 @@
     "tech": ["JS", "PixiJS", "NextJS"],
     "platform": ["web"],
 
+    "is_playable_on_canvas": true,
+    "urls": {
+      "play": "https://mateus.digital/same-game",
+      "itchio": "https://mateusdigital.itch.io/same_game",
+      "github": "https://github.com/mateusdigital/game-same-game",
 
-    "is_playable_on_canvas": true
+    },
+
+    "html": [
+      "<p>",
+        "The Same Game is a small matching making game.",
+      "</p>",
+      "<p>",
+        "I started it when I was in Minsk Belarus, during the pandemic in 2020 - I was feeling very homesick back then I tried to make something that remembered me my dear home, my mother and my dog.",
+      "</p>",
+      "<p>",
+        "For a long time it was forgotten in the shelve of projects, but in 2024 I decided to finish it and release! ",
+      "</p>",
+      "<p>",
+        "I hope that you have fun!!",
+      "</p>"
+    ]
   },
   // --- // Koliery ------------------------------------------------------------
   {
@@ -642,7 +662,7 @@
       "</p>",
       "<p>",
       "  During this project, I had the opportunity to work extensively with <b>Anvil</b>, the same engine powering <b>Assassin's Creed</b>,",
-      "  as well as <b>Phoenix UI</b>, the UI engine behind Rainbow Six.",
+      "  as well as <b>Phoenix UI</b>, the UI engine behind <b>Rainbow Six</b>.",
       "</p>"
     ]
   },
