@@ -35,6 +35,10 @@
   margin-bottom: 0.5rem;
 }
 
+.contacts li a {
+  margin-left: 0.5rem;
+}
+
 .contacts svg.svgIcon {
   width: 1.5rem;
   height: 1.5rem;

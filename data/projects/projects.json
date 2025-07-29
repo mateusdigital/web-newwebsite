@@ -22,7 +22,7 @@
     "tech": ["typescript", "javascript", "vscode"],
     "platform": ["vscode"],
 
-    "default_icon": "icons/E-H/HR2A.ICO",
+    "default_icon": "img/software-icons/HR2A.ICO",
   },
 
   // --- mdheader ---------------------------------------------------------------
@@ -43,7 +43,7 @@
   "tech": ["typescript", "javascript", "vscode"],
   "platform": ["PC"],
 
-  "default_icon": "icons/E-H/HR2.ICO",
+  "default_icon": "img/software-icons/HR2.ICO",
 },
 
   // --- autopeacock ------------------------------------------------------------
@@ -63,7 +63,7 @@
     "tech": ["typescript", "javascript", "vscode", "peacock"],
     "platform": ["PC"],
 
-    "default_icon": "icons/R-T/SLIDES1.ICO"
+    "default_icon": "img/software-icons/SLIDES1.ICO"
   },
 
 
@@ -90,7 +90,7 @@
     "tech": ["python", "powershell", "shellscript"],
     "platform": ["PC"],
 
-    "default_icon": "icons/C-D/C_SUNSET.ICO"
+    "default_icon": "img/software-icons/C_SUNSET.ICO"
   },
 
 
@@ -114,7 +114,7 @@
     "tech": ["python", "powershell", "shellscript"],
     "platform": ["PC"],
 
-    "default_icon": "icons/U-Z/ZEN.ICO"
+    "default_icon": "img/software-icons/ZEN.ICO"
   },
 
 
@@ -137,7 +137,7 @@
 
     "tech": ["JS", "nodejs"],
     "platform": ["PC"],
-    "default_icon": "icons/N-Q/PLAYBALL.ICO"
+    "default_icon": "img/software-icons/PLAYBALL.ICO"
   },
 
   // --- psd-to-png ------------------------------------------------------------
@@ -161,7 +161,7 @@
 
     // "default_icon": "icons/U-Z/WAVE4.ICO"
     // "default_icon": "icons/C-D/CUBEMAG.ICO"
-    "default_icon": "icons/R-T/SPIRAL1.ICO"
+    "default_icon": "img/software-icons/SPIRAL1.ICO"
   },
 
 
@@ -183,7 +183,7 @@
     "platform": ["PC"],
 
     // "default_icon": "icons/U-Z/WAVE3.ICO"
-    "default_icon": "icons/C-D/CUBEBLUE.ICO"
+    "default_icon": "img/software-icons/CUBEBLUE.ICO"
   },
 
 
@@ -209,7 +209,7 @@
 
     // "default_icon": "icons/U-Z/WAVE2.ICO"
     // "default_icon": "icons/R-T/SQUARE.ICO"
-    "default_icon": "icons/U-Z/WALL.ICO"
+    "default_icon": "img/software-icons/WALL.ICO"
   },
 
   // --- tile-to-map -----------------------------------------------------------
@@ -231,7 +231,7 @@
     "platform": ["PC"],
 
     // "default_icon": "icons/U-Z/WAVE1.ICO"
-    "default_icon": "icons/R-T/SQSPIRL.ICO"
+    "default_icon": "img/software-icons/SQSPIRL.ICO"
   },
 
   //

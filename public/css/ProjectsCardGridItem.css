@@ -23,7 +23,7 @@
 }
 
 .projectItemCard .infoContainer {
-  /* visibility: collapse; */
+  visibility: collapse;
 
   position: absolute;
   left: 0;
