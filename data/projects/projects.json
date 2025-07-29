@@ -257,6 +257,11 @@
     "platform": ["gameboy", "web"],
 
     "youtube_video_id": "VlpMRj9wwLw",
+    "urls": {
+      "play": "https://mateus.digital/el-jamon-volador",
+      "itchio": "https://mateusdigital.itch.io/el-jamon-volador",
+      "github": "https://github.com/mateusdigital/game-el-jamon-volador",
+    },
 
     "html": [
       "<p>",
@@ -299,6 +304,12 @@
     "tech": ["C++", "SDL1.2", "MSDOS"],
     "platform": ["msdos"],
 
+    "youtube_video_id": "WOTBzn-LciM",
+    "urls": {
+      "play": "https://mateus.digital/same-game",
+      "itchio": "https://mateusdigital.itch.io/same_game",
+      "github": "https://github.com/mateusdigital/game-same-game",
+    },
 
     "html": [
       "<p>",
@@ -314,6 +325,8 @@
       "</p>"
     ]
   },
+
+
   // --- the same game ---------------------------------------------------------
   {
     "project_name": "same-game",
@@ -338,12 +351,11 @@
       "play": "https://mateus.digital/same-game",
       "itchio": "https://mateusdigital.itch.io/same_game",
       "github": "https://github.com/mateusdigital/game-same-game",
-
     },
 
     "html": [
       "<p>",
-        "The Same Game is a small matching making game.",
+        "<b>The Same Game<b> is a small matching making game.",
       "</p>",
       "<p>",
         "I started it when I was in Minsk Belarus, during the pandemic in 2020 - I was feeling very homesick back then I tried to make something that remembered me my dear home, my mother and my dog.",
@@ -375,8 +387,29 @@
     "tech": ["JS", "Canvas API", "chroma.js"],
     "platform": ["web"],
 
-    "is_playable_on_canvas": true
+    "is_playable_on_canvas": true,
+    "urls": {
+      "play": "https://mateus.digital/koliery",
+      "itchio": "https://mateusdigital.itch.io/koliery",
+      "github": "https://github.com/mateusdigital/game-koliery",
+    },
+
+    "html": [
+      "<p>",
+        "<b>Koliery</b> - <b>Колеры</b> in <b>Belarussian</b> - meaning colors is a game inspired by the <b>Sega Columns</b> and the <b>ISS Colours</b> for the <b>Atari 500</b>..",
+      "</p>",
+      "<p>",
+        "It was developed using <b>Pixi.js</b> in 2020 while I was in Minsk Belarus, but not released until 2024.",
+      "</p>",
+      "<p>",
+        "For a long time it was forgotten in the shelve of projects, but in 2024 I decided to finish it and release! ",
+      "</p>",
+      "<p>",
+        "I hope that you have fun!!",
+      "</p>"
+    ]
   },
+
   // --- simple snake ----------------------------------------------------------
   {
     "project_name": "simple-snake",
@@ -384,7 +417,7 @@
 
 
     "project_type": "game",
-    "project_subtype": "personal",
+    "project_subtype": "game-personal",
 
 
     "project_license": "GPLv3",
@@ -399,6 +432,11 @@
     "platform": ["web"],
 
     "is_playable_on_canvas": true,
+    "urls": {
+      "play": "https://mateus.digital/same-game",
+      "itchio": "https://mateusdigital.itch.io/same_game",
+      "github": "https://github.com/mateusdigital/game-same-game",
+    },
 
     "html": [
       "<p>",
@@ -415,6 +453,7 @@
       "</p>"
     ]
   },
+
   // --- nuclear rain ----------------------------------------------------------
   {
     "project_name": "nuclear-rain",
@@ -433,20 +472,33 @@
     "tech": ["JS", "Canvas API", "chroma.js"],
     "platform": ["web"],
 
-    "is_playable_on_canvas": true
+    "is_playable_on_canvas": true,
+    "urls": {
+      "play": "https://mateus.digital/same-game",
+      "itchio": "https://mateusdigital.itch.io/same_game",
+      "github": "https://github.com/mateusdigital/game-same-game",
+    },
   },
+
   // --- cosmic intruders ------------------------------------------------------
   {
     "project_name": "cosmic-intruders",
     "project_title": "Cosmic Intruders",
     "project_type": "game",
-    "project_subtype": "personal",
+    "project_subtype": "game-personal",
     "year_start": 2018,
     "year_end": 2019,
     "year_release": 2018,
     "platform": ["pc", "web"],
     "tech": ["C++", "JS", "Emscripten"],
+
     "is_playable_on_canvas": true,
+    "urls": {
+      "play": "https://mateus.digital/same-game",
+      "itchio": "https://mateusdigital.itch.io/same_game",
+      "github": "https://github.com/mateusdigital/game-same-game",
+    },
+
     "html": [
       "<p>",
       "  Cosmic Intruders is a Space Invaders clone that was made as a test for Miniclip Web Client Developer vacancy by the end of 2017.",
@@ -464,6 +516,7 @@
       "</p>"
     ]
   },
+
   // --- color grid -------------------------------------------------------------
   {
     "project_name": "color-grid",
@@ -475,7 +528,6 @@
     "year_release": 2018,
     "platform": ["pc", "web"],
     "tech": ["C++", "JS", "Emscripten"],
-    "is_playable_on_canvas": true
   },
   // --- memory amazing cow -----------------------------------------------------
   {
@@ -598,7 +650,7 @@
       "  Fortnite is a <b>free-to-play</b> battle royale game developed and published by <b>Epic Games</b>.",
       "</p>",
       "<p>",
-      "  I've worked as <b>Senior UI Programmer</b>, creating MVVM modules for the UI system.",
+      "  I've worked as <b>Senior UI Programmer</b>, creating <b>MVVM modules</b> for the <b>UI system</b>.",
       "</p>"
     ]
   },
@@ -657,7 +709,7 @@
 
     "html": [
       "<p>",
-      "  In 2020, I joined Ubisoft Kyiv as a Senior Programmer. My role was to implement cutting-edge <b>accessibility</b> solutions,",
+      "  In 2020, I joined <b>Ubisoft Kyiv</b> as a <b>Senior Programmer</b>. My role was to implement cutting-edge <b>accessibility</b> solutions,",
       "  focusing on <b>Text-to-Speech</b> and <b>Speech-to-Text</b> functionalities. I worked with a multi-studio effort involving Kyiv, Odessa, Berlin, and Belgrade.",
       "</p>",
       "<p>",
@@ -686,7 +738,7 @@
     "youtube_video_id": "_Vtvjg8dYqI",
     "html": [
       "<p>",
-      "  In 2019, I embarked on a journey to Minsk, Belarus, to join the <b>World of Tanks - Blitz</b> team.",
+      "  In 2019, I embarked on a journey to <b>Minsk - Belarus</b>, to join the <b>World of Tanks - Blitz</b> team.",
       "</p>",
       "<p>",
       "  Working with <b>Unreal Engine 4</b>, I was involved in implementing user interfaces using UE4's <b>UMG</b> system.",
@@ -744,7 +796,7 @@
 
     "html": [
       "<p>",
-      "  8 Ball Pool, the Miniclip's flagship game, thrives as a global online multiplayer game,",
+      "  <b>8 Ball Pool</b>, the Miniclip's flagship game, thrives as a global online multiplayer game,",
       "  gathering players for virtual pool matches.",
       "</p>",
 
@@ -801,6 +853,8 @@
       "</p>"
     ]
   },
+
+  // --- Killers and Thieves ---------------------------------------------------
   {
     "project_name": "killers-and-thieves",
     "project_title": "Killers and Thieves",
@@ -835,6 +889,8 @@
   ]
 
   },
+
+  // --- the banner saga 2 -----------------------------------------------------
   {
     "project_name": "the-banner-saga-2",
     "project_title": "Banner Saga 2",
@@ -864,6 +920,8 @@
       "</p>"
     ]
   },
+
+  // --- the banner saga 1 -----------------------------------------------------
   {
     "project_name": "the-banner-saga-1",
     "project_title": "Banner Saga 1",
@@ -915,6 +973,8 @@
       "</section>"
     ]
   },
+
+  // --- like a boss -----------------------------------------------------------
   {
     "project_name": "like-a-boss",
     "project_title": "Like a Boss",
@@ -948,6 +1008,7 @@
     ]
   },
 
+  // --- let them come ---------------------------------------------------------
   {
     "project_name": "let-them-come",
     "project_title": "Let Them Come",
@@ -977,6 +1038,8 @@
       "</p>"
     ]
   },
+
+  //  --- at sundown -----------------------------------------------------------
   {
     "project_name": "at-sundown",
     "project_title": "At Sundown",
@@ -1004,6 +1067,8 @@
       "</p>"
     ]
   },
+
+  // --- fist punch 2 ----------------------------------------------------------
   {
     "project_name": "fist-punch-2",
     "project_title": "Fist Punch 2",
@@ -1052,10 +1117,11 @@
     "platform": ["web"],
     "tech": ["CSS"],
 
+    "is_playable_on_canvas": true,
     "html": [
       "<p>",
-      "  I thought that would be great to have a Gameboy",
-      "  frame for the <a href=\"https://mateus.digital/el-jamon-volador\">El Jamon Volador</Link> page,",
+      "  I thought that would be great to have a Gameboy frame for ",
+      "  the <a href=\"https://mateus.digital/el-jamon-volador\">El Jamon Volador</a> page,",
       "  and I saw it as opportunity to start to get into making art with CSS.",
       "</p>",
       "<p>",
@@ -1063,6 +1129,8 @@
       "</p>"
     ]
   },
+
+  // --- roses ---------------------------------------------------------------
   {
     "project_name": "roses",
     "project_title": "Roses",
@@ -1074,8 +1142,13 @@
     "year_release": 2022,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+
+    "is_playable_on_canvas": true,
   },
+
+  // --- flowfield -------------------------------------------------------------
   {
     "project_name": "flowfield",
     "project_title": "Flowfield",
@@ -1089,6 +1162,9 @@
     "platform": ["web"],
     "tech": ["JS", "demolib"],
 
+    "is_playable_on_canvas": true,
+
+
     "html": [
       "<p>",
       "  Flowfield is a visual experimentation using <a href=\"https://en.wikipedia.org/wiki/Perlin_noise\">Perlin Noise</a>.",
@@ -1098,6 +1174,8 @@
       "</p>"
     ]
   },
+
+  // --- lissajous -------------------------------------------------------------
   {
     "project_name": "lissajous",
     "project_title": "Lissajous",
@@ -1111,6 +1189,8 @@
     "platform": ["web"],
     "tech": ["JS", "demolib"]
   },
+
+  // --- doom fire -------------------------------------------------------------
   {
     "project_name": "doom-fire",
     "project_title": "Doom Fire!",
@@ -1124,6 +1204,8 @@
     "platform": ["web"],
     "tech": ["JS", "demolib"],
 
+    "is_playable_on_canvas": true,
+
     "html": [
       "<p>",
       "  DOOM FIRE! is a creative experience inspired by the <a href=\"https://fabiensanglard.net/doom_fire_psx/index.html\">amazing blog post</a> of <a href=\"https://fabiensanglard.net/about/index.html\">Fabian Sanglard</a>.",
@@ -1133,6 +1215,8 @@
       "</p>"
     ]
   },
+
+  // --- game of life ----------------------------------------------------------
   {
     "project_name": "game-of-life",
     "project_title": "Game of Life",
@@ -1146,11 +1230,15 @@
     "platform": ["web"],
     "tech": ["JS", "demolib"],
 
+    "is_playable_on_canvas": true,
+
     "html": [
       "<p> Game of Life is an implementation of the classic <a href=\"https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life\">Conway's Game of Life</a>. </p>",
       "<p> It was created with <Link href=\"\">demolib</Link>, it's licensed as <Link href=\"\">GPLv3</Link>. </p>"
     ]
   },
+
+  // --- simple tree -----------------------------------------------------------
   {
     "project_name": "simple-tree",
     "project_title": "Simple Trees!",
@@ -1164,6 +1252,8 @@
     "platform": ["web"],
     "tech": ["JS", "demolib"],
 
+    "is_playable_on_canvas": true,
+
     "html": [
       "<p>",
       "  Simple Tree is a creative experience using <a href=\"https://en.wikipedia.org/wiki/L-system\">L-System</a> trees.",
@@ -1173,6 +1263,8 @@
       "</p>"
     ]
   },
+
+  // --- simple clock ----------------------------------------------------------
   {
     "project_name": "simple-clock",
     "project_title": "Simple Clock!",
@@ -1184,8 +1276,13 @@
     "year_release": 2019,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+
+    "is_playable_on_canvas": true,
   },
+
+  // --- metaballs -------------------------------------------------------------
   {
     "project_name": "metaballs",
     "project_title": "Metaballs",
@@ -1197,8 +1294,12 @@
     "year_release": 2019,
 
     "platform": ["web"],
-    "tech": ["JS", "demolib"]
+    "tech": ["JS", "demolib"],
+
+    "is_playable_on_canvas": true,
   },
+
+  // --- starfield -------------------------------------------------------------
   {
     "project_name": "starfield",
     "project_title": "Starfield",
@@ -1216,6 +1317,8 @@
       "<p>",
         "Starfield is my first attempt with creative-coding :)",
       "</p>",
-    ]
+    ],
+
+    "is_playable_on_canvas": true,
   }
 ]

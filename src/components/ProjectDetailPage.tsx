@@ -89,7 +89,7 @@ export function GetPresentationElement(project: Project, log: ILogger) {
 function GetGeneralInfoElement(info: Project) {
   return (<>
     <section className="generalInfo">
-      <span className="title">General Info:</span>
+      <span className="title"><b>General Info:</b></span>
       <ul class="infoUL">
         {info.role &&
           <li>
@@ -120,17 +120,6 @@ function GetGeneralInfoElement(info: Project) {
   </>);
 }
 
-function _ActionButton({ href, children }) {
-  //
-  return (<>
-    <a className="actionButton"
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer">
-        {children}
-    </a>
-  </>);
-}
 
 // -----------------------------------------------------------------------------
 function GetActionButtonsElement(info: Project, log: ILogger) {
@@ -155,7 +144,19 @@ function GetActionButtonsElement(info: Project, log: ILogger) {
           <span className="text">GitHub</span>
         </_ActionButton>
       }
-
     </section>
+  </>);
+}
+
+// -----------------------------------------------------------------------------
+function _ActionButton({ href, children }) {
+  //
+  return (<>
+    <a className="actionButton"
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer">
+        {children}
+    </a>
   </>);
 }
