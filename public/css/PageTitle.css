@@ -33,4 +33,5 @@ section h1 span {
   color: var(--section-title-lighter-color);
   font-size: var(--section-title-lighter-size);
   font-weight: var(--section-title-lighter-weight);
+  /* margin-left: -0.25rem; */
 }

@@ -25,12 +25,12 @@ iframe {
 :root {
   /* Grayscale base (adjust these for main theme) */
   /* Solid dark backgrounds (use what fits your design) */
-  --back-000: hsl(0, 10%,  2%); /* almost black, deep navyish gray */
-  --back-100: hsl(0, 10%,  4%);   /* almost black, deep navyish gray */
-  --back-200: hsl(0, 10%,  8%);  /* very dark gray */
-  --back-400: hsl(0, 10%, 10%);  /* for cards, panels etc */
-  --back-500: hsl(0, 10%, 12%);  /* subtle borders, dividers */
-  --back-600: hsl(0, 10%, 14%);  /* less used, optional */
+  --back-000: hsl(0, 5%,  2%); /* almost black, deep navyish gray */
+  --back-100: hsl(0, 5%,  4%);   /* almost black, deep navyish gray */
+  --back-200: hsl(0, 5%,  8%);  /* very dark gray */
+  --back-400: hsl(0, 5%, 10%);  /* for cards, panels etc */
+  --back-500: hsl(0, 5%, 12%);  /* subtle borders, dividers */
+  --back-600: hsl(0, 5%, 14%);  /* less used, optional */
 
   /* Light overlays (all based on white w/ alpha) */
   --text-ok:  hsla(0, 0%, 100%, 0.98);
@@ -40,6 +40,15 @@ iframe {
   --text-60: hsla(0, 0%, 100%, 0.60);
   --text-50: hsla(0, 0%, 100%, 0.50);
   --text-40: hsla(0, 0%, 100%, 0.40);
+  --text-30: hsla(0, 0%, 100%, 0.30);
+  --text-20: hsla(0, 0%, 100%, 0.20);
+  --text-10: hsla(0, 0%, 100%, 0.10);
+  --text-05: hsla(0, 0%, 100%, 0.05);
+
+  --very-bold-weight: 600;
+  --bold-weight: 400;
+  --normal-weight: 200;
+  --light-weight: 100;
 
   /* Core backgrounds */
   --body-background-color: var(--back-000);
@@ -54,62 +63,67 @@ iframe {
   --dropdown-menu-item-border-color: var(--back-500);
 
   --dropdown-menu-item-current-color: var(--text-90);
-  --dropdown-menu-item-current-weight: 500;
+  --dropdown-menu-item-current-weight: var(--bold-weight);
   --dropdown-border-current-color: var(--text-70);
 
   --dropdown-menu-item-normal-color: var(--text-60);
-  --dropdown-menu-item-normal-weight: 200;
+  --dropdown-menu-item-normal-weight: var(--normal-weight);
   --dropdown-border-normal-color: var(--text-40);
 
   --dropdown-menu-item-hovered-color: var(--text-80);
-  --dropdown-menu-item-hovered-weight: 300;
+  --dropdown-menu-item-hovered-weight: var(--bold-weight);
   --dropdown-border-hovered-color: var(--text-60);
 
-
   /* Section Titles */
-  --section-title-color: var(--text-ok);
+  --section-title-color: var(--text-60);
   --section-title-size: 1.85rem;
-  --section-title-weight: 500;
+  --section-title-weight: var(--very-bold-weight);
 
-  --section-title-square-size: 70%;
+  --section-title-square-size: 75%;
   --section-title-square-color: var(--text-60);
-  --section-title-square-weight: 400;
+  --section-title-square-weight: var(--light-weight);
 
   --section-title-lighter-size: 100%;
-  --section-title-lighter-color: var(--text-70);
-  --section-title-lighter-weight: 300;
+  --section-title-lighter-color: var(--text-40);
+  --section-title-lighter-weight: var(--light-weight);
 
   /* About Section */
   --about-section-subtitle-size: 1.5rem;
-  --about-section-subtitle-color: var(--text-80);
-  --about-section-subtitle-weight: 400;
+  --about-section-subtitle-color: var(--text-60);
+  --about-section-subtitle-weight: var(--normal-weight);
 
-  --about-callout-background-color: var(--back-500);
-  --about-callout-text-color: var(--text-90);
+  --about-callout-background-color: var(--back-200);
+  --about-callout-text-color: var(--text-80);
 
   /* Contacts */
   --contacts-section-subtitle-size: 1.5rem;
-  --contacts-section-subtitle-color: var(--text-70);
-  --contacts-section-subtitle-weight: 400;
+  --contacts-section-subtitle-color: var(--text-60);
+  --contacts-section-subtitle-weight: var(--normal-weight);
 
   /* Project Item Card */
-  --project-item-card-background-color: var(--back-400, hsl(0, 0%, 13%)); /* fallback for custom back-400 */
+  --project-item-card-background-color: hsl(0, 5%, 5%, 0.8);
+  --project-item-card-icon-color: var(--text-80);
   --project-item-card-text-color: var(--text-80);
-  --project-item-card-text-size: 0.7rem;
-  --project-item-card-text-weight: 300;
-  --project-item-card-icon-color: var(--text-ok);
+  --project-item-card-text-size: 0.8rem;
+  --project-item-card-text-weight: -var(var(--bold-weight));
 
   /* Software Card */
   --software-card-title-size: 1rem;
-  --software-card-title-color: var(--text-90);
-  --software-card-title-weight: 400;
-  --software-card-description-size: 0.75rem;
+  --software-card-title-color: var(--text-80);
+  --software-card-title-weight: var(--bold-weight);
+  --software-card-description-size: 75%;
   --software-card-description-color: var(--text-60);
-  --software-card-description-weight: 300;
-  --software-card-border-color: var(--back-600);
+  --software-card-description-weight: var(--light-weight);
+
+  --software-card-border-color: var(--text-20);
+  --software-card-hovered-border-color: var(--text-40);
+  --software-card-hovered-text-color: var(--text-80);
+  --software-card-hovered-background-color: var(--text-05);
 
   /* Certification Card */
-  --certification-item-card-text-color: var(--text-90);
+
+  --certification-item-card-text-color: var(--text-60);
+  --certification-item-hovered-text-color: var(--text-80);
   --certification-item-card-text-size: 0.9rem;
   --certification-item-card-text-weight: 400;
 

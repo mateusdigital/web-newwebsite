@@ -4,6 +4,7 @@ import { DefaultPage } from "../components/DefaultPage";
 import { Link } from "../components/Link";
 import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 
+import GithubIcon_ from "../components/icons/github";
 
 //
 // Component
@@ -63,14 +64,20 @@ export default function SoftwarePage({ log }: { log: ILogger }) {
 function SoftwareItemCard({ project, log }: { project: Project, log: ILogger }) {
   return (<>
     <Link href="" className="softwareCard" key={project.project_name}>
-      <div className="vstack">
-        <div className="iconContainer">
-          <img src={project.default_icon} alt={`Icon of ${project.project_name}`}></img>
-        </div>
 
-        <div className="vstack">
-          <span className="projectTitle">{project.project_title}</span>
-          <span className="projectDescription">{project.project_description}</span>
+      <div className="vstack">
+
+        <div className="hstack">
+          <div className="iconContainer">
+            <img src={project.default_icon} alt={`Icon of ${project.project_name}`}></img>
+          </div>
+
+          <div className="vstack">
+            <div className="vstack">
+              <span className="projectTitle">{project.project_title}</span>
+              <span className="projectDescription">{project.project_description}</span>
+            </div>
+          </div>
         </div>
       </div>
     </Link>
@@ -91,7 +98,7 @@ function _SoftwarePageSection({ title, subtitle, columns, projects, log }: any) 
   return (
     <section>
       <h1>{title} <span>{subtitle}</span></h1>
-      <div className={"gridContainer" + columns}>
+      <div className={"softwareGridContainer" + columns}>
         {projects.map((project: Project, index: number) => {
           return (
             <SoftwareItemCard key={index} project={project} log={log} />

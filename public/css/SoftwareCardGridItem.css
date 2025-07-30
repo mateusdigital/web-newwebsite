@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- */
-.softwareCard {
+a.softwareCard {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,8 @@
   width: 100%;
   height: 100%;
 
-  padding: 1rem;
+
+  padding: 0.75rem;
 
   border: 1px solid var(--software-card-border-color);
   border-radius: var(--border-radius);
@@ -17,7 +18,10 @@
   text-decoration: none;
 }
 
-
+a.softwareCard:hover {
+  border-color: var(--software-card-hovered-border-color);
+  background: var(--software-card-hovered-background-color);
+}
 
 .softwareCard .hstack {
   display: flex;
@@ -26,23 +30,23 @@
   align-items: center;
   justify-content: flex-start;
 
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .softwareCard .vstack {
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: center;
+  align-items:start ;
   justify-content: flex-start;
 
   gap: 0.5rem;
 
-  text-align: center;
+  text-align:start;
 }
 
 .softwareCard .iconContainer {
-  --icon-size: 56px;
+  --icon-size: 64px;
 
   display: flex;
   justify-content: center;
@@ -55,6 +59,7 @@
   max-height: var(--icon-size);
   margin: 0.5rem;
 }
+
 .iconContainer img {
   width: 100%;
   height: 100%;
@@ -67,6 +72,7 @@
   color: var(--software-card-title-color);
   font-weight: var(--software-card-title-weight);
   display: block;
+  text-decoration: none;
 }
 
 .softwareCard .projectDescription {
@@ -75,7 +81,27 @@
   font-size: var(--software-card-description-size);
   color: var(--software-card-description-color);
   font-weight: var(--software-card-description-weight);
+  text-decoration: none;
 
   max-width: 100%;
   display: block;
+}
+
+
+.softwareGridContainer3,
+.softwareGridContainer4,
+.softwareGridContainer5 {
+  display: grid;
+  gap: 0.5rem 0.75rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.softwareGridContainer3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.softwareGridContainer4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.softwareGridContainer5 {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }

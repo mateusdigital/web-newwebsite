@@ -49,10 +49,10 @@ export default function Projects({log}: { log: ILogger }) {
         </_Section>
 
         <_Section title="Talks" subtitle="/ Podcasts" columns="3">
-          {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2023)}
-          {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2023)}
-          {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2023)}
-
+          {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2024)}
+          {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2024)}
+          {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2024)}
+          {_CreateYTCard("H2wB8h1g1to", "JornadaCast #70 Mateus Mesquita;", "Youtube", 2024)}
         {_CreateImgCard(
           "/img/projects/talks/Carreira-86-300x300-1.png",
           "https://web.archive.org/web/20210512050831/https://www.carreirasemfronteiras.com.br/desenvolvedor-de-jogos-em-minsk-belarus-carreira-sem-fronteiras-86/",
