@@ -6,16 +6,17 @@ import { CopyResources } from "./CopyResources";
 import { Logger } from "../libs/mdweb/source/Logger";
 import { GenerateCertificationsThumbnails } from "./GenerateCertificationsThumbnails";
 import { Assert } from "../libs/mdweb/source/Assert";
+import { PathUtils } from "../libs/mdweb/source/PathUtils";
 
 // -----------------------------------------------------------------------------
 const cwd = FileUtils.GetCwd();
 const LOGGER = Logger;
 
 // -----------------------------------------------------------------------------
-const DIST_DIR = FileUtils.ForwardSlash(`${cwd}/_dist`);
-const PAGES_DIR = FileUtils.ForwardSlash(`${cwd}/src/pages`);
-const PUBLIC_DIR = FileUtils.ForwardSlash(`${cwd}/public`);
-const CERTS_DIR = FileUtils.ForwardSlash(`${cwd}/public/res/certifications`);
+const DIST_DIR = PathUtils.ForwardSlash(`${cwd}/_dist`);
+const PAGES_DIR = PathUtils.ForwardSlash(`${cwd}/src/pages`);
+const PUBLIC_DIR = PathUtils.ForwardSlash(`${cwd}/public`);
+const CERTS_DIR = PathUtils.ForwardSlash(`${cwd}/public/res/certifications`);
 
 // -----------------------------------------------------------------------------
 FileUtils.EnsurePath(DIST_DIR, { isDir: true });

@@ -40,11 +40,12 @@ type NavBarProps = {
 };
 
 export default function NavBar({ pageId }: NavBarProps) {
+
   return (<>
     <div className="navBarContainer" id={pageId}>
       <nav className="topNav">
         <Link className="logo" href="/">mateus.digital</Link>
-
+        {pageId}
         <div id="navBarMenu" className="navBarMenu">
           <button id="navBarButton" className="">
             ☰
@@ -59,13 +60,13 @@ export default function NavBar({ pageId }: NavBarProps) {
             </button>
 
             <div className="dropdownMenuItemsContainer">
-              <Link href="/games"><span>Games</span></Link>
-              <Link href="/projects"><span>Projects</span></Link>
-              <Link href="/software"><span>Software</span></Link>
-              <Link href="/contacts"><span>Contacts</span></Link>
-              <Link href="/resume"><span>Resume</span></Link>
-              <Link href="/certifications"><span>Certifications</span></Link>
-              <Link href="/about"><span>About</span></Link>
+              <Link className={_MakeClassName(pageId, "games")} href="/games"><span>Games</span></Link>
+              <Link className={_MakeClassName(pageId, "projects")} href="/projects"><span>Projects</span></Link>
+              <Link className={_MakeClassName(pageId, "software")} href="/software"><span>Software</span></Link>
+              <Link className={_MakeClassName(pageId, "contacts")} href="/contacts"><span>Contacts</span></Link>
+              <Link className={_MakeClassName(pageId, "resume")} href="/resume"><span>Resume</span></Link>
+              <Link className={_MakeClassName(pageId, "certifications")} href="/certifications"><span>Certifications</span></Link>
+              <Link className={_MakeClassName(pageId, "about")} href="/about"><span>About</span></Link>
             </div>
           </div>
         </div>
@@ -75,4 +76,12 @@ export default function NavBar({ pageId }: NavBarProps) {
     </div>
   </>
   );
+}
+
+// -----------------------------------------------------------------------------
+function _MakeClassName(pageId: string, target: string): string {
+  if (pageId.toLowerCase() === target.toLowerCase()) {
+    return "current";
+  }
+  return "";
 }

@@ -15,6 +15,7 @@ import { FileUtils } from "../../libs/mdweb/source/FileUtils";
 import { JsonUtils } from "../../libs/mdweb/source/JsonUtils";
 import { Assert } from "../../libs/mdweb/source/Assert";
 import { DefaultLogger, ILogger } from "../../libs/mdweb/source/Logger";
+import { PathUtils } from "../../libs/mdweb/source/PathUtils";
 
 
 
@@ -96,7 +97,7 @@ class ProjectsInfo {
   // ---------------------------------------------------------------------------
   constructor(log: ILogger = DefaultLogger) {
     const cwd = FileUtils.GetCwd();
-    const projects_json_filepath = FileUtils.JoinPath(cwd, "data/projects/projects.json");
+    const projects_json_filepath = PathUtils.JoinPath(cwd, "data/projects/projects.json");
     log.D("Loading projects info from: ", projects_json_filepath);
 
     if (!FileUtils.FileExists(projects_json_filepath)) {

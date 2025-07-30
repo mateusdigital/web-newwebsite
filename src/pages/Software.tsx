@@ -28,7 +28,7 @@ export default function SoftwarePage({ log }: { log: ILogger }) {
   });
 
   return (<>
-    <DefaultPage pageId="SoftwarePage">
+    <DefaultPage pageId="software">
       {/*  */}
       <_SoftwarePageSection
         title="VSCode"

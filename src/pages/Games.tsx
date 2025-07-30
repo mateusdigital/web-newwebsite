@@ -44,7 +44,7 @@ export default function GamesPage({ log }: { log: ILogger }) {
   }
 
   return (<>
-    <DefaultPage pageId="GamesPage">
+    <DefaultPage pageId="games">
       {/*  */}
       <_GamesPageSection
         title="Professional"

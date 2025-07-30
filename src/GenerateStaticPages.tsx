@@ -3,6 +3,7 @@ import { FileUtils } from "../libs/mdweb/source/FileUtils"
 import { Assert } from "../libs/mdweb/source/Assert";
 import { ILogger } from "../libs/mdweb/source/Logger";
 import { RenderPage } from "./Render";
+import { PathUtils } from "../libs/mdweb/source/PathUtils";
 
 
 
@@ -23,7 +24,7 @@ export async function GenerateStaticPages(
   log.D("Output directory: ", outputDir);
 
   //
-  pagesDir = FileUtils.ForwardSlash(pagesDir);
+  pagesDir = PathUtils.ForwardSlash(pagesDir);
   Assert(
     FileUtils.DirExists(pagesDir),
     `Pages directory does not exist - aborting...\n ${pagesDir}`
@@ -40,7 +41,7 @@ export async function GenerateStaticPages(
   const filepaths = FileUtils.ListDir(pagesDir, { recursive: true, fullpaths: true });
   log.D("Found files in pages directory: ", filepaths.length);
   for (const filepath of filepaths) {
-    const clean_filepath = FileUtils.ForwardSlash(filepath.toString());
+    const clean_filepath = PathUtils.ForwardSlash(filepath.toString());
     const clean_fileurl = FileUtils.PathToUrl(clean_filepath);
 
     const should_skip = FileUtils.DirExists(clean_filepath)

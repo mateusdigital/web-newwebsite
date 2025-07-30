@@ -23,120 +23,134 @@ iframe {
     Variables
 */
 :root {
-  --gray-200: yellow;
-  --gray-300: yellow;
-  --gray-400: yellow;
-  --gray-500: yellow;
-  --gray-600: yellow;
-  --gray-700: yellow;
-  --gray-800: yellow;
-  --gray-900: yellow;
+  /* Grayscale base (adjust these for main theme) */
+  /* Solid dark backgrounds (use what fits your design) */
+  --back-000: hsl(0, 10%,  2%); /* almost black, deep navyish gray */
+  --back-100: hsl(0, 10%,  4%);   /* almost black, deep navyish gray */
+  --back-200: hsl(0, 10%,  8%);  /* very dark gray */
+  --back-400: hsl(0, 10%, 10%);  /* for cards, panels etc */
+  --back-500: hsl(0, 10%, 12%);  /* subtle borders, dividers */
+  --back-600: hsl(0, 10%, 14%);  /* less used, optional */
 
-  --nav-bar-logo-color: hsl(0, 0%, 100%);
-  --nav-bar-hamburger-color: hsl(0, 0%, 100%);
+  /* Light overlays (all based on white w/ alpha) */
+  --text-ok:  hsla(0, 0%, 100%, 0.98);
+  --text-90: hsla(0, 0%, 100%, 0.90);
+  --text-80: hsla(0, 0%, 100%, 0.80);
+  --text-70: hsla(0, 0%, 100%, 0.70);
+  --text-60: hsla(0, 0%, 100%, 0.60);
+  --text-50: hsla(0, 0%, 100%, 0.50);
+  --text-40: hsla(0, 0%, 100%, 0.40);
 
-  --body-background-color: red;
-  --page-background-color: blue;
+  /* Core backgrounds */
+  --body-background-color: var(--back-000);
+  --page-background-color: var(--back-000);
 
-  /*  */
-  --dropdown-background-color: var(--page-background-color);
-  --dropdown-menu-item-border-color: magenta;
-  --dropdown-menu-item-active-color: hsl(0, 0%, 100%);
+  /* Navbar & Icons */
+  --nav-bar-logo-color:      var(--text-60);
+  --nav-bar-hamburger-color: var(--text-70);
 
-  /*  */
-  --section-title-color: hsl(0, 0%, 100%);
+  /* Dropdowns */
+  --dropdown-background-color: var(--back-100);
+  --dropdown-menu-item-border-color: var(--back-500);
+
+  --dropdown-menu-item-current-color: var(--text-90);
+  --dropdown-menu-item-current-weight: 500;
+  --dropdown-border-current-color: var(--text-70);
+
+  --dropdown-menu-item-normal-color: var(--text-60);
+  --dropdown-menu-item-normal-weight: 200;
+  --dropdown-border-normal-color: var(--text-40);
+
+  --dropdown-menu-item-hovered-color: var(--text-80);
+  --dropdown-menu-item-hovered-weight: 300;
+  --dropdown-border-hovered-color: var(--text-60);
+
+
+  /* Section Titles */
+  --section-title-color: var(--text-ok);
   --section-title-size: 1.85rem;
-  --section-title-weight: 300;
+  --section-title-weight: 500;
 
   --section-title-square-size: 70%;
-  --section-title-square-color: hsl(0, 0%, 100%);
-  --section-title-square-weight: 200;
+  --section-title-square-color: var(--text-60);
+  --section-title-square-weight: 400;
 
   --section-title-lighter-size: 100%;
-  --section-title-lighter-color: hsl(0, 0%, 100%);
-  --section-title-lighter-weight: 100;
+  --section-title-lighter-color: var(--text-70);
+  --section-title-lighter-weight: 300;
 
-  /*  */
+  /* About Section */
   --about-section-subtitle-size: 1.5rem;
-  --about-section-subtitle-color: hsl(0, 0%, 100%);
+  --about-section-subtitle-color: var(--text-80);
   --about-section-subtitle-weight: 400;
 
-  --about-callout-background-color: hsl(0, 0%, 5%);
-  --about-callout-text-color: hsl(0, 0%, 100%);
+  --about-callout-background-color: var(--back-500);
+  --about-callout-text-color: var(--text-90);
 
-  /*  */
+  /* Contacts */
   --contacts-section-subtitle-size: 1.5rem;
-  --contacts-section-subtitle-color: hsl(0, 0%, 100%);
+  --contacts-section-subtitle-color: var(--text-70);
   --contacts-section-subtitle-weight: 400;
 
-  /*  */
-  --project-item-card-background-color: hsl(0, 0%, 5%);
-
-  --project-item-card-text-color: hsla(0, 0%, 100%, 0.5);
+  /* Project Item Card */
+  --project-item-card-background-color: var(--back-400, hsl(0, 0%, 13%)); /* fallback for custom back-400 */
+  --project-item-card-text-color: var(--text-80);
   --project-item-card-text-size: 0.7rem;
-  --project-item-card-text-weight: 200;
+  --project-item-card-text-weight: 300;
+  --project-item-card-icon-color: var(--text-ok);
 
-  --project-item-card-icon-color: hsl(0, 0%, 100%);
-
-
-  /*  */
+  /* Software Card */
   --software-card-title-size: 1rem;
-  --software-card-title-color: hsl(0, 0%, 100%);
-  --software-card-title-weight: 300;
-
+  --software-card-title-color: var(--text-90);
+  --software-card-title-weight: 400;
   --software-card-description-size: 0.75rem;
-  --software-card-description-color: hsl(0, 0%, 100%);
-  --software-card-description-weight: 100;
-  --software-card-border-color: hsl(0, 0%, 100%);
+  --software-card-description-color: var(--text-60);
+  --software-card-description-weight: 300;
+  --software-card-border-color: var(--back-600);
 
-  /*  */
-
-  --certification-item-card-text-color: hsl(0, 0%, 100%);
+  /* Certification Card */
+  --certification-item-card-text-color: var(--text-90);
   --certification-item-card-text-size: 0.9rem;
   --certification-item-card-text-weight: 400;
 
+  /* Generic */
+  --icon-color: var(--text-ok);
+  --bold-text-color: var(--text-ok);
+  --bold-text-weight: 700;
 
-  /*  */
-  --icon-color: hsl(0, 0%, 100%);
+  --link-text-color: hsl(210, 100%, 70%);
+  --link-decoration-color: hsl(210, 100%, 70%);
+  --link-text-color-hover: hsl(210, 100%, 80%);
+  --link-decoration-color-hover: hsl(210, 100%, 80%);
 
-  --bold-text-color: hsl(0, 0%, 100%);
-  --bold-text-weight: 600;
-
-  --link-text-color: hsl(0, 0%, 100%);
-  --link-decoration-color: hsl(0, 0%, 100%);
-  --link-text-color-hover: hsl(0, 0%, 100%);
-  --link-decoration-color-hover: hsl(0, 0%, 100%);
-
-  /*  */
-  --text-color: yellow;
-  --text-size: 1.0rem;
+  --text-color: var(--text-90);
+  --text-size: 1rem;
   --text-weight: 400;
 
   --text-detail-size: 0.8rem;
-  --text-detail-weight: light;
-  --text-detail-color: hsl(0, 0%, 100%);
+  --text-detail-weight: 400;
+  --text-detail-color: var(--text-60);
 
-
-  /*  */
-
-  /*  */
-  --footer-text-color: var(--gray-600);
+  /* Footer */
+  --footer-text-color: var(--text-40);
   --footer-text-size: 0.8rem;
 
-  /*  */
-  --horizontal-line-color: var(--gray-800);
+  --horizontal-line-color: var(--back-500);
 
-  /*  */
-
-  /*  */
+  /* Paragraphs */
   --paragraph-line-height: 1.5;
   --paragraph-margin-bottom: 1.25rem;
 
-  /* */
+  /* Border & radius */
   --border-radius: 0.5rem;
-  --border-color: var(--gray-600);
-}
+  --border-color: var(--back-600);
 
+  /* Accent Colors (Change these to your brand) */
+  --primary-accent: hsl(210, 100%, 60%); /* sky blue */
+  --success-accent: hsl(160, 100%, 40%); /* teal green */
+  --warning-accent: hsl(40, 100%, 60%);  /* amber */
+  --error-accent:   hsl(0, 90%, 65%);    /* red */
+}
 
 /* ------------------------------------------------------------------------- */
 /*                                                                            */

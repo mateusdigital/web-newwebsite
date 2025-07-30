@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 import { FileUtils } from '../../libs/mdweb/source/FileUtils';
 import { ILogger } from '../../libs/mdweb/source/Logger';
+import { PathUtils } from '../../libs/mdweb/source/PathUtils';
 import { Str } from '../../libs/mdweb/source/Str';
 // -----------------------------------------------------------------------------
 import { DefaultPage } from '../components/DefaultPage';
@@ -17,7 +18,7 @@ export default function CertificationsPage({ log }: { log: ILogger }) {
   }).filter((item: string) => {
     return item.endsWith(".pdf");
   }).forEach((item: string) => {
-    item = FileUtils.ForwardSlash(item);
+    item = PathUtils.ForwardSlash(item);
 
     const comps = item.split("/");
     const provider = comps[comps.length - 2];
@@ -52,9 +53,9 @@ export default function CertificationsPage({ log }: { log: ILogger }) {
 
 // -----------------------------------------------------------------------------
 function _CertificationItemCard({ cert, log }: { cert: any; log: ILogger }) {
-  const item_filepath = FileUtils.ForwardSlash(cert.toString());
+  const item_filepath = PathUtils.ForwardSlash(cert.toString());
   const img_filepath = item_filepath.replace(".pdf", ".1.png");
-  const clean_filename = FileUtils.GetFilename(item_filepath);
+  const clean_filename = PathUtils.GetFilename(item_filepath);
 
   const img_url = img_filepath.substring(img_filepath.indexOf("public") + 6, img_filepath.length);
   const clean_img_url = Str.RemoveAccents(img_url);

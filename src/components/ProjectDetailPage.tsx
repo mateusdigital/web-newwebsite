@@ -14,9 +14,18 @@ export function ProjectDetailPage({ info, log }: { info: Project, log: ILogger }
   log.D("Rendering project detail page for: ", info.project_name);
   const raw_html = info.html || [];
   let html = raw_html.join("");
+  let pageId = "";
+  switch (info.project_type) {
+    case "tool": { pageId = "Software"; } break;
+    case "game": { pageId = "Games"; } break;
+    case "library": { pageId = "Software"; } break;
+    case "demo": { pageId = "Projects"; } break;
+    case "app": { pageId = "Software"; } break;
+    case "web": { pageId = "Software"; } break;
+  }
 
   return (<>
-    <DefaultPage pageId={info.project_name}>
+    <DefaultPage pageId={pageId}>
       <section className="projectsDetailPage">
         {GetPresentationElement(info, log)}
 
@@ -133,7 +142,7 @@ function GetActionButtonsElement(info: Project, log: ILogger) {
 
       {info?.urls?.itchio &&
         <_ActionButton href={info.urls.itchio}>
-          <ItchIcon_/>
+          <ItchIcon_ />
           <span className="text">itch.io</span>
         </_ActionButton>
       }
@@ -156,7 +165,7 @@ function _ActionButton({ href, children }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer">
-        {children}
+      {children}
     </a>
   </>);
 }

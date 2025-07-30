@@ -9,6 +9,7 @@ import { render } from "preact-render-to-string";
 import { JSX } from "preact";
 import path from "path";
 import { RenderPage } from "./Render";
+import { PathUtils } from "../libs/mdweb/source/PathUtils";
 
 
 
@@ -20,7 +21,7 @@ export async function GenerateProjectsPagesFromData(
 ) {
   log.I("Generating project pages from data...");
 
-  const output_dir = FileUtils.ForwardSlash(path.join(outputDir, "projects"));
+  const output_dir = PathUtils.ForwardSlash(path.join(outputDir, "projects"));
   FileUtils.EnsurePath(output_dir);
 
   const info = GetProjectsInfo(log);
