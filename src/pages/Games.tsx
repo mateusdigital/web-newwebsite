@@ -29,52 +29,21 @@ export default function GamesPage({ log }: { log: ILogger }) {
       continue;
     }
 
-    if (item.project_subtype == "game-professional") {
-      professional_games.push(item);
-    }
-    else if (item.project_subtype == "game-retro") {
-      retro_games.push(item);
-    }
-    else if (item.project_subtype == "game-personal") {
-      personal_games.push(item);
-    }
-    else if (item.project_subtype == "game-old") {
-      old_games.push(item);
+    switch (item.project_subtype) {
+      case "game-professional": { professional_games.push(item); } break;
+      case "game-retro": { retro_games.push(item); } break;
+      case "game-personal": { personal_games.push(item); } break;
+      case "game-old": { old_games.push(item); break; }
+      default: { } break;
     }
   }
 
   return (<>
     <DefaultPage pageId="games">
-      {/*  */}
-      <_GamesPageSection
-        title="Professional"
-        subtitle="Games"
-        columns="3"
-        projects={professional_games}
-        log={log} />
-      {/*  */}
-      <_GamesPageSection
-        title="Retro"
-        subtitle="Games"
-        columns="3"
-        projects={retro_games}
-        log={log} />
-
-      {/*  */}
-      <_GamesPageSection
-        title="Personal"
-        subtitle="Games"
-        columns="3"
-        projects={personal_games}
-        log={log} />
-
-      {/*  */}
-      <_GamesPageSection
-        title="Old"
-        subtitle="Games"
-        columns="4"
-        projects={old_games}
-        log={log} />
+      <_GamesPageSection title="Professional" columns="3" projects={professional_games} />
+      <_GamesPageSection title="Retro" columns="3" projects={retro_games} />
+      <_GamesPageSection title="Personal" columns="3" projects={personal_games} />
+      <_GamesPageSection title="Old" subtitle="Games" columns="4" projects={old_games} />
     </DefaultPage>
   </>);
 }
@@ -85,17 +54,18 @@ export default function GamesPage({ log }: { log: ILogger }) {
 //
 
 // -----------------------------------------------------------------------------
-function _GamesPageSection({ title, subtitle, columns, projects, log }: any) {
-  return (
+function _GamesPageSection({ title, subtitle, columns, projects }: any) {
+  subtitle = subtitle || "Games";
+  return (<>
     <section>
       <h1>{title} <span>{subtitle}</span></h1>
       <div className={"gridContainer" + columns}>
         {projects.map((item: Project, index: number) => {
-          return (
-            <ProjectItemCard key={index} item={item} log={log} />
-          );
+          return (<>
+            <ProjectItemCard key={index} item={item}/>
+          </>);
         })}
       </div>
     </section>
-  );
+  </>);
 }

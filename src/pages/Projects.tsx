@@ -21,8 +21,8 @@
 //----------------------------------------------------------------------------//
 
 // -----------------------------------------------------------------------------
-import { Link }  from "../components/Link";
-import { DefaultPage }  from "../components/DefaultPage";
+import { Link } from "../components/Link";
+import { DefaultPage } from "../components/DefaultPage";
 import { ProjectItemCard } from "../components/ProjectItemCard";
 import { GetProjectsInfo, Project } from "../models/ProjectsInfo";
 import { ILogger } from "../../libs/mdweb/source/Logger";
@@ -32,27 +32,21 @@ import { ILogger } from "../../libs/mdweb/source/Logger";
 //
 
 // -----------------------------------------------------------------------------
-export default function Projects({log}: { log: ILogger }) {
-  const projects = GetProjectsInfo();
-
-  const demos = projects.FindProject((item: Project) => {
+export default function ProjectsPage({ log }: { log: ILogger }) {
+  const info = GetProjectsInfo();
+  const demos = info.FindProject((item: Project) => {
     return item.project_type === "demo";
   });
 
-  return (
-    <>
-      <DefaultPage pageId="projects">
-        <_Section title="Creative" subtitle="Coding" columns="4">
-          {demos.map((item: Project, index: number) => (
-            <ProjectItemCard key={index} item={item} log={log}/>
-          ))}
-        </_Section>
+  return (<>
+    <DefaultPage pageId="projects">
+      <_DemoSection title="Creative" subtitle="Coding" columns="4" demos={demos}/>
 
-        <_Section title="Talks" subtitle="/ Podcasts" columns="3">
-          {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2024)}
-          {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2024)}
-          {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2024)}
-          {_CreateYTCard("H2wB8h1g1to", "JornadaCast #70 Mateus Mesquita;", "Youtube", 2024)}
+      <_TalksSection title="Talks" subtitle="/ Podcasts" columns="3">
+        {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2024)}
+        {_CreateYTCard("InM81C0S65E", "CTRL ALT - Tudo Sobre Unreal Engine #2", "Youtube", 2024)}
+        {_CreateYTCard("zKkm6iGo5uE", "GDTK - Bate Papo Game Dev", "Youtube", 2024)}
+        {_CreateYTCard("H2wB8h1g1to", "JornadaCast #70 Mateus Mesquita;", "Youtube", 2024)}
         {_CreateImgCard(
           "/img/projects/talks/Carreira-86-300x300-1.png",
           "https://web.archive.org/web/20210512050831/https://www.carreirasemfronteiras.com.br/desenvolvedor-de-jogos-em-minsk-belarus-carreira-sem-fronteiras-86/",
@@ -60,29 +54,29 @@ export default function Projects({log}: { log: ILogger }) {
           "",
           2020
         )}
-        </_Section>
+      </_TalksSection>
 
-        <_Section title="Open Source" subtitle="Contributions" columns="0">
-          <ul>
-            <li>
-              <span><a href="http://www.libreflix.org">libreflix</a>:</span>
-              <a href="https://notabug.org/libreflix/libreflix/pulls/17">(#17)</a>
-            </li>
+      <_OthersSection title="Open Source" subtitle="Contributions" columns="0">
+        <ul>
+          <li>
+            <span><a href="http://www.libreflix.org">libreflix</a>:</span>
+            <a href="https://notabug.org/libreflix/libreflix/pulls/17">(#17)</a>
+          </li>
 
-            <li>
-              <span>Cocos2d-x:</span>
-              <a href="https://github.com/cocos2d/cocos2d-x/pull/16466">(#16466)</a>
-              <a href="https://github.com/cocos2d/cocos2d-x/pull/16789">(#16789)</a>
-            </li>
+          <li>
+            <span>Cocos2d-x:</span>
+            <a href="https://github.com/cocos2d/cocos2d-x/pull/16466">(#16466)</a>
+            <a href="https://github.com/cocos2d/cocos2d-x/pull/16789">(#16789)</a>
+          </li>
 
-            <li>
-              <span>2048py:</span>
-              <a href="https://github.com/davidsousarj/2048py/pull/2">(#2)</a>
-            </li>
-          </ul>
-        </_Section>
-      </DefaultPage>
-    </>
+          <li>
+            <span>2048py:</span>
+            <a href="https://github.com/davidsousarj/2048py/pull/2">(#2)</a>
+          </li>
+        </ul>
+      </_OthersSection>
+    </DefaultPage>
+  </>
   );
 }
 
@@ -91,15 +85,45 @@ export default function Projects({log}: { log: ILogger }) {
 //
 
 // -----------------------------------------------------------------------------
-function _Section({ title, subtitle, columns, children }: any) {
-  return (
+function _DemoSection({ title, subtitle, columns, demos }: any) {
+  if(!demos) {
+    debugger;
+    return (<></>);
+  }
+  return (<>
     <section>
       <h1>{title} <span>{subtitle}</span></h1>
-      <div className={"gridContainer" + columns}>
+      <div className={"demoContainer" + columns}>
+        {demos.map((item: Project, index: number) => (
+          <ProjectItemCard key={index} item={item} />
+        ))}
+      </div>
+    </section>
+  </>);
+}
+
+// -----------------------------------------------------------------------------
+function _TalksSection({ title, subtitle, columns, children }: any) {
+  return (<>
+    <section>
+      <h1>{title} <span>{subtitle}</span></h1>
+      <div className={"talksContainer" + columns}>
         {children}
       </div>
     </section>
-  );
+  </>);
+}
+
+// -----------------------------------------------------------------------------
+function _OthersSection({ title, subtitle, columns, children }: any) {
+  return (<>
+    <section>
+      <h1>{title} <span>{subtitle}</span></h1>
+      <div className={"othersContainer" + columns}>
+        {children}
+      </div>
+    </section>
+  </>);
 }
 
 // -----------------------------------------------------------------------------

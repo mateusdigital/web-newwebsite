@@ -14,11 +14,10 @@ import RetroIcon from "./icons/address-book-solid"
 // -----------------------------------------------------------------------------
 interface ProjectItemCardProps {
   item: Project;
-  log: ILogger;
 }
 
 // -----------------------------------------------------------------------------
-export function ProjectItemCard({ item, log }: ProjectItemCardProps) {
+export function ProjectItemCard({ item }: ProjectItemCardProps) {
   let {
     project_name,
     project_title,
@@ -45,7 +44,7 @@ export function ProjectItemCard({ item, log }: ProjectItemCardProps) {
   const jpg_img = `/img/projects/${project_subtype}/${project_name}.jpg`;
   const gif_img = `/img/projects/${project_subtype}/${project_name}.gif`;
 
-  log.D(png_img, jpg_img, gif_img);
+  // log.D(png_img, jpg_img, gif_img);
 
   const cwd = PathUtils.JoinPath(FileUtils.GetCwd(), "public");
   const img_path = // Check which image exists, in this order: PNG, JPG, GIF
