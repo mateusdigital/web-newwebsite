@@ -355,7 +355,7 @@
 
     "html": [
       "<p>",
-        "<b>The Same Game<b> is a small matching making game.",
+        "<b>The Same Game</b> is a small matching making game.",
       "</p>",
       "<p>",
         "I started it when I was in Minsk Belarus, during the pandemic in 2020 - I was feeling very homesick back then I tried to make something that remembered me my dear home, my mother and my dog.",
@@ -366,8 +366,10 @@
       "<p>",
         "I hope that you have fun!!",
       "</p>"
-    ]
+    ],
+
   },
+
   // --- // Koliery ------------------------------------------------------------
   {
     "project_name": "koliery",
@@ -396,7 +398,7 @@
 
     "html": [
       "<p>",
-        "<b>Koliery</b> - <b>Колеры</b> in <b>Belarussian</b> - meaning colors is a game inspired by the <b>Sega Columns</b> and the <b>ISS Colours</b> for the <b>Atari 500</b>..",
+        "<b>Koliery</b> - <b>Колеры</b> in <b>Belarusian</b> - meaning colors is a game inspired by the <b>Sega Columns</b> and the <b>ISS Colours</b> for the <b>Atari 500</b>..",
       "</p>",
       "<p>",
         "It was developed using <b>Pixi.js</b> in 2020 while I was in Minsk Belarus, but not released until 2024.",
@@ -407,7 +409,9 @@
       "<p>",
         "I hope that you have fun!!",
       "</p>"
-    ]
+    ],
+
+
   },
 
   // --- simple snake ----------------------------------------------------------

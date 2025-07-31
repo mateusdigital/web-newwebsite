@@ -28,9 +28,10 @@ iframe {
   --back-000: hsl(0, 5%,  2%); /* almost black, deep navyish gray */
   --back-100: hsl(0, 5%,  4%);   /* almost black, deep navyish gray */
   --back-200: hsl(0, 5%,  8%);  /* very dark gray */
-  --back-400: hsl(0, 5%, 10%);  /* for cards, panels etc */
-  --back-500: hsl(0, 5%, 12%);  /* subtle borders, dividers */
-  --back-600: hsl(0, 5%, 14%);  /* less used, optional */
+  --back-300: hsl(0, 5%, 10%);  /* for cards, panels etc */
+  --back-400: hsl(0, 5%, 12%);  /* for cards, panels etc */
+  --back-500: hsl(0, 5%, 14%);  /* subtle borders, dividers */
+  --back-600: hsl(0, 5%, 16%);  /* less used, optional */
 
   /* Light overlays (all based on white w/ alpha) */
   --text-ok:  hsla(0, 0%, 100%, 0.98);
@@ -121,7 +122,6 @@ iframe {
   --software-card-hovered-background-color: var(--text-05);
 
   /* Certification Card */
-
   --certification-item-card-text-color: var(--text-60);
   --certification-item-hovered-text-color: var(--text-80);
   --certification-item-card-text-size: 0.9rem;
@@ -144,6 +144,14 @@ iframe {
   --text-detail-size: 0.8rem;
   --text-detail-weight: 400;
   --text-detail-color: var(--text-60);
+
+  /* Action Button  */
+
+  --button-background-color:  var(--back-300);
+  --button-text-color: var(--text-70);
+
+  --button-background-hovered-color: var(--back-500);
+  --button-text-hovered-color: var(--text-90);
 
   /* Footer */
   --footer-text-color: var(--text-40);
@@ -357,6 +365,7 @@ svg.heartIcon:hover {
   width: 100%;
   height: 60vh;
   z-index: 1;
+  cursor: pointer;
   /* background-color: red; */
 }
 
@@ -381,23 +390,34 @@ svg.heartIcon:hover {
   }
 }
 
-
+/* -------------------------------------------------------------------------- */
 .projectsDetailPage .actionButtons .actionButton {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
   flex-grow: 1;
 
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
   padding: 0.5rem 1rem;
+
   border-radius: var(--border-radius);
-  background-color: red;
-  color: cyan;
+  font-weight: var(--text-weight);
   text-decoration: none;
 
-  font-weight: var(--text-weight);
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
 }
+
+/* -------------------------------------------------------------------------- */
+.projectsDetailPage .actionButtons .actionButton:hover {
+  font-weight: var(--bold-text-weight);
+
+  background-color: var(--button-background-hovered-color);
+  color: var(--button-text-hovered-color);
+}
+
 
 
 /*
