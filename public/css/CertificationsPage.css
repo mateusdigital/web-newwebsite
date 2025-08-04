@@ -23,6 +23,7 @@ a.certificationItemCard {
 
   color: var(--certification-item-card-text-color);
 }
+
 a.certificationItemCard:hover {
   color: var(--certification-item-hovered-text-color);
 }

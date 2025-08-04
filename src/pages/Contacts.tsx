@@ -45,7 +45,7 @@ export function Contacts() {
     <DefaultPage pageId="contacts">
       {/*  */}
       <section>
-      <h1>Contact <span>Me</span></h1>
+        <h1>Contact <span>Me</span></h1>
         <p>
           <Link href="https://www.youtube.com/watch?v=frszEJb0aOo" target="_blank"> Hello there!</Link>
         </p>
@@ -80,6 +80,12 @@ export function Contacts() {
           <li><GithubIcon_ /> <a href="https://github.com/mateusdigital">github.com/mateusdigital</a></li>
           <li><LinkedinIcon_ /> <a href="https://www.linkedin.com/in/mateusdigital">linkedin.com/in/mateusdigital</a></li>
           <li><YoutubeIcon_ /> <a href="https://www.youtube.com/@_mateusdigital">youtube.com/@_mateusdigital</a></li>
+        </ul>
+        <h2>Calendar:</h2>
+        <ul>
+          <li>
+            <a href="https://calendly.com/mateusdigital">calendly.com/mateusdigital</a>
+          </li>
         </ul>
 
         <h2>Stores:</h2>

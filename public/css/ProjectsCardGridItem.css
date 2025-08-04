@@ -86,8 +86,8 @@
 
 /* -------------------------------------------------------------------------- */
 
-.projectItemCard .youtubeAndImageContainer {
-  background-color: blue;
+.youtubeAndImageContainer {
+  /* background-color: blue; */
   gap: 0.5rem;
   text-align: center;
   height: 100%;
@@ -100,10 +100,23 @@
   width: 100%;
   min-width: 100%;
   min-height: 100%;
+  font-size: 80%;
 }
 
-.projectItemCard .youtubeAndImageContainer img {
-  /* max-height: 180px */
+.youtubeAndImageContainer img {
+  max-height: 180px
+}
+
+
+a.youtubeAndImageContainer {
+  text-align: center;
+  text-decoration: none;
+  color: var(--certification-item-card-text-color);
+}
+
+a.youtubeAndImageContainer:hover {
+  color: var(--certification-item-hovered-text-color);
+  text-decoration: var(--link-decoration-color) dotted underline;
 }
 
 
@@ -112,7 +125,7 @@
 .gridContainer4,
 .gridContainer5 {
   display: grid;
-  gap: 0.5rem 0.75rem;
+  gap: 0.75rem 0.75rem;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
 }
@@ -134,20 +147,13 @@
 .demoContainer4,
 .demoContainer5 {
   display: grid;
-  gap: 0.5rem 0.75rem;
+  gap: 0.75rem 0.75rem;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
 }
-
-.demoContainer3 {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-.demoContainer4 {
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-}
-.demoContainer5 {
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-}
+.demoContainer3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.demoContainer4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.demoContainer5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 
 
 /* -------------------------------------------------------------------------- */
@@ -155,17 +161,11 @@
 .talksContainer4,
 .talksContainer5 {
   display: grid;
-  gap: 0.5rem 0.75rem;
+  gap: 0.75rem 0.75rem;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
 }
 
-.talksContainer3 {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-.talksContainer4 {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-.talksContainer5 {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
+.talksContainer3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.talksContainer4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.talksContainer5 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }

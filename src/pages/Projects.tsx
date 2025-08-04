@@ -40,7 +40,6 @@ export default function ProjectsPage({ log }: { log: ILogger }) {
 
   return (<>
     <DefaultPage pageId="projects">
-      <_DemoSection title="Creative" subtitle="Coding" columns="4" demos={demos}/>
 
       <_TalksSection title="Talks" subtitle="/ Podcasts" columns="3">
         {_CreateYTCard("diSLvMutYH0", "CTRL ALT - Tudo Sobre Unreal Engine #1", "Youtube", 2024)}
@@ -55,6 +54,8 @@ export default function ProjectsPage({ log }: { log: ILogger }) {
           2020
         )}
       </_TalksSection>
+
+      <_DemoSection title="Creative" subtitle="Coding" columns="4" demos={demos} />
 
       <_OthersSection title="Open Source" subtitle="Contributions" columns="0">
         <ul>
@@ -86,7 +87,7 @@ export default function ProjectsPage({ log }: { log: ILogger }) {
 
 // -----------------------------------------------------------------------------
 function _DemoSection({ title, subtitle, columns, demos }: any) {
-  if(!demos) {
+  if (!demos) {
     debugger;
     return (<></>);
   }
@@ -132,31 +133,22 @@ function _CreateYTCard(ytId: string, title: string, detail: string, year: number
   const img_path = `https://img.youtube.com/vi/${ytId}/maxresdefault.jpg`;
   const alt_text = title;
 
-  return (
-    <div className="projectItemCard" key={title}>
-      <Link href={yt_url}>
-        <div className="youtubeAndImageContainer">
-          <img src={img_path} alt={alt_text} />
-          {title}
-        </div>
-      </Link>
-    </div>
-  )
+  return (<>
+    <a href={yt_url} className="youtubeAndImageContainer">
+      <img src={img_path} alt={alt_text} />
+      {title}
+    </a>
+  </>);
 }
 
 // -----------------------------------------------------------------------------
 function _CreateImgCard(imgUrl: string, href: string, title: string, detail?: string, year?: number) {
   const alt_text = title;
-  return (
-    <div className="projectItemCard" key={title}>
-      <div className="youtubeAndImageContainer">
-        <Link href={href}>
-          <img src={imgUrl} alt={alt_text} />
-        </Link>
-        <Link href={href}>
-          {title}
-        </Link>
-      </div>
-    </div >
-  )
+
+  return (<>
+    <a href={href} className="youtubeAndImageContainer">
+      <img src={imgUrl} alt={alt_text} />
+      {title}
+    </a>
+  </>);
 }
